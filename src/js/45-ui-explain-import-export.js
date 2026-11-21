@@ -3,7 +3,7 @@ function explainBlock(inn){
   const a=analyze(inn),sc=inn.scores||a.scores;if(!sc)return '';
   const inputs=[['Etap rozwoju',STAGES[inn.stage]],['Zasięg problemu',SCOPE[inn.scope]],['Wymagana infrastruktura',INFRA[inn.infra]],['Dokumentacja',inn.hasDocs?'tak':'nie'],['Zespół',TEAM[inn.team]],['Ochrona własności',IPL[inn.ip]]];
   const pts=CRIT.map(c=>({c,v:sc[c.k]||1,p:c.w*(sc[c.k]||1)/5}));
-  const rows=pts.map(x=>'<tr><td>'+x.c.name+'</td><td class="num">'+x.v+'/5</td><td class="num">'+x.c.w+'%</td><td class="num">'+x.p.toFixed(1)+'</td><td class="small muted">'+x.c.auto+'</td></tr>').join('');
+  const rows=pts.map(x=>'<tr><td>'+metLink(x.c.k,x.c.name)+'</td><td class="num">'+x.v+'/5</td><td class="num">'+x.c.w+'%</td><td class="num">'+x.p.toFixed(1)+'</td><td class="small muted">'+x.c.auto+'</td></tr>').join('');
   const up=pts.filter(x=>x.v<5).sort((p,q)=>q.c.w-p.c.w).slice(0,2).map(x=>'<li>'+x.c.name+': każdy punkt więcej w skali 1–5 dodaje '+(x.c.w/5).toFixed(0)+' pkt do oceny.</li>').join('');
   const src=inn.estimated?'Etap, zasięg, infrastrukturę i zespół <b>oszacowano automatycznie</b> z programu, budżetu i składu konsorcjum w rejestrze NCBR.':'Dane wejściowe pochodzą z formularza zgłoszenia i mogą być poprawione ręcznie w sekcji „Szczegóły oceny”.';
   const body='<p class="small">'+src+'</p><div class="tablewrap"><table><thead><tr><th>Kryterium</th><th>Wartość</th><th>Waga</th><th>Punkty</th><th>Skąd wartość</th></tr></thead><tbody>'+rows+'<tr><td><b>Suma</b></td><td></td><td class="num">100%</td><td class="num"><b>'+totalScore(sc)+'</b></td><td class="small muted">suma wag × wartość / 5</td></tr></tbody></table></div>'+

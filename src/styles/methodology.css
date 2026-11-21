@@ -1,0 +1,61 @@
+
+/* ---------- Metodologia oceny: sekcja kryteriów, tabele punktów, odnośniki ---------- */
+.met-sec,.met-toc,.crit-card,.met-how{scroll-margin-top:84px;transition:box-shadow .4s}
+.met-sec.flash,.met-toc.flash,.crit-card.flash,.met-how.flash{box-shadow:0 0 0 3px var(--accent),var(--shadow)}
+.mlink{color:var(--accent-d);font-weight:700;text-decoration:underline;text-decoration-color:rgba(79,107,237,.35);text-underline-offset:3px}
+.mlink:hover{text-decoration-color:currentColor}
+.mlink.up{font-size:13px}
+.mlink:focus-visible,.chip:focus-visible,.crit-more summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
+.met-sec h3:focus,.crit-card h4:focus,.met-how h4:focus{outline:none}
+.met-n{display:inline-grid;place-items:center;flex:none;width:28px;height:28px;margin-right:10px;border-radius:50%;background:var(--accent-soft);color:var(--accent-d);font-size:14px;font-weight:800;vertical-align:middle}
+.met-w{display:inline-block;padding:2px 10px;border-radius:999px;background:var(--soft);color:var(--muted);font-size:12.5px;font-weight:700;white-space:nowrap}
+.met-others,.met-see{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.chip{display:inline-block;padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--accent-d);font-size:13px;font-weight:700;text-decoration:none}
+.chip:hover{border-color:var(--accent);background:var(--accent-soft)}
+.met-foot{display:flex;justify-content:flex-end;padding-top:10px;border-top:1px solid var(--line)}
+
+/* wzór ogólny i progi */
+.met-how{display:grid;gap:12px;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--soft)}
+.met-how h4{margin:0;font-size:16px}
+.met-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.met-stat{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.met-stat b{font-size:20px;color:var(--accent-d)}
+.met-stat span{font-size:13px;color:var(--muted)}
+.crit-rule{margin:0;padding:8px 12px;border-left:4px solid var(--accent);border-radius:6px;background:var(--accent-soft);font-weight:700;font-size:14px}
+.met-thr{display:flex;flex-wrap:wrap;gap:8px}
+.thr{padding:6px 12px;border-radius:999px;font-size:13px;border:1px solid transparent}
+.thr.lo{background:var(--rose-soft);color:var(--rose);border-color:#f6c6cf}
+.thr.mid{background:var(--amber-soft);color:var(--amber);border-color:#f1d9a6}
+.thr.hi{background:var(--teal-soft);color:var(--teal);border-color:#bfe8e1}
+
+/* karta kryterium */
+.crit-card{display:grid;gap:10px;margin-top:6px;padding:18px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.crit-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}
+.crit-head h4{margin:0;font-size:17px}
+.met-lead{margin:0;font-size:15px;font-weight:600}
+.crit-src{margin:0}
+.crit-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:14px;align-items:start}
+.crit-pts{display:grid;gap:10px}
+.crit-side{display:grid;gap:10px}
+.crit-note{padding:10px 12px;border-radius:12px;border:1px solid var(--line);font-size:14px;line-height:1.55}
+.crit-note .l{display:block;margin-bottom:3px;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.crit-note.ex{background:var(--accent-soft);border-color:#d6defc}
+.crit-note.lim{background:var(--amber-soft);border-color:#f1d9a6}
+
+/* tabela „punkty -> warunek” */
+.ptbl{width:100%;border-collapse:separate;border-spacing:0;font-size:14px;margin:0 0 8px}
+.ptbl caption{caption-side:top;text-align:left;padding:0 0 6px;font-weight:800;font-size:13px;color:var(--muted)}
+.ptbl th{text-align:left;font-size:12px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);padding:6px 10px;border-bottom:1px solid var(--line)}
+.ptbl td{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.ptbl tr:last-child td{border-bottom:0}
+.ptbl td:first-child,.ptbl th:first-child{width:64px;white-space:nowrap}
+.pt{display:inline-block;min-width:30px;padding:2px 8px;border-radius:8px;background:var(--accent-soft);color:var(--accent-d);font-weight:800;text-align:center}
+
+.crit-more{border:1px dashed var(--line);border-radius:12px;padding:8px 12px}
+.crit-more summary{cursor:pointer;font-weight:700;color:var(--accent-d)}
+.crit-more p{margin:8px 0 2px}
+
+@media(max-width:800px){.crit-grid{grid-template-columns:1fr}.met-stats{grid-template-columns:1fr}.met-sec,.met-toc,.crit-card,.met-how{scroll-margin-top:150px}}
+html.a11y-hc .met-how,html.a11y-hc .met-stat,html.a11y-hc .crit-card,html.a11y-hc .crit-note,html.a11y-hc .crit-rule,html.a11y-hc .chip,html.a11y-hc .thr,html.a11y-hc .pt,html.a11y-hc .met-n,html.a11y-hc .met-w,html.a11y-hc .crit-more{background:#000!important;color:#fff!important;border-color:#fff!important}
+html.a11y-hc .mlink,html.a11y-hc .chip,html.a11y-hc .crit-more summary,html.a11y-hc .met-stat b{color:#ffeb3b!important}
+html.a11y-hc .ptbl td,html.a11y-hc .ptbl th{border-color:#fff!important}

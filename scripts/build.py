@@ -7,7 +7,7 @@ Co robi:
   1. wczytuje i waliduje pliki JSON z data/ i wstrzykuje je do skryptu jako stałe JS
      (kolejność i nazwy stałych: lista DATA poniżej),
   2. dokleja pliki src/js/*.js w kolejności numerów w nazwie (10-, 20-, ...),
-  3. dokleja src/styles/*.css (main.css, potem overrides.css),
+  3. dokleja pliki CSS z src/styles/ w kolejności z listy STYLES,
   4. wkłada CSS i skrypt do src/templates/index.html.
 Tylko biblioteka standardowa Pythona 3.
 """
@@ -31,7 +31,7 @@ DATA = [
     ('PUBLIC_CONTACTS',  'reference/contacts-companies.json'),
     ('INST_CONTACTS',    'reference/contacts-institutions.json'),
 ]
-STYLES = ['main.css', 'overrides.css']
+STYLES = ['main.css', 'overrides.css', 'methodology.css']
 
 
 def path(*p):
