@@ -1,5 +1,4 @@
 __pycache__/
-*.sqlite3*
 *.log
 *.pid
 data/
