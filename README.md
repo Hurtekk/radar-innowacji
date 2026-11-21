@@ -9,13 +9,13 @@ Wynik to jeden samodzielny plik `dist/index.html`.
 data/                      dane źródłowe (JSON), wstrzykiwane do aplikacji przy budowaniu
   records/
     ncbr-projects.json     190 projektów z bazy sukcesów NCBR (fakty ze źródła: tytuł, beneficjent, program, budżet…)
-    assessments.json       opisy, rodzaj innowacji i TRL – OCENA AUTORÓW, klucz = id rekordu (n01…, w-…)
+    assessments.json       opisy, rodzaj innowacji, TRL i poziom wdrożenia (wdr 1–5 + uzasadnienie wb) – OCENA AUTORÓW, klucz = id rekordu
     detected-feed.json     migawka kanału „wykryte” (odświeżana przez collector/)
   reference/               programy NCBR, partnerzy, publiczne dane kontaktowe instytucji i firm
   geo/                     miejscowości, środki województw, kontury województw (SVG path)
 src/
   js/                      kod aplikacji; numer w nazwie = kolejność w skrypcie (10 logika, 20 dane/lokalizacje, 40+ interfejs)
-  styles/                  main.css + overrides.css (doklejany po main.css)
+  styles/                  main.css, overrides.css i methodology.css (kolejność: STYLES w build.py)
   templates/index.html     szkielet strony z ekranem startowym
 scripts/build.py           składa src/ + data/ w dist/
 dist/                      wynik budowania (index.html, script.js)
@@ -36,7 +36,8 @@ Potrzebny jest tylko Python 3 (bez zależności). Skrypt waliduje JSON-y, ostrze
 ## Dodawanie i zmiana rekordów
 
 - Nowy projekt NCBR: dopisz obiekt do `data/records/ncbr-projects.json` (kolejne `id`, np. `n191`)
-  oraz wpis o tym samym id w `data/records/assessments.json` (`typ`, `trl`, `tb`, `opis`, `zast`). Potem build.
+  oraz wpis o tym samym id w `data/records/assessments.json` (`typ`, `trl`, `tb`, `wdr`, `wb`, `opis`, `zast`). Potem build.
+  `wdr` to poziom rzeczywistego użycia 1–5 (skala w metodologii oceny), a `wb` to jego krótkie uzasadnienie na podstawie źródła.
 - **Id rekordu jest stabilne** – nie zmieniaj ani nie przenumerowuj istniejących, bo odwołują się do nich oceny i zapisany stan użytkowników.
 - Rekord bez wpisu w `assessments.json` jest pomijany (obecnie `n58` i `n60`).
 

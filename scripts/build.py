@@ -72,6 +72,9 @@ def check_data():
         if missing:
             print('UWAGA: %d rekordów z %s bez oceny w assessments.json (nie trafią do radaru): %s'
                   % (len(missing), label, ', '.join(missing[:8])))
+    nowdr = sorted(k for k, v in json.loads(read('data/records/assessments.json')).items() if not 1 <= v.get('wdr', 0) <= 5)
+    if nowdr:
+        print('UWAGA: %d ocen bez poziomu wdrożenia wdr (1-5): %s' % (len(nowdr), ', '.join(nowdr[:8])))
     orphan = sorted(assess - ids - feed)
     if orphan:
         print('UWAGA: %d ocen w assessments.json bez rekordu: %s' % (len(orphan), ', '.join(orphan[:8])))

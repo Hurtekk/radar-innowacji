@@ -19,7 +19,7 @@ function _catsFor(area,title,benef){
 const _fin=s=>{const m=String(s).match(/^\d{2}\.\d{2}\.(\d{4})–(\d{2}\.\d{2}\.(\d{4}))/);return m?+m[3]:(String(s).match(/(\d{4})\s*$/)||[])[1]|0};
 function applyRewrite(o){
   const w=REWRITE[o.id];if(!w)return null;
-  o.description=w.opis;o.problem=w.zast;o.benefit=w.zast;o.typ=w.typ;o.trlWhy=w.tb;
+  o.description=w.opis;o.problem=w.zast;o.benefit=w.zast;o.typ=w.typ;o.trlWhy=w.tb;o.wdr=w.wdr;o.wdrWhy=w.wb;
   if(w.trl>0){o.trl=w.trl;if(o.trlBasis!=='source')o.trlBasis='assessed';o.trlNA=false;o.stage=w.trl<=3?0:w.trl<=5?1:w.trl===6?2:w.trl<=8?3:4}else{o.trl=0;o.trlNA=true;o.trlBasis='na'}
   return o;
 }

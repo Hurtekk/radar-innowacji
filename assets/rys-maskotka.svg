@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 600" width="440" height="600">
+  <title>Ryś – maskotka Radaru Innowacji</title>
+  <defs>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2B66B"/>
+      <stop offset="1" stop-color="#D98F45"/>
+    </linearGradient>
+    <linearGradient id="furSoft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7C888"/>
+      <stop offset="1" stop-color="#E4A25A"/>
+    </linearGradient>
+    <radialGradient id="iris" cx="50%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#6FB0FF"/>
+      <stop offset=".6" stop-color="#2459C9"/>
+      <stop offset="1" stop-color="#16348A"/>
+    </radialGradient>
+    <linearGradient id="sweep" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#5FD6A6" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5FD6A6" stop-opacity=".45"/>
+    </linearGradient>
+    <path id="ear" d="M112 205 C62 160 28 90 34 14 C62 28 104 62 138 122 Z"/>
+    <path id="earIn" d="M106 192 C74 154 58 106 62 62 C88 82 118 112 130 152 Z"/>
+    <path id="tuft" d="M34 14 C24 44 30 76 50 100 C48 68 56 44 72 30 C60 24 46 18 34 14 Z"/>
+    <path id="ruff" d="M82 275 L38 290 L72 308 L46 330 L92 334 L84 366 L134 352 L168 384 L170 296 Z"/>
+    <ellipse id="pad" cx="0" cy="0" rx="8" ry="6"/>
+  </defs>
+
+  <!-- tło: miękki radar (do wyłączenia: usuń grupę) -->
+  <g id="radar-tlo">
+    <circle cx="220" cy="330" r="215" fill="#E3F6EF"/>
+    <g fill="none" stroke="#8ED9BD" stroke-width="3" opacity=".8">
+      <circle cx="220" cy="330" r="150"/>
+      <circle cx="220" cy="330" r="85"/>
+      <line x1="220" y1="115" x2="220" y2="545"/>
+      <line x1="5" y1="330" x2="435" y2="330"/>
+    </g>
+    <path d="M220 330 L220 115 A215 215 0 0 1 372 178 Z" fill="url(#sweep)"/>
+    <g fill="#FF9F43" stroke="#fff" stroke-width="3">
+      <circle cx="372" cy="250" r="9"/><circle cx="52" cy="190" r="8"/><circle cx="400" cy="400" r="7"/>
+    </g>
+  </g>
+
+  <g stroke="#6B3F1E" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- ogon -->
+    <path d="M360 520 C395 508 428 470 404 436 C384 452 380 486 350 506 Z" fill="url(#fur)"/>
+    <path d="M404 436 C396 440 392 446 390 452 M412 456 C404 458 398 462 394 468 M410 474 C402 478 396 482 390 488" fill="none" stroke="#3A2416" stroke-width="7"/>
+
+    <!-- zadnie łapy -->
+    <ellipse cx="98" cy="490" rx="72" ry="62" fill="url(#fur)"/>
+    <ellipse cx="342" cy="490" rx="72" ry="62" fill="url(#fur)"/>
+    <!-- tułów -->
+    <path d="M136 390 C112 460 126 540 150 575 L290 575 C314 540 328 460 304 390 Z" fill="url(#fur)"/>
+    <path d="M176 384 L220 486 L264 384 Q220 402 176 384 Z" fill="#FFF6E8" stroke="#D9B98F"/>
+
+    <!-- tylne stopy z poduszkami -->
+    <g>
+      <ellipse cx="66" cy="540" rx="46" ry="38" fill="#E9AE66"/>
+      <ellipse cx="60" cy="548" rx="24" ry="20" fill="#7A4A2C" stroke="none"/>
+      <g fill="#7A4A2C" stroke="none">
+        <ellipse cx="38" cy="522" rx="8" ry="10"/><ellipse cx="58" cy="512" rx="8" ry="10"/><ellipse cx="80" cy="514" rx="8" ry="10"/><ellipse cx="96" cy="528" rx="7" ry="9"/>
+      </g>
+      <ellipse cx="374" cy="540" rx="46" ry="38" fill="#E9AE66"/>
+      <ellipse cx="380" cy="548" rx="24" ry="20" fill="#7A4A2C" stroke="none"/>
+      <g fill="#7A4A2C" stroke="none">
+        <ellipse cx="402" cy="522" rx="8" ry="10"/><ellipse cx="382" cy="512" rx="8" ry="10"/><ellipse cx="360" cy="514" rx="8" ry="10"/><ellipse cx="344" cy="528" rx="7" ry="9"/>
+      </g>
+    </g>
+
+    <!-- przednie łapy -->
+    <ellipse cx="172" cy="563" rx="40" ry="27" fill="#FFE9C9"/>
+    <ellipse cx="268" cy="563" rx="40" ry="27" fill="#FFE9C9"/>
+    <g fill="none" stroke="#B9895A" stroke-width="2.5">
+      <path d="M160 548 L160 574 M174 546 L174 576 M188 548 L188 574"/>
+      <path d="M252 548 L252 574 M266 546 L266 576 M280 548 L280 574"/>
+    </g>
+
+    <!-- cętki -->
+    <g fill="#3A2416" stroke="none">
+      <ellipse cx="90" cy="470" rx="9" ry="6"/><ellipse cx="118" cy="500" rx="8" ry="6"/><ellipse cx="78" cy="505" rx="6" ry="5"/><ellipse cx="108" cy="445" rx="6" ry="5"/>
+      <ellipse cx="350" cy="470" rx="9" ry="6"/><ellipse cx="322" cy="500" rx="8" ry="6"/><ellipse cx="362" cy="505" rx="6" ry="5"/><ellipse cx="332" cy="445" rx="6" ry="5"/>
+      <ellipse cx="152" cy="430" rx="8" ry="12"/><ellipse cx="146" cy="480" rx="7" ry="11"/><ellipse cx="160" cy="525" rx="6" ry="9"/>
+      <ellipse cx="288" cy="430" rx="8" ry="12"/><ellipse cx="294" cy="480" rx="7" ry="11"/><ellipse cx="280" cy="525" rx="6" ry="9"/>
+    </g>
+
+    <!-- uszy -->
+    <use href="#ear" fill="url(#fur)"/>
+    <use href="#earIn" fill="#EFE6DC" stroke="#B9A892"/>
+    <use href="#tuft" fill="#2A1A12"/>
+    <g transform="translate(440 0) scale(-1 1)">
+      <use href="#ear" fill="url(#fur)"/>
+      <use href="#earIn" fill="#EFE6DC" stroke="#B9A892"/>
+      <use href="#tuft" fill="#2A1A12"/>
+    </g>
+
+    <!-- bokobrody -->
+    <use href="#ruff" fill="#FFF6E8" stroke="#D9B98F"/>
+    <g transform="translate(440 0) scale(-1 1)"><use href="#ruff" fill="#FFF6E8" stroke="#D9B98F"/></g>
+
+    <!-- głowa -->
+    <ellipse cx="220" cy="248" rx="150" ry="120" fill="url(#furSoft)"/>
+    <!-- czupryna -->
+    <path d="M150 140 L158 98 L184 124 L204 86 L224 118 L250 88 L262 124 L290 102 L292 150 Z" fill="url(#fur)"/>
+
+    <!-- plamy wokół oczu -->
+    <ellipse cx="155" cy="272" rx="54" ry="48" fill="#FFF1DC" stroke="none"/>
+    <ellipse cx="285" cy="272" rx="54" ry="48" fill="#FFF1DC" stroke="none"/>
+
+    <!-- pyszczek -->
+    <ellipse cx="220" cy="336" rx="64" ry="44" fill="#FFF6E8" stroke="#D9B98F"/>
+
+    <!-- cętki na twarzy -->
+    <g fill="#3A2416" stroke="none">
+      <ellipse cx="220" cy="148" rx="6" ry="14"/><ellipse cx="190" cy="165" rx="6" ry="12" transform="rotate(-15 190 165)"/><ellipse cx="250" cy="165" rx="6" ry="12" transform="rotate(15 250 165)"/>
+      <ellipse cx="220" cy="190" rx="8" ry="12"/><ellipse cx="170" cy="190" rx="5" ry="10" transform="rotate(-25 170 190)"/><ellipse cx="270" cy="190" rx="5" ry="10" transform="rotate(25 270 190)"/>
+      <ellipse cx="86" cy="266" rx="10" ry="6"/><ellipse cx="92" cy="296" rx="8" ry="5"/><ellipse cx="354" cy="266" rx="10" ry="6"/><ellipse cx="348" cy="296" rx="8" ry="5"/>
+    </g>
+
+    <!-- brwi -->
+    <g fill="none" stroke="#2A1A12" stroke-width="10">
+      <path d="M110 222 Q150 198 192 222"/>
+      <path d="M330 222 Q290 198 248 222"/>
+    </g>
+
+    <!-- oczy -->
+    <g stroke="#2A1A12" stroke-width="3">
+      <ellipse cx="155" cy="272" rx="42" ry="45" fill="#fff"/>
+      <ellipse cx="285" cy="272" rx="42" ry="45" fill="#fff"/>
+    </g>
+    <circle cx="157" cy="276" r="34" fill="url(#iris)" stroke="#16348A" stroke-width="3"/>
+    <circle cx="283" cy="276" r="34" fill="url(#iris)" stroke="#16348A" stroke-width="3"/>
+    <circle cx="157" cy="277" r="17" fill="#0B1A3A" stroke="none"/>
+    <circle cx="283" cy="277" r="17" fill="#0B1A3A" stroke="none"/>
+    <g fill="#fff" stroke="none">
+      <circle cx="170" cy="262" r="9"/><circle cx="147" cy="292" r="4"/>
+      <circle cx="296" cy="262" r="9"/><circle cx="273" cy="292" r="4"/>
+    </g>
+
+    <!-- nos -->
+    <path d="M196 306 Q220 294 244 306 Q241 330 220 337 Q199 330 196 306 Z" fill="#6B4A3A" stroke="#3A2416"/>
+    <ellipse cx="220" cy="309" rx="12" ry="5" fill="#A07860" stroke="none"/>
+
+    <!-- usta -->
+    <path d="M220 337 L220 350" fill="none"/>
+    <path d="M178 346 Q200 376 220 354 Q240 376 262 346" fill="none" stroke="#3A2416" stroke-width="3"/>
+    <path d="M192 356 Q220 404 248 356 Q220 372 192 356 Z" fill="#E8788A" stroke="#3A2416" stroke-width="3"/>
+    <path d="M208 376 Q220 394 232 376 Q220 384 208 376 Z" fill="#F5A0AE" stroke="none"/>
+    <g fill="#fff" stroke="#3A2416" stroke-width="1.5">
+      <path d="M196 358 L202 372 L208 360 Z"/><path d="M244 358 L238 372 L232 360 Z"/>
+    </g>
+
+    <!-- wąsy -->
+    <g fill="none" stroke="#8A6A4F" stroke-width="1.8">
+      <path d="M170 340 L104 326"/><path d="M168 350 L100 352"/><path d="M172 360 L110 376"/>
+      <path d="M270 340 L336 326"/><path d="M272 350 L340 352"/><path d="M268 360 L330 376"/>
+    </g>
+  </g>
+</svg>

@@ -13,8 +13,8 @@ const TAG2DZ={'lotnictwo':'Lotnictwo i kosmos','kosmos':'Lotnictwo i kosmos','mo
 const TAGW={ICT:.3,AI:.3,IoT:.3,czujniki:.3};
 const CITIES=['Rzeszów','Krosno','Przemyśl','Sanok','Mielec','Stalowa Wola','Jasło','Tarnobrzeg','Dębica','Łańcut','Ustrzyki Dolne','Leżajsk','Kolbuszowa','Kraków','Lublin','Warszawa'];
 const CRIT=[
- {k:'wdroz',name:'Poziom wdrożenia',w:20,r:['1: koncepcja','3: testy','5: stosowane w praktyce'],auto:'z etapu: koncepcja, prototyp, testy, pilotaż, stosowane w praktyce'},
- {k:'trl',name:'Poziom gotowości technologicznej (TRL)',w:20,r:['1: TRL 1–2','3: TRL 5','5: TRL 9'],auto:'z podanego TRL albo szacunek z etapu wdrożenia'},
+ {k:'wdroz',name:'Wdrożenie w praktyce',w:20,r:['1: brak dowodów użycia','3: działa u jednego odbiorcy','5: dziesiątki klientów lub tysiące użytkowników'],auto:'z dowodów użycia w źródle (wdrożenia, klienci, sprzedaż, uczestnicy); ocena autorów, uzasadnienie na karcie'},
+ {k:'trl',name:'Poziom gotowości technologicznej (TRL)',w:20,r:['1: TRL 1–2','3: TRL 5','5: TRL 9'],auto:'z podanego TRL albo szacunek z etapu rozwoju'},
  {k:'nov',name:'Innowacyjność',w:20,r:['1: istnieje niemal identyczne rozwiązanie','3: znane podejście z istotną zmianą','5: brak podobnych w przeszukanych źródłach'],auto:'z podobieństwa do innych rozwiązań w bazie'},
  {k:'pot',name:'Potencjał zastosowania',w:20,r:['1: wąskie, kosztowne zastosowanie','3: wymaga dostosowania','5: szeroki zasięg, łatwe do przeniesienia'],auto:'z zasięgu problemu oraz wymagań infrastrukturalnych i dokumentacji'},
  {k:'wiar',name:'Wiarygodność',w:20,r:['3: źródło publiczne (link obowiązkowy)','4: wpis w rejestrze publicznym','5: rejestr i niezależne potwierdzenie'],auto:'z rodzaju źródła (rejestr, strona instytucji) i potwierdzeń; pozycje bez źródła nie trafiają do radaru'}
@@ -49,7 +49,7 @@ const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 function maxSim(sims){return sims.length?sims[0].sim:0}
 function suggest(inn,sims){
   const s=maxSim(sims),nv=clamp(Math.round(5-s*9),1,5),tr=clamp(INFRA_VAL[inn.infra]+(inn.hasDocs?0:-1),1,5);
-  return {wdroz:clamp(inn.stage+1,1,5),trl:inn.trlNA?clamp(inn.stage+1,1,5):clamp(Math.round(trlOf(inn)/2),1,5),nov:inn.novelty>=0?clamp(Math.round((nv+[5,4,3,2][inn.novelty])/2),1,5):nv,
+  return {wdroz:inn.wdr>0?clamp(inn.wdr,1,5):clamp(inn.stage+1,1,5),trl:inn.trlNA?clamp(inn.stage+1,1,5):clamp(Math.round(trlOf(inn)/2),1,5),nov:inn.novelty>=0?clamp(Math.round((nv+[5,4,3,2][inn.novelty])/2),1,5):nv,
     pot:clamp(Math.round(((inn.scope+1)+tr)/2),1,5),wiar:clamp(3+(inn.registry?1:0)+(inn.confirmedBy?1:0),1,5)};
 }
 function totalScore(sc){return Math.round(CRIT.reduce((a,c)=>a+c.w*(sc[c.k]||1)/5,0))}

@@ -1,7 +1,7 @@
 /* ====================== przejrzystość oceny, import/eksport, prywatność, skalowanie ====================== */
 function explainBlock(inn){
   const a=analyze(inn),sc=inn.scores||a.scores;if(!sc)return '';
-  const inputs=[['Etap rozwoju',STAGES[inn.stage]],['Zasięg problemu',SCOPE[inn.scope]],['Wymagana infrastruktura',INFRA[inn.infra]],['Dokumentacja',inn.hasDocs?'tak':'nie'],['Zespół',TEAM[inn.team]],['Ochrona własności',IPL[inn.ip]]];
+  const inputs=[['Etap rozwoju',STAGES[inn.stage]],['Wdrożenie w praktyce',inn.wdr>0?inn.wdr+'/5 (ocena na podstawie źródła)':'brak oceny, szacunek z etapu rozwoju'],['Zasięg problemu',SCOPE[inn.scope]],['Wymagana infrastruktura',INFRA[inn.infra]],['Dokumentacja',inn.hasDocs?'tak':'nie'],['Zespół',TEAM[inn.team]],['Ochrona własności',IPL[inn.ip]]];
   const pts=CRIT.map(c=>({c,v:sc[c.k]||1,p:c.w*(sc[c.k]||1)/5}));
   const rows=pts.map(x=>'<tr><td>'+metLink(x.c.k,x.c.name)+'</td><td class="num">'+x.v+'/5</td><td class="num">'+x.c.w+'%</td><td class="num">'+x.p.toFixed(1)+'</td><td class="small muted">'+x.c.auto+'</td></tr>').join('');
   const up=pts.filter(x=>x.v<5).sort((p,q)=>q.c.w-p.c.w).slice(0,2).map(x=>'<li>'+x.c.name+': każdy punkt więcej w skali 1–5 dodaje '+(x.c.w/5).toFixed(0)+' pkt do oceny.</li>').join('');
