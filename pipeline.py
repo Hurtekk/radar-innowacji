@@ -97,8 +97,11 @@ def reconcile(connect):
                     db.execute('INSERT OR IGNORE INTO profile_origins VALUES(?,?,?,?)',(rid,field,'manual',timestamp()))
             # Snapshot already processed records before a prompt/model upgrade.
             if db.execute("SELECT 1 FROM processing_jobs WHERE record_id=? AND status='completed'",(rid,)).fetchone() and not db.execute('SELECT 1 FROM published_records WHERE record_id=?',(rid,)).fetchone():
-                sanitize_published_stage(db,rid)
-                publish(db,rid)
+                # Legacy completed jobs can belong to unsupported sources or
+                # predate source_facts. Completion is not publication eligibility.
+                if not source_only.enabled(db) or source_only.can_publish_record(db,rid):
+                    sanitize_published_stage(db,rid)
+                    publish(db,rid)
             enqueue(db,rid)
         db.execute('DELETE FROM processing_jobs WHERE record_id NOT IN (SELECT id FROM polish_records)')
         db.execute('DELETE FROM published_records WHERE record_id NOT IN (SELECT id FROM polish_records)')

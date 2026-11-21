@@ -5,7 +5,11 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parent
 children = []
-subprocess.run([sys.executable, str(root / 'radar.py'), 'init'], check=True)
+if sys.version_info < (3, 10):
+    raise SystemExit('Radar wymaga Pythona 3.10 lub nowszego.')
+initialization = subprocess.run([sys.executable, str(root / 'radar.py'), 'init'])
+if initialization.returncode:
+    raise SystemExit(initialization.returncode)
 
 
 def stop(*_):
@@ -24,8 +28,9 @@ try:
     while True:
         for child in children:
             try:
-                child.wait(timeout=1)
-                raise RuntimeError('Proces zakończył się przedwcześnie')
+                code = child.wait(timeout=1)
+                print('Proces Radaru zakończył się. Przyczyna jest wypisana powyżej.', file=sys.stderr)
+                raise SystemExit(code or 1)
             except subprocess.TimeoutExpired:
                 pass
 finally:

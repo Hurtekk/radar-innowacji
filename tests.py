@@ -753,6 +753,24 @@ class DatabaseTests(unittest.TestCase):
             db.execute('DELETE FROM record_countries WHERE record_id=?',(rid,))
             with self.assertRaises(ValueError):source_only.document(db,rid)
 
+    def test_source_only_restart_skips_completed_legacy_records_without_source_facts(self):
+        with radar.connect() as db:
+            legacy=radar.save_record(db,'a',self.item(id='legacy'))
+            valid=radar.save_record(db,'a',self.item(id='current',url='https://www.gov.pl/web/ncbr/current'))
+            source_only.save(db,valid,catalog_sources.facts({'title':'Projekt źródłowy','description':'Opis ze źródła.'},'https://www.gov.pl/web/ncbr/current','NCBR'))
+            db.executemany('INSERT INTO runtime_settings VALUES(?,?)',[
+                ('source_only','1'),('source_allow_missing','1'),('analysis_engine','source_only'),('processing_mode','live')])
+            db.execute("UPDATE processing_jobs SET status='completed'")
+        pipeline.reconcile(radar.connect)
+        pipeline.reconcile(radar.connect)
+        with radar.connect() as db:
+            self.assertTrue(db.execute('SELECT 1 FROM records WHERE id=?',(legacy,)).fetchone())
+            self.assertFalse(db.execute('SELECT 1 FROM published_records WHERE record_id=?',(legacy,)).fetchone())
+            self.assertTrue(db.execute('SELECT 1 FROM published_records WHERE record_id=?',(valid,)).fetchone())
+        # Also reproduce the worker/server path through initialize(), not only
+        # a direct reconciliation call.
+        radar.initialize()
+
     def test_interreg_requires_polish_connection_in_article_not_navigation(self):
         template='<html><nav>Polska</nav><h2 class="card-header-wrapper__title">Projekt</h2><div class="widget-text"><p>{}</p></div></html>'
         url='https://interreg.gov.pl/historie-sukcesow-programu-interreg-europa-srodkowa/test/'

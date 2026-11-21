@@ -74,8 +74,16 @@ def save(db,rid,facts):
         if not allowed(f['source_url']):raise ValueError('Źródło poza katalogiem zadania')
         db.execute('INSERT INTO source_facts VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(record_id,field) DO UPDATE SET value=excluded.value,source_url=excluded.source_url,source_name=excluded.source_name,excerpt=excluded.excerpt,retrieved_at=excluded.retrieved_at,claim_type=excluded.claim_type',(rid,key,f['value'],f['source_url'],f['source_name'],f['excerpt'],f['retrieved_at'],f['claim_type']))
 
+def read_facts(db,rid):
+    return {r['field']:{k:r[k] for k in ('value','source_url','source_name','excerpt','retrieved_at','claim_type')} for r in db.execute('SELECT * FROM source_facts WHERE record_id=?',(rid,))}
+
+
+def can_publish_record(db,rid):
+    return bool(db.execute('SELECT 1 FROM polish_records WHERE id=?',(rid,)).fetchone()) and publishable(db,read_facts(db,rid))
+
+
 def document(db,rid):
-    facts={r['field']:{k:r[k] for k in ('value','source_url','source_name','excerpt','retrieved_at','claim_type')} for r in db.execute('SELECT * FROM source_facts WHERE record_id=?',(rid,))}
+    facts=read_facts(db,rid)
     if not publishable(db,facts):raise ValueError('Rekord nie ma tytułu z dozwolonego źródła')
     record=db.execute('SELECT * FROM polish_records WHERE id=?',(rid,)).fetchone()
     if not record:raise ValueError('Brak potwierdzonego polskiego związku rekordu')
