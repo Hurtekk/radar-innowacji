@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import { parseWp, parseRss, parseHtmlLinks, looksLikeInnovation } from './collect.mjs';
+const cfg = { keywords: ['patent', 'prototyp', 'opracowa'], exclude: ['rekrutacj'] };
+const wp = await parseWp([{ title: { rendered: 'Studenci opracowali prototyp drona &#8211; wygrali hackathon' }, link: 'https://x.pl/a', excerpt: { rendered: '<p>Opis</p>' }, date: '2026-05-01T10:00:00' }]);
+assert.equal(wp[0].title, 'Studenci opracowali prototyp drona – wygrali hackathon'); assert.ok(looksLikeInnovation(wp[0], cfg));
+const rss = parseRss('<rss><channel><item><title>Nowy patent dla zespołu z uczelni</title><link>https://x.pl/b</link><description>Opis patentu</description><pubDate>Mon, 01 Jun 2026</pubDate></item></channel></rss>');
+assert.equal(rss[0].url, 'https://x.pl/b'); assert.ok(looksLikeInnovation(rss[0], cfg));
+const html = parseHtmlLinks('<a href="/news/1">Zespół uczniów opracował prototyp stacji pogodowej</a><a href="/kontakt">Kontakt</a>', 'https://s.pl/', '/news/');
+assert.equal(html.length, 1); assert.equal(html[0].url, 'https://s.pl/news/1');
+assert.ok(!looksLikeInnovation({ title: 'Rekrutacja na studia – nowy patent na sukces', text: '' }, cfg));
+console.log('OK – testy parserów przeszły');

@@ -1,0 +1,19 @@
+name: Codzienne wyszukiwanie innowacji
+on:
+  schedule: [{ cron: '0 4 * * *' }]   # 04:00 UTC = 5:00 zimą / 6:00 latem w Polsce
+  workflow_dispatch: {}
+permissions: { contents: write }
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm test
+      - run: npm run collect
+        env: { ANTHROPIC_API_KEY: '${{ secrets.ANTHROPIC_API_KEY }}' }   # opcjonalne
+      - name: Zapisz nowe wpisy
+        run: |
+          git config user.name "radar-bot"; git config user.email "bot@example.invalid"
+          git add feed/ && (git diff --cached --quiet || git commit -m "Nowe innowacje $(date +%F)" && git push)

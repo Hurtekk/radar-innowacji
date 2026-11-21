@@ -1,0 +1,17 @@
+D={}
+D['n72']=dict(typ='Projekt B+R',trl=7,tb='Strona podaje, że wyniki wdrożono w dwóch firmach (Smart Fluid, Gedeon) i opracowano ponad 14 struktur ochronnych. Technologia zastosowana w działających firmach to TRL 7 (zakres 6–8).',
+ opis='Projekt zbadał ciecze zagęszczane ścinaniem (nienewtonowskie), których lepkość skokowo rośnie po przekroczeniu krytycznej szybkości ścinania, dzięki czemu pochłaniają energię uderzenia. Opracowano ponad 14 struktur ochronnych oraz metody wytwarzania i aplikacji cieczy.',
+ zast='Ochrona ludzi i mienia: wkłady do odzieży i obuwia sportowego, pancerze dla wojska i służb, zabezpieczenia w motoryzacji oraz urządzeń narażonych na uderzenia.')
+D['n73']=dict(typ='Projekt B+R',trl=6,tb='Powstało działające narzędzie (wirtualny analityk bezpieczeństwa IT), ale strona nie podaje liczby klientów ani wdrożeń. Prototyp w środowisku zbliżonym do rzeczywistego to TRL 6 (zakres 5–7).',
+ opis='Cyberstudio to system przewidujący i wykrywający zagrożenia w systemach IT. Działa jak wirtualny analityk: łączy poziom ryzyka infrastruktury i usług chmurowych, wskazuje podatności z zaleceniami naprawczymi i informuje o zdarzeniach mogących oznaczać atak.',
+ zast='Małe i średnie firmy bez specjalistów od cyberbezpieczeństwa, którym zapewnia całodobowy nadzór nad systemami IT.')
+D['n74']=dict(typ='Program edukacyjny',trl=0,tb='Program kształcenia nie jest technologią, więc skala TRL nie ma zastosowania. O dojrzałości świadczy zrealizowany projekt z wynikami zatrudnienia.',
+ opis='Projekt Politechniki Rzeszowskiej (2018–2019, Program Wiedza Edukacja Rozwój) dla 40 studentów elektroniki i telekomunikacji: cztery ścieżki szkoleniowe, trzymiesięczne staże i współpraca z firmą BURY z Mielca.',
+ zast='Przygotowanie absolwentów do pracy w przemyśle motoryzacyjnym i skrócenie ich wdrażania w firmie. Efekt: 21 absolwentów zatrudniono w BURY, 8 w innych firmach, 2 założyły własną działalność.')
+D['n75']=dict(typ='Program edukacyjny',trl=0,tb='Projekt dostępności uczelni nie jest technologią, więc skala TRL nie ma zastosowania. Rozwiązania są wdrożone i działają (podnośnik, strona WCAG 2.1, Centrum Wsparcia).',
+ opis='Projekt „Uczelnia bez barier” Państwowej Akademii Nauk Stosowanych w Krośnie (2020–2023, dofinansowanie ok. 2,17 mln zł) zwiększył dostępność uczelni dla osób z niepełnosprawnościami pod względem architektonicznym, cyfrowym i dydaktycznym.',
+ zast='Studenci z niepełnosprawnościami, pracownicy i osoby odwiedzające uczelnię. Zamontowano podnośnik, dostosowano stronę do WCAG 2.1, przeszkolono kadrę, uruchomiono kurs e-learningowy i Centrum Wsparcia.')
+D['n76']=dict(typ='Program edukacyjny',trl=0,tb='Projekt dostępności uczelni nie jest technologią, więc skala TRL nie ma zastosowania. Zmiany zostały wprowadzone w uczelni.',
+ opis='Projekt zwiększył dostępność Podkarpackiej Szkoły Wyższej w Jaśle dla osób z niepełnosprawnościami, łącząc zmiany organizacyjne, architektoniczne, technologiczne i edukacyjne.',
+ zast='Obecni i przyszli studenci, kandydaci i kadra uczelni. Wyposażono pracownię komputerową i bibliotekę w stanowiska dla osób niewidomych, słabowidzących i z dysfunkcjami rąk, oznakowano budynek, adaptowano miejsca parkingowe i przeszkolono kadrę.')
+import json;json.dump(D,open('b14.json','w'),ensure_ascii=False)

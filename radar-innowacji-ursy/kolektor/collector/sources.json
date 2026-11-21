@@ -1,0 +1,14 @@
+{
+ "_uwaga": "Lista startowa. Pole verified=false oznacza adres do sprawdzenia przy pierwszym uruchomieniu (kolektor zapisze w raporcie, które źródła nie odpowiedziały). Dodawaj kolejne wpisy bez zmian w kodzie.",
+ "sources": [
+  {"id":"lukasiewicz","name":"Sieć Badawcza Łukasiewicz","type":"wp-json","url":"https://lukasiewicz.gov.pl/en/wp-json/wp/v2/posts?per_page=30","institution":"Sieć Badawcza Łukasiewicz","city":"Warszawa","woj":"mazowieckie","instType":4,"origin":3,"verified":true},
+  {"id":"pans-krosno","name":"PANS Krosno","type":"wp-json","url":"https://pans.krosno.pl/wp-json/wp/v2/posts?per_page=30","institution":"Państwowa Akademia Nauk Stosowanych w Krośnie","city":"Krosno","woj":"podkarpackie","instType":1,"origin":2,"verified":false},
+  {"id":"pwste","name":"PANS Jarosław","type":"wp-json","url":"https://www.pwste.edu.pl/wp-json/wp/v2/posts?per_page=30","institution":"Państwowa Akademia Nauk Stosowanych w Jarosławiu","city":"Jarosław","woj":"podkarpackie","instType":1,"origin":2,"verified":false},
+  {"id":"ur","name":"Uniwersytet Rzeszowski","type":"html","url":"https://www.ur.edu.pl/pl/uniwersytet/aktualnosci","linkPattern":"/pl/uniwersytet/aktualnosci/","institution":"Uniwersytet Rzeszowski","city":"Rzeszów","woj":"podkarpackie","instType":1,"origin":2,"verified":false},
+  {"id":"prz","name":"Politechnika Rzeszowska","type":"html","url":"https://prz.edu.pl/aktualnosci","linkPattern":"/aktualnosci/","institution":"Politechnika Rzeszowska","city":"Rzeszów","woj":"podkarpackie","instType":1,"origin":2,"verified":false},
+  {"id":"powiat-jaslo","name":"Powiat jasielski – szkoły","type":"html","url":"https://samorzad.gov.pl/web/powiat-jasielski","linkPattern":"/web/powiat-jasielski/","institution":"Szkoły powiatu jasielskiego","city":"Jasło","woj":"podkarpackie","instType":0,"origin":1,"verified":false},
+  {"id":"parp-ppp","name":"PARP – Polski Produkt Przyszłości","type":"html","url":"https://www.parp.gov.pl/component/content/article/91387","linkPattern":"/article/","institution":"PARP (laureaci)","city":"Warszawa","woj":"mazowieckie","instType":3,"origin":-1,"verified":false}
+ ],
+ "keywords": ["wynalazek","wynalazł","patent","prototyp","opracowa","innowac","nowatorsk","wdroż","technologi","urządzenie","system ","aplikacj","licencj","komercjaliz","laboratorium","nagrod","medal","konkurs"],
+ "exclude": ["rekrutacj","wyniki naboru","dzień otwarty","konkurs ofert","przetarg","stypendi","zarządzenie","ogłoszenie o","praca "]
+}

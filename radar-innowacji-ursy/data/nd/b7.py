@@ -1,0 +1,17 @@
+D={}
+D['n37']=dict(typ='Projekt B+R',trl=7,tb='Projekt dotyczy demonstracji technologii na skalę przemysłową (budżet ok. 32,9 mln zł), a produkt NEMpreg ma najwyższą klasę ochrony przeciwpożarowej. Demonstracja w warunkach operacyjnych to TRL 7 (zakres 6–8), bez potwierdzonej sprzedaży.',
+ opis='Firma New Era Materials opracowała technologię wytwarzania półproduktów i gotowych elementów kompozytowych z jednoskładnikowej żywicy epoksydowej. Pozwala to używać komponentów o wyższej temperaturze topnienia niż temperatura procesu i skraca cykl produkcyjny.',
+ zast='Przemysł kolejowy (uniepalniony materiał NEMpreg o najwyższej klasie ochrony przeciwpożarowej) oraz transport, np. platformy dla osób na wózkach w autobusach. Korzyści to bezpieczniejsze pojazdy i krótszy czas produkcji.')
+D['n38']=dict(typ='Projekt B+R',trl=5,tb='Strona mówi o prototypie systemu, który integruje dane, dostarcza analitykę i zdalne wsparcie VR/AR, ale nie podaje testów u klientów. Prototyp w warunkach zbliżonych do rzeczywistych to TRL 5 (zakres 4–6).',
+ opis='Aiut Sp. z o.o. (2017–2020) stworzyła prototyp systemu do produkcji elastycznej i wielowariantowej, który łączy zarządzanie wiedzą z utrzymaniem instalacji automatyki przemysłowej. Platforma integruje dane we wspólnym modelu, wymienia je między systemami i umożliwia zdalne wsparcie z użyciem VR i AR.',
+ zast='Firmy z produkcją seryjną i krótkoseryjną, m.in. w motoryzacji, meblarstwie, spożywczym i oświetleniowym; odbiorcy to działy produkcji, utrzymania ruchu i logistyki. System można wdrożyć w całości lub modułami.')
+D['n39']=dict(typ='Wdrożenie w ochronie zdrowia',trl=7,tb='Strona podaje, że system jest obecnie wdrażany w Gdańsku, a nie podaje zmierzonych wyników. Działający system w środowisku docelowym w trakcie wdrożenia to TRL 7 (zakres 6–8).',
+ opis='Uniwersyteckie Centrum Kliniczne w Gdańsku zbudowało system, który wspiera organizację pracy personelu Szpitalnego Oddziału Ratunkowego i monitoruje jakość jego pracy (program Polska Cyfrowa, 2020–2021). Pokazuje kolejność pacjentów i maksymalny czas do przyjęcia przez lekarza, wysyła powiadomienia i wskazuje standardowe ścieżki postępowania.',
+ zast='Szpitale z oddziałami ratunkowymi: lepsza organizacja pracy, mniej stresu pacjentów dzięki bieżącej informacji o czekaniu i trwających czynnościach.')
+D['n40']=dict(typ='Program edukacyjny',trl=0,tb='Kurs językowy, nie technologia, więc TRL nie ma zastosowania.',
+ opis='Bezpłatny kurs online polskiego języka migowego na poziomie podstawowym (Uniwersytet Humanistyczno-Przyrodniczy w Częstochowie, 2019–2021), dostępny na platformie navoica.pl.',
+ zast='Osoby, które chcą porozumiewać się z osobami niesłyszącymi, np. pracownicy administracji, podmiotów leczniczych, policji, straży i oświaty, oraz rodziny osób niesłyszących. Po kursie można posługiwać się PJM w prostych sytuacjach.')
+D['n41']=dict(typ='Projekt B+R',trl=4,tb='Strona mówi o prototypie narzędzia, bez informacji o testach w produkcji gier. Prototyp sprawdzony w laboratorium to TRL 4 (zakres 4–5, niska pewność).',
+ opis='Prototyp narzędzia programistycznego, które przyspiesza tworzenie modeli 3D na podstawie zdjęć stereoskopowych.',
+ zast='Twórcy gier wideo i graficy 3D, którzy chcą wiernie przenosić rzeczywistą scenografię do wirtualnych światów.')
+import json;json.dump(D,open('b7.json','w'),ensure_ascii=False)

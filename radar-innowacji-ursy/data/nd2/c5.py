@@ -1,0 +1,20 @@
+D={}
+D['protezka-strzemiaczka']=dict(typ='Patent',trl=4,tb='Źródło podaje rozwiązanie opatentowane i prototyp zaimplantowany w preparacie kości skroniowej post mortem, bez badań klinicznych. Walidacja w laboratorium to TRL 4 (zakres 3–5); TRL nie jest podany w źródle.',
+ opis='Nowa komorowa protezka strzemiączka przywraca słuch przy niedosłuchu przewodzeniowym spowodowanym unieruchomieniem strzemiączka. Działa podobnie do struktur zdrowego ucha, bez wprowadzania elementu drgającego do ucha wewnętrznego; według źródła odtwarza słuch w zakresie 20 Hz–10 kHz.',
+ zast='Pacjenci z niedosłuchem przewodzeniowym i lekarze otochirurdzy (łatwiejsza, bezpieczniejsza implantacja); system ochrony zdrowia – mniej reoperacji.')
+D['bioengineering']=dict(typ='Prototyp',trl=6,tb='Źródło wspomina testowanie prototypów, bez klientów i wdrożeń. Prototyp w warunkach zbliżonych do rzeczywistych to TRL 6 (zakres 5–7); TRL nie jest podany w źródle.',
+ opis='Modułowa bioniczna proteza ręki z niezależnie sterowanymi palcami, sterowana sygnałami z drgań mięśni, stopą użytkownika lub przyciskami. Według firmy znacznie tańsza od zagranicznych odpowiedników.',
+ zast='Pacjenci z ubytkiem ręki powyżej łokcia, którzy chcą wrócić do codziennej aktywności.')
+D['aerosize']=dict(typ='Prototyp',trl=6,tb='Źródło podaje próby w terenie górskim i prezentację prototypów na targach, bez sprzedaży. Prototyp testowany w terenie to TRL 6 (zakres 5–7); TRL nie jest podany w źródle.',
+ opis='AEROSIZE to hybrydowa poduszka lawinowa: gaz z naboju napełnia pneumatyczną ramę, a resztę objętości wypełnia powietrze z otoczenia, dzięki czemu system jest mniejszy i mieści się w osobnej kamizelce-uprzęży.',
+ zast='Turyści, narciarze, ratownicy górscy i żołnierze jednostek górskich w terenie zagrożonym lawinami.')
+D['mine-master']=dict(typ='Prototyp',trl=7,tb='Źródło mówi o zbudowanych prototypach dwóch wersji maszyny (zagraniczna i dla KGHM), bez opisu testów dołowych. Prototyp w skali docelowej to TRL 7 (zakres 6–8); TRL nie jest podany w źródle.',
+ opis='Samojezdny wóz kotwiący na podwoziu oponowym do zabezpieczania podziemnych wyrobisk przed obsuwaniem skał i zawałem. Wersja zagraniczna instaluje siatkę z rolki w wyrobiskach do 7,5 m, wersja krajowa dla KGHM zabudowuje kotwy w wyrobiskach do 8,5 m.',
+ zast='Górnictwo podziemne (m.in. KGHM, kopalnie w Chile, Peru, Iranie) i roboty tunelowe; poprawa bezpieczeństwa załóg.')
+D['pureapta']=dict(typ='Projekt B+R',trl=6,tb='Źródło mówi o wykorzystaniu platformy w trzech własnych projektach B+R i wejściu w fazę komercjalizacji, bez klientów. Technologia demonstrowana w istotnym otoczeniu to TRL 6 (zakres 5–7); TRL nie jest podany w źródle.',
+ opis='PureApta to modularna platforma usługowa Pure Biologics do generowania chemicznie modyfikowanych aptamerów – cząsteczek, które mogą zastępować przeciwciała w testach diagnostycznych, służyć jako narzędzia badawcze lub substancje terapeutyczne.',
+ zast='Producenci testów diagnostycznych (np. paskowych), laboratoria badawcze i firmy rozwijające terapie.')
+D['waven---bezprzewodowo-ladowane-baterie']=dict(typ='Prototyp',trl=5,tb='Źródło podaje zakończenie projektu sprawnie wykonanymi prototypami elektronicznymi, bez wdrożeń. Prototyp sprawdzony w laboratorium to TRL 5 (zakres 4–6); TRL nie jest podany w źródle.',
+ opis='Baterie AA doładowywane falami radiowymi bez wyjmowania z urządzenia; energię zbierają z otaczających pól elektromagnetycznych lub z dedykowanych ładowarek bezprzewodowych.',
+ zast='Zamienniki zwykłych baterii i akumulatorków AA dla konsumentów oraz zasilanie czujników, urządzeń pomiarowych i zabezpieczających w internecie rzeczy.')
+import json;json.dump(D,open('c5.json','w'),ensure_ascii=False)
