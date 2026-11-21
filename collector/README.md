@@ -1,12 +1,14 @@
 # Radar innowacji – codzienne wyszukiwanie
 
-Struktura do wdrożenia na serwerze:
+Struktura w repo (do wdrożenia na serwerze kopiujesz `dist/index.html` obok katalogu `feed/`):
 
-    index.html            – aplikacja (ta sama co w podglądzie)
-    feed/feed.json        – kanał wykrytych innowacji (aplikacja pobiera go przy starcie i co godzinę)
-    collector/collect.mjs – kolektor (Node 20+, bez zależności)
-    collector/sources.json– lista źródeł: dopisujesz strony szkół, uczelni, instytutów
-    .github/workflows/    – uruchamianie codziennie o 5:00
+    collect.mjs     – kolektor (Node 20+, bez zależności)
+    sources.json    – lista źródeł: dopisujesz strony szkół, uczelni, instytutów
+    test.mjs        – testy parserów
+    feed/feed.json  – kanał wykrytych innowacji (aplikacja pobiera go przy starcie i co godzinę)
+    ../.github/workflows/collect-feed.yml – uruchamianie codziennie o 5:00
+
+Komendy poniżej uruchamiaj w katalogu `collector/`.
 
 ## Jak to działa
 1. Kolektor czyta źródła (WordPress `wp-json`, RSS albo strona z listą aktualności).
@@ -20,7 +22,7 @@ Struktura do wdrożenia na serwerze:
     npm test          # testy parserów (bez sieci)
     npm run collect   # jedno uruchomienie; raport w feed/last-run.json
 
-Cron zamiast GitHub Actions:  `0 5 * * *  cd /var/www/radar && node collector/collect.mjs`
+Cron zamiast GitHub Actions:  `0 5 * * *  cd /var/www/radar/collector && node collect.mjs`
 
 ## Ważne
 - W `collect.mjs` ustaw w `UA` adres kontaktowy organizacji.

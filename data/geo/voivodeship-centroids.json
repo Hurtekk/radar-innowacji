@@ -1,0 +1,66 @@
+{
+ "dolnośląskie": [
+  51.1,
+  16.4
+ ],
+ "kujawsko-pomorskie": [
+  53.1,
+  18.5
+ ],
+ "lubelskie": [
+  51.2,
+  22.9
+ ],
+ "lubuskie": [
+  52.2,
+  15.3
+ ],
+ "łódzkie": [
+  51.6,
+  19.4
+ ],
+ "małopolskie": [
+  49.9,
+  20.2
+ ],
+ "mazowieckie": [
+  52.4,
+  21.0
+ ],
+ "opolskie": [
+  50.6,
+  17.9
+ ],
+ "podkarpackie": [
+  49.95,
+  22.2
+ ],
+ "podlaskie": [
+  53.2,
+  22.9
+ ],
+ "pomorskie": [
+  54.1,
+  18.0
+ ],
+ "śląskie": [
+  50.4,
+  19.0
+ ],
+ "świętokrzyskie": [
+  50.8,
+  20.8
+ ],
+ "warmińsko-mazurskie": [
+  53.8,
+  20.9
+ ],
+ "wielkopolskie": [
+  52.3,
+  17.3
+ ],
+ "zachodniopomorskie": [
+  53.5,
+  15.8
+ ]
+}

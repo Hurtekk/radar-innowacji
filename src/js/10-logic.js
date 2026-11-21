@@ -1,5 +1,4 @@
 //<LOGIC
-'use strict';
 const STAGES=['Koncepcja','Prototyp','Testy','Pilotaż','Stosowana w praktyce'];
 const TYPES=['technologiczna','organizacyjna','edukacyjna','społeczna','procesowa'];
 const INST=['Szkoła','Uczelnia','Samorząd (JST)','Inna instytucja publiczna','Instytut badawczy'];

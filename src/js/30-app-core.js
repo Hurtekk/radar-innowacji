@@ -56,5 +56,4 @@ async function aiAll(){
   toast('Gotowe: etykiety AI nadane.');
 }
 function toast(m){let b=document.getElementById('toast');if(!b){b=document.createElement('div');b.id='toast';b.setAttribute('role','status');document.body.appendChild(b)}b.textContent=m;clearTimeout(b._t);b._t=setTimeout(()=>{if(b.parentNode)b.remove()},4000)}
-function softRefresh(){AC.clear();const a=document.activeElement;if(a&&(a.id==='q'||a.tagName==='TEXTAREA'||a.tagName==='INPUT')&&a.id==='q')updateRes();else if(S.tab!=='dodaj'&&S.tab!=='profil')render()}
 

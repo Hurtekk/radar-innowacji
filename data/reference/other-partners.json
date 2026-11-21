@@ -1,0 +1,10 @@
+[
+ {"id": "x-biopolinex", "name": "Biopolinex Sp. z o.o.", "kind": "Partner", "city": "Lublin", "prj": "plazmowa", "d": "Partner przemysłowy w projekcie „Plazmowa technologia usuwania tlenków azotu z gazów spalinowych” (Program TANGO). W nazwie rejestru wskazano siedzibę: Lublin."},
+ {"id": "x-dezamet", "name": "Zakłady Metalowe DEZAMET S.A.", "kind": "Partner", "city": "Nowa Dęba", "prj": "laserowy", "d": "Partner przemysłowy w projekcie „Laserowy system korekcji toru lotu dla bomb lotniczych”. W rejestrze wskazano siedzibę: Nowa Dęba (woj. podkarpackie)."},
+ {"id": "x-orlen", "name": "PKN ORLEN S.A.", "kind": "Partner", "city": "Płock", "prj": "co-bio", "d": "Beneficjent projektu CO-BIO (technologia współuwodornienia frakcji napędowych). Siedziba spółki: Płock."},
+ {"id": "x-samasz", "name": "SaMASZ Sp. z o.o.", "kind": "Partner", "city": "Bielsk Podlaski", "prj": "typoszereg", "d": "Partner przemysłowy w projekcie dotyczącym zgrabiarek rolniczych, razem z Łukasiewiczem – PIMR. Siedziba spółki: Bielsk Podlaski."},
+ {"id": "x-vigo", "name": "Vigo Photonics S.A.", "kind": "Partner", "city": "Ożarów Mazowiecki", "prj": "aktywny", "d": "Lider projektu „Aktywny Koherentny Spektrometr Dyspersyjny” (program międzynarodowy NCBR). Siedziba spółki: Ożarów Mazowiecki."},
+ {"id": "x-lublin", "name": "Miasto Lublin", "kind": "Odbiorca", "city": "Lublin", "prj": "comobility", "d": "Partner wdrożeniowy w projekcie CoMobility (włączająca mobilność miejska), wymieniony w rejestrze NCBR jako Miasto Lublin."},
+ {"id": "x-gromk", "name": "Wojewódzki Szpital Specjalistyczny im. J. Gromkowskiego", "kind": "Odbiorca", "city": "Wrocław", "prj": "metoda-natychmiast", "d": "Partner kliniczny w projekcie Virtual AM Storage Covid-19 razem z Politechniką Wrocławską."},
+ {"id": "x-cspsp", "name": "Centralna Szkoła PSP w Częstochowie", "kind": "Odbiorca", "city": "Częstochowa", "prj": "zaawansowane", "d": "Partner w projekcie dot. zagrożeń powodziowych (konsorcjum prowadzone przez Politechnikę Warszawską)."}
+]

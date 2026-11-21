@@ -9,7 +9,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
-const FEED = resolve(HERE, '../feed/feed.json');
+const FEED = resolve(HERE, 'feed/feed.json');
 const SRC = resolve(HERE, 'sources.json');
 const UA = 'RadarInnowacjiBot/1.0 (+kontakt: ustaw-adres-organizacji)';
 const MAX_NEW_PER_RUN = Number(process.env.MAX_NEW || 40);
@@ -131,7 +131,7 @@ async function main() {
   feed.generatedAt = today;
   feed.items = feed.items.slice(0, 2000);
   await writeFile(FEED, JSON.stringify(feed, null, 1));
-  await writeFile(resolve(HERE, '../feed/last-run.json'), JSON.stringify(report, null, 1));
+  await writeFile(resolve(HERE, 'feed/last-run.json'), JSON.stringify(report, null, 1));
   console.log(JSON.stringify(report, null, 1));
 }
 if (process.argv[1] === fileURLToPath(import.meta.url)) main().catch(e => { console.error(e); process.exit(1); });

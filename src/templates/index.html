@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar innowacji</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+{{STYLES}}</style>
+</head>
+<body>
+<div id="intro" role="status" aria-label="Ładowanie aplikacji Radar innowacji">
+  <svg viewBox="0 0 120 120" aria-hidden="true">
+    <circle class="ring2 r1" cx="60" cy="60" r="54" pathLength="1"/>
+    <circle class="ring2 r2" cx="60" cy="60" r="36" pathLength="1"/>
+    <circle class="ring2 r3" cx="60" cy="60" r="18" pathLength="1"/>
+    <path class="axis" d="M60 6V114M6 60H114"/>
+    <g class="isweep"><path d="M60 60 L60 6 A54 54 0 0 1 98 22 Z" fill="#4f6bed" opacity=".18"/><line x1="60" y1="60" x2="60" y2="6" stroke="#4f6bed" stroke-width="2"/></g>
+    <circle class="blip b1" cx="84" cy="36" r="5" fill="#0f9d8c"/>
+    <circle class="blip b2" cx="38" cy="80" r="4" fill="#0f9d8c"/>
+    <circle cx="60" cy="60" r="3.5" fill="#4f6bed"/>
+  </svg>
+  <div class="iw"><div class="in">Radar innowacji</div><div class="is">Istniejące innowacje w Polsce, znalezione i ocenione automatycznie</div></div>
+</div>
+<header class="top"><div class="wrap hdr" id="hdr"></div></header>
+<main class="wrap"><div id="sub"></div><div id="view"></div></main>
+<div id="layer"></div>
+
+<script>
+{{SCRIPT}}
+</script>
+</body>
+</html>

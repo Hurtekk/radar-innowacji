@@ -1,0 +1,83 @@
+{
+ "Państwowa Akademia Nauk Stosowanych w Krośnie": {
+  "phone": "+48 13 43 755 00",
+  "src": "pismo urzędowe PANS Krosno"
+ },
+ "Podkarpacka Szkoła Wyższa": {
+  "phone": "+48 13 446 64 76",
+  "src": "katalog uczelni opinieouczelniach.pl"
+ },
+ "„Centrum Medyczne w Łańcucie”": {
+  "phone": "+48 17 224 01 46",
+  "src": "ogłoszenia TED (dział zamówień), strona cm-lancut.pl"
+ },
+ "Politechnika Krakowska": {
+  "phone": "+48 12 628 20 00",
+  "src": "katalog uczelni otouczelnie.pl"
+ },
+ "Politechnika Poznańska": {
+  "phone": "+48 61 224 44 44",
+  "src": "katalog uczelni opinieouczelniach.pl"
+ },
+ "Uniwersytet Rzeszowski": {
+  "email": "info@ur.edu.pl",
+  "phone": "+48 17 872 10 26",
+  "src": "ur.edu.pl (Biuro Promocji)"
+ },
+ "Politechnika Warszawska": {
+  "email": "pw@pw.edu.pl",
+  "phone": "+48 22 629 74 84",
+  "src": "USOS PW (biuro rektora)"
+ },
+ "Uniwersytet Wrocławski": {
+  "email": "ctt@uwr.edu.pl",
+  "phone": "+48 71 375 28 90",
+  "src": "uwr.edu.pl (Centrum Transferu Technologii UWr)"
+ },
+ "Politechnika Wrocławska": {
+  "phone": "+48 71 320 41 11",
+  "src": "wroclaw.pl (adresy uczelni wyższych)"
+ },
+ "Uniwersytet im. Adama Mickiewicza": {
+  "phone": "+48 61 829 40 00",
+  "src": "strona UAM (centrala)"
+ },
+ "Politechnika Gdańska": {
+  "phone": "+48 58 348 67 00",
+  "src": "opinieouczelniach.pl (dane uczelni)"
+ },
+ "AGH": {
+  "email": "prorektor.ogolne@agh.edu.pl",
+  "phone": "+48 12 617 20 05",
+  "src": "agh.edu.pl (Prorektor ds. ogólnych)"
+ },
+ "Uniwersytet Warszawski": {
+  "phone": "+48 22 55 20 000",
+  "src": "uw.edu.pl/kontakt"
+ },
+ "Uniwersytet Jagielloński": {
+  "email": "dydaktyka@uj.edu.pl",
+  "phone": "+48 12 663 22 22",
+  "src": "dydaktyka.uj.edu.pl (Centrum Wsparcia Dydaktyki UJ)"
+ },
+ "Politechnika Rzeszowska": {
+  "email": "kancelaria@prz.edu.pl",
+  "phone": "+48 17 865 11 00",
+  "src": "prz.edu.pl (dane teleadresowe uczelni)"
+ },
+ "Gmina Miasto Rzeszów": {
+  "email": "umrz@erzeszow.pl",
+  "phone": "+48 17 788 99 00",
+  "src": "erzeszow.pl (Urząd Miasta Rzeszowa)"
+ },
+ "Województwo Podkarpackie": {
+  "email": "urzad@podkarpackie.pl",
+  "phone": "+48 17 850 17 00",
+  "src": "podkarpackie.pl (Urząd Marszałkowski)"
+ },
+ "Narodowe Centrum Badań i Rozwoju": {
+  "email": "info@ncbr.gov.pl",
+  "phone": "+48 22 39 07 170",
+  "src": "gov.pl/web/ncbr (Punkt Informacyjny)"
+ }
+}

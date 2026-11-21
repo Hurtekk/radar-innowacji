@@ -1,0 +1,2 @@
+{ "name": "radar-innowacji-kolektor", "version": "1.0.0", "type": "module", "private": true,
+  "scripts": { "collect": "node collect.mjs", "test": "node test.mjs" }, "engines": { "node": ">=20" } }
