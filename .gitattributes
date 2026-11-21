@@ -1,5 +1,0 @@
-* text=auto
-*.py text eol=lf
-*.sql text eol=lf
-*.json text eol=lf
-*.sqlite3 binary

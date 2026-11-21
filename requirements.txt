@@ -1,4 +1,0 @@
-lxml>=5.3,<7
-openpyxl>=3.1,<4
-fastembed>=0.7,<1
-numpy>=1.26
