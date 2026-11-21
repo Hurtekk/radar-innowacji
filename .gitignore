@@ -3,6 +3,7 @@ __pycache__/
 *.log
 *.pid
 data/cache/
+data/models/
 data/profile-reviews.json
 .env
 .venv/

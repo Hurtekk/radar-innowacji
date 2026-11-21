@@ -21,6 +21,7 @@ import pipeline
 import assessment
 import source_only
 import profile_review
+import search_index
 
 ROOT = Path(__file__).resolve().parent
 
@@ -300,6 +301,8 @@ class Handler(BaseHTTPRequestHandler):
                 row=db.execute('SELECT * FROM ready_records WHERE id=?',(int(path.rsplit('/',1)[1]),)).fetchone()
                 if not row:self.send_json({'error':'Nie znaleziono'},404);return
                 result=record_details(db,row)
+            elif path=='/api/search/status':
+                result=search_index.status(db)
             elif path=='/api/processing':
                 result=pipeline.summary(db)
             elif path=='/api/options':
@@ -317,7 +320,7 @@ class Handler(BaseHTTPRequestHandler):
                     result.append(item)
             elif path in ('/api/records','/api/search','/api/innovations'):
                 page=max(1,int(q.get('page',['1'])[0]));size=min(100,max(1,int(q.get('limit',['30'])[0])))
-                clauses=['instr(r.search_text,?)>0'];params=[q.get('q',[''])[0].casefold()]
+                query=q.get('q',[''])[0].strip();clauses=[];params=[]
                 if q.get('catalog',['all'])[0]=='radar':
                     clauses.append("json_extract(r.published_payload,'$.assessment.bucket')!='context'")
                 for name in ('bucket',):
@@ -336,16 +339,30 @@ class Handler(BaseHTTPRequestHandler):
                 for field,table,column in [('category','project_categories','category_code'),('education_level','project_education_levels','level_code')]:
                     if q.get(field,[''])[0]:
                         clauses.append("EXISTS(SELECT 1 FROM json_each(r.published_payload,'$.profile."+('categories' if field=='category' else 'education_levels')+"') v WHERE v.value=?)");params.append(q[field][0])
-                where=' AND '.join(clauses)
-                total=db.execute('SELECT count(*) FROM ready_records r WHERE '+where,params).fetchone()[0]
+                where=' AND '.join(clauses) or '1'
+                ranked=None
+                if query:
+                    # Hybryda: BM25 (FTS5) + podciąg + wektory, fuzja RRF. Filtry zostają w SQL.
+                    allowed={r[0] for r in db.execute('SELECT r.id FROM ready_records r WHERE '+where,params)}
+                    substring=[r[0] for r in db.execute('SELECT r.id FROM ready_records r WHERE instr(r.search_text,?)>0 AND '+where,[query.casefold()]+params)]
+                    ranked=search_index.search(db,query,allowed,substring,q.get('mode',['hybrid'])[0])
+                    total=len(ranked['items'])
+                else:
+                    total=db.execute('SELECT count(*) FROM ready_records r WHERE '+where,params).fetchone()[0]
                 order='r.id DESC'
                 if pipeline.presentation_mode(db):
                     featured=db.execute("SELECT value FROM runtime_settings WHERE key='featured_records'").fetchone()
                     ids=[v for v in json.loads(featured[0]) if type(v) is int][:50] if featured else []
                     if ids:order='CASE r.id '+ ' '.join(f'WHEN {rid} THEN {rank}' for rank,rid in enumerate(ids))+' ELSE 999 END,r.id DESC'
-                rows=db.execute('SELECT r.* FROM ready_records r WHERE '+where+' ORDER BY '+order+' LIMIT ? OFFSET ?',params+[size,(page-1)*size]).fetchall()
-                items=[record_details(db,r) for r in rows]
-                result=items if path=='/api/records' else {'items':items,'total':total,'page':page,'pages':(total+size-1)//size,'preparing':not db.execute('SELECT 1 FROM ready_records LIMIT 1').fetchone() and bool(db.execute('SELECT 1 FROM processing_jobs LIMIT 1').fetchone())}
+                if ranked:
+                    items=[]
+                    for hit in ranked['items'][(page-1)*size:page*size]:
+                        row=db.execute('SELECT * FROM ready_records WHERE id=?',(hit['id'],)).fetchone()
+                        if row:items.append({**record_details(db,row),'search':{k:hit[k] for k in ('score','keyword','similarity')}})
+                else:
+                    rows=db.execute('SELECT r.* FROM ready_records r WHERE '+where+' ORDER BY '+order+' LIMIT ? OFFSET ?',params+[size,(page-1)*size]).fetchall()
+                    items=[record_details(db,r) for r in rows]
+                result=items if path=='/api/records' else {'items':items,'total':total,'page':page,'pages':(total+size-1)//size,'preparing':not db.execute('SELECT 1 FROM ready_records LIMIT 1').fetchone() and bool(db.execute('SELECT 1 FROM processing_jobs LIMIT 1').fetchone()),'search':ranked['info'] if ranked else None}
             elif path=='/api/compare':
                 ids=[int(x) for x in q.get('ids',[''])[0].split(',') if x]
                 if not 2<=len(set(ids))<=3:raise ValueError('Porównanie wymaga 2–3 różnych rekordów')
@@ -409,7 +426,7 @@ class Handler(BaseHTTPRequestHandler):
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('command',choices=['init','refresh','worker','serve','import-file'])
+    parser.add_argument('command',choices=['init','refresh','worker','serve','import-file','index','search'])
     parser.add_argument('--live',action='store_true',help='Włącz harmonogram i ocenę regułami źródłowymi bez Ollama')
     parser.add_argument('--force',action='store_true')
     parser.add_argument('--full',action='store_true',help='Pobierz cały zbiór w adapterach obsługujących pełny import')
@@ -418,6 +435,9 @@ def main():
     parser.add_argument('--source',action='append')
     parser.add_argument('--file');parser.add_argument('--mapping')
     parser.add_argument('--port',type=int,default=8080)
+    parser.add_argument('--query',help='Zapytanie dla komendy search')
+    parser.add_argument('--mode',default='hybrid',choices=['hybrid','keyword','semantic'])
+    parser.add_argument('--rebuild',action='store_true',help='Przelicz cały indeks wyszukiwania od zera')
     args=parser.parse_args();initialize()
     if args.live:
         with connect() as db:
@@ -438,9 +458,32 @@ def main():
     elif args.command=='serve':
         server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler)
         stop,thread=pipeline.start_worker(connect)
+        with connect() as db:search_index.sync_fts(db)
+        index_stop,_=search_index.start_indexer(connect)
         print(f'Radar działa pod http://127.0.0.1:{args.port}. Ctrl+C zatrzymuje procesy.',flush=True)
         try:server.serve_forever()
-        finally:server.server_close();stop.set();thread.join(timeout=3)
+        finally:server.server_close();index_stop.set();stop.set();thread.join(timeout=3)
+    elif args.command=='index':
+        with connect() as db:
+            if args.rebuild:
+                for table in ('search_chunks','search_docs','search_fts'):
+                    if db.execute("SELECT 1 FROM sqlite_master WHERE name=?",(table,)).fetchone():db.execute('DELETE FROM '+table)
+            print('Zmian w indeksie słów kluczowych:',search_index.sync_fts(db))
+        print('Ładuję model %s (przy pierwszym uruchomieniu pobieranie ok. 220 MB do data/models)…'%search_index.model_id(),flush=True)
+        embedder=search_index.load_embedder(force=True)
+        if not embedder:raise SystemExit('Model niedostępny: %s'%search_index._state['error'])
+        search_index.embed_pending(connect,embedder,lambda done,total:print(f'  embeddingi {done}/{total}',flush=True))
+        with connect() as db:print(search_index.status(db))
+    elif args.command=='search':
+        if not args.query:parser.error('Wymagane --query')
+        embedder=search_index.load_embedder(force=True) if args.mode!='keyword' else None
+        with connect() as db:
+            search_index.sync_fts(db)
+            result=search_index.search_all(db,args.query,args.mode)
+            print('tryb:',result['info'],'\n')
+            for hit in result['items'][:args.limit or 10]:
+                row=db.execute('SELECT title,kind FROM ready_records WHERE id=?',(hit['id'],)).fetchone()
+                print(f"{hit['score']:.4f}  słowa:{hit['keyword'] if hit['keyword'] is not None else '-':>4}  sens:{hit['similarity'] if hit['similarity'] is not None else '-':>6}  [{row['kind']}] {row['title'][:90]}")
     elif args.command=='import-file':
         from file_import import import_file
         if not args.file or not args.mapping or not args.source:parser.error('Wymagane --source --file --mapping')
