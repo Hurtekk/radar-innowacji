@@ -1,0 +1,10 @@
+__pycache__/
+*.sqlite3*
+*.log
+*.pid
+data/
+.env
+.venv/
+*.zip
+
+_radar_update_backup*/
