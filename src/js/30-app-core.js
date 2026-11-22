@@ -1,14 +1,14 @@
 const AC=new Map();
-function save(){AC.clear();try{localStorage.setItem(KEY,JSON.stringify({items:S.items,inv:S.inv}))}catch(e){}}
+function save(){AC.clear();if(needsMigration&&!backupReady)return;try{localStorage.setItem(KEY,JSON.stringify(Object.assign({},savedState||{},{items:S.items,inv:S.inv,catalogRevision:DATA_REVISION})))}catch(e){}}
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cur=()=>S.items.find(x=>x.id===S.sel);
 const vis=()=>S.items;
 const log=(inn,x)=>inn.log.unshift({t:now(),x});
 function analyze(inn){
   let c=AC.get(inn.id);if(c)return c;
-  const sims=buildSim(inn,S.items);if(!inn.scores)inn.scores=suggest(inn,sims);
+  const sims=buildSim(inn,S.items);if(!inn.scores||inn.scoresRevision!==DATA_REVISION){inn.scores=suggest(inn,sims);inn.scoresRevision=DATA_REVISION;}
   const sug=suggest(inn,sims),score=totalScore(inn.scores),comp=completeness(inn);
-  c={sims,sug,score,comp,rec:recommend(inn,score,sims,comp),matches:[],lab:labelsOf(inn)};
+  c={sims,sug,score,comp,notes:scoreNotes(inn),range:scoreRange(inn,inn.scores),rec:recommend(inn,score,sims,comp),matches:[],lab:labelsOf(inn)};
   AC.set(inn.id,c);return c;
 }
 const lvl=s=>s>=65?'good':s>=45?'warn':'bad';

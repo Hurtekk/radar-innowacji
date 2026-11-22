@@ -45,22 +45,37 @@ function track(k,v){
 }
 
 /* ---------- dane: fakty potwierdzone a szacunki ---------- */
+function budgetLabel(i){const b=budgetOf(i);return b?b.amount.toLocaleString('pl-PL',{maximumFractionDigits:2})+' '+b.currency:'brak danych'}
 function factRows(i){
-  const l=locOf(i)||{},ok=i.url?true:false;
+  const l=locOf(i)||{},checked=i.audit&&i.audit.reviewed&&i.audit.readable;
   return [
-   ['Tytuł, opis i instytucja',ok?'f':'e',ok?'ze strony źródłowej (link w karcie)':'bez linku do źródła'],
-   ['Lokalizacja',l.prec==='miejscowość'?'f':'e',l.prec==='miejscowość'?'miejscowość podana w źródle lub rejestrze':'znane tylko województwo, punkt na mapie przybliżony'],
-   ['Etap rozwoju',(i.stageOk||!i.estimated)?'f':'e',(i.stageOk||!i.estimated)?'opisany w źródle':'oszacowany z programu, budżetu i opisu'],
-   ['Wdrożenie w praktyce','e',i.wdr>0?'ocena autorów na podstawie źródła (poziom '+i.wdr+'/5), uzasadnienie w karcie':'brak oceny użycia, szacunek z etapu rozwoju'],
-   ['TRL',i.trlNA||i.trlBasis==='source'?'f':'e',i.trlNA?'nie dotyczy: to nie jest technologia, uzasadnienie w karcie':i.trlBasis==='source'?'podany w źródle':(i.trl>0?'ocena na podstawie opisu źródła (nie jest w nim podana), uzasadnienie w karcie':'szacunek wyliczony z poziomu wdrożenia')],
-   ['Obszar innowacji',i.area3?'f':'e',i.area3?'przypisany przy wykryciu':'klasyfikacja automatyczna na podstawie opisu'],
-   ['Ochrona własności',i.ip>0?'f':'e',i.ip>0?'wskazana w opisie źródła':'brak informacji w źródle, nie oznacza braku ochrony'],
-   ['Ocena w pięciu kryteriach','e','wyliczenie algorytmiczne; wspiera decyzję człowieka, jej nie zastępuje']
+   ['Tytuł i instytucja',checked?'f':'s',checked?'porównano ze wskazanym źródłem podczas kontroli '+i.audit.checkedAt:'dane przypisane do źródła; sam link nie oznacza weryfikacji'],
+   ['Opis','e','streszczenie autora / radaru; zakres dowodów podano poniżej'],
+   ['Lokalizacja','s',l.prec==='miejscowość'?'miejscowość przypisana w danych; nie oznacza lokalizacji każdego wdrożenia':'lokalizacja przybliżona lub brak miejscowości'],
+   ['Etap rozwoju','e',i.trlNA?'ocena etapu usługi z dowodów użycia':'ocena wynikająca z przypisanego TRL'],
+   ['Wdrożenie w praktyce','e',i.wdr>0?'ocena autorów '+i.wdr+'/5; dowody i zakres opisano w uzasadnieniu':'brak dowodów użycia; sam TRL nie dowodzi wdrożenia'],
+   ['TRL',i.trlBasis==='source'?'s':'e',i.trlNA?'nie dotyczy — decyzja klasyfikacyjna radaru, nie deklaracja beneficjenta':i.trlBasis==='source'?'liczba przypisana do źródła; sprawdź wskazany dokument':'szacunek radaru z opisu; nie jest oficjalną oceną beneficjenta'],
+   ['Budżet',budgetOf(i)?'s':'u',budgetLabel(i)+(scopeOf(i)===null?'; brak podstaw do porównania z progami PLN lub brak zasięgu':'; w projektach NCBR służy jako przybliżenie zasięgu')],
+   ['Obszar innowacji','e','klasyfikacja radaru według głównego zastosowania'],
+   ['Ochrona własności',i.ip>0?'s':'u',i.ip>0?'deklaracja w przypisanym źródle; aktualnego statusu nie sprawdzono w rejestrze patentowym':'brak informacji nie oznacza braku ochrony'],
+   ['Ocena w pięciu kryteriach','e','algorytm przelicza oceny autorów i dane źródłowe; nie potwierdza skuteczności']
   ];
 }
-const factPill=t=>t==='f'?'<span class="pill good">potwierdzone ze źródła</span>':'<span class="pill warn">szacunek</span>';
-function factsTable(i){
-  return '<div class="tablewrap"><table><thead><tr><th>Informacja</th><th>Status</th><th>Skąd</th></tr></thead><tbody>'+factRows(i).map(r=>'<tr><td>'+r[0]+'</td><td>'+factPill(r[1])+'</td><td class="small muted">'+r[2]+'</td></tr>').join('')+'</tbody></table></div>';
+const factPill=t=>t==='f'?'<span class="pill good">porównane ze źródłem</span>':t==='s'?'<span class="pill plain">dane przypisane do źródła</span>':t==='u'?'<span class="pill warn">brak danych</span>':'<span class="pill warn">ocena radaru</span>';
+function factsTable(i){return '<div class="tablewrap"><table><thead><tr><th>Informacja</th><th>Status</th><th>Skąd</th></tr></thead><tbody>'+factRows(i).map(r=>'<tr><td>'+esc(r[0])+'</td><td>'+factPill(r[1])+'</td><td class="small muted">'+esc(r[2])+'</td></tr>').join('')+'</tbody></table></div>'}
+function evidenceBlock(i){
+  const a=i.audit,urls=[...new Set([i.url].concat(i.sourceUrls||[]))].filter(u=>/^https?:\/\//.test(u||''));
+  const state=a?(a.readable?(a.reviewed?'Porównano wybrane twierdzenia i ocenę ze źródłem.':'Odczytano treść lub fragment źródła; nie potwierdzono osobno wszystkich twierdzeń.'):'Odczyt źródła nie powiódł się; treść pozostaje niezweryfikowana. Nie jest to dowód niedziałania strony.'):'Brak odnotowanej kontroli źródła.';
+  const ev=(a&&a.evidence||[]).map(e=>'<li><q>'+esc(e.excerpt)+'</q><br><span class="small">Zakres: '+esc(e.scope)+' · sprawdzono '+esc(e.checkedAt)+'</span><br><a href="'+esc(e.url)+'" target="_blank" rel="noopener noreferrer">Dokument źródłowy</a></li>').join('');
+  const notes=scoreNotes(i);
+  return '<section class="panel stack"><h4>Dowody i zakres weryfikacji</h4><p class="small">'+esc(state)+(a?' Kontrola: '+esc(a.checkedAt)+'.':'')+'</p>'+(ev?'<ul class="why">'+ev+'</ul>':'<p class="small muted">Nie zapisano cytatu potwierdzającego tę ocenę. Uzasadnienie jest oceną autora, wymagającą sprawdzenia w źródle.</p>')+'<p class="small muted">'+esc(a&&a.scope||'Opis źródła nie jest niezależnym potwierdzeniem skuteczności ani aktualnej oferty.')+'</p>'+(notes.length?'<ul class="why">'+notes.map(n=>'<li>'+esc(n)+'</li>').join(''):'')+(urls.length>1?'<p class="small"><b>Połączone źródła tego samego projektu:</b> '+urls.map((u,k)=>'<a href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">Źródło '+(k+1)+'</a>').join(' · ')+'</p>':'')+'</section>';
+}
+function criterionWhy(i,k,a){
+  if(k==='wdroz')return i.wdrWhy||'Brak dowodu użycia; etap nie jest jego substytutem.';
+  if(k==='trl')return (i.trlWhy||'Szacunek z etapu rozwoju.')+(i.trlNA?' Punkty dojrzałości wynikają z etapu usługi: '+STAGES[i.stage]+'.':'');
+  if(k==='nov')return 'Najbliższy opis innego projektu w bazie radaru: '+(a.sims[0]?Math.round(a.sims[0].sim*100)+'% podobieństwa tekstu.':'brak.')+' Nie przeszukano automatycznie rynku ani baz patentowych. Różne źródła tego samego projektu są wyłączone z porównania.'+(i.noveltyBasis==='declared'?' Uwzględniono zapisaną deklarację beneficjenta.':'');
+  if(k==='pot'){const s=scopeOf(i),tr=clamp(INFRA_VAL[i.infra]+(i.hasDocs?0:-1),1,5);return 'Budżet: '+budgetLabel(i)+'. Zasięg: '+(s===null?'brak danych — roboczo 3/5':s+'/5')+'. Łatwość przeniesienia: '+tr+'/5 ('+INFRA[i.infra]+', dokumentacja: '+(i.hasDocs?'jest przypisany opis':'brak')+'). Infrastruktura jest założeniem radaru, nie audytem kosztów.'}
+  return 'Publiczny link: 3 pkt'+(i.registry?' + rejestr: 1 pkt':'')+(independentSource(i)?' + wskazane drugie źródło z innej domeny: 1 pkt':'')+'. To ocena pochodzenia danych, nie potwierdzenie wszystkich twierdzeń ani skuteczności.';
 }
 
 /* ---------- nagłówek, pasek widoku, strona główna ---------- */
@@ -121,7 +136,7 @@ function innCard(r){
   const s0=a.sims[0];
   return '<div class="cardw"><button class="card" data-open="inn:'+i.id+'"><div class="ctop"><div><span class="pill" style="background:'+AREA_C[ar]+'1a;color:'+AREA_C[ar]+'">'+ar+'</span>'+(i.detected?' <span class="pill plain" title="Znalezione automatycznie w publicznym źródle">Wykryte '+esc(i.discoveredAt)+'</span>':'')+'<h3 style="margin-top:8px">'+esc(i.title)+'</h3></div><div style="text-align:center">'+ring(ps,46,lvl(ps))+(A.w?'<div class="hint" style="margin-top:2px">dopasowanie</div>':'')+'</div></div>'+
   '<div class="meta">'+esc(i.institution)+' · '+esc(l.city)+'</div><p class="small cdesc">'+esc((i.description||i.problem||'').slice(0,140))+((i.description||'').length>140?'…':'')+'</p>'+
-  '<div class="cfoot"><span class="pill plain">'+STAGES[i.stage]+'</span><span class="pill plain" title="'+esc(i.trlWhy||'')+'">'+trlTxt(i)+'</span><span class="pill '+lvl(a.score)+'">'+scoreWord(a.score)+'</span>'+(A.sim&&s0?'<span class="pill '+(s0.sim>=.35?'warn':'plain')+'">podobne istnieje: '+Math.round(s0.sim*100)+'%</span>':'')+'</div>'+
+  '<div class="cfoot"><span class="pill plain">'+STAGES[i.stage]+'</span><span class="pill plain" title="'+esc(i.trlWhy||'')+'">'+trlTxt(i)+'</span><span class="pill '+lvl(a.score)+'">'+scoreWord(a.score)+'</span>'+(a.notes.length?'<span class="pill warn">Wynik z zastrzeżeniami</span>':'')+(A.sim&&s0?'<span class="pill '+(s0.sim>=.35?'warn':'plain')+'">podobny opis: '+Math.round(s0.sim*100)+'%</span>':'')+'</div>'+
   (i.url?'<div class="hint" style="margin-top:8px">Źródło: '+esc(domainOf(i.url))+'</div>':'')+'</button><button class="cmpb'+(on?' on':'')+'" data-cmp="'+i.id+'" aria-pressed="'+on+'">'+(on?'✓ W porównaniu':'+ Porównaj')+'</button></div>';
 }
 function resultsHTML(){
@@ -151,13 +166,14 @@ function sbChoose(k,id){
 
 /* ---------- karta innowacji (panel boczny) ---------- */
 function critTable(i,a){
-  const sc=i.scores||a.sug;
-  const rows=CRIT.map(c=>{const v=sc[c.k]||1;return '<tr><td>'+metLink(c.k,c.name)+'</td><td>'+bar5(v)+' <span class="num">'+v+'/5</span></td><td class="num">'+(c.w*v/5).toFixed(0)+'</td><td class="small muted">'+c.auto+'</td></tr>'}).join('');
-  return '<div class="tablewrap"><table><thead><tr><th>Kryterium</th><th>Ocena</th><th>Pkt (z '+CRIT[0].w+')</th><th>Skąd</th></tr></thead><tbody>'+rows+'<tr><td><b>Ocena potencjału</b></td><td></td><td class="num"><b>'+totalScore(sc)+'</b></td><td class="small muted">suma punktów, skala 0–100 · '+metA('met-wynik','jak liczymy','mlink','metod')+'</td></tr></tbody></table></div><p class="small muted">Nazwa kryterium prowadzi do zasad przyznawania punktów w metodologii oceny.</p>';
+  const sc=i.scores||a.sug,range=scoreRange(i,sc);
+  const rows=CRIT.map(c=>{const v=sc[c.k]||1;return '<tr><td>'+metLink(c.k,c.name)+'</td><td>'+bar5(v)+' <span class="num">'+v+'/5</span></td><td class="num">'+(c.w*v/5).toFixed(0)+'</td><td class="small muted">'+esc(criterionWhy(i,c.k,a))+'</td></tr>'}).join('');
+  return '<div class="tablewrap"><table><thead><tr><th>Kryterium</th><th>Ocena</th><th>Pkt (z 20)</th><th>Podstawa i ograniczenia</th></tr></thead><tbody>'+rows+'<tr><td><b>Ocena potencjału</b></td><td></td><td class="num"><b>'+totalScore(sc)+'</b></td><td class="small muted">suma punktów, skala 20–100 · '+metA('met-wynik','jak liczymy','mlink','metod')+'</td></tr></tbody></table></div>'+(range[0]!==range[1]?'<p class="hint">Wynik roboczy przy nieznanym zasięgu. Zakres wyniku dla zasięgu 1–5: '+range[0]+'–'+range[1]+'/100, przy pozostałych ocenach bez zmian. Nie jest to przedział statystyczny.</p>':'')+'<p class="small muted">Nazwy kryteriów prowadzą do zasad oceny. Wynik zależy od kompletności dowodów.</p>';
 }
+
 function cardTxt(i,a){
   const l=a.lab;
-  return ['KARTA INNOWACJI',i.title,'Obszar: '+area3Of(i)+' | Dziedziny: '+(i.cats||[]).join(', '),'Instytucja: '+i.institution+' ('+l.city+')','Zastosowanie: '+(i.problem||'—'),'Etap rozwoju: '+STAGES[i.stage]+(i.stageOk||!i.estimated?'':' (szacunek)'),'Rodzaj: '+typOf(i),'Opis: '+(i.description||'—'),'TRL: '+(i.trlNA?'nie dotyczy':trlOf(i)+(i.trlBasis==='source'?' (ze źródła)':' (ocena z opisu)')),'Uzasadnienie TRL: '+(i.trlWhy||'—'),'Wdrożenie w praktyce: '+(i.wdr>0?i.wdr+'/5':'brak oceny'),'Uzasadnienie wdrożenia: '+(i.wdrWhy||'—'),'Ocena potencjału: '+a.score+'/100 ('+scoreWord(a.score)+')','Źródło: '+(i.url||'brak linku'),'Wykryto: '+(i.discoveredAt||'rejestr NCBR')].join('\n');
+  return ['KARTA INNOWACJI',i.title,'Obszar: '+area3Of(i)+' | Dziedziny: '+(i.cats||[]).join(', '),'Instytucja: '+i.institution+' ('+l.city+')','Zastosowanie: '+(i.problem||'—'),'Etap rozwoju: '+STAGES[i.stage]+(i.stageOk||!i.estimated?'':' (szacunek)'),'Rodzaj: '+typOf(i),'Opis: '+(i.description||'—'),'TRL: '+(i.trlNA?'nie dotyczy':trlOf(i)+(i.trlBasis==='source'?' (ze źródła)':' (ocena z opisu)')),'Uzasadnienie TRL: '+(i.trlWhy||'—'),'Wdrożenie w praktyce: '+(i.wdr>0?i.wdr+'/5':'brak oceny'),'Uzasadnienie wdrożenia: '+(i.wdrWhy||'—'),'Ocena potencjału: '+a.score+'/100 ('+scoreWord(a.score)+')','Ograniczenia: '+scoreNotes(i).join(' '),'Kontrola źródła: '+(i.audit?i.audit.checkedAt+'; '+(i.audit.readable?'odczytano':'bez odczytu'):'brak'),'Źródła: '+[...new Set([i.url].concat(i.sourceUrls||[]))].join('; '),'Wykryto: '+(i.discoveredAt||'rejestr NCBR')].join('\n');
 }
 function drawerCard(i){
   const a=analyze(i),l=a.lab,ar=area3Of(i),A=audOf(),ps=profScore(i,a),on=(S.cmp||[]).includes(i.id);
@@ -167,7 +183,7 @@ function drawerCard(i){
   const labs=[['Dziedzina',l.dz],['Temat',l.topic],['Miasto',l.city],['Typ instytucji',l.iss]].map(x=>'<div class="lab"><div class="k">'+x[0]+'</div><div class="v">'+esc(x[1])+'</div></div>').join('');
   const body='<div class="dbody"><div class="dsum">'+ring(ps,56,lvl(ps))+'<div class="grow"><div class="mini">'+(A.w?'Dopasowanie do profilu':'Ocena potencjału')+'</div><b>'+scoreWord(a.score)+'</b><div class="small muted">ocena ogólna '+a.score+'/100 · średnia z pięciu kryteriów</div></div></div>'+
    '<div class="labels" style="margin:4px 0 12px">'+grid+'</div>'+
-   '<p><b>Opis.</b> '+esc(i.description||'—')+'</p><p><b>Zastosowanie.</b> '+esc(i.problem||'—')+'</p><p><b>Uzasadnienie TRL.</b> '+esc(i.trlWhy||'Brak uzasadnienia.')+'</p><p><b>Uzasadnienie wdrożenia'+(i.wdr>0?' ('+i.wdr+'/5)':'')+'.</b> '+esc(i.wdrWhy||'Brak oceny użycia, kryterium szacowane z etapu rozwoju.')+'</p>'+((i.contact||i.phone)?'<p><b>Kontakt.</b> '+[i.contact?'<a href="mailto:'+esc(i.contact)+'">'+esc(i.contact)+'</a>':'',i.phone?esc(i.phone):''].filter(Boolean).join(' · ')+(i.contactSrc?' <span class="small muted">(źródło: '+esc(i.contactSrc)+')</span>':'')+'</p>':'')+srcB+
+   '<p><span class="pill plain">'+esc(lifecycleOf(i))+'</span></p><p><b>Opis.</b> '+esc(i.description||'—')+'</p><p><b>Zastosowanie.</b> '+esc(i.problem||'—')+'</p><p><b>Uzasadnienie TRL.</b> '+esc(i.trlWhy||'Brak uzasadnienia.')+'</p><p><b>Uzasadnienie wdrożenia'+(i.wdr>0?' ('+i.wdr+'/5)':'')+'.</b> '+esc(i.wdrWhy||'Brak oceny użycia, kryterium szacowane z etapu rozwoju.')+'</p>'+((i.contact||i.phone)?'<p><b>Kontakt.</b> '+[i.contact?'<a href="mailto:'+esc(i.contact)+'">'+esc(i.contact)+'</a>':'',i.phone?esc(i.phone):''].filter(Boolean).join(' · ')+(i.contactSrc?' <span class="small muted">(źródło: '+esc(i.contactSrc)+')</span>':'')+'</p>':'')+srcB+evidenceBlock(i)+
    '<h4 style="margin:16px 0 6px">Co jest faktem, a co szacunkiem</h4>'+factsTable(i)+
    '<h4 style="margin:16px 0 6px">Ocena w pięciu kryteriach</h4>'+critTable(i,a)+prof+
    '<div style="margin:12px 0">'+locBlock(i)+'</div>'+
@@ -250,7 +266,7 @@ PAGEX.analityka=()=>{
 function renderAbout(){
   return back()+'<div class="page stack"><h2>Jak to działa</h2>'+
   panel('Do czego służy radar','<p>Radar to narzędzie do automatycznego wyszukiwania, identyfikowania, analizowania i oceniania <b>istniejących</b> innowacji w Polsce. Skraca czas potrzebny na znalezienie rozwiązania i zmniejsza ryzyko powielania prac. Pomaga częściej wdrażać polskie rozwiązania.</p>')+
-  panel('Pięć kroków','<ol class="why"><li><b>Zbieranie.</b> Kolektor i import odczytują publiczne źródła: rejestry projektów, strony uczelni, instytutów, samorządów, szkół, firm oraz bazy patentowe.</li><li><b>Wykrywanie.</b> Opis jest sprawdzany pod kątem definicji innowacji (nowe lub ulepszone rozwiązanie, które jest wdrożone lub udostępnione).</li><li><b>Klasyfikacja.</b> Pozycja trafia do obszaru: technologicznego, edukacyjnego lub administracyjnego, dostaje dziedziny, lokalizację i etap rozwoju.</li><li><b>Ocena.</b> Pięć kryteriów: wdrożenie w praktyce, TRL, innowacyjność, potencjał zastosowania i wiarygodność.</li><li><b>Prezentacja.</b> Karta ze źródłem, statusem, gotowością i oceną. Wyszukiwanie dopasowuje się do sześciu grup odbiorców.</li></ol>')+
+  panel('Pięć kroków','<ol class="why"><li><b>Zbieranie.</b> Kolektor i import odczytują publiczne źródła: rejestry projektów, strony uczelni, instytutów, samorządów, szkół, firm oraz bazy patentowe.</li><li><b>Wykrywanie.</b> Oddzielamy rozwiązania udostępnione od projektów w testach i planów. Samo finansowanie lub patent nie oznacza wdrożenia.</li><li><b>Klasyfikacja.</b> Pozycja trafia do obszaru: technologicznego, edukacyjnego lub administracyjnego, dostaje dziedziny, lokalizację i etap rozwoju.</li><li><b>Ocena.</b> Pięć kryteriów: wdrożenie w praktyce, TRL, innowacyjność, potencjał zastosowania i wiarygodność.</li><li><b>Prezentacja.</b> Karta ze źródłem, statusem, gotowością i oceną. Wyszukiwanie dopasowuje się do sześciu grup odbiorców.</li></ol>')+
   panel('Uczciwość danych','<ul class="why"><li>Każda karta ma link do źródła. Pozycje bez źródła są odrzucane i nie pojawiają się w radarze.</li><li>Radar rozróżnia <b>fakty potwierdzone ze źródła</b> od <b>szacunków</b> (np. TRL liczony z etapu wdrożenia). Szacunki są oznaczone gwiazdką lub etykietą.</li><li>AI wspiera klasyfikację, ale nie wymyśla faktów. Ocena wspiera człowieka i go nie zastępuje.</li></ul>')+
   panel('Cele','<ul class="why"><li>Krótszy czas znalezienia innowacji.</li><li>Mniej powielania badań i wdrożeń.</li><li>Więcej wdrożeń polskiej własności intelektualnej.</li></ul>')+'</div>';
 }

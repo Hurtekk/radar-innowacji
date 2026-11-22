@@ -2,9 +2,9 @@
 const NCBR_URL='https://www.gov.pl/web/ncbr/';
 const _num=s=>{const m=String(s).match(/^([\d\s]+),?(\d{0,2})/);return m?parseFloat(m[1].replace(/\s/g,'')+'.'+(m[2]||'0')):0};
 function _catsFor(area,title,benef){
-  const a=norm(area+' '+title+' '+benef),c=[];
+  const a=norm(area+' '+title),c=[];
   const add=x=>{if(!c.includes(x))c.push(x)};
-  if(/pedagog|edukac|uczni|nauczyc|kurs|uczelni|szkol|akademi|studen/.test(a)&&!/^[^|]*inzynieria/.test(norm(area)))add('Edukacja');
+  if(/pedagog|edukac|uczni|nauczyc|kurs|uczelni|szkol(?!k)|akademi|studen/.test(a)&&!/^[^|]*inzynieria/.test(norm(area)))add('Edukacja');
   if(/medyc|covid|szpital|zdrow|pacjent|chorob|niewydolnosc|rany|osluchow|niepłodnosci|niepłodn|bioimpl|protez/.test(a))add('Zdrowie');
   if(/lotni|silnik lot|bomb lotni|lotow/.test(a))add('Lotnictwo');
   if(/pojazd|automotive|motoryz|wagon|skrzyni|samochod|transport/.test(a))add('Motoryzacja');
@@ -18,9 +18,14 @@ function _catsFor(area,title,benef){
 }
 const _fin=s=>{const m=String(s).match(/^\d{2}\.\d{2}\.(\d{4})–(\d{2}\.\d{2}\.(\d{4}))/);return m?+m[3]:(String(s).match(/(\d{4})\s*$/)||[])[1]|0};
 function applyRewrite(o){
-  const w=REWRITE[o.id];if(!w)return null;
+  const w=REWRITE[o.id];if(!w||w.canonicalId)return null;
   o.description=w.opis;o.problem=w.zast;o.benefit=w.zast;o.typ=w.typ;o.trlWhy=w.tb;o.wdr=w.wdr;o.wdrWhy=w.wb;
-  if(w.trl>0){o.trl=w.trl;if(o.trlBasis!=='source')o.trlBasis='assessed';o.trlNA=false;o.stage=w.trl<=3?0:w.trl<=5?1:w.trl===6?2:w.trl<=8?3:4}else{o.trl=0;o.trlNA=true;o.trlBasis='na'}
+  o.trl=w.trl||0;o.trlNA=!(w.trl>0);o.trlBasis=o.trlNA?'na':o.trlBasis==='source'?'source':'assessed';
+  o.stage=w.trl>0?stageFromTrl(w.trl):Number.isInteger(w.stage)?w.stage:w.wdr>=3?4:w.wdr===2?3:0;
+  ['area3','cats','origin','instType','novelty','noveltyBasis','uncertainty','sourceUrls','aliases'].forEach(k=>{if(w[k]!==undefined)o[k]=JSON.parse(JSON.stringify(w[k]))});
+  o.projectId=o.id;o.audit=SOURCE_AUDIT[o.id]||null;o.dataRevision=DATA_REVISION;o._v2=true;
+  o.scope=scopeOf(o)===null?null:scopeOf(o)-1;
+  o.scores=null;o.scoresRevision=null;
   return o;
 }
 function realData(){
@@ -32,7 +37,7 @@ function realData(){
     const inst=/Szpital|Centrum Medyczne|Centralny Szpital|Uniwersyteckie Centrum Kliniczne|Wojskowy Instytut Medyczny/.test(first)?3:/Instytut|PAN|Łukasiewicz|Sieć Badawcza/.test(first)?4:/Uniwersytet|Politechnika|Akademia|Szkoła Wyższa|Szkoła Wyższa|Państwowa Wyższa|Podkarpacka Szkoła|Collegium|Wyższa Szkoła|Wydział|AGH|Karkonoska|Wojskowa|Państwowa Akademia|WAT/.test(first)?1:3;
     const origin=company?4:inst===1?2:inst===4?3:/Szpital|Centrum Medyczne|Centralny|Uniwersyteckie/.test(first)?5:2;
     const cats=_catsFor(area,title,ben);
-    const v=_num(val),intl=/EUR|międzynarod|Eurostars|M-ERA|V4/.test(val+prog);
+    const v=_num(val);
     const stage=edu?4:/POIR|Inteligentny Rozwój|Wsparcie szpitali|szpitali/.test(prog)?3:2;
     const consortium=/ oraz | i |,/.test(ben)&&ben.split(',').length>1;
     const end=_fin(per);
@@ -42,9 +47,9 @@ function realData(){
     const o={id:r.id,type:edu?'edukacyjna':/szpital|COVID|opieki/.test(norm(title))?'procesowa':'technologiczna',instType:inst,institution:first,city:(loc&&loc.miejsc)||city||'',creators:'',contact:'',phone:'',title,
       problem:'Obszar badawczy wg rejestru NCBR: '+area+'. Źródło nie opisuje problemu własnymi słowami, więc dalszy opis dołącz po kontakcie z beneficjentem.',
       description:'Projekt zakończony, finansowany przez NCBR w programie „'+prgShort+'”. Beneficjent: '+ben+'. Dziedzina: '+area+'. Budżet: '+val+'. Okres realizacji: '+per+'.',
-      tags:[],stage,scope:v>=1e7?4:v>=3e6?3:v>=1e6?2:1,infra:edu?0:2,team:consortium?2:1,ip:0,hasDocs:true,status:0,contacts:[],log:[{t:now(),x:'Zaimportowano z rejestru NCBR (baza sukcesów beneficjentów)'}],scores:null,ai:null,
-      rodzaj,novelty:intl?0:-1,origin,cats,benefit:'Gotowy, sfinansowany ze środków publicznych wynik projektu. Okazja do komercjalizacji, wdrożenia lub kontynuacji badań z beneficjentem.',owner:'',public:true,interests:[],
-      source:'Baza sukcesów NCBR',url:NCBR_URL+slug,registry:'NCBR',programme:prgShort,value:val,period:per,endYear:end,area,loc,estimated:true};
+      tags:[],stage,scope:v>=1e7?4:v>=3e6?3:v>=1e6?2:1,infra:2,team:consortium?2:1,ip:0,hasDocs:true,status:0,contacts:[],log:[{t:now(),x:'Zaimportowano z rejestru NCBR (baza sukcesów beneficjentów)'}],scores:null,ai:null,
+      rodzaj,novelty:-1,origin,cats,benefit:'Gotowy, sfinansowany ze środków publicznych wynik projektu. Okazja do komercjalizacji, wdrożenia lub kontynuacji badań z beneficjentem.',owner:'',public:true,interests:[],
+      budgetSource:r.budgetSource||'',budgetCheckedAt:r.budgetCheckedAt||'',source:'Baza sukcesów NCBR',url:NCBR_URL+slug,registry:'NCBR',programme:prgShort,value:val,period:per,endYear:end,area,loc,estimated:true};
     o.tags=tagsFromCats(cats);
     return applyRewrite(o);
   }).filter(Boolean).filter(o=>/^https?:\/\//.test(o.url||''));

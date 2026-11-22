@@ -18,7 +18,8 @@ const DEMOX=[
  {t:'Sąsiedzka opieka',r:1,n:2,o:5,c:['Społeczne','Zdrowie'],b:'Mierzalny efekt społeczny w gminach wiejskich. Możliwość finansowania z programów społecznych i replikacji.'}
 ];
 function enrich(inn){
-  if(!inn._v2){inn.stage=[0,0,1,3,4][inn.stage]==null?0:[0,0,1,3,4][inn.stage];inn._v2=true;inn.scores=null}
+  if(!inn._v2){inn._v2=true;inn.scores=null}
+  if(inn.trl>0)inn.stage=stageFromTrl(inn.trl);
   if(inn.scores&&inn.scores.wdroz==null)inn.scores=null;
   if(inn.cats===undefined)inn.cats=[];
   ['rodzaj','novelty','origin'].forEach(k=>{if(inn[k]==null)inn[k]=-1});

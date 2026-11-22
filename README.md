@@ -51,3 +51,20 @@ Potrzebny jest tylko Python 3 (bez zależności). Skrypt waliduje JSON-y, ostrze
 
 Opis w [collector/README.md](collector/README.md). Aplikacja przy starcie próbuje pobrać `feed/feed.json`
 (względem adresu strony); bez serwera działa wbudowana migawka z `data/records/detected-feed.json`.
+
+## Kontrola spójności i aktualizacja katalogu
+
+Po zmianie danych lub reguł uruchom:
+
+```
+python3 scripts/build.py
+node --check dist/script.js
+node scripts/check.cjs
+node collector/test.mjs
+```
+
+`source-audit.json` przechowuje wynik odczytu, zakres kontroli, datę oraz krótkie fragmenty dowodów. Odczyt strony nie oznacza pełnej weryfikacji opisu. Pole `canonicalId` w ocenie wiąże dodatkowy wpis z jedną kartą projektu; `sourceUrls` zachowuje oba źródła.
+
+Wersja katalogu `DATA_REVISION` służy do aktualizacji już zapisanych danych. Przed pierwszą migracją aplikacja zachowuje poprzedni zapis w lokalnej kopii `radar-innowacji-v9-backup-before-<wersja>`. Aktualizuje pola redakcyjne i przelicza oceny, zachowując notatki, kontakty użytkownika, profil, statusy i pozostałe dane. Scalony rekord aliasu zostaje w `mergedRecords`. Kolejna zmiana danych wymaga podniesienia `DATA_REVISION`.
+
+Budżety mają rozpoznaną walutę. Kwoty EUR nie są porównywane z progami PLN bez udokumentowanej konwersji (`budget.amountPLN` i `budget.conversionSource`). Brak zasięgu skutkuje roboczą wartością neutralną i widocznym zakresem wrażliwości. Udział w programie międzynarodowym nie jest deklaracją nowości światowej.

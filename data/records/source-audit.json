@@ -1,0 +1,2174 @@
+{
+ "n01": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/innowacyjny-czujnik-odksztalcen-na-bazie-specjalnych-swiatlowodow-mikrostrukturalnych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 186 431,74 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n02": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/uniwersyteckie-innowacje-w-dziedzinie-nauk-spolecznych-uph-w-siedlcach",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 945 328,25 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n03": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/swiat-odkrywcow-odkrywanie-swiata--nowatorski-program-rozwoju-kompetencji-i-pobudzenia-aktywnosci-edukacyjnej-i-kulturalnej-dla-dzieci-szkol-podstawowych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n04": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-i-implementacja-nowych-metod-lokalizacji-budowy-mapy-oraz-planowania-ruchu-z-uzyciem-czujnikow-rgb-d-w-zrobotyzowanych-systemach-elastycznej-produkcji",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 198 705,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n05": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/od-genu-do-ekosystemu",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n06": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/kadra-jako-kluczowy-element-rozwoju-branzy-motoryzacyjnej",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "411 390,36 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n07": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/uczelnia-kreatorem-kompetencji-kadr-msp",
+  "sourceBudget": "698 700,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/uczelnia-kreatorem-kompetencji-kadr-msp",
+    "excerpt": "kursy są bezpłatne i dostępne na platformie NAVOICA dla szerokiego grona odbiorców",
+    "scope": "Otwarte kursy MŚP",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło potwierdza siedem bezpłatnych kursów dostępnych na NAVOICA dla szerokiego grona odbiorców. Wdrożenie 3/5 jest uzasadnione szablonem o jednej instytucji.",
+  "recommendationBeforeCorrection": "Według zapisanej metodologii otwarty dostęp oznacza 4/5. Przy pozostałych kryteriach bez zmian wynik to 80 zamiast 76."
+ },
+ "n08": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/z-pythonem-w-przyszlosc",
+  "sourceBudget": "163 425,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/z-pythonem-w-przyszlosc",
+    "excerpt": "skorzystało już z niego ponad 1600 osób",
+    "scope": "Uczestnicy kursu; stan opisany w artykule",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło opisuje bezpłatny otwarty kurs i ponad 1600 uczestników. Karta ma użycie 3/5 oraz szablonowe uzasadnienie o jednej instytucji.",
+  "recommendationBeforeCorrection": "Zastosować próg „tysiące użytkowników”: 5/5. Przy pozostałych kryteriach bez zmian wynik rośnie z 76 do 84. Liczba dotyczy stanu opisanego w artykule, nie pomiaru na dzień audytu."
+ },
+ "n09": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/przedsiebiorca-12",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "270 750,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n10": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/wsparcie-edukatorow-wychowania-przedszkolnego-w-zakresie-edukacji-steam",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "119, 987,50 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n11": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/mucha--system-rejestracji-i-przetwarzania-obrazu-przestrzennego",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 196 912,50 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n12": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/kompetencje-dla-centrow-obslugi-biznesu",
+  "sourceBudget": "432 591,25 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/kompetencje-dla-centrow-obslugi-biznesu",
+    "excerpt": "Oferowane bezpłatne kursy e-learningowe",
+    "scope": "Trzy kursy na platformie NAVOICA",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło potwierdza trzy bezpłatne kursy e-learningowe na NAVOICA, a karta ma użycie 3/5.",
+  "recommendationBeforeCorrection": "Przyjąć 4/5 za otwarty dostęp zgodnie z metodologią. Pozostałe kryteria bez zmian: 80 zamiast 76 punktów."
+ },
+ "n13": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-technologii-recyklingu-surowcowego-roslinnych-olejow-posmazalniczych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 200 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n14": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/nowoczesny-nauczyciel-matematyki",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "191 394,62 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n15": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/nowe-sfunkcjonalizowane-biopolimery-do-zastosowan-medycznych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n16": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/budowa-prototypu-mobilnego-urzadzenia-do-nieinwazyjnego-wykrywania-substancji-niebezpiecznych-w-srodowisku-wodnym",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 200 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n17": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/hydrauliczno-mechaniczna-automatyczna-skrzynia-biegow-dla-pojazdow-rolniczych-i-maszyn-roboczych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n18": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/percepcja-i-sterowanie-w-zadaniu-robotycznej-manipulacji-obiektami-elastycznymi",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 156 500,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n19": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/coolmen",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "4 745 449,80 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n20": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/multifunkcjonalne-membrany-polimerowe",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "688 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n21": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-kompozytowej-protezy-ucha-srodkowego-o-wlasciwosciach-bakteriobojczych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 190 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n22": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/wykorzystanie-inzynierii-chromosomowej",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "905 900 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n23": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/hybico",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "545 000 EUR",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n24": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/produkcja-lodow-naturalnych-i-sorbetow-dla-diabetykow-lody-0-cukru",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "333 099,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n25": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/aktywny-koherentny-spektrometr-dyspersyjny",
+  "sourceBudget": "1 564 125,92 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/aktywny-koherentny-spektrometr-dyspersyjny",
+    "excerpt": "jako nowy produkt został wprowadzony na rynek",
+    "scope": "Moduł VIGO, nie cały spektrometr",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło potwierdza trzy moduły wdrożone do produkcji i produkt w portfolio VIGO. Karta wyjaśnia, że spektrometr budują partnerzy zagraniczni, a TRL 9 dotyczy modułu. Ten zakres jest istotny i został zachowany.",
+  "recommendationBeforeCorrection": "Zachować rozróżnienie części i całego systemu. Wartość TRL jest nadal szacunkiem radaru, nie deklaracją źródła."
+ },
+ "n26": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-innowacyjnego-testu-diagnostycznego-do-oceny-przebiegu-covid-19",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "11 979 750,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n27": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/amulet",
+  "sourceBudget": "12 582 626,92 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/amulet",
+    "excerpt": "zmniejszenie o 38% liczby hospitalizacji",
+    "scope": "Wynik opisanego badania klinicznego, nie dowód rutynowego wdrożenia",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło podaje badanie kliniczne i spadek hospitalizacji o 38%. Karta nie zamienia tego w potwierdzenie rutynowego wdrożenia w całej ochronie zdrowia. Ocena użycia 2/5 odpowiada regule badania klinicznego.",
+  "recommendationBeforeCorrection": "Zachować rozróżnienie badania i wdrożenia. Wynik 38% opisywać jako rezultat podanego badania, a TRL 8 jako szacunek wymagający uzasadnienia zakresu technologii."
+ },
+ "n28": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/ograniczanie-transmisji-rozprzestrzeniania-sie-choroby-covid-19-w-codziennej-praktyce-medycznej-u-pacjentow",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n29": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/metoda-natychmiastowego-wytwarzania-przyrostowego-czesci-zamiennych-i-alternatywnych-aparatury-medycznej",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 172 500,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n30": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/mlody-da-vinci---innowacyjne-zajecia-dla-dzieci-i-mlodziezy-w-orzeszu",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "498 832,14 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n31": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/wsparcie-aplikacji-serverless-w-srodowisku-multi-cloud",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 655 926,93 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n32": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/photored",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n33": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-bezpiecznych-procedur-w-kontaktach-z-osobami-zarazonymi-wirusem-sars-cov-2",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n34": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/comobility",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "8 868 049,58 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n35": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/rozwoj-przyjaznych-dla-srodowiska-kompozytow-geopolimerowych-wzmacnianych-wloknami-odpadowymi",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "647 480,00 EUR",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n36": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/zylia",
+  "sourceBudget": "3 607 532,56 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/zylia",
+    "excerpt": "wprowadziła na globalny rynek wielomikrofonowy system",
+    "scope": "Deklaracja beneficjenta dotycząca systemu ZYLIA",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło opisuje system wielu macierzy mikrofonowych, nawigowalny dźwięk 6DoF i wprowadzenie na globalny rynek. Streszczenie zachowuje ten sens.",
+  "recommendationBeforeCorrection": "Zachować przypisanie deklaracji „jedyny na świecie” do firmy; artykuł beneficjenta nie jest niezależnym badaniem nowości."
+ },
+ "n37": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/demonstracja-autorskiej-technologii-wytwarzania-komponentow-i-elementow-kompozytowych-asset",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "32 904 415,36 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n38": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/system-zarzadzania-operacyjnego-produkcja",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "5 861 414,11 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n39": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/system-wspierajacy-organizacje-pracy-personelu-i-monitorujacy-parametry-jakosci-pracy-szpitalnego-oddzialu-ratunkowego",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n40": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/masowy-otwarty-kurs-polskiego-jezyka-migowego-na-poziomie-podstawowym",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "171 740,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n41": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/steriosoft",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 549 368,58 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n42": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/przestrzen-wspolpracy--przestrzen-rozwoju",
+  "sourceBudget": "499 670,25 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/przestrzen-wspolpracy--przestrzen-rozwoju",
+    "excerpt": "400 godzin szkoleń",
+    "scope": "Liczby grup należy sumować jako uczestnictwa; brak pewności rozłączności",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "931 godzin i 257 osób wynikają z dodania trzech grup: 400+451+80 godzin oraz 107+100+50 uczestników. Nie jest to nowa liczba z niezależnego źródła; tekst osobno wspomina też 50 nauczycieli.",
+  "recommendationBeforeCorrection": "Oznaczyć sumy jako obliczenie na podstawie źródła. Nie zakładać bez sprawdzenia, że grupy nie nakładają się ani że osobno wspomniani nauczyciele są dodatkową grupą."
+ },
+ "n43": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/innowacyjna-w-skali-swiatowej-drukarka-przyrostowa",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n44": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/akademia-bez-barier",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "792 962,50 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n45": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-i-implementacja-obslugi-systemow-ui-oraz-mechanizmow-sterowania-w-esportowej-grze-video",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "3 189 607,25 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n46": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-innowacyjnej-technologii-mvc",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n47": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-innowacyjnego-silnika-lotniczego-zasilanego-paliwem-jet-a1",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "7 499 285,20 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n48": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/akademia-mlodego-studenta",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "419 291,84 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n49": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/regsor",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n50": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/typoszereg-aktywnych-zgrabiarek-podbieraczowo-tasmowych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "3 563 820,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n51": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/co-bio",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "8 711 127,87 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n52": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/saponlabs",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 358 152,50 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n53": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/proekologiczny-wagon-do-przewozu-skroplonych-produktow-gazowych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "5 864 084,71 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n54": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/akademia-czystego-morza",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "478 844,37 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n55": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/stethome",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "8 683 974,12 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n56": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/zaawansowane-technologie-wspomagajace-przeciwdzialanie-zagrozeniom-zwiazanym-z-powodziami",
+  "sourceBudget": "8 586 515,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/safedam",
+    "excerpt": "PSP FALA 2018",
+    "scope": "Demonstracja SAFEDAM podczas ćwiczeń",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "W bazie są n56 i n96: ten sam tytuł, instytucja i system SAFEDAM, dwa adresy źródłowe. Jeden wpis ma użycie 1/5, drugi 2/5. Opisy wzajemnie obniżają ocenę innowacyjności do 1/5.",
+  "recommendationBeforeCorrection": "Połączyć dowody w jedną kartę projektu lub jawnie powiązać wersje. Nie traktować drugiego opisu tego samego projektu jako niezależnego podobnego rozwiązania."
+ },
+ "n57": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/agromix",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "3 030 961,24 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n59": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/implementacja-kursu-programowania-w-jezyku-javascript-na-poziomie-podstawowym",
+  "sourceBudget": "326 062,50 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/implementacja-kursu-programowania-w-jezyku-javascript-na-poziomie-podstawowym",
+    "excerpt": "Na kurs może zapisać się każdy",
+    "scope": "Otwarty kurs JavaScript",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło wskazuje, że na bezpłatny kurs może zapisać się każdy. Karta opisuje kurs sensownie, ale uzasadnia 3/5 realizacją w jednej instytucji.",
+  "recommendationBeforeCorrection": "Użycie 4/5, co przy pozostałych ocenach bez zmian daje 76 zamiast 72 punktów."
+ },
+ "n61": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/zaklocanie-transmisji-radiowej-w-wybranych-obiektach-strazy-granicznej",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 387 523,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n62": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/szurad",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "3 925 575,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n63": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/warmie-bezprzewodowy-system-do-wykrywania-i-monitorowania-zmian-wewnatrz-ran",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 000 000,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n64": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/laserowy-system-korekcji-toru-lotu-dla-bomb-lotniczych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "3 945 881,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n65": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/kreator-wirtualnych-doswiadczen",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n66": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/innowacyjna-wylegarnia---wdrozenie-kriokonserwacji-nasienia-do-programow-doskonalenia-hodowli-ryb-lososiowatych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n67": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-metody-regeneracji-katalizatorow-denox",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n68": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-technologii-biotyzacji-do-komercyjnej-ekologicznej-produkcji-owocow-jagodowych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "838 766,58 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n69": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-komercyjnej-metody-produkcji-podlozy-sers",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n70": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/bezolowiowe-ogniwa-sloneczne-perowskitowe-o-dlugoterminowej-zywotnosci",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "550,738.99 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n71": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/plazmowa-technologia-usuwania-tlenkow-azotu-z-gazow-spalinowych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n72": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/zastosowanie-cieczy-nienewtonowskich-w-ukladach-absorbujacych-energie",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 132 000 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n73": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/cyberstudio",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n74": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/elektronika-dla-branzy-automotive",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n75": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/uczelnia-bez-barier---w-kierunku-edukacji-wlaczajacej",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 241 406,40 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n76": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/psw-w-jasle---uczelnia-bez-barier",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n77": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/invites",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n78": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/petra",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 707 626,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n79": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/inteligentne-sieci-elektroenergetyczne-na-obszarach-wiejskich--rigrid",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 062 012,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n80": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/nowa-technika-oceny-krazenia-naczyniowego",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "3 018 145,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n81": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/rodzina-innowacyjnych-tunelowych-opryskiwaczy-sadowniczych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n82": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/nowa-generacja-gruntow-cynkowych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/nowa-generacja-gruntow-cynkowych",
+    "excerpt": "technologią (laboratoryjną) ich wytwarzania",
+    "scope": "Technologia laboratoryjna",
+    "checkedAt": "2026-11-22"
+   }
+  ]
+ },
+ "n83": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/frapol-sp-z-oo",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n84": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/innerweb",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n85": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/cryptone",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n86": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/grunner",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n87": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/wheelstair",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 343 848 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n88": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/platforma-zywnosciowa",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n89": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/zmierz",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n90": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/jednolity-system-antyplagiatowy",
+  "sourceBudget": "11 000 000,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/jednolity-system-antyplagiatowy",
+    "excerpt": "Z systemu korzysta cały ekosystem edukacji wyższej, kilkaset tysięcy aktywnych użytkowników.",
+    "scope": "Cały system JSA; stan opisany w artykule",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło opisuje ogólnokrajowe wdrożenie, kilkaset tysięcy aktywnych użytkowników i budżet 11 mln zł. Karta pokazuje Prototyp, TRL nie dotyczy, uzasadnienie „na”, a dojrzałość punktuje 2/5. OPI PIB oznaczono dodatkowo jako uczelnię.",
+  "recommendationBeforeCorrection": "Ustawić etap odpowiadający rzeczywistemu użyciu, poprawić typ podmiotu i uzasadnienie, uzupełnić budżet. Przy zachowaniu pozostałych ocen oraz TRL nie dotyczy poprawienie etapu z 1 na 4 i budżetu daje 88 zamiast 72 punktów. To scenariusz korekty danych, nie nowa ocena ekspercka."
+ },
+ "n91": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/mikrosondy-laserowe",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "12 982 621,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n92": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/edwardai",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n93": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/technabio",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 199 742,97 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n94": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/aval",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n95": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/airly",
+  "sourceBudget": "4 522 020,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/airly",
+    "excerpt": "ponad 2 800 czujników AIRLY",
+    "scope": "Czujniki; pobrania aplikacji nie są liczbą aktywnych użytkowników",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło potwierdza pomiary czujnikami, prognozę na 24 godziny, ponad 2800 czujników i ponad 500 tys. pobrań. Wysoka ocena rzeczywistego użycia ma podstawę w artykule. Brakujący w aplikacji budżet jest jednak podany w źródle.",
+  "recommendationBeforeCorrection": "Zachować streszczenie i oznaczenie szacowanego TRL, uzupełnić budżet i dodać datę, do której odnoszą się liczby. Pobrania nie są liczbą aktywnych użytkowników."
+ },
+ "n96": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/safedam",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/safedam",
+    "excerpt": "PSP FALA 2018",
+    "scope": "Ćwiczenia służb; źródło uzupełniające SAFEDAM",
+    "checkedAt": "2026-11-22"
+   }
+  ]
+ },
+ "n97": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/musicon",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 465 745,43 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n98": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/protezka-strzemiaczka",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n99": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/bioengineering",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n100": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/aerosize",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "4 975 000,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n101": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/mine-master",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n102": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/pureapta",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n103": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/waven---bezprzewodowo-ladowane-baterie",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 000 000 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n104": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/postep-w-technologii-zgrzewania",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 150 000,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n105": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/system-do-wizualnej-kontroli-optycznej",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "15 445 009,50 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n106": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/mobilna-linia-przetwarzania-odpadow",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "49 335 889,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n107": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/dowody-pod-kontrola",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n108": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/testy-dna-pszenicy",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n109": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/integrowane-nawadnianie",
+  "sourceBudget": "2 942 250,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/integrowane-nawadnianie",
+    "excerpt": "prototypowym sterownikiem",
+    "scope": "Sterownik nawadniania upraw, nie szkoła",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło opisuje sterownik nawadniania roślin i algorytm potrzeb wodnych, a aplikacja klasyfikuje pozycję jako edukacyjną. Słowo „szkółek” uruchamia regułę słownikową dotyczącą szkół. Budżet 2 942 250 zł jest w źródle, ale w danych aplikacji wpisano, że go nie podano.",
+  "recommendationBeforeCorrection": "Klasyfikować jako technologię dla rolnictwa/ogrodnictwa. Uzupełnić budżet. Opis działania sterownika jest zasadniczo zgodny ze źródłem."
+ },
+ "n110": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/cypherdog",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 000 000,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n111": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/innosense",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n112": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/smart-borders",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "5 460 000,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n113": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/hybrydowy-zasobnik-energii-breeze-energies",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n114": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/inteligentna-dokladna-tokarka-do-regeneracji-zestawow-kolowych-pojazdow-szynowych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n115": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/optymalizacja-rozmieszczenia-sprzetu-na-samochodach-pozarniczych-w-celu-obnizenia-wysokosci-pojazdu",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "4 102 253,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n116": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/innowacyjny-kompleksowy-system-zbiorki-i-recyklingu-odpadow",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "11 351 081,54 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n117": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-technologii-wytwarzania-nawozu-organicznego-w-postaci-peletugranulatu-na-bazie-odchodow-hermetia-illucens-i-zbadanie-jego-oddzialywania-na-wybrane-rosliny",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "5 615 193,75 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n118": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/mechanizmy-i-algorytmy-testowania-sieci-mobilnych-nowej-generacji-5g-i-ich-uslug",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n119": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-innowacyjnego-stacjonarnego-systemu-do-wykrywania-sladowych-ilosci-materialow-wybuchowych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "6 382 350,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n120": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/przenosny-detektor-sladowych-ilosci-trimerycznego-nadtlenku-acetonu-tatp-i-nadtlenku-heksaminy-hmtd",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "6 088 500,00 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n121": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/mobilna-platforma-kryminalistyczna-do-szybkiej-identyfikacji-na-miejscu-zdarzenia-masowego--ataku-terrorystycznego-lub-katastrofy",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "10 562 371,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n122": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/badanie-symulacja-oraz-opracowanie-nowych-wielkoskalowych-procesow-ekspedycyjno-rozdzielczych-uwzgledniajacych-praktyczne-wykorzystanie-pasywnych-technologii-identyfikacji-radiowej-w-srodowisku-gestym",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "9 115 713,10 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n123": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/simmag3d",
+  "sourceBudget": "4 546 565,43 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/simmag3d",
+    "excerpt": "systemu przeznaczonego do modelowania i wizualizacji w 3D obiektów magazynowych",
+    "scope": "Główne zastosowanie logistyczne",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło opisuje modelowanie magazynów i logistykę; dydaktyka jest jednym z dodatkowych zastosowań. Opis w karcie jest zgodny z tym zakresem, ale główny obszar „Edukacyjna” zniekształca przeznaczenie. Uzasadnienie TRL najpierw wskazuje brak dowodów testów, a potem stwierdza sprawdzenie w warunkach zbliżonych do rzeczywistych.",
+  "recommendationBeforeCorrection": "Wybrać główny obszar technologiczny i pozostawić edukację jako zastosowanie dodatkowe. Dla TRL podać konkretny dowód walidacji albo obniżyć pewność szacunku, zamiast dopisywać testy."
+ },
+ "n124": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/inteligentne-materialy-geopolimerowe-smart-g-smart-geopolymers",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "605 324,33 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n125": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-nowego-hybrydowego-procesu-zaawansowanego-oczyszczania-sciekow-z-wykorzystaniem-inteligentnych-filtrow-tekstylnych-i-membran-polimerowych-modyfikowanych-grafenem---hyprstep",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 442 902,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n126": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/lekki-opancerzony-transporter-rozpoznawczy",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "36 450 970,98 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n127": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/przewidywalnosc-dlugoterminowej-ogniotrwalosci-wysokoglinowych-betonow-ogniotrwalych-w-warunkach-duzego-obciazenia-cieplnego-ze-szczegolnym-uwzglednieniem-zanieczyszczen-pochodzacych-z-materialu-z-recyklingu",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 134 271,23 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n128": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/innowacyjny-test-diagnostyczny-do-wykrywania-antygenow-wybranych-gatunkow-bakterii-wywolujacych-mastitis-u-bydla",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 499 277,50 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n129": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/innowacyjna-technologia-produkcji-logistyki-zabudowy-i-utrzymania-prefabrykowanych-rozjazdow-tramwajowych-w-blokach",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "8 607 518,35 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n130": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/budowa-budynku-mieszkalnego-jednorodzinnego-w-ramach-budownictwa-efektywnego-energetycznie-i-procesowo",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "4 048 909,40 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n131": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/utworzenie-pierwszego-przemyslowego-urzadzenia-rentgenowskiego-wykorzystujacego-technologie-bezposredniej-konwersji--dedykowanego-dla-celow-kontroli-jakosci-w-przemysle-spozywczym",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "10 483 130,89 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n132": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-funkcjonalnej-formy-aplikacji-estrow-cukrowych-kwasow-tluszczowych-na-bazie-bakteryjnych-polihydroksyalkanianow-hamujacych-rozwoj-komorek-nowotworowych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n133": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/ogarniampradpl--opracowanie-technologii-automatyzacji-procesow-przy-wykorzystaniu-zbiorow-rozmytych-z-elementami-algorytmow-sztucznej-inteligencji-do-obslugi-dynamicznych-aukcji-sprzedazy-energii-elektrycznej-i-paliwa-gazowego",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 000 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n134": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/projekt-br-laven",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n135": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/bezspoinowy-system-ocieplen-aktywowany-energetycznie--integracja-powlok-fotowoltaicznych-stabilizowanych-termicznie-w-budynkach-efektywnych-energetycznie",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "521 750,00 Eur",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n136": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/material-narzedziowy-nowej-generacji-na-osnowie-tytanu-wytwarzany-w-szybkim-procesie-spiekania-iskrowo-plazmowego",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 372 707,98 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n137": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/wielorodzinny-budynek-modulowy-efektywny-energetycznie-i-procesowo",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "20 511 107,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n138": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/nowe-podejscie-w-identyfikacji-mikroorganizmow-w-matrycach-srodowiskowych-i-klinicznych-dla-rutynowych-laboratoriow-mikrobiologicznych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "208 616,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n139": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/br-biocam",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 070 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n140": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/maly-innowator",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "199 128,47 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n141": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/mlody-projektant",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "280 186,77 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n142": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/laboratorium-edukacji-przyszlosci",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 167 221,21 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n143": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-nowej-generacji-akumulacyjnych-ogrzewaczy-pomieszczen-zasilanych-gazem-procesowym-z-termochemicznej-konwersji-biomasy",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "4 506 122,86 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n144": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/thermos---thermal-optimal-system",
+  "sourceBudget": "2 555 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/thermos---thermal-optimal-system",
+    "excerpt": "budowa Demonstratora w Krakowie",
+    "scope": "Demonstrator w użytkowanym budynku",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Karta mówi o dokumentacji bez budowy i testów, TRL 4 i użyciu 1/5. Źródło opisuje budowę demonstratora w Krakowie na funkcjonującej instalacji oraz ogrzewanie budynku i produkcję wody lodowej.",
+  "recommendationBeforeCorrection": "Przepisać opis etapu oraz oba uzasadnienia. Dowód demonstratora w działającym budynku odpowiada co najmniej demonstracji/pilotażowi w kryterium użycia (2/5). Dokładnego TRL nie wyznaczać tylko z budżetu lub samego istnienia dokumentacji."
+ },
+ "n145": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/enzymecp-kompozycje-enzymow-jako-przyszlosc-biologicznej-ochrony-roslin",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "4 609 320,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n146": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/wodne-przyjazne-dla-srodowiska-grunty-wysoko-pigmentowane-cynkiem",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 547 395,68 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n147": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/samowystarczalna-wielostopniowa-technologia-odzysku-wody-z-wysoko-uwodnionych-produktow-fermentacji-dla-celow-rolniczych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "828 391,51 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n148": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/wykorzystanie-technologii-informacyjnych-w-podnoszeniu-skutecznosci-systemu-zarzadzania-srodowiskowego-szs",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "243 581.53 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n149": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-prototypu-radaru-p-18pl-wstepnego-wskazywania-celow-pracujacego-w-pasmie-metrowym-ze-skanowaniem-fazowym-w-dwoch-plaszczyznach-dla-zestawow-rakietowych-op-zrop-p-18pl",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "54 400 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n150": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/prace-br-majace-na-celu-opracowanie-innowacyjnego-szyfratora-online-sprzetowego-mobilnego-rozwiazania-kryptograficznego-zapewniajacego-wysoka-sile-ochrony-kryptograficznej-i-odpornosc-na-ataki-sieciowe-wraz-z-systemem-do-zdalnego-monitorowania-i-zdalnej-konfiguracji-pracy-calego-systemu-kryptograficznego",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "15 994 660,67 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n151": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/warstwy-antybakteryjne-zol-zel-zawierajace-nanoczastki-wegla",
+  "sourceBudget": "1 858 804, 65 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/warstwy-antybakteryjne-zol-zel-zawierajace-nanoczastki-wegla",
+    "excerpt": "Działanie przeciwbakteryjne warstw zweryfikowano w eksperymentach mikrobiologicznych",
+    "scope": "Testy laboratoryjne, nie eksploatacja u użytkowników",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło opisuje powłoki antybakteryjne, eksperymenty mikrobiologiczne, testy komórkowe i stanowisko nanoszenia warstw. Szkoły są jedynie jednym z miejsc potencjalnego zastosowania. Karta ma obszar edukacyjny.",
+  "recommendationBeforeCorrection": "Klasyfikować jako technologię materiałową/zdrowotną. Opis podstawowego mechanizmu i planowanego wdrożenia jest zgodny ze źródłem."
+ },
+ "n152": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/posemo--narzedzie-do-automatycznego-okreslania-zaangazowania-i-pobudzenia-emocjonalnego-osob-w-obrazie-z-kamery",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n153": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/boltsense--nowatorskie-elementy-zlaczne-do-pomiaru-obciazen",
+  "sourceBudget": "798 870,56 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/boltsense--nowatorskie-elementy-zlaczne-do-pomiaru-obciazen",
+    "excerpt": "już zainstalowała ponad 4000 oprzyrządowanych śrub BoltSense",
+    "scope": "Zainstalowane śruby, nie liczba klientów",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "W źródle wskazano Copper State Bolt & Nut Company oraz ponad 4000 już zainstalowanych śrub BoltSense i sprzedaż sprzętu/subskrypcji. Karta ma użycie 1/5 oraz informację, że źródło nie wymienia wdrożeń.",
+  "recommendationBeforeCorrection": "Uwzględnić wskazanego odbiorcę i instalacje. Według zasad aplikacji sprzedaż uzasadnia 4/5; bez zmiany pozostałych kryteriów daje to 72 zamiast 60 punktów. 4000 śrub nie oznacza automatycznie 4000 klientów ani użytkowników. Ponownie uzasadnić TRL; obecne „bez nazwanych wdrożeń” jest fałszywe."
+ },
+ "n154": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/uniwersalny-system-wczesnej-detekcji-i-unieszkodliwiania-zlosliwego-oprogramowania-typu-ransomware",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "4 505 360,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n155": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-innowacyjnego-aktywnego-filtra-harmonicznych-z-tranzystorami-z-weglika-krzemu-sic-z-bezstratnymi-obwodami-lagodzenia-dudt-przeznaczonego-do-sieci-przemyslowych-sredniego-napiecia",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "3 683 568,75 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n156": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/gepetto--opracowanie-innowacyjnego-rozwiazania-telemedycznego-majacego-na-celu-umozliwienie-doboru-okularow-korekcyjnych-w-zakresie-zdrowotnym-oraz-wizualnym-bez-koniecznosci-wychodzenia-z-domu",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 100 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n157": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/magazynowanie-energii-elektrycznej---strumien-bateria",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "4 988 650,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n158": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/ewaporacyjne-oczyszczanie-plynow",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n159": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/wyzsza-szkola-spoleczno-ekonomiczna-w-gdansku--uczelnia-przyjazna",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n160": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/luzycka-szkola-wyzsza--uczelnia-rownych-szans",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "5 038 909,56 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n161": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-technologii-zrodla-laserowego-wielodiodowego-opartego-na-diodach-o-dlugosciach-fal-z-zakresu-350-550-nm-pozwalajacej-na-modyfikacje-parametrow-wiazki-laserowej-w-celu-optymalizacji-procesow-ciecia-grawerowania-i-spiekania-materialow-uzywanych-w-przemysle",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n162": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/cinematic-feel--kompleksowa-technologia-umozliwiajaca-dostarczanie-unikalnej-filmowej-jakosci-w-grach-rpg-z-otwartym-swiatem-uwzgledniajaca-rowniez-innowacyjne-rozwiazania-procesowe-i-unikalny-zestaw-dedykowanych-narzedzi",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "9 198 388,93 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n163": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/specjalistyczny-system-aktywizacji-ukladow-nerwowych-i-miesniowych-z-wykorzystaniem-sygnalow-emg-i-metod-symulacji-jako-innowacyjna-forma-diagnostyki-rehabilitacji-i-terapii-dla-osob-z-dysfunkcja-konczyn",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "6 142 924,49 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n164": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/smarter-diagnostics--platforma-profilaktyki-urazow-sportowych-oparta-o-obrazowanie-rezonansem-magnetycznym-i-algorytmy-sztucznej-inteligencji",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 100 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n165": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/spin-autofeed---pierwsze-na-swiecie-narzedzie-wkretakowe-z-koncowka-ramienia-do-cobotow-z-automatycznym-podawaniem-srub",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1,081,261.77 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n166": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-w-pelni-zautomatyzowanego-narzedzia-autonomicznie-zarzadzajacego-i-optymalizujacego-kampanie-reklamowe-w-wyszukiwarkach-internetowych-i-marketplaceach-umozliwiajacego-efektywne-przeniesienie-sprzedazy-do-internetu-w-szczegolnosci-w-czasie-pandemii-covid-19",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 181 387,06 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n167": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/ujawnianie-sladow-linii-papilarnych-nanoczasteczkami-wytwarzanymi-przy-uzyciu-technologii-wysokich-cisnien",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "5 700 961,67 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n168": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-roweru-z-podatna-rama-oraz-widelcem-przedniego-kola-z-zastosowaniem-bio-kompozytow",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 319 500,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n169": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/al-investments---zaawansowane-narzedzie-inwestycyjne-oparte-na-uczeniu-maszynowym-oraz-big-data",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 647 610,88 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n170": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/podniesienie-jakosci-i-efektywnosci-ksztaltowania-wiedzy-oraz-umiejetnosci-praktycznych-studentow-na-kierunku-samochody-i-bezpieczenstwo-w-transporcie-drogowym-poprzez-utworzenie-studiow-dualnych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n171": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/niezawodne-i-trwale-w-eksploatacji-nowoczesne-szyny-kolejowe-o-dlugosci-120-m-charakteryzujace-sie-wysokimi-wlasciwosciami-mechanicznymi-duza-odpornoscia-na-pekanie-oraz-zmodyfikowana-mikrostruktura-materialu-w-wyniku-modernizacji-procesu-chlodzenia-po-walcowaniu",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n172": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/theraply-vr---stworzenie-innowacyjnej-spersonalizowanej-metody-terapii-dzieci-spe-z-wykorzystaniem-technologii-wirtualnej-rzeczywistosci-vr-wspomagajacej-prace-terapeutow-oraz-rodzicow",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 150 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n173": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/dostosowanie-oferty-edukacyjnej-wyzszej-szkoly-finansow-i-prawa-w-bielsku-bialej-do-potrzeb-gospodarki-rynku-pracy-i-spoleczenstwa",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n174": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-bionicznej-protezy-przedramienia-zeus-o-modulowej-konstrukcji-odznaczajacej-sie-wysoka-wytrzymaloscia-na-uderzenia-i-intuicyjnej-kontroli-ruchu-opartej-na-przetwarzaniu-biosygnalow",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n175": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-innowacyjnego-narzedzia-do-automatycznej-oceny-zaburzen-rytmu-serca-i-przewodzenia-u-pacjentow-pediatrycznych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n176": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/system-automatycznej-detekcji-zaburzen-rytmu-serca-na-potrzeby-wczesnego-wykrywania-chorob-ukladu-sercowo-naczyniowego",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "2 551 090.00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n177": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-systemu-wspierajacego-szkolenie-i-prace-personelu-serwisowego-elektrowni-wiatrowych-z-wykorzystaniem-technologii-wirtualnej-i-rozszerzonej-rzeczywistosci",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "5 633 952,50 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n178": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/system-wspomagania-pracy-osob-wykonujacych-montaz-serwisantow-i-operatorow-urzadzen-naziemnej-obslugi-statkow-powietrznych-nosp-bazujacy-na-technologii-rozszerzonej-rzeczywistosci",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n179": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-innowacyjnego-stanowiska-szkolenia-i-doszkalania-operatora-kontroli-bezpieczenstwa-w-porcie-lotniczym",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n180": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/tworzenie-nieinwazyjnych-georadarow-ktore-sa-bardziej-precyzyjne-i-szybsze-od-konwencjonalnych-georadarow-produkt-firmy-sgprtech-skierowany-jest-do-klientow-dla-ktorych-obecne-georadary-sa-niewystarczajace",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "1 000 000,00 PLN",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n181": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/snarto-its",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n182": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-inteligentnego-systemu-telemedycznego-w-z-funkcja-predykcji-upadkow",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.gov.pl/web/ncbr/opracowanie-inteligentnego-systemu-telemedycznego-w-z-funkcja-predykcji-upadkow",
+    "excerpt": "Aktualnie z technologii tworzonej przez SiDLY korzysta już ponad 60 tysięcy użytkowników.",
+    "scope": "Technologie firmy ogółem; nie funkcja predykcji",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło opisuje Sidly Care PRO z detekcją upadków i ponad 60 tys. użytkowników technologii SiDLY oraz przykład użycia w Telecentrum. Karta ma użycie 1/5 i twierdzi, że wdrożeń nie opisano. W opisie przekształcono cel predykcji z tytułu projektu w gotową funkcję przewidywania upadków.",
+  "recommendationBeforeCorrection": "Oddzielić cel badawczy predykcji od opisanej w wynikach detekcji. Uwzględnić działanie technologii i wyjaśnić zakres liczby 60 tys.: artykuł odnosi ją do technologii SiDLY ogółem, nie dowodzi tylu użytkowników konkretnej funkcji predykcji. Nie podwyższać automatycznie do 5/5 bez rozstrzygnięcia zakresu produktu."
+ },
+ "n183": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/platforma-technologiczna-dla-nowych-generacji-lekow-przeciw-chorobom-spowodowanym-przez-koronawirusy-w-szczegolnosci-sars-cov-2",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n184": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-innowacyjnej-technologii-czyszczenia-urzadzen-w-warunkach-zagrozonych-wybuchem-metanu-ilub-pylu-weglowego-w-miejscu-ich-zabudowy-z-wykorzystaniem-dwutlenku-wegla-w-postaci-stalej--uct-underground-cleaning-technology",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n185": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/sukces-z-natury--kompleksowy-program-podniesienia-jakosci-zarzadzania-procesem-ksztalcenia-i-jakosci-nauczania-szkoly-glownej-gospodarstwa-wiejskiego-w-warszawie",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n186": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-innowacyjnego-systemu-wykrywania-osob-ukrytych-w-srodkach-transportu-o-akronimie-iswot",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": "9 656 793,71 zł",
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n187": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/wytworzenie-innowacyjnej-technologii-mikrosondy-do-badania-aktywnych-biologicznie-zwiazkow-przy-uzyciu-metod-do-tej-pory-niedostepnych-popularnie-nazywana-polska-mikrosonda-z-lublina",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n188": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/robot-karmiacy-fidi",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n189": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/opracowanie-i-wdrozenie-innowacyjnego-opartego-o-uczenie-maszynowe-procesu-diagnostycznego-w-celu-skrocenia-sciezki-pacjenta-i-poprawy-jakosci-opieki-zdrowotnej-nad-pacjentami-z-chorobami-limfo--i-mieloproliferacyjnymi",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "n190": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.gov.pl/web/ncbr/modue--opracowanie-modulowego-urzadzenia-pozwalajacego-na-poglebiona-interakcje-uzytkownika-z-systemem-komputerowym-dzieki-zastosowaniu-przekazywania-informacji-zwrotnej-za-pomoca-dobranych-efektorow-w-tym-systemow-haptycznych-czy-maszyn-elektrycznych",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "w-ur-powloka": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.ur.edu.pl/en/university/news/another-patent-for-an-innovative-antibacterial-coating-awarded-to-the-university-of-rzeszow-and-the-podkarpackie-innovation-centre",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.ur.edu.pl/en/university/news/another-patent-for-an-innovative-antibacterial-coating-awarded-to-the-university-of-rzeszow-and-the-podkarpackie-innovation-centre",
+    "excerpt": "By a decision dated 23 January 2026",
+    "scope": "Data decyzji patentowej; publikacja 23.03.2026",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Źródło potwierdza patent z decyzją 23.01.2026, ale artykuł opublikowano 23.03.2026. Dane źródłowe aplikacji oznaczają publikację jako 2026-01. Artykuł podaje redukcję Staphylococcus aureus ponad 90%, nie potwierdza produkcji seryjnej.",
+  "recommendationBeforeCorrection": "Oddzielić datę decyzji patentowej od publikacji. Wynik mikrobiologiczny można dodać z wyraźnym przypisaniem do źródła; nie zamieniać go w gwarancję ograniczenia zakażeń w realnym użytkowaniu."
+ },
+ "w-ur-zelki": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://www.ur.edu.pl/en/university/news/new-patent-for-researchers-from-the-university-of-rzeszow-innovative-functional-fruit-gummies",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "w-prz-drony": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://tvn24.pl/rzeszow/rzeszow-studenci-z-politechniki-buduja-tania-siec-sensorow-do-wykrywania-dronow-st8973057",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "w-prz-lakiery": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://android.com.pl/news/439055-innowacyjne-lakiery-proszkowe/",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "w-pans-5g": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": false,
+  "url": "https://dlapilota.pl/wiadomosci/polska/krosnienskie-lotnisko-objete-zasiegiem-prywatnej-sieci-5g-nowy-etap-rozwoju-pans",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "w-put-elektrolit": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://put.poznan.pl/sites/default/files/2026-07/zo-2026-20-ekologiczne-magazynowanie-%20energii%E2%80%93elektrolit-%C5%BCelowy-z-naturalnym-talkiem.pdf",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "w-pk-lohc": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.autocentrum.pl/newsy/elektryki-maja-nowego-rywala-polski-wynalazek-moze-ulatwic-wykorzystanie-wodoru-w-samochodach/",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.autocentrum.pl/newsy/elektryki-maja-nowego-rywala-polski-wynalazek-moze-ulatwic-wykorzystanie-wodoru-w-samochodach/",
+    "excerpt": "Prawa do technologii kupiła już krakowska spółka REENERGOLOGY",
+    "scope": "Transfer praw; nie wdrożenie przemysłowe",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Artykuł podaje dwa rozwiązania patentowe, badania układu w ok. 320°C, stopień przereagowania 97,5% oraz zakup praw przez REENERGOLOGY. Karta upraszcza materiał do potwierdzenia patentów i dowodu koncepcji.",
+  "recommendationBeforeCorrection": "Uzupełnić opis o badania i transfer praw, a także ograniczenia energetyczne. Ponownie uzasadnić TRL na podstawie doświadczeń. Zakup praw nie jest dowodem gotowości rynkowej produktu ani wdrożenia u końcowego użytkownika."
+ },
+ "w-rap-steam": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://www.interregeurope.eu/good-practices/rap-steam",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ },
+ "w-rzeszow-parking": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.money.pl/gielda/asseco-wdrozy-w-rzeszowie-pierwszy-inteligentny-miejski-system-parkingowy-6443503552223361a.html",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.money.pl/gielda/asseco-wdrozy-w-rzeszowie-pierwszy-inteligentny-miejski-system-parkingowy-6443503552223361a.html",
+    "excerpt": "System inteligentnego monitoringu Strefy Płatnego Parkowania w Rzeszowie będzie funkcjonował od 2021 r.",
+    "scope": "Historyczna zapowiedź, nie potwierdzenie odbioru",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Podany artykuł używa czasu przyszłego: system będzie zbierał dane, informacje będą przekazywane, uruchomienie zaplanowano od 2021 r. Karta stwierdza, że system działa. Źródło wskazuje Asseco Data Systems, podczas gdy karta wskazuje Asseco Poland.",
+  "recommendationBeforeCorrection": "Zmienić wykonawcę na podanego w artykule. Dodać źródło potwierdzające uruchomienie albo opisać historyczną zapowiedź. Samo upłynięcie terminu nie dowodzi realizacji. Ocena użycia 3/5 nie wynika z tego konkretnego artykułu."
+ },
+ "w-rzeszow-smietniki": {
+  "checkedAt": "2026-11-22",
+  "readable": true,
+  "reviewed": true,
+  "url": "https://www.se.pl/rzeszow/w-rzeszowie-stanely-inteligentne-smietniki-oto-jak-dzialaja-aa-zPkj-Bjum-PfsB.html",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": [
+   {
+    "url": "https://www.se.pl/rzeszow/w-rzeszowie-stanely-inteligentne-smietniki-oto-jak-dzialaja-aa-zPkj-Bjum-PfsB.html",
+    "excerpt": "Testy potrwają 6 miesięcy",
+    "scope": "Historyczny pilotaż rozpoczęty w kwietniu 2025 r.",
+    "checkedAt": "2026-11-22"
+   }
+  ],
+  "findingsBeforeCorrection": "Artykuł potwierdza test dziewięciu pojemników od kwietnia 2025 r., czujniki, zgniatarkę i sześciomiesięczny okres prób. Karta poprawnie traktuje użycie jako test, ale uzasadnienie nazywa ten pilotaż etapem „Prototyp”, a widok stosuje „Testy”.",
+  "recommendationBeforeCorrection": "Ujednolicić nazwy etapu i zachować historyczną datę. Potwierdzić osobno, co stało się po zakończeniu sześciomiesięcznych prób, jeśli karta ma pokazywać aktualny stan."
+ },
+ "w-rzeszow-5g-lacznosc": {
+  "checkedAt": "2026-11-22",
+  "readable": false,
+  "reviewed": false,
+  "url": "https://itwiz.pl/?p=73122",
+  "summary": "Kontrola odczytu i danych wejściowych; bez pełnego potwierdzenia każdego twierdzenia.",
+  "sourceBudget": null,
+  "scope": "Stan opisany w źródle; nie potwierdza aktualnej oferty ani niezależnej skuteczności.",
+  "evidence": []
+ }
+}

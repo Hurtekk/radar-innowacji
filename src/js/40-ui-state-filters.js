@@ -3,13 +3,17 @@ let S={aud:'all',cmp:[],acct:null,acctMode:'reg',role:null,view:'inn',page:null,
   f:F0(),fi:FI0(),sel:null,draft:null,addMode:'form',txt:'',showCard:false,openInt:null,
   gmin:55,gtopics:true,gsel:null,
   inv:{name:'Mój profil inwestora',person:'',email:'',phone:'',city:'',tags:[],types:[],smin:0,smax:4,min:45,dup:false}};
-try{const r=localStorage.getItem(KEY);if(r){const p=JSON.parse(r);if(p&&p.items&&p.items.length)S.items=p.items;if(p&&p.inv)S.inv=Object.assign(S.inv,p.inv)}}catch(e){}
-if(!S.items||!S.items.length)S.items=demoData();
+let savedRaw=null,savedState=null;
+try{savedRaw=localStorage.getItem(KEY);if(savedRaw){savedState=JSON.parse(savedRaw);if(savedState&&savedState.inv)S.inv=Object.assign(S.inv,savedState.inv)}}catch(e){}
+const CURRENT_CATALOG=REAL_ITEMS.concat(DETECTED_ITEMS);
 const hasSrc=i=>/^https?:\/\//.test(String(i&&i.url||''));
-S.items=S.items.filter(hasSrc);
-DETECTED_ITEMS.forEach(d=>{if(!S.items.some(x=>x.id===d.id||(x.url&&x.url===d.url)))S.items.push(JSON.parse(JSON.stringify(d)))});
-S.items.forEach(enrich);
-S.sel=S.items[0].id;
+const needsMigration=!savedState||savedState.catalogRevision!==DATA_REVISION;
+S.items=migrateCatalog(savedState&&savedState.items,CURRENT_CATALOG);
+let backupReady=true;
+if(savedRaw&&needsMigration){try{const bk=KEY+'-backup-before-'+DATA_REVISION;if(!localStorage.getItem(bk))localStorage.setItem(bk,savedRaw)}catch(e){backupReady=false}}
+if(needsMigration&&backupReady){try{localStorage.setItem(KEY,JSON.stringify(Object.assign({},savedState||{},{items:S.items,inv:S.inv,catalogRevision:DATA_REVISION})))}catch(e){}}
+
+S.sel=S.items.length?S.items[0].id:null;
 const $=id=>document.getElementById(id);
 const raf=(typeof requestAnimationFrame==='function')?requestAnimationFrame:(f=>setTimeout(f,16));
 const opts=(arr,sel)=>arr.map((a,i)=>'<option value="'+i+'"'+(i===sel?' selected':'')+'>'+esc(a)+'</option>').join('');

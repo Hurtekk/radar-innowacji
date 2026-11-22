@@ -42,14 +42,14 @@ function trustOf(x){
   if(TCACHE.has(key))return TCACHE.get(key);
   const inn=isInn(x),reps=(REPS[x.id]||[]).length,email=inn?x.contact:x.email,l=locOf(x),name=inn?x.institution:x.name;
   const instMail=!!email&&/@/.test(email)&&!FREEMAIL.test(email);
-  let lvl=x.registry?2:(instMail||x.detected)?1:0;if(x.confirmedBy)lvl=3;if(reps>=3)lvl=Math.max(0,lvl-1);
+  let lvl=x.registry?2:(instMail||x.detected)?1:0;if(independentSource(x))lvl=3;if(reps>=3)lvl=Math.max(0,lvl-1);
   const C=[];
   C.push({n:1,t:'Tożsamość podmiotu',s:x.registry||instMail?'ok':'warn',x:x.registry?(inn?'Beneficjent „'+name+'” jest wskazany w rejestrze NCBR. Dla pewności sprawdź go w KRS, REGON lub POL-on.':'Podmiot występuje w rejestrze NCBR ('+(x.inferred?'jako uczestnik projektu':'jako instytucja finansująca')+').'):instMail?'Adres e-mail w domenie instytucjonalnej ('+esc(email.split('@')[1])+'). Do pełnej weryfikacji sprawdź podmiot w rejestrach.':'Brak potwierdzenia: prywatna skrzynka lub brak e-maila. Sprawdź podmiot w KRS, REGON lub POL-on.',links:[['KRS','https://wyszukiwarka-krs.ms.gov.pl/'],['REGON','https://wyszukiwarkaregon.stat.gov.pl/'],['POL-on','https://polon.nauka.gov.pl/']]});
   C.push({n:2,t:'Twierdzenia a źródła zewnętrzne',s:x.registry?'ok':(inn&&x.ip>0)?'warn':'na',x:x.registry?'Tytuł, program, budżet i okres pochodzą ze strony projektu w rejestrze NCBR (link w punkcie 3). Autorstwo i patenty sprawdź w bazach poniżej.':(inn&&x.ip>0)?'Zgłoszono ochronę własności. Sprawdź numer zgłoszenia lub patentu w bazie UPRP lub EPO oraz autorstwo w PBN.':'Brak twierdzeń do sprawdzenia w zewnętrznych bazach.',links:[['UPRP','https://ewyszukiwarka.pue.uprp.gov.pl/search/simple-search'],['EPO','https://register.epo.org/regviewer'],['PBN','https://pbn.nauka.gov.pl/core/#/home']]});
-  C.push({n:3,t:'Dowody dołączone do ogłoszenia',s:x.url?'ok':'no',x:x.url?'Źródło jest obowiązkowe: strona źródłowa potwierdza istnienie projektu. Pozycje bez źródła nie są pokazywane w radarze.':(inn&&x.hasDocs)?'Zadeklarowano dokumentację, ale nie dołączono linku ani pliku.':'Brak dowodów. Dodaj link, plik lub wskaż osobę, która może potwierdzić.',links:x.url?[['Strona źródłowa',x.url]]:[]});
+  C.push({n:3,t:'Dowody dołączone do ogłoszenia',s:x.url?'ok':'no',x:x.url?'Link pozwala sprawdzić opis; jego obecność nie potwierdza wszystkich twierdzeń ani skuteczności rozwiązania. Wynik kontroli źródła pokazano na karcie.':(inn&&x.hasDocs)?'Zadeklarowano dokumentację, ale nie dołączono linku ani pliku.':'Brak dowodów. Dodaj link, plik lub wskaż osobę, która może potwierdzić.',links:x.url?[['Strona źródłowa',x.url]]:[]});
   const iss=[];
   if(inn&&x.stage===4&&!x.url)iss.push('Etap „Wdrożona” bez dowodu.');
-  if(inn&&x.estimated)iss.push('Etap, skala i gotowość zespołu oszacowano automatycznie z programu i budżetu. Potwierdź z beneficjentem.');
+  if(inn&&x.estimated)iss.push('TRL, etap i poziom użycia są ocenami radaru na podstawie opisanych dowodów. '+scoreNotes(x).join(' '));
   if(inn){try{const a=analyze(x),s=a.sims&&a.sims[0];if(s&&!s.ref&&s.sim>=.5)iss.push('Możliwy duplikat: „'+s.title+'” ('+Math.round(s.sim*100)+'%).')}catch(e){}}
   if(!l)iss.push('Brak lokalizacji: ogłoszenie nie pojawi się na mapie.');else if(l.prec==='województwo')iss.push('Lokalizacja przybliżona: znane tylko województwo.');
   if(!inn&&x.inferred)iss.push('Oferta wywnioskowana z rejestru. Podmiot nie złożył jej sam.');

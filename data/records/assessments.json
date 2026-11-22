@@ -6,7 +6,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Program Uniwersytetu Wrocławskiego dla dzieci w wieku 11–15 lat, łączący zajęcia z biologii (genetyka, mikrobiologia, botanika, zoologia, biologia człowieka, ekologia) z kształtowaniem postaw społecznych i komunikacyjnych.",
-  "zast": "Uczniowie szkół podstawowych z powiatu oleśnickiego; program rozwija zainteresowania przyrodnicze, a jego scenariusze są nadal używane na wydarzeniach popularyzujących naukę. Przeprowadzono cztery edycje (2019–2021) z 5-dniowymi obozami, wzięło udział 132 uczestników."
+  "zast": "Uczniowie szkół podstawowych z powiatu oleśnickiego; program rozwija zainteresowania przyrodnicze, a jego scenariusze są nadal używane na wydarzeniach popularyzujących naukę. Przeprowadzono cztery edycje (2019–2021) z 5-dniowymi obozami, wzięło udział 132 uczestników.",
+  "stage": 4
  },
  "n09": {
   "typ": "Program edukacyjny",
@@ -15,7 +16,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Zajęcia Uniwersytetu im. A. Mickiewicza w Poznaniu dla uczniów w wieku 12–13 lat o wykluczeniu społecznym i przedsiębiorczości jako sposobie włączania ludzi, w tym o ekonomii społecznej. Uczniowie uczyli się debatować o problemach społecznych i projektować działania inkluzyjne.",
-  "zast": "Uczniowie, ich rodzice i nauczyciele, którzy poznali nowe metody prowadzenia zajęć, oraz podmioty ekonomii społecznej. Efekty to kompetencje miękkie uczestników, koncert charytatywny i publikacja naukowa."
+  "zast": "Uczniowie, ich rodzice i nauczyciele, którzy poznali nowe metody prowadzenia zajęć, oraz podmioty ekonomii społecznej. Efekty to kompetencje miękkie uczestników, koncert charytatywny i publikacja naukowa.",
+  "stage": 4
  },
  "n21": {
   "typ": "Projekt B+R",
@@ -69,7 +71,8 @@
   "wdr": 3,
   "wb": "Procedury opracowano i stosowano w jednym szpitalu; źródło nie podaje liczby wdrożeń.",
   "opis": "Szpital Wojewódzki w Łomży opracował procedury badania nosa, gardła, krtani i ucha u pacjentów zakażonych SARS-CoV-2, wraz z zasadami dekontaminacji sprzętu i wydzielania stref zakaźnych oraz schematami leczenia niewydolności oddechowej z użyciem CPAP lub BiPAP.",
-  "zast": "Poradnie i oddziały otorynolaryngologiczne, szpitale leczące chorych na COVID-19 i inne choroby zakaźne oraz, po lokalnym dostosowaniu, gabinety ambulatoryjne. Procedury zmniejszają ryzyko zakażeń personelu i pacjentów."
+  "zast": "Poradnie i oddziały otorynolaryngologiczne, szpitale leczące chorych na COVID-19 i inne choroby zakaźne oraz, po lokalnym dostosowaniu, gabinety ambulatoryjne. Procedury zmniejszają ryzyko zakażeń personelu i pacjentów.",
+  "stage": 4
  },
  "n47": {
   "typ": "Projekt B+R",
@@ -87,7 +90,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Projekt zajęć dla dzieci i młodzieży z jeleniogórskich szkół, który miał zmotywować do nauki i zdrowego stylu życia dzięki nietypowym, ciekawym zajęciom.",
-  "zast": "Nauczyciele, rodzice i uczestnicy oraz środowisko akademickie współpracujące z lokalną społecznością. Zajęcia ograniczały monotonię tradycyjnej lekcji i rozwijały aktywność, eksperymentowanie i samoocenę uczniów."
+  "zast": "Nauczyciele, rodzice i uczestnicy oraz środowisko akademickie współpracujące z lokalną społecznością. Zajęcia ograniczały monotonię tradycyjnej lekcji i rozwijały aktywność, eksperymentowanie i samoocenę uczniów.",
+  "stage": 4
  },
  "n49": {
   "typ": "Projekt B+R",
@@ -123,7 +127,8 @@
   "wdr": 1,
   "wb": "Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
   "opis": "Czujnik światłowodowy do monitorowania zginania elementów. Specjalna struktura włókna fotonicznego pozwala odróżnić kierunek zgięcia, a pomiar opiera się na natężeniu światła, więc czujnik jest prosty i niewrażliwy na temperaturę oraz ciśnienie. Demonstrator wylicza kąt i kierunek zgięcia z mocy przesyłanego sygnału.",
-  "zast": "Wczesne wykrywanie odchyleń w pracy robotów przemysłowych, monitorowanie krytycznych miejsc konstrukcji lotniczych, starzenia infrastruktury górniczej i stanu konstrukcji budowlanych oraz kontrola poprawnej pracy robotów chirurgicznych. Korzyści to mniej awarii, dostęp do trudno dostępnych miejsc i większe bezpieczeństwo pracowników."
+  "zast": "Wczesne wykrywanie odchyleń w pracy robotów przemysłowych, monitorowanie krytycznych miejsc konstrukcji lotniczych, starzenia infrastruktury górniczej i stanu konstrukcji budowlanych oraz kontrola poprawnej pracy robotów chirurgicznych. Korzyści to mniej awarii, dostęp do trudno dostępnych miejsc i większe bezpieczeństwo pracowników.",
+  "area3": "Technologiczna"
  },
  "n05": {
   "typ": "Program edukacyjny",
@@ -132,7 +137,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Program zajęć z biologii dla uczniów szkół podstawowych w wieku 10–15 lat (Uniwersytet Wrocławski, 2018–2021). Obejmuje zajęcia laboratoryjne i terenowe z genetyki, mikrobiologii, ekologii i ochrony środowiska oraz uczniowskie badania bioindykacyjne, a rodzice uczestniczyli w kursie „Wyzwania rodzicielstwa”.",
-  "zast": "Nauczyciele mogą wykorzystać gotowe scenariusze i instrukcje zajęć oraz dostosować je do swojej klasy, a dydaktycy akademiccy dane z badań edukacyjnych. W projekcie wzięło udział 210 uczniów z powiatu oleśnickiego i 68 rodziców."
+  "zast": "Nauczyciele mogą wykorzystać gotowe scenariusze i instrukcje zajęć oraz dostosować je do swojej klasy, a dydaktycy akademiccy dane z badań edukacyjnych. W projekcie wzięło udział 210 uczniów z powiatu oleśnickiego i 68 rodziców.",
+  "stage": 4
  },
  "n06": {
   "typ": "Program edukacyjny",
@@ -141,25 +147,28 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Projekt PWSZ w Legnicy (2018–2021) dopasowujący kompetencje studentów do potrzeb branży motoryzacyjnej. Uczelnia współpracowała z pracodawcami i Dolnośląskim Klastrem Motoryzacyjnym, prowadząc staże, szkolenia, warsztaty i wizyty studyjne.",
-  "zast": "Model współpracy uczelni z lokalnymi firmami, który mogą powtórzyć inne uczelnie kształcące kadry pod konkretnych pracodawców. W projekcie wzięło udział 34 studentów, a zatrudnienie absolwentów w branży wyniosło 25% przy wymaganych 30%."
+  "zast": "Model współpracy uczelni z lokalnymi firmami, który mogą powtórzyć inne uczelnie kształcące kadry pod konkretnych pracodawców. W projekcie wzięło udział 34 studentów, a zatrudnienie absolwentów w branży wyniosło 25% przy wymaganych 30%.",
+  "stage": 4
  },
  "n07": {
   "typ": "Program edukacyjny",
   "trl": 0,
   "tb": "Kursy online, nie technologia, więc TRL nie ma zastosowania.",
-  "wdr": 3,
-  "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
+  "wdr": 4,
+  "wb": "Źródło potwierdza bezpłatny kurs / kursy dostępne dla każdego na otwartej platformie NAVOICA. Otwarty dostęp odpowiada 4/5; nie zakładamy niepodanej liczby aktywnych użytkowników.",
   "opis": "Siedem bezpłatnych kursów e-learningowych (MOOC) z zarządzania w małych i średnich firmach, przygotowanych przez Politechnikę Bydgoską (2020–2021). Tematy to m.in. finanse, jakość, zarządzanie projektami, Excel i marketing internetowy.",
-  "zast": "Przedsiębiorcy i pracownicy MŚP, studenci, osoby bezrobotne i bierne zawodowo, młode matki na urlopie, osoby z ograniczeniami oraz planujące założenie firmy. Kursy działają na platformie NAVOICA i można się na nich uczyć samodzielnie w dowolnym czasie."
+  "zast": "Przedsiębiorcy i pracownicy MŚP, studenci, osoby bezrobotne i bierne zawodowo, młode matki na urlopie, osoby z ograniczeniami oraz planujące założenie firmy. Kursy działają na platformie NAVOICA i można się na nich uczyć samodzielnie w dowolnym czasie.",
+  "stage": 4
  },
  "n08": {
   "typ": "Program edukacyjny",
   "trl": 0,
   "tb": "Kurs programowania, nie technologia, więc TRL nie ma zastosowania.",
-  "wdr": 3,
-  "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
+  "wdr": 5,
+  "wb": "Źródło podaje ponad 1600 uczestników otwartego kursu. Tysiące użytkowników odpowiadają 5/5; liczba dotyczy stanu opisanego w artykule.",
   "opis": "Bezpłatny, otwarty kurs programowania w Pythonie 3 (Uniwersytet Szczeciński, 2019–2021), dostępny po polsku i angielsku na platformie navoica.pl. Odpowiada na niedobór wykwalifikowanych programistów, a materiały są zgodne z WCAG 2.1.",
-  "zast": "Uczniowie, studenci i osoby pracujące chcące zdobyć lub podnieść kwalifikacje, także osoby z niepełnosprawnościami. Według strony skorzystało z niego ponad 1600 osób."
+  "zast": "Uczniowie, studenci i osoby pracujące chcące zdobyć lub podnieść kwalifikacje, także osoby z niepełnosprawnościami. Według strony skorzystało z niego ponad 1600 osób.",
+  "stage": 4
  },
  "n10": {
   "typ": "Program edukacyjny",
@@ -168,16 +177,18 @@
   "wdr": 4,
   "wb": "Kurs jest dostępny w otwartym dostępie na platformie navoica.",
   "opis": "Kurs wspierający edukację STEAM w wychowaniu przedszkolnym (Akademia Ignatianum w Krakowie, 2019–2021). Uczy nauczycieli, wychowawców i rodziców projektowania angażujących zajęć dla małych dzieci, a kurs jest dostępny w otwartym dostępie na navoica.pl.",
-  "zast": "Nauczyciele przedszkoli i klas I–III, studenci pedagogiki, rodzice i wykładowcy w pracy metodycznej z małymi dziećmi."
+  "zast": "Nauczyciele przedszkoli i klas I–III, studenci pedagogiki, rodzice i wykładowcy w pracy metodycznej z małymi dziećmi.",
+  "stage": 4
  },
  "n12": {
   "typ": "Program edukacyjny",
   "trl": 0,
   "tb": "Kursy online, nie technologia, więc TRL nie ma zastosowania.",
-  "wdr": 3,
-  "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
+  "wdr": 4,
+  "wb": "Źródło potwierdza bezpłatny kurs / kursy dostępne dla każdego na otwartej platformie NAVOICA. Otwarty dostęp odpowiada 4/5; nie zakładamy niepodanej liczby aktywnych użytkowników.",
   "opis": "Trzy bezpłatne kursy e-learningowe dla pracowników centrów obsługi biznesu (Uniwersytet Technologiczno-Humanistyczny w Radomiu, 2019–2021), z zarządzania, logistyki i narzędzi IT, dostępne na platformie NAVOICA także z urządzeń mobilnych.",
-  "zast": "Osoby pracujące lub chcące pracować w nowoczesnych centrach obsługi biznesu, które chcą podnieść swoje kompetencje bez wychodzenia z domu."
+  "zast": "Osoby pracujące lub chcące pracować w nowoczesnych centrach obsługi biznesu, które chcą podnieść swoje kompetencje bez wychodzenia z domu.",
+  "stage": 4
  },
  "n14": {
   "typ": "Program edukacyjny",
@@ -186,7 +197,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Cztery kursy dla nauczycieli matematyki (Wydział Matematyczno-Przyrodniczy UKSW, 2019–2021): o multimediach w nauczaniu, modelowaniu matematycznym, zadaniach konkursowych i olimpijskich oraz szkolnej algebrze.",
-  "zast": "Nauczyciele matematyki w szkołach podstawowych i ponadpodstawowych oraz przyszli nauczyciele, którzy chcą poszerzyć warsztat metodyczny. Strona nie podaje liczby uczestników."
+  "zast": "Nauczyciele matematyki w szkołach podstawowych i ponadpodstawowych oraz przyszli nauczyciele, którzy chcą poszerzyć warsztat metodyczny. Strona nie podaje liczby uczestników.",
+  "stage": 4
  },
  "n15": {
   "typ": "Projekt B+R",
@@ -249,7 +261,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Projekt Wyższej Szkoły Humanitas dla uczniów klas IV–VII w Orzeszu z trzema modułami: robotyka i programowanie, przedmioty przyrodnicze z wirtualną rzeczywistością oraz techniki pamięciowe i szybkiego czytania.",
-  "zast": "Zajęcia praktyczne (eksperymenty chemiczne i biologiczne, kuchnia molekularna, programowanie robotów) rozwijają samodzielność, pracę w grupie i kreatywność dzieci. Projektem objęto 164 dzieci z Orzesza."
+  "zast": "Zajęcia praktyczne (eksperymenty chemiczne i biologiczne, kuchnia molekularna, programowanie robotów) rozwijają samodzielność, pracę w grupie i kreatywność dzieci. Projektem objęto 164 dzieci z Orzesza.",
+  "stage": 4
  },
  "n31": {
   "typ": "Projekt B+R",
@@ -273,10 +286,11 @@
   "typ": "Program edukacyjny",
   "trl": 0,
   "tb": "Kurs programowania, nie technologia, więc TRL nie ma zastosowania.",
-  "wdr": 3,
-  "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
+  "wdr": 4,
+  "wb": "Źródło potwierdza bezpłatny kurs / kursy dostępne dla każdego na otwartej platformie NAVOICA. Otwarty dostęp odpowiada 4/5; nie zakładamy niepodanej liczby aktywnych użytkowników.",
   "opis": "Bezpłatny kurs podstaw programowania w JavaScript na platformie MOOC (Uniwersytet Szczeciński), w wersji polskiej i angielskiej, dostosowany dla osób z niepełnosprawnością słuchu i wzroku. Łączy teorię z zadaniami w interaktywnym środowisku i kończy się egzaminem oraz certyfikatem.",
-  "zast": "Osoby chcące zdobyć i potwierdzić podstawowe umiejętności IT, zwłaszcza w zawodach deficytowych."
+  "zast": "Osoby chcące zdobyć i potwierdzić podstawowe umiejętności IT, zwłaszcza w zawodach deficytowych.",
+  "stage": 4
  },
  "n61": {
   "typ": "Projekt B+R",
@@ -361,12 +375,12 @@
  },
  "w-pk-lohc": {
   "typ": "Patent",
-  "trl": 3,
-  "tb": "Źródło potwierdza dwa patenty (rozwiązania i opis działania), ale nie podaje instalacji ani testów skali pilotażowej. Dowód koncepcji to TRL 3 (zakres 2–4); TRL nie jest podany w źródle.",
+  "trl": 4,
+  "tb": "Opisane doświadczenia nad uwalnianiem wodoru uzasadniają ostrożny szacunek TRL 4 (walidacja laboratoryjna). Sprzedaż praw nie potwierdza gotowości produktu ani pilotażu przemysłowego.",
   "wdr": 1,
-  "wb": "Źródło potwierdza dwa patenty, ale nie podaje instalacji ani testów w skali pilotażowej.",
-  "opis": "Dwa rozwiązania patentowe Politechniki Krakowskiej do magazynowania wodoru w ciekłych nośnikach organicznych (LOHC). Wodór wiąże się chemicznie z cieczą, dzięki czemu można go przewozić bez sprężania. Drugi patent to system dopasowujący ilość uwalnianego wodoru do zapotrzebowania.",
-  "zast": "Transport i magazynowanie wodoru w energetyce i przemyśle bez drogich zbiorników wysokociśnieniowych. Korzystają producenci i odbiorcy wodoru."
+  "wb": "Prawa kupiła REENERGOLOGY, ale transfer praw nie jest dowodem użycia produktu u odbiorcy. Brak potwierdzonej eksploatacji: 1/5.",
+  "opis": "Dwa rozwiązania patentowe Politechniki Krakowskiej dotyczą uwalniania i separacji wodoru z ciekłych nośników organicznych (LOHC) oraz dopasowania podaży wodoru do zapotrzebowania. Źródło opisuje doświadczenia przy ok. 320°C, stopień przereagowania 97,5% i zakup praw przez REENERGOLOGY.",
+  "zast": "Transport i magazynowanie wodoru oraz infrastruktura tankowania. Uwalnianie wodoru wymaga ciepła; opłacalność i sprawność całej instalacji wymagają dalszej walidacji. Nie jest to gotowy zamiennik napędu bateryjnego."
  },
  "w-imn-linia": {
   "typ": "Infrastruktura badawcza",
@@ -384,7 +398,8 @@
   "wdr": 3,
   "wb": "Program działa w regionie i opisano go jako dobrą praktykę Interreg Europe.",
   "opis": "Regionalny program Województwa Podkarpackiego włączający robotykę edukacyjną, programowanie i podejście STEAM do szkół podstawowych. Opisany jako dobra praktyka w programie Interreg Europe.",
-  "zast": "Uczniowie i nauczyciele szkół podstawowych w regionie dostają pracownie i metody nauki robotyki oraz programowania, które rozwijają umiejętności techniczne od najmłodszych lat."
+  "zast": "Uczniowie i nauczyciele szkół podstawowych w regionie dostają pracownie i metody nauki robotyki oraz programowania, które rozwijają umiejętności techniczne od najmłodszych lat.",
+  "stage": 4
  },
  "w-dreamup": {
   "typ": "Program edukacyjny",
@@ -393,7 +408,8 @@
   "wdr": 3,
   "wb": "Program jest prowadzony, a nabór do edycji 2026 odbył się 21.09–04.10.2026.",
   "opis": "Bezpłatny program rozwojowy „Dream Up – Rozwiń skrzydła” dla uczniów liceów i techników z Podkarpacia (16+), prowadzony przez zakład przemysłu lotniczego.",
-  "zast": "Młodzież poznaje pracę w przemyśle lotniczym w praktyce, co ułatwia wybór kierunku kształcenia i budowanie kariery w regionie, a firma pozyskuje przyszłych pracowników."
+  "zast": "Młodzież poznaje pracę w przemyśle lotniczym w praktyce, co ułatwia wybór kierunku kształcenia i budowanie kariery w regionie, a firma pozyskuje przyszłych pracowników.",
+  "stage": 4
  },
  "w-lo4-jaslo-ai": {
   "typ": "Program edukacyjny",
@@ -402,7 +418,8 @@
   "wdr": 1,
   "wb": "Laboratorium jest dopiero planowane (szkoła pozyskała grant).",
   "opis": "Laboratorium Sztucznej Inteligencji w IV Liceum Ogólnokształcącym w Jaśle, w którym uczniowie będą zdobywać praktyczne umiejętności z uczenia maszynowego, analizy danych i sztucznej inteligencji. Szkoła pozyskała na nie grant.",
-  "zast": "Uczniowie szkół ponadpodstawowych zyskują dostęp do praktyki z AI, która zwykle jest dostępna dopiero na studiach."
+  "zast": "Uczniowie szkół ponadpodstawowych zyskują dostęp do praktyki z AI, która zwykle jest dostępna dopiero na studiach.",
+  "stage": 0
  },
  "w-steam-jaslo": {
   "typ": "Program edukacyjny",
@@ -411,25 +428,30 @@
   "wdr": 1,
   "wb": "Źródło opisuje projekt wyposażenia pracowni, bez informacji o ukończeniu.",
   "opis": "Projekt wyposażenia pracowni STEAM w czterech szkołach powiatu jasielskiego z naciskiem na praktyczne zastosowanie wiedzy o programowaniu i robotyce oraz dostępność dla uczniów ze specjalnymi potrzebami.",
-  "zast": "Uczniowie szkół ogólnych powiatu, także ci ze specjalnymi potrzebami, uczą się programowania i robotyki na sprzęcie, którego wcześniej brakowało."
+  "zast": "Uczniowie szkół ogólnych powiatu, także ci ze specjalnymi potrzebami, uczą się programowania i robotyki na sprzęcie, którego wcześniej brakowało.",
+  "stage": 0
  },
  "w-rzeszow-parking": {
   "typ": "Usługa publiczna",
   "trl": 0,
-  "tb": "To system administracyjny miasta, a nie technologia w fazie badań, więc skala TRL nie ma zastosowania. System działa: dane o wolnych miejscach są udostępniane na tablicach i w aplikacji.",
-  "wdr": 3,
-  "wb": "System działa w Rzeszowie: dane o wolnych miejscach są na tablicach i w aplikacji.",
-  "opis": "Inteligentny System Płatnego Parkowania w Rzeszowie monitoruje zajętość strefy płatnego parkowania i udostępnia dane o wolnych miejscach na tablicach i w aplikacji dla mieszkańców. Wartość projektu podano na 14,7 mln zł.",
-  "zast": "Kierowcy szybciej znajdują miejsce, a miasto ma bieżące dane o zajętości strefy do zarządzania parkowaniem i ruchem."
+  "tb": "TRL nie dotyczy w przyjętej klasyfikacji usługi publicznej. Etap jest planem opisanym w historycznym źródle; wymaga aktualnego potwierdzenia wdrożenia.",
+  "wdr": 1,
+  "wb": "Podany artykuł zapowiada wdrożenie i używa czasu przyszłego. Brak w nim potwierdzenia rzeczywistego użycia: 1/5. Upłynięcie planowanego terminu nie jest dowodem realizacji.",
+  "opis": "Historyczna zapowiedź wdrożenia Inteligentnego Systemu Płatnego Parkowania w Rzeszowie przez Asseco Data Systems: monitoring zajętości strefy, tablice i aplikacja dla mieszkańców. Artykuł podaje budżet 14,7 mln zł i plan uruchomienia od 2021 r.; sam nie potwierdza odbioru ani uruchomienia systemu.",
+  "zast": "Kierowcy szybciej znajdują miejsce, a miasto ma bieżące dane o zajętości strefy do zarządzania parkowaniem i ruchem.",
+  "stage": 0,
+  "uncertainty": "Źródło opisuje plan uruchomienia od 2021 r. Aktualnego działania systemu nie potwierdzono tym artykułem."
  },
  "w-rzeszow-smietniki": {
   "typ": "Usługa publiczna",
   "trl": 0,
-  "tb": "To pilotaż rozwiązania miejskiego, a nie technologia w fazie badań, więc skala TRL nie ma zastosowania. Test ruszył w kwietniu 2025 r., co odpowiada etapowi „Prototyp”.",
+  "tb": "Miejski pilotaż dziewięciu pojemników rozpoczęto w kwietniu 2025 r. i zaplanowano na sześć miesięcy. TRL nie dotyczy w ocenie usługi miejskiej; etap Pilotaż odzwierciedla opisany test, nie aktualny stan po jego zakończeniu.",
   "wdr": 2,
   "wb": "Test pojemników z czujnikami ruszył w kwietniu 2025 r. jako pilotaż.",
   "opis": "Test inteligentnych pojemników na odpady z czujnikami poziomu zapełnienia i zgniatarką, uruchomiony w kwietniu 2025 r. przy ul. Hetmańskiej w Rzeszowie. Mieszkańcy zgłaszali uwagi do segregacji.",
-  "zast": "Miasto i firmy odbierające odpady mogą opróżniać pojemniki wtedy, gdy są pełne, co ma ograniczyć przepełnienie i podrzucanie śmieci. Korzystają mieszkańcy okolicy."
+  "zast": "Miasto i firmy odbierające odpady mogą opróżniać pojemniki wtedy, gdy są pełne, co ma ograniczyć przepełnienie i podrzucanie śmieci. Korzystają mieszkańcy okolicy.",
+  "stage": 3,
+  "uncertainty": "Brak w tym artykule informacji o wyniku lub przedłużeniu sześciomiesięcznych testów."
  },
  "w-rzeszow-5g-lacznosc": {
   "typ": "Usługa publiczna",
@@ -438,7 +460,8 @@
   "wdr": 3,
   "wb": "System łączności działa w administracji miasta i został nagrodzony na Kongresie Bezpieczeństwa Polski.",
   "opis": "System Łączności Awaryjnej miasta Rzeszowa oparty na prywatnej sieci 5G (technologie HPE i Nokia) wspiera ratowników i zarządzanie kryzysowe. Nagrodzony podczas Kongresu Bezpieczeństwa Polski.",
-  "zast": "Służby ratunkowe i zarządzanie kryzysowe mają niezależny kanał łączności na wypadek awarii zwykłych sieci. Korzystają ratownicy i mieszkańcy."
+  "zast": "Służby ratunkowe i zarządzanie kryzysowe mają niezależny kanał łączności na wypadek awarii zwykłych sieci. Korzystają ratownicy i mieszkańcy.",
+  "stage": 4
  },
  "w-tyczyn-sms": {
   "typ": "Usługa publiczna",
@@ -447,7 +470,8 @@
   "wdr": 3,
   "wb": "System działa i wysyła komunikaty do mieszkańców gminy Tyczyn.",
   "opis": "Gminny system powiadomień SMS w Gminie Tyczyn wysyła komunikaty urzędu bezpośrednio na telefony mieszkańców Tyczyna, Borku Starego, Kielnarowej i Hermanowej.",
-  "zast": "Mieszkańcy szybko dostają ostrzeżenia i informacje urzędu, a gmina poprawia bezpieczeństwo i komunikację z mieszkańcami."
+  "zast": "Mieszkańcy szybko dostają ostrzeżenia i informacje urzędu, a gmina poprawia bezpieczeństwo i komunikację z mieszkańcami.",
+  "stage": 4
  },
  "w-nml-rezerwacje": {
   "typ": "Usługa publiczna",
@@ -456,7 +480,8 @@
   "wdr": 3,
   "wb": "System działa w starostwie od 30.05.2025 r.",
   "opis": "Rezerwacja wizyt online i elektroniczny system kolejkowy w Wydziale Komunikacji i Transportu Starostwa Powiatowego w Nowym Mieście Lubawskim, uruchomione w projekcie „E-usługi publiczne w Powiecie Nowomiejskim – etap I” (EFRR).",
-  "zast": "Mieszkańcy rejestrują się na wizytę przez internet i krócej czekają na załatwienie spraw w wydziale komunikacji, a urząd lepiej planuje obsługę."
+  "zast": "Mieszkańcy rejestrują się na wizytę przez internet i krócej czekają na załatwienie spraw w wydziale komunikacji, a urząd lepiej planuje obsługę.",
+  "stage": 4
  },
  "n67": {
   "typ": "Patent",
@@ -528,7 +553,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Projekt Politechniki Rzeszowskiej (2018–2019, Program Wiedza Edukacja Rozwój) dla 40 studentów elektroniki i telekomunikacji: cztery ścieżki szkoleniowe, trzymiesięczne staże i współpraca z firmą BURY z Mielca.",
-  "zast": "Przygotowanie absolwentów do pracy w przemyśle motoryzacyjnym i skrócenie ich wdrażania w firmie. Efekt: 21 absolwentów zatrudniono w BURY, 8 w innych firmach, 2 założyły własną działalność."
+  "zast": "Przygotowanie absolwentów do pracy w przemyśle motoryzacyjnym i skrócenie ich wdrażania w firmie. Efekt: 21 absolwentów zatrudniono w BURY, 8 w innych firmach, 2 założyły własną działalność.",
+  "stage": 4
  },
  "n75": {
   "typ": "Program edukacyjny",
@@ -537,7 +563,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Projekt „Uczelnia bez barier” Państwowej Akademii Nauk Stosowanych w Krośnie (2020–2023, dofinansowanie ok. 2,17 mln zł) zwiększył dostępność uczelni dla osób z niepełnosprawnościami pod względem architektonicznym, cyfrowym i dydaktycznym.",
-  "zast": "Studenci z niepełnosprawnościami, pracownicy i osoby odwiedzające uczelnię. Zamontowano podnośnik, dostosowano stronę do WCAG 2.1, przeszkolono kadrę, uruchomiono kurs e-learningowy i Centrum Wsparcia."
+  "zast": "Studenci z niepełnosprawnościami, pracownicy i osoby odwiedzające uczelnię. Zamontowano podnośnik, dostosowano stronę do WCAG 2.1, przeszkolono kadrę, uruchomiono kurs e-learningowy i Centrum Wsparcia.",
+  "stage": 4
  },
  "n76": {
   "typ": "Program edukacyjny",
@@ -546,7 +573,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Projekt zwiększył dostępność Podkarpackiej Szkoły Wyższej w Jaśle dla osób z niepełnosprawnościami, łącząc zmiany organizacyjne, architektoniczne, technologiczne i edukacyjne.",
-  "zast": "Obecni i przyszli studenci, kandydaci i kadra uczelni. Wyposażono pracownię komputerową i bibliotekę w stanowiska dla osób niewidomych, słabowidzących i z dysfunkcjami rąk, oznakowano budynek, adaptowano miejsca parkingowe i przeszkolono kadrę."
+  "zast": "Obecni i przyszli studenci, kandydaci i kadra uczelni. Wyposażono pracownię komputerową i bibliotekę w stanowiska dla osób niewidomych, słabowidzących i z dysfunkcjami rąk, oznakowano budynek, adaptowano miejsca parkingowe i przeszkolono kadrę.",
+  "stage": 4
  },
  "n62": {
   "typ": "Projekt B+R",
@@ -618,7 +646,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Akademia Czystego Morza (2018–2020) uwrażliwia uczniów na zanieczyszczenie wód, zwłaszcza płytkiego i zamkniętego Morza Bałtyckiego. Obejmuje gry dydaktyczne, quizy, eksperymenty w laboratorium, zajęcia terenowe, segregację odpadów u źródła i edukację rodziców.",
-  "zast": "Uczniowie szkół podstawowych w regionie nadmorskim, ich rodzice i nauczyciele. Strona nie podaje liczby uczestników, a efekty są opisane w Kronice Projektu."
+  "zast": "Uczniowie szkół podstawowych w regionie nadmorskim, ich rodzice i nauczyciele. Strona nie podaje liczby uczestników, a efekty są opisane w Kronice Projektu.",
+  "stage": 4
  },
  "n55": {
   "typ": "Projekt B+R",
@@ -632,11 +661,18 @@
  "n56": {
   "typ": "Projekt B+R",
   "trl": 6,
-  "tb": "Strona opisuje system w dwóch konfiguracjach (prewencyjnej i interwencyjnej) z pomiarem krytycznych fragmentów wałów z dokładnością do kilku centymetrów, ale nie podaje użycia w prawdziwej powodzi. Prototyp systemu w warunkach zbliżonych do rzeczywistych to TRL 6 (zakres 5–7).",
-  "wdr": 1,
-  "wb": "Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+  "tb": "Połączone źródła opisują prototyp SAFEDAM i pokaz podczas ćwiczeń PSP FALA 2018. Demonstracja w warunkach zbliżonych do rzeczywistych uzasadnia szacunek TRL 6, bez potwierdzenia rutynowego wdrożenia.",
+  "wdr": 2,
+  "wb": "Drugie źródło tego samego projektu opisuje demonstrację podczas ćwiczeń PSP FALA 2018 w Kozienicach. Próba w warunkach zbliżonych do rzeczywistych odpowiada 2/5.",
   "opis": "SAFEDAM to system monitoringu wałów przeciwpowodziowych, który wykorzystuje drony, dane lotnicze i satelitarne oraz skaner laserowy. Moduł geopartycypacji ma zbierać od mieszkańców zgłoszenia o stanie wałów.",
-  "zast": "Straż pożarna i służby zarządzania kryzysowego: w prewencji kontrolują stan wałów, a podczas powodzi wskazują miejsca największego zagrożenia przerwaniem wału. Chroni to mieszkańców terenów zalewowych."
+  "zast": "Straż pożarna i służby zarządzania kryzysowego: w prewencji kontrolują stan wałów, a podczas powodzi wskazują miejsca największego zagrożenia przerwaniem wału. Chroni to mieszkańców terenów zalewowych.",
+  "sourceUrls": [
+   "https://www.gov.pl/web/ncbr/zaawansowane-technologie-wspomagajace-przeciwdzialanie-zagrozeniom-zwiazanym-z-powodziami",
+   "https://www.gov.pl/web/ncbr/safedam"
+  ],
+  "aliases": [
+   "n96"
+  ]
  },
  "n24": {
   "typ": "Projekt B+R",
@@ -663,7 +699,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Projekt Uniwersytetu Przyrodniczo-Humanistycznego w Siedlcach (2019–2021) łączący kształcenie praktyczne z nowymi metodami: warsztaty, tygodniowy obóz, wizyty studyjne, coaching i płatne staże zawodowe. Studenci rozwijali m.in. elastyczność, pracę zespołową i przedsiębiorczość.",
-  "zast": "Studenci i pracodawcy, a także Wydział Nauk Społecznych, który dzięki projektowi zyskał dwie nowe pracownie: integracji sensorycznej (pedagogika) oraz elektroniczną strzelnicę (bezpieczeństwo i kryminologia)."
+  "zast": "Studenci i pracodawcy, a także Wydział Nauk Społecznych, który dzięki projektowi zyskał dwie nowe pracownie: integracji sensorycznej (pedagogika) oraz elektroniczną strzelnicę (bezpieczeństwo i kryminologia).",
+  "stage": 4
  },
  "n04": {
   "typ": "Projekt B+R",
@@ -707,8 +744,9 @@
   "tb": "Projekt kształcenia i dostępności, nie technologia, więc TRL nie ma zastosowania.",
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
-  "opis": "Projekt szkoleń dla dzieci i młodzieży, dorosłych i seniorów oraz zdalnej edukacji 50 nauczycieli. Łącznie przeprowadzono 931 godzin zajęć, w których wzięło udział około 257 osób.",
-  "zast": "Rozwiązuje problem braku wsparcia dopasowanego do konkretnych grup odbiorców. Uczestnicy zdobyli wiedzę i certyfikowane kwalifikacje, a seniorzy nawiązali współpracę z klubami z kilku gmin."
+  "opis": "Projekt szkoleń dla dzieci i młodzieży, dorosłych oraz seniorów; źródło osobno wspomina zdalne szkolenie 50 nauczycieli. Z podanych trzech grup wynika łącznie 931 godzin i 257 uczestnictw (obliczenie radaru: 400+451+80 godzin; 107+100+50 uczestnictw). Nie potwierdzono liczby unikalnych osób ani rozłączności grup.",
+  "zast": "Rozwiązuje problem braku wsparcia dopasowanego do konkretnych grup odbiorców. Uczestnicy zdobyli wiedzę i certyfikowane kwalifikacje, a seniorzy nawiązali współpracę z klubami z kilku gmin.",
+  "stage": 4
  },
  "n43": {
   "typ": "Projekt B+R",
@@ -726,7 +764,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Projekt Wojskowej Akademii Technicznej (2020–2021) zwiększający dostępność uczelni dla osób z niepełnosprawnościami: dostosowania architektoniczne i cyfrowe, procedury wsparcia, szkolenia kadry i bezpłatne konsultacje psychologiczne.",
-  "zast": "Studenci i doktoranci z niepełnosprawnościami oraz kadra uczelni. Strona WAT (serwis główny i osiem wydziałowych) została dostosowana do standardu WCAG 2.0."
+  "zast": "Studenci i doktoranci z niepełnosprawnościami oraz kadra uczelni. Strona WAT (serwis główny i osiem wydziałowych) została dostosowana do standardu WCAG 2.0.",
+  "stage": 4
  },
  "n45": {
   "typ": "Projekt B+R",
@@ -780,7 +819,8 @@
   "wdr": 4,
   "wb": "Kurs jest masowy i otwarty, więc korzysta z niego wielu uczestników.",
   "opis": "Bezpłatny kurs online polskiego języka migowego na poziomie podstawowym (Uniwersytet Humanistyczno-Przyrodniczy w Częstochowie, 2019–2021), dostępny na platformie navoica.pl.",
-  "zast": "Osoby, które chcą porozumiewać się z osobami niesłyszącymi, np. pracownicy administracji, podmiotów leczniczych, policji, straży i oświaty, oraz rodziny osób niesłyszących. Po kursie można posługiwać się PJM w prostych sytuacjach."
+  "zast": "Osoby, które chcą porozumiewać się z osobami niesłyszącymi, np. pracownicy administracji, podmiotów leczniczych, policji, straży i oświaty, oraz rodziny osób niesłyszących. Po kursie można posługiwać się PJM w prostych sytuacjach.",
+  "stage": 4
  },
  "n41": {
   "typ": "Projekt B+R",
@@ -807,7 +847,8 @@
   "wdr": 2,
   "wb": "Sprzęt testowano w szpitalu; wnioski końcowe nie były jeszcze znane.",
   "opis": "Centrum Medyczne w Łańcucie (2020–2022) testowało osobisty sprzęt ochronny PAPR, czyli kaptur z wentylatorem i filtrem, i badało, czy chroni personel na oddziałach zakaźnych, w transporcie i badaniu pacjentów podejrzanych o zakażenie SARS-CoV-2.",
-  "zast": "Szpitale i personel medyczny pracujący z pacjentami zakaźnymi oraz producenci sprzętu, dla których projekt ma przygotować wytyczne. Użytkownicy zgłaszali wygodniejszy oddech niż w maskach FFP2/FFP3, a analiza ankiet i badania czystości powierzchni trwały."
+  "zast": "Szpitale i personel medyczny pracujący z pacjentami zakaźnymi oraz producenci sprzętu, dla których projekt ma przygotować wytyczne. Użytkownicy zgłaszali wygodniejszy oddech niż w maskach FFP2/FFP3, a analiza ankiet i badania czystości powierzchni trwały.",
+  "stage": 3
  },
  "n34": {
   "typ": "Projekt B+R",
@@ -883,8 +924,8 @@
  },
  "n82": {
   "typ": "Projekt B+R",
-  "trl": 6,
-  "tb": "Źródło mówi o gotowej technologii, ale niezkomercjalizowanej: jeden producent rozważa wdrożenie jednej receptury, jedna receptura ma zgłoszenie patentowe P.428816. Technologia sprawdzona w skali demonstracyjnej to TRL 6 (zakres 5–7); TRL nie jest podany w źródle.",
+  "trl": 4,
+  "tb": "Źródło opisuje technologię laboratoryjną i udostępnione receptury, bez potwierdzonego wdrożenia przemysłowego. Ostrożny szacunek TRL 4; sama gotowość do komercjalizacji nie dowodzi demonstracji w środowisku operacyjnym.",
   "wdr": 1,
   "wb": "Jeden producent rozważa wdrożenie jednej receptury; technologia nie jest skomercjalizowana.",
   "opis": "Epoksydowe grunty cynkowe o zawartości cynku zmniejszonej do ok. 50% w suchej powłoce, z pigmentami cynkowymi różnych kształtów, stopami cynku z cyną i magnezem oraz dodatkiem nanorurek węglowych i grafenu. Mają chronić stal tak samo dobrze lub lepiej niż tradycyjne grunty wysokocynkowe.",
@@ -933,16 +974,18 @@
   "wdr": 1,
   "wb": "Źródło podaje patenty i materiały wideo; produkcję seryjną dopiero planowano.",
   "opis": "Wheelstair to dostawka do manualnych wózków inwalidzkich umożliwiająca samodzielne pokonywanie schodów i innych barier. Po zamontowaniu dwóch nieinwazyjnych adaptacji zamienia wózek w elektryczny. Pasuje do większości standardowych i lekkich wózków.",
-  "zast": "Osoby niesamodzielne ruchowo, aktywni wózkowicze i osoby czasowo niepełnosprawne oraz instytucje: gminy, szkoły, domy opieki, właściciele zabytkowych budynków."
+  "zast": "Osoby niesamodzielne ruchowo, aktywni wózkowicze i osoby czasowo niepełnosprawne oraz instytucje: gminy, szkoły, domy opieki, właściciele zabytkowych budynków.",
+  "area3": "Technologiczna"
  },
  "n88": {
   "typ": "Usługa publiczna",
   "trl": 0,
-  "tb": "na",
+  "tb": "W przyjętej ocenie usługi / procesu skala TRL nie ma zastosowania. Jest to klasyfikacja radaru, nie poziom TRL podany przez beneficjenta.",
   "wdr": 2,
   "wb": "Platforma przeszła półroczny pilotaż z rzeczywistymi transakcjami w dwóch systemach (kurs jednolity i aukcja).",
   "opis": "Platforma Żywnościowa to zorganizowany, regulowany rynek kontraktów SPOT dla wybranych produktów rolno-spożywczych, stabilizujący dochody i ograniczający ryzyko cenowe i handlowe. Przetestowana w półrocznym pilotażu z rzeczywistymi transakcjami w dwóch systemach: kursie jednolitym i aukcji.",
-  "zast": "Producenci rolni, firmy handlowe i przetwórcy, na początku w obrocie zbożem; w kolejnych etapach rzepak, cukier, owoce i warzywa, mleko, mięso czerwone i drób."
+  "zast": "Producenci rolni, firmy handlowe i przetwórcy, na początku w obrocie zbożem; w kolejnych etapach rzepak, cukier, owoce i warzywa, mleko, mięso czerwone i drób.",
+  "stage": 3
  },
  "n89": {
   "typ": "Projekt B+R",
@@ -956,11 +999,15 @@
  "n90": {
   "typ": "Usługa publiczna",
   "trl": 0,
-  "tb": "na",
+  "tb": "TRL nie dotyczy w przyjętej ocenie usługi publicznej; jest to decyzja radaru, nie deklaracja TRL w źródle. Etap stosowania wynika z opisanego wdrożenia w całym kraju.",
   "wdr": 5,
   "wb": "System działa w całym kraju i ma kilkaset tysięcy aktywnych użytkowników; od 2019 r. uczelnie muszą sprawdzać w nim prace dyplomowe.",
   "opis": "Jednolity System Antyplagiatowy (JSA), opracowany w OPI PIB, dzieli tekst pracy na fragmenty i porównuje je z bazą ponad 10 mld fragmentów. Zmiana szyku lub podmiana słów nie wpływa na wynik, bo analizowane są zbiory pojedynczych słów.",
-  "zast": "Polskie uczelnie i instytuty, które od stycznia 2019 r. muszą sprawdzać prace licencjackie, inżynierskie, magisterskie i doktorskie. Użytkownicy: promotorzy i pracownicy dydaktyczni; system działa w całym kraju i ma kilkaset tysięcy aktywnych użytkowników."
+  "zast": "Polskie uczelnie i instytuty, które od stycznia 2019 r. muszą sprawdzać prace licencjackie, inżynierskie, magisterskie i doktorskie. Użytkownicy: promotorzy i pracownicy dydaktyczni; system działa w całym kraju i ma kilkaset tysięcy aktywnych użytkowników.",
+  "stage": 4,
+  "instType": 4,
+  "origin": 3,
+  "area3": "Technologiczna"
  },
  "n91": {
   "typ": "Prototyp",
@@ -1014,7 +1061,8 @@
   "wdr": 2,
   "wb": "System obserwowano podczas ćwiczeń PSP FALA 2018 w Kozienicach.",
   "opis": "SAFEDAM to system monitorowania wałów przeciwpowodziowych z użyciem dronów, danych lotniczych i satelitarnych, skanera laserowego i fotogrametrii; ma konfigurację prewencyjną i interwencyjną oraz moduł zgłoszeń od mieszkańców.",
-  "zast": "Państwowa Straż Pożarna, samorządy i jednostki zarządzania kryzysowego oraz służby hydrologiczne przy zagrożeniu powodziowym."
+  "zast": "Państwowa Straż Pożarna, samorządy i jednostki zarządzania kryzysowego oraz służby hydrologiczne przy zagrożeniu powodziowym.",
+  "canonicalId": "n56"
  },
  "n97": {
   "typ": "Projekt B+R",
@@ -1131,7 +1179,13 @@
   "wdr": 1,
   "wb": "Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
   "opis": "Kontroler nawadniania sterujący na podstawie parametrów klimatycznych i model, który wyznacza potrzeby wodne roślin dla każdej kolejnej godziny.",
-  "zast": "Kontenerowe szkółki roślin ozdobnych, a także uprawy rolnicze i ogrodnicze oraz zieleń miejska; oszczędność wody."
+  "zast": "Kontenerowe szkółki roślin ozdobnych, a także uprawy rolnicze i ogrodnicze oraz zieleń miejska; oszczędność wody.",
+  "area3": "Technologiczna",
+  "cats": [
+   "Rolnictwo i żywność",
+   "Technologia",
+   "Energia i środowisko"
+  ]
  },
  "n110": {
   "typ": "Projekt B+R",
@@ -1252,12 +1306,17 @@
  },
  "n123": {
   "typ": "Projekt B+R",
-  "trl": 5,
-  "tb": "Źródło opisuje narzędzie i okres projektu, bez klientów i testów w praktyce. Narzędzie sprawdzone w warunkach zbliżonych do rzeczywistych to TRL 5 (zakres 4–6); TRL nie jest podany w źródle.",
+  "trl": 4,
+  "tb": "Źródło opisuje opracowany system SIMMAG3D i jego funkcje, ale nie dokumentuje testów w środowisku operacyjnym. Ostrożny szacunek TRL 4 dla zintegrowanego narzędzia; brak danych do potwierdzenia wyższego poziomu.",
   "wdr": 1,
   "wb": "Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
   "opis": "SIMMAG3D to system do modelowania i wizualizacji obiektów magazynowych w 3D (Politechnika Warszawska i Logifact-Systems), wspierający analizę procesów magazynowych, wykrywanie wąskich gardeł i projektowanie nowych obiektów i przepływów materiałów.",
-  "zast": "Firmy, w tym MŚP, oceniające modernizację magazynów, rozszerzenie systemu WMS Logifact-Systems oraz dydaktyka i nauka."
+  "zast": "Firmy, w tym MŚP, oceniające modernizację magazynów, rozszerzenie systemu WMS Logifact-Systems oraz dydaktyka i nauka.",
+  "area3": "Technologiczna",
+  "cats": [
+   "Technologia",
+   "Motoryzacja"
+  ]
  },
  "n124": {
   "typ": "Projekt B+R",
@@ -1410,7 +1469,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Zajęcia projektowe Uniwersytetu Warszawskiego angażujące uczniów: studenci prowadzą z uczniami stacjonarne zajęcia, w których projektuje się i drukuje zabawki. Program wspiera lokalną społeczność w ramach trzeciej misji uczelni.",
-  "zast": "Uczniowie szkół podstawowych, nauczyciele akademiccy (studia przypadków i środki dydaktyczne) oraz szkoły, w których programy zastosowano jako zajęcia dodatkowe."
+  "zast": "Uczniowie szkół podstawowych, nauczyciele akademiccy (studia przypadków i środki dydaktyczne) oraz szkoły, w których programy zastosowano jako zajęcia dodatkowe.",
+  "stage": 4
  },
  "n141": {
   "typ": "Program edukacyjny",
@@ -1419,7 +1479,8 @@
   "wdr": 4,
   "wb": "Zajęcia wdrożono w szkołach podstawowych (więcej niż jednej) jako zajęcia dodatkowe.",
   "opis": "Hybrydowe zajęcia projektowe Uniwersytetu Warszawskiego rozwijające kompetencje uczniów, wdrożone w szkołach podstawowych jako zajęcia dodatkowe pobudzające aktywność edukacyjną i kulturalną.",
-  "zast": "Uczniowie szkół podstawowych i ich nauczyciele oraz nauczyciele akademiccy prowadzący zajęcia; wsparcie społeczności lokalnych."
+  "zast": "Uczniowie szkół podstawowych i ich nauczyciele oraz nauczyciele akademiccy prowadzący zajęcia; wsparcie społeczności lokalnych.",
+  "stage": 4
  },
  "n142": {
   "typ": "Program edukacyjny",
@@ -1428,7 +1489,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Program jednolitych studiów magisterskich dla przyszłych nauczycieli przedszkola i edukacji wczesnoszkolnej Wydziału Pedagogicznego UW; wdrożony do praktyki, kształci kompetencje m.in. wspierania rozwoju dzieci i organizowania sytuacji edukacyjno-wychowawczych.",
-  "zast": "Studenci kierunków nauczycielskich, a pośrednio dzieci w przedszkolach i klasach początkowych."
+  "zast": "Studenci kierunków nauczycielskich, a pośrednio dzieci w przedszkolach i klasach początkowych.",
+  "stage": 4
  },
  "n143": {
   "typ": "Projekt B+R",
@@ -1441,11 +1503,11 @@
  },
  "n144": {
   "typ": "Projekt B+R",
-  "trl": 4,
-  "tb": "Źródło mówi o opracowanych założeniach i pełnej dokumentacji wykonawczej układu, bez budowy i testów instalacji. Walidacja koncepcji i dokumentacji to TRL 4 (zakres 3–5); TRL nie jest podany w źródle.",
-  "wdr": 1,
-  "wb": "Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
-  "opis": "ThermOS (Thermal Optimal System) to kompleksowy układ dostarczania i magazynowania ciepła oraz chłodu, który ma maksymalnie wykorzystać energię wytwarzaną z odnawialnych źródeł; powstały założenia i pełna dokumentacja wykonawcza.",
+  "trl": 7,
+  "tb": "Źródło opisuje budowę demonstratora w Krakowie na funkcjonującej instalacji, ogrzewanie budynku oraz wytwarzanie wody lodowej. Demonstracja systemu w środowisku operacyjnym uzasadnia ostrożny szacunek TRL 7; brak oficjalnej liczby TRL w źródle.",
+  "wdr": 2,
+  "wb": "Zbudowano demonstrator w użytkowanym budynku w Krakowie. To demonstracja w warunkach rzeczywistych: 2/5. Źródło nie potwierdza regularnej sprzedaży.",
+  "opis": "ThermOS łączy pompę ciepła, fotowoltaikę i dwustopniowe magazynowanie ciepła oraz chłodu. W ramach projektu ConnectPoint zbudowano demonstrator w Krakowie na działającej instalacji użytkowanego budynku; źródło opisuje ogrzewanie i sezonowe wytwarzanie wody lodowej.",
   "zast": "Właściciele budynków i instalacji OZE oraz projektanci systemów energetycznych."
  },
  "n145": {
@@ -1504,12 +1566,17 @@
  },
  "n151": {
   "typ": "Projekt B+R",
-  "trl": 6,
-  "tb": "Źródło mówi o podejmowaniu działań zmierzających do wdrożenia technologii, bez nazwanych wdrożeń. Technologia sprawdzona w warunkach zbliżonych do rzeczywistych to TRL 6 (zakres 5–7); TRL nie jest podany w źródle.",
+  "trl": 4,
+  "tb": "Źródło potwierdza eksperymenty mikrobiologiczne, testy komórkowe i laboratoryjne stanowisko nanoszenia warstw. Ostrożny szacunek TRL 4; nie opisano walidacji powłok u użytkowników.",
   "wdr": 1,
   "wb": "Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
   "opis": "AnBaCo to nietoksyczne antybakteryjne powłoki zol-żel z nanocząstkami węgla, nanoszone na często dotykane przedmioty, np. uchwyty w transporcie publicznym.",
-  "zast": "Szpitale, sklepy, transport publiczny i szkoły: ograniczenie rozprzestrzeniania bakterii na powierzchniach."
+  "zast": "Szpitale, sklepy, transport publiczny i szkoły: ograniczenie rozprzestrzeniania bakterii na powierzchniach.",
+  "area3": "Technologiczna",
+  "cats": [
+   "Technologia",
+   "Zdrowie"
+  ]
  },
  "n152": {
   "typ": "Prototyp",
@@ -1521,13 +1588,13 @@
   "zast": "Badacze psychologii i psychofizjologii oraz twórcy narzędzi do komunikacji online."
  },
  "n153": {
-  "typ": "Prototyp",
-  "trl": 6,
-  "tb": "Źródło opisuje zintegrowane rozwiązanie (Bluetooth LE, LoRa, akcelerometr, portal klienta), bez nazwanych wdrożeń. Prototyp w warunkach zbliżonych do rzeczywistych to TRL 6 (zakres 5–7); TRL nie jest podany w źródle.",
-  "wdr": 1,
-  "wb": "Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+  "typ": "Projekt B+R",
+  "trl": 9,
+  "tb": "Źródło wymienia Copper State Bolt & Nut Company i ponad 4000 już zainstalowanych śrub oraz sprzedaż sprzętu i subskrypcji. Działanie produktu w praktyce uzasadnia szacunek TRL 9; źródło nie podaje liczby TRL.",
+  "wdr": 4,
+  "wb": "Copper State Bolt & Nut Company zainstalowała ponad 4000 śrub; opisano sprzedaż sprzętu i SaaS. Oferta rynkowa odpowiada 4/5. Liczba śrub nie jest liczbą klientów.",
   "opis": "BoltSense to elementy złączne do zdalnego pomiaru naprężeń w trudno dostępnych, krytycznych miejscach (turbiny wiatrowe, młyny kulowe) z łącznością Bluetooth LE i LoRa oraz portalem klienta do analiz i raportów.",
-  "zast": "Producenci i użytkownicy w przemyśle ciężkim i energetyce wiatrowej; lepsza kalibracja i monitoring połączeń."
+  "zast": "Monitoring krytycznych połączeń w przemyśle ciężkim i energetyce wiatrowej. Źródło wskazuje ponad 4000 śrub zainstalowanych przez Copper State Bolt & Nut Company oraz współpracę z JR Dynamics Ltd. przy sprzedaży sprzętu i subskrypcji."
  },
  "n154": {
   "typ": "Projekt B+R",
@@ -1581,7 +1648,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Program dostosowania Wyższej Szkoły Społeczno-Ekonomicznej w Gdańsku i Ostrołęce do potrzeb studentów z niepełnosprawnościami: likwidacja barier architektonicznych (toalety, komunikacja pionowa, wejście główne), informacyjnych i cyfrowych oraz zakup sprzętu wspierającego.",
-  "zast": "Studenci i kandydaci z niepełnosprawnościami oraz kadra uczelni; równy dostęp do kształcenia."
+  "zast": "Studenci i kandydaci z niepełnosprawnościami oraz kadra uczelni; równy dostęp do kształcenia.",
+  "stage": 4
  },
  "n160": {
   "typ": "Program edukacyjny",
@@ -1590,7 +1658,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Program poprawy dostępności Łużyckiej Szkoły Wyższej dla osób z niepełnosprawnościami: zmiany w strukturze organizacyjnej, architekturze, technologiach wspierających, procedurach, wsparciu edukacyjnym i szkoleniach o niepełnosprawności oraz alternatywne metody kształcenia.",
-  "zast": "Studenci z niepełnosprawnościami i specjalnymi potrzebami edukacyjnymi oraz pracownicy uczelni."
+  "zast": "Studenci z niepełnosprawnościami i specjalnymi potrzebami edukacyjnymi oraz pracownicy uczelni.",
+  "stage": 4
  },
  "n161": {
   "typ": "Prototyp",
@@ -1680,7 +1749,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Program Uniwersytetu Technologiczno-Humanistycznego w Radomiu dla studentów kierunku Samochody i Bezpieczeństwo w Transporcie Drogowym: 2400 godzin staży przemysłowych oraz specjalistyczne szkolenie dla kandydatów na diagnostów samochodowych.",
-  "zast": "Studenci Wydziału Mechanicznego i pracodawcy poszukujący wykwalifikowanych pracowników."
+  "zast": "Studenci Wydziału Mechanicznego i pracodawcy poszukujący wykwalifikowanych pracowników.",
+  "stage": 4
  },
  "n171": {
   "typ": "Projekt B+R",
@@ -1707,7 +1777,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Projekt Wyższej Szkoły Finansów i Prawa w Bielsku-Białej: nowe laboratoria dydaktyczne (multimedialna strzelnica, wirtualna sala zbrodni VR, laboratorium kryminalistyczne), szkolenia kadry oraz nowoczesne systemy informatyczne do obsługi studentów.",
-  "zast": "Studenci kierunków związanych z bezpieczeństwem, kadra dydaktyczna i administracja uczelni."
+  "zast": "Studenci kierunków związanych z bezpieczeństwem, kadra dydaktyczna i administracja uczelni.",
+  "stage": 4
  },
  "n174": {
   "typ": "Prototyp",
@@ -1784,11 +1855,12 @@
  "n182": {
   "typ": "Procedura i usługa zdrowotna",
   "trl": 7,
-  "tb": "Źródło mówi, że powstała technologia i urządzenie Sidly Care Pro, bez danych klinicznych. Gotowe urządzenie to TRL 7 (zakres 6–8); TRL nie jest podany w źródle.",
-  "wdr": 1,
-  "wb": "Powstała technologia i urządzenie Sidly Care Pro; źródło nie podaje danych klinicznych ani wdrożeń.",
-  "opis": "Sidly Care Pro: inteligentny system telemedyczny z opaską i funkcją predykcji upadków, wcześnie wykrywający zwiększone ryzyko upadku seniorów i pacjentów.",
-  "zast": "Seniorzy, ich opiekunowie, placówki opieki i ratownictwo."
+  "tb": "Źródło opisuje urządzenie z detekcją upadków i zastosowanie technologii w Telecentrum. TRL 7 jest ostrożnym szacunkiem radaru dla systemu; nie jest dowodem walidacji klinicznej funkcji predykcji.",
+  "wdr": 3,
+  "wb": "Źródło pokazuje działanie technologii w Telecentrum i wskazuje ponad 60 tys. użytkowników technologii SiDLY ogółem. Ostrożna ocena 3/5 odnosi się do użycia systemu, nie do potwierdzonego wdrożenia funkcji predykcji.",
+  "opis": "Sidly Care PRO: urządzenie telemedyczne z detekcją upadków oraz pomiarami tętna i saturacji. Predykcja upadków jest celem wskazanym w tytule projektu; podany opis wyników nie potwierdza skuteczności przewidywania upadków.",
+  "zast": "Seniorzy, opiekunowie i personel medyczny; źródło pokazuje użycie technologii SiDLY w Telecentrum. Ponad 60 tys. użytkowników dotyczy technologii firmy ogółem, nie jest potwierdzoną liczbą użytkowników funkcji predykcji.",
+  "uncertainty": "Liczba 60 tys. obejmuje technologie SiDLY ogółem. Skuteczność i skala wdrożenia funkcji predykcji pozostają niepotwierdzone."
  },
  "n183": {
   "typ": "Projekt B+R",
@@ -1815,7 +1887,8 @@
   "wdr": 3,
   "wb": "Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
   "opis": "Program Szkoły Głównej Gospodarstwa Wiejskiego „Sukces z natury”: zmiany w zarządzaniu kształceniem, cyfryzacja procesów (panel dydaktyczny i redakcyjny, wirtualny asystent rekrutacji, rozbudowa systemu bibliotecznego) i podniesienie kompetencji studentów.",
-  "zast": "Studenci i kadra SGGW oraz pracodawcy."
+  "zast": "Studenci i kadra SGGW oraz pracodawcy.",
+  "stage": 4
  },
  "n186": {
   "typ": "Prototyp",

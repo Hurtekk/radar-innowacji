@@ -15,18 +15,59 @@ const CITIES=['Rzeszów','Krosno','Przemyśl','Sanok','Mielec','Stalowa Wola','J
 const CRIT=[
  {k:'wdroz',name:'Wdrożenie w praktyce',w:20,r:['1: brak dowodów użycia','3: działa u jednego odbiorcy','5: dziesiątki klientów lub tysiące użytkowników'],auto:'z dowodów użycia w źródle (wdrożenia, klienci, sprzedaż, uczestnicy); ocena autorów, uzasadnienie na karcie'},
  {k:'trl',name:'Poziom gotowości technologicznej (TRL)',w:20,r:['1: TRL 1–2','3: TRL 5','5: TRL 9'],auto:'z podanego TRL albo szacunek z etapu rozwoju'},
- {k:'nov',name:'Innowacyjność',w:20,r:['1: istnieje niemal identyczne rozwiązanie','3: znane podejście z istotną zmianą','5: brak podobnych w przeszukanych źródłach'],auto:'z podobieństwa do innych rozwiązań w bazie'},
+ {k:'nov',name:'Innowacyjność',w:20,r:['1: duże podobieństwo tekstu','3: umiarkowane podobieństwo tekstu','5: niskie podobieństwo w bazie radaru'],auto:'z podobieństwa do innych rozwiązań w bazie'},
  {k:'pot',name:'Potencjał zastosowania',w:20,r:['1: wąskie, kosztowne zastosowanie','3: wymaga dostosowania','5: szeroki zasięg, łatwe do przeniesienia'],auto:'z zasięgu problemu oraz wymagań infrastrukturalnych i dokumentacji'},
  {k:'wiar',name:'Wiarygodność',w:20,r:['3: źródło publiczne (link obowiązkowy)','4: wpis w rejestrze publicznym','5: rejestr i niezależne potwierdzenie'],auto:'z rodzaju źródła (rejestr, strona instytucji) i potwierdzeń; pozycje bez źródła nie trafiają do radaru'}
 ];
 const TRL_FROM_STAGE=[3,4,5,7,9];
 function trlOf(i){return i.trlNA?0:i.trl>0?i.trl:(TRL_FROM_STAGE[i.stage]||3)}
+const DATA_REVISION='audit-2026-11-22-v1';
+const STAGE_TRL_LABELS=['TRL 1–3','TRL 4','TRL 5–6','TRL 7–8','TRL 9'];
+function stageFromTrl(trl){return trl<=3?0:trl===4?1:trl<=6?2:trl<=8?3:4}
+function canonicalId(id){return REWRITE[id]&&REWRITE[id].canonicalId||id}
+function projectKey(i){return i.projectId||canonicalId(i.id)}
+function lifecycleOf(i){return i.wdr>=3?'Rozwiązanie udostępnione':i.wdr===2?'Projekt w testach':'Projekt rozwojowy / plan'}
 function area3Of(i){
   if(i.area3)return i.area3;
-  const t=norm((i.title||'')+' '+(i.problem||'')),c=i.cats||[];
-  if(/edukac|uczni|nauczyc|szkol|ksztalc|nauczan|student|kurs |dydakt/.test(t)||i.origin===0||i.origin===1||i.rodzaj===1||i.rodzaj===2||(i.instType===0))return 'Edukacyjna';
-  if(c.includes('Administracja')||i.origin===5||i.instType===2||i.rodzaj===3)return 'Administracyjna';
+  const t=norm((i.title||'')+' '+(i.description||'')),c=i.cats||[];
+  if(i.typ==='Program edukacyjny'||i.rodzaj===2||/gra edukacyj|pomoc.{0,25}dydakt|kurs\b|kursu\b|kursy\b|program.{0,25}ksztalc|szkoleni.{0,35}(vr|wirtual)/.test(t))return 'Edukacyjna';
+  if(c.includes('Administracja')||i.instType===2||i.rodzaj===3)return 'Administracyjna';
   return 'Technologiczna';
+}
+// Currency amounts are never compared across currencies without a documented conversion.
+function budgetOf(i){
+  if(i.budget&&Number.isFinite(i.budget.amount)&&i.budget.amount>0)return i.budget;
+  const text=String(i.value||'').trim(),m=text.match(/^(\d[\d\s\u00a0.,]*?)\s*(zł|PLN|EUR|USD)(?=\s|$|[(/])/i);
+  if(!m)return null;
+  let number=m[1].replace(/[\s\u00a0]/g,'');
+  if(number.includes(','))number=number.replace(/\./g,'').replace(',','.');
+  else if((number.match(/\./g)||[]).length>1||/^\d{1,3}(\.\d{3})+$/.test(number))number=number.replace(/\./g,'');
+  const amount=Number(number);return Number.isFinite(amount)&&amount>0?{amount,currency:/zł|PLN/i.test(m[2])?'PLN':m[2].toUpperCase(),basis:'source',url:i.budgetSource||i.url}:null;
+}
+function scopeOf(i){
+  const b=budgetOf(i);
+  if(i.registry==='NCBR'){
+    const v=b&&b.currency==='PLN'?b.amount:b&&b.amountPLN>0&&b.conversionSource?b.amountPLN:null;
+    return v===null?null:v>=1e7?5:v>=3e6?4:v>=1e6?3:2;
+  }
+  return Number.isInteger(i.scope)&&i.scope>=0&&i.scope<=4?i.scope+1:null;
+}
+function independentSource(i){
+  const u=typeof i.confirmedBy==='string'?i.confirmedBy:i.confirmedBy&&i.confirmedBy.url;
+  try{const a=new URL(u),b=new URL(i.url);return /^https?:$/.test(a.protocol)&&a.hostname.replace(/^www\./,'')!==b.hostname.replace(/^www\./,'')?u:null}catch(e){return null}
+}
+function scoreNotes(i){
+  const notes=[],b=budgetOf(i);
+  if(scopeOf(i)===null)notes.push(b?'Budżet '+b.currency+' nie jest porównywany z progami PLN bez udokumentowanego kursu.':'Brak danych o zasięgu; do wyniku roboczego przyjęto neutralne 3/5 za zasięg.');
+  if(i.uncertainty)notes.push(i.uncertainty);
+  if(i.audit&&!i.audit.readable)notes.push('Nie udało się odczytać źródła podczas kontroli '+i.audit.checkedAt+'. Nie oznacza to, że strona nie działa; twierdzenia wymagają sprawdzenia.');
+  if(!(i.wdr>0))notes.push('Brak oceny rzeczywistego użycia; sam etap ani TRL nie dowodzi wdrożenia.');
+  return notes;
+}
+function scoreRange(i,sc){
+  if(scopeOf(i)!==null)return [totalScore(sc),totalScore(sc)];
+  const tr=clamp(INFRA_VAL[i.infra]+(i.hasDocs?0:-1),1,5);
+  return [1,5].map(v=>totalScore(Object.assign({},sc,{pot:clamp(Math.round((v+tr)/2),1,5)})));
 }
 const STOP=new Set('oraz jest sie dla przy jako nie ale lub aby tym ten ta to na do w z i o od po przez ktory ktora ktore ktorych moze moga sa byc jego jej ich tez juz bardzo wiec czy'.split(' '));
 function norm(s){return String(s||'').toLowerCase().replace(/ł/g,'l').normalize('NFD').replace(/[̀-ͯ]/g,'')}
@@ -36,7 +77,7 @@ function docText(x){return [x.title,x.title,x.problem,x.description,(x.tags||[])
 const REF=[];
 function buildSim(inn,all){
   const docs=REF.map(r=>({id:r.id,src:r.src,title:r.title,ref:true,t:toks(docText(r))}))
-    .concat(all.filter(x=>x.id!==inn.id).map(x=>({id:x.id,src:'Baza radaru ('+x.institution+')',title:x.title,ref:false,t:toks(docText(x))})));
+    .concat(all.filter(x=>x.id!==inn.id&&projectKey(x)!==projectKey(inn)).map(x=>({id:x.id,src:'Baza radaru ('+x.institution+')',title:x.title,ref:false,t:toks(docText(x))})));
   const me=toks(docText(inn));
   const N=docs.length+1, df={};
   [me].concat(docs.map(d=>d.t)).forEach(t=>new Set(t).forEach(w=>df[w]=(df[w]||0)+1));
@@ -48,9 +89,10 @@ function buildSim(inn,all){
 const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 function maxSim(sims){return sims.length?sims[0].sim:0}
 function suggest(inn,sims){
-  const s=maxSim(sims),nv=clamp(Math.round(5-s*9),1,5),tr=clamp(INFRA_VAL[inn.infra]+(inn.hasDocs?0:-1),1,5);
-  return {wdroz:inn.wdr>0?clamp(inn.wdr,1,5):clamp(inn.stage+1,1,5),trl:inn.trlNA?clamp(inn.stage+1,1,5):clamp(Math.round(trlOf(inn)/2),1,5),nov:inn.novelty>=0?clamp(Math.round((nv+[5,4,3,2][inn.novelty])/2),1,5):nv,
-    pot:clamp(Math.round(((inn.scope+1)+tr)/2),1,5),wiar:clamp(3+(inn.registry?1:0)+(inn.confirmedBy?1:0),1,5)};
+  const s=maxSim(sims),nv=clamp(Math.round(5-s*9),1,5),tr=clamp(INFRA_VAL[inn.infra]+(inn.hasDocs?0:-1),1,5),scope=scopeOf(inn);
+  const declared=inn.novelty>=0&&(!inn.registry||inn.noveltyBasis==='declared');
+  return {wdroz:inn.wdr>0?clamp(inn.wdr,1,5):1,trl:inn.trlNA?clamp(inn.stage+1,1,5):clamp(Math.round(trlOf(inn)/2),1,5),nov:declared?clamp(Math.round((nv+[5,4,3,2][inn.novelty])/2),1,5):nv,
+    pot:clamp(Math.round(((scope===null?3:scope)+tr)/2),1,5),wiar:clamp(3+(inn.registry?1:0)+(independentSource(inn)?1:0),1,5)};
 }
 function totalScore(sc){return Math.round(CRIT.reduce((a,c)=>a+c.w*(sc[c.k]||1)/5,0))}
 function completeness(inn){

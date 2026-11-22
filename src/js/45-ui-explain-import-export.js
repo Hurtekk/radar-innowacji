@@ -1,11 +1,11 @@
 /* ====================== przejrzystość oceny, import/eksport, prywatność, skalowanie ====================== */
 function explainBlock(inn){
   const a=analyze(inn),sc=inn.scores||a.scores;if(!sc)return '';
-  const inputs=[['Etap rozwoju',STAGES[inn.stage]],['Wdrożenie w praktyce',inn.wdr>0?inn.wdr+'/5 (ocena na podstawie źródła)':'brak oceny, szacunek z etapu rozwoju'],['Zasięg problemu',SCOPE[inn.scope]],['Wymagana infrastruktura',INFRA[inn.infra]],['Dokumentacja',inn.hasDocs?'tak':'nie'],['Zespół',TEAM[inn.team]],['Ochrona własności',IPL[inn.ip]]];
+  const inputs=[['Etap rozwoju',STAGES[inn.stage]],['Wdrożenie w praktyce',inn.wdr>0?inn.wdr+'/5 (ocena na podstawie źródła)':'brak oceny, szacunek z etapu rozwoju'],['Zasięg problemu',scopeOf(inn)===null?'brak danych':scopeOf(inn)+'/5'],['Wymagana infrastruktura',INFRA[inn.infra]],['Dokumentacja',inn.hasDocs?'tak':'nie'],['Zespół',TEAM[inn.team]],['Ochrona własności',IPL[inn.ip]]];
   const pts=CRIT.map(c=>({c,v:sc[c.k]||1,p:c.w*(sc[c.k]||1)/5}));
-  const rows=pts.map(x=>'<tr><td>'+metLink(x.c.k,x.c.name)+'</td><td class="num">'+x.v+'/5</td><td class="num">'+x.c.w+'%</td><td class="num">'+x.p.toFixed(1)+'</td><td class="small muted">'+x.c.auto+'</td></tr>').join('');
+  const rows=pts.map(x=>'<tr><td>'+metLink(x.c.k,x.c.name)+'</td><td class="num">'+x.v+'/5</td><td class="num">'+x.c.w+'%</td><td class="num">'+x.p.toFixed(1)+'</td><td class="small muted">'+esc(criterionWhy(inn,x.c.k,a))+'</td></tr>').join('');
   const up=pts.filter(x=>x.v<5).sort((p,q)=>q.c.w-p.c.w).slice(0,2).map(x=>'<li>'+x.c.name+': każdy punkt więcej w skali 1–5 dodaje '+(x.c.w/5).toFixed(0)+' pkt do oceny.</li>').join('');
-  const src=inn.estimated?'Etap, zasięg, infrastrukturę i zespół <b>oszacowano automatycznie</b> z programu, budżetu i składu konsorcjum w rejestrze NCBR.':'Dane wejściowe pochodzą z formularza zgłoszenia i mogą być poprawione ręcznie w sekcji „Szczegóły oceny”.';
+  const src='Algorytm przelicza oceny autorów i dane przypisane do źródeł. Etap wynika z TRL lub dowodów użycia usługi. Budżet jest tylko przybliżeniem zasięgu; braki danych i ograniczenia wskazano na karcie.';
   const body='<p class="small">'+src+'</p><div class="tablewrap"><table><thead><tr><th>Kryterium</th><th>Wartość</th><th>Waga</th><th>Punkty</th><th>Skąd wartość</th></tr></thead><tbody>'+rows+'<tr><td><b>Suma</b></td><td></td><td class="num">100%</td><td class="num"><b>'+totalScore(sc)+'</b></td><td class="small muted">suma wag × wartość / 5</td></tr></tbody></table></div>'+
    '<p class="small" style="margin-top:10px"><b>Dane wejściowe:</b> '+inputs.map(x=>esc(x[0])+': '+esc(x[1])).join(' · ')+'</p>'+
    '<p class="small"><b>Progi:</b> od 65 wysoki potencjał, 45–64 średni, poniżej 45 niski. <b>Co poprawiłoby wynik:</b></p><ul class="why">'+up+'</ul>'+
@@ -82,7 +82,7 @@ function extAction2(d){
   const a=d.act;if(!a)return false;
   const out=t=>{const e=$('exp-out');if(e){e.value=t;e.focus();e.select()}try{navigator.clipboard&&navigator.clipboard.writeText(t).then(()=>toast('Skopiowano do schowka.'),()=>{})}catch(_){}};
   if(a==='expcsv'){out(CSV_HEAD.join(';')+'\n'+exportRows().join('\n'));return true}
-  if(a==='expjson'){out(JSON.stringify(vis().map(i=>({id:i.id,tytul:i.title,instytucja:i.institution,lokalizacja:locOf(i),etap:STAGES[i.stage],kategorie:i.cats,zrodlo:i.url||null,ocena:totalScore(i.scores||analyze(i).scores)})),null,1));return true}
+  if(a==='expjson'){out(JSON.stringify(vis().map(i=>({id:i.id,tytul:i.title,instytucja:i.institution,lokalizacja:locOf(i),etap:STAGES[i.stage],kategorie:i.cats,zrodlo:i.url||null,ocena:totalScore(i.scores||analyze(i).sug)})),null,1));return true}
   if(a==='tplcsv'){out(CSV_HEAD.join(';')+'\n'+['Przykładowy tytuł innowacji','Krótki opis rozwiązania','Problem, który rozwiązuje','Nazwa szkoły','Krosno','podkarpackie','','','Prototyp','technologiczna','Technologia|Edukacja',''].map(csvQ).join(';'));return true}
   if(a==='privcopy'){const mine=S.acct?S.items.filter(i=>i.owner===S.acct.email):[];out(JSON.stringify({konto:S.acct?{nazwa:S.acct.name,email:S.acct.email,miasto:S.acct.city}:null,innowacje:mine,zgloszenia:REPS},null,1));return true}
   if(a==='privdel'){S.delAsk2=true;render();return true}

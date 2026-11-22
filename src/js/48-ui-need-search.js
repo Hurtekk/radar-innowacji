@@ -59,16 +59,16 @@ function needSearch(q,opt){
 }
 const WHY_W=w=>w;
 function pathOf(i){
-  if(i.trlNA)return readyOf(i)?'Rozwiązanie działa w praktyce. Skontaktuj się z autorem, aby ustalić warunki przeniesienia lub współpracy.':'Rozwiązanie jest na wczesnym etapie. Skontaktuj się z autorem i obserwuj postępy.';
+  if(i.trlNA)return i.stage===4?'Źródło opisuje stosowanie usługi. Potwierdź aktualną dostępność i warunki przeniesienia.':i.stage===3?'Źródło opisuje pilotaż. Potwierdź jego wyniki i możliwość dalszych testów.':'Źródło opisuje plan lub rozwój usługi. Potwierdź postępy z podmiotem lub źródłem.';
   const t=trlOf(i);
-  return t>=7?'Gotowe do wdrożenia lub licencji. Skontaktuj się w sprawie testu u siebie, licencji lub zakupu.':t>=4?'Wymaga jeszcze rozwoju. Rozważ wspólny pilotaż lub projekt B+R z autorem.':'Wczesny etap badań. Rozważ współpracę badawczą i obserwuj postępy.';
+  return t>=7?'Opis wskazuje na demonstrację lub eksploatację technologii. Potwierdź zakres walidacji, dostępność i warunki współpracy.':t>=4?'Rozwój i testy. Rozważ wspólny pilotaż lub projekt B+R z autorem.':'Wczesny etap badań. Rozważ współpracę badawczą i obserwuj postępy.';
 }
 function needCard(r,q){
   const i=r.i,l=locOf(i)||{},rd=readyOf(i);
   const why=(r.hit.length?'<span class="small">słowa z potrzeby: <b>'+r.hit.map(esc).join(', ')+'</b></span> ':'')+(r.chit.length?'<span class="small">powiązanie tematyczne: <b>'+r.chit.map(esc).join('; ')+'</b></span>':'');
   const mail=i.contact?'mailto:'+encodeURIComponent(i.contact).replace('%40','@')+'?subject='+encodeURIComponent('Zapytanie o wdrożenie: '+i.title)+'&body='+encodeURIComponent('Dzień dzień dobry,\n\nszukamy rozwiązania: '+q.slice(0,400)+'\n\nZainteresowała nas innowacja „'+i.title+'” (źródło: '+(i.url||'Radar innowacji')+'). Prosimy o informację o możliwości wdrożenia lub współpracy.\n\nPozdrawiam').replace(/dzień dzień/,'dzień'):'';
   return '<article class="card needc"><div class="row" style="justify-content:space-between;align-items:flex-start;gap:12px"><div><h3 style="margin:0 0 4px">'+esc(i.title)+'</h3><div class="meta">'+esc(i.institution)+' · '+esc(l.miejsc||l.city||'')+(l.woj?', '+esc(l.woj):'')+'</div></div><div style="text-align:center;min-width:74px"><div style="font-size:26px;font-weight:800;color:#4f6bed">'+r.rel+'%</div><div class="small muted">dopasowanie</div></div></div>'+
-   '<div class="row" style="flex-wrap:wrap;gap:6px;margin:8px 0"><span class="pill '+(rd?'good':'warn')+'">'+(rd?'Gotowe do wdrożenia':'Wymaga rozwoju')+'</span><span class="pill plain">'+esc(typOf(i))+'</span><span class="pill plain">'+trlTxt(i)+'</span><span class="pill plain">'+esc(area3Of(i))+'</span></div>'+
+   '<div class="row" style="flex-wrap:wrap;gap:6px;margin:8px 0"><span class="pill '+(rd?'good':'warn')+'">'+(rd?'Pilotaż lub stosowanie':'Badania / rozwój')+'</span><span class="pill plain">'+esc(typOf(i))+'</span><span class="pill plain">'+trlTxt(i)+'</span><span class="pill plain">'+esc(area3Of(i))+'</span></div>'+
    '<p class="small" style="margin:6px 0">'+esc((i.description||'').slice(0,260))+((i.description||'').length>260?'…':'')+'</p>'+
    '<p class="small" style="margin:6px 0"><b>Dlaczego pasuje.</b> '+why+'</p>'+
    '<p class="small" style="margin:6px 0"><b>Gotowość.</b> '+esc((i.trlWhy||'').slice(0,300))+'</p>'+
@@ -79,17 +79,17 @@ function needResHTML(){
   const N=S.need;if(!N.q.trim())return '<div class="panel muted small">Wpisz, czego potrzebuje Twoja organizacja, lub wybierz przykład powyżej. Radar przeszuka bazę istniejących innowacji i pokaże te, które pasują do potrzeby, wraz z poziomem gotowości i kontaktem.</div>';
   const R=needSearch(N.q,N);
   if(!R.qt.length)return '<div class="panel small">Opisz potrzebę trochę dokładniej (branża, problem, oczekiwany efekt), aby radar mógł znaleźć dopasowania.</div>';
-  const head='<div class="panel" style="display:flex;gap:18px;flex-wrap:wrap"><div><div class="small muted">Znalezione rozwiązania</div><div style="font-size:26px;font-weight:800">'+R.rows.length+'</div></div><div><div class="small muted">Gotowe do wdrożenia</div><div style="font-size:26px;font-weight:800">'+R.rows.filter(r=>readyOf(r.i)).length+'</div></div><div><div class="small muted">Rozpoznane pojęcia</div><div class="small" style="margin-top:6px">'+(R.cons.length?R.cons.map(c=>esc(c.n)).join('; '):'—')+'</div></div></div>';
-  if(!R.rows.length)return head+'<div class="panel small"><b>Nie znaleziono innowacji spełniających tę potrzebę.</b> '+(N.ready&&R.all?'Jest '+R.all+' pasujących pozycji, ale nie są jeszcze gotowe do wdrożenia. Odznacz „Tylko gotowe do wdrożenia”, aby je zobaczyć.':'Spróbuj opisać problem inaczej albo zdjąć filtry.')+' Radar nie pokazuje pozycji, które nie mają oparcia w bazie.</div>';
+  const head='<div class="panel" style="display:flex;gap:18px;flex-wrap:wrap"><div><div class="small muted">Znalezione rozwiązania</div><div style="font-size:26px;font-weight:800">'+R.rows.length+'</div></div><div><div class="small muted">Pilotaż lub stosowanie</div><div style="font-size:26px;font-weight:800">'+R.rows.filter(r=>readyOf(r.i)).length+'</div></div><div><div class="small muted">Rozpoznane pojęcia</div><div class="small" style="margin-top:6px">'+(R.cons.length?R.cons.map(c=>esc(c.n)).join('; '):'—')+'</div></div></div>';
+  if(!R.rows.length)return head+'<div class="panel small"><b>Nie znaleziono innowacji spełniających tę potrzebę.</b> '+(N.ready&&R.all?'Jest '+R.all+' pasujących pozycji, ale nie są na etapie pilotażu lub stosowania. Odznacz „Tylko pilotaż lub stosowanie”, aby je zobaczyć.':'Spróbuj opisać problem inaczej albo zdjąć filtry.')+' Radar nie pokazuje pozycji, które nie mają oparcia w bazie.</div>';
   return head+'<div class="stack" style="gap:12px">'+R.rows.slice(0,12).map(r=>needCard(r,N.q)).join('')+'</div>'+(R.rows.length>12?'<p class="small muted">Pokazano 12 najlepszych z '+R.rows.length+'.</p>':'');
 }
 PAGEX.szukam=()=>{
   const N=S.need,woj=optList(S.items.map(i=>(locOf(i)||{}).woj||'').filter(Boolean));
   return pg('Szukam rozwiązania',
-   '<div class="panel stack"><p class="small" style="margin:0">Opisz, czego oczekuje Twoja organizacja. Radar dopasuje istniejące innowacje z bazy, oceni ich gotowość do wdrożenia (TRL) i poda kontakt do autora. Tekst jest przetwarzany tylko w Twojej przeglądarce.</p>'+
+   '<div class="panel stack"><p class="small" style="margin:0">Opisz, czego oczekuje Twoja organizacja. Radar dopasuje istniejące innowacje z bazy, pokaże ocenę dojrzałości (TRL) i kontakt do podmiotu lub źródła. Tekst jest przetwarzany tylko w Twojej przeglądarce.</p>'+
    '<textarea id="need-q" rows="3" style="width:100%" placeholder="np. Huta szkła szuka rozwiązań ograniczających emisje tlenków azotu ze spalin pieca">'+esc(N.q)+'</textarea>'+
    '<div class="row" style="flex-wrap:wrap;gap:6px">'+NEED_EX.map((x,k)=>'<button class="pill" data-needex="'+k+'">'+esc(x.split(/ (szuka|chce|potrzebuje)/)[0])+'</button>').join('')+'</div>'+
-   '<div class="row" style="flex-wrap:wrap;gap:14px;align-items:flex-end"><label class="small"><input type="checkbox" id="need-ready"'+(N.ready?' checked':'')+'> Tylko gotowe do wdrożenia (TRL 7–9 lub rozwiązanie stosowane)</label>'+
+   '<div class="row" style="flex-wrap:wrap;gap:14px;align-items:flex-end"><label class="small"><input type="checkbox" id="need-ready"'+(N.ready?' checked':'')+'> Tylko pilotaż lub stosowanie (TRL 7–9 lub rozwiązanie stosowane)</label>'+
    '<div><label for="need-woj" class="small muted">Województwo</label><select id="need-woj"><option value="">Cała Polska</option>'+woj.map(x=>'<option value="'+esc(x[0])+'"'+(x[0]===N.woj?' selected':'')+'>'+esc(x[0])+'</option>').join('')+'</select></div>'+
    '<div><label for="need-area" class="small muted">Obszar</label><select id="need-area"><option value="">Wszystkie</option>'+AREAS.map(a=>'<option value="'+a+'"'+(a===N.area?' selected':'')+'>'+a+'</option>').join('')+'</select></div>'+
    '<button class="btn" id="need-go">Szukaj rozwiązań</button></div></div>'+
@@ -109,7 +109,7 @@ document.addEventListener('change',e=>{if(e.target&&/^need-(ready|woj|area)$/.te
 
 /* ---------- strona główna: pole potrzeby i dane w liczbach ---------- */
 function homeNeed(){
-  return '<div class="panel stack needhero" style="text-align:left;margin:18px 0"><h2 style="margin:0">Powiedz, czego potrzebujesz. Radar znajdzie gotowe rozwiązanie.</h2><p class="small muted" style="margin:0">Opisz potrzebę własnymi słowami (np. branża, problem, oczekiwany efekt). Radar dopasuje istniejące polskie innowacje, oceni ich gotowość do wdrożenia i poda kontakt.</p>'+
+  return '<div class="panel stack needhero" style="text-align:left;margin:18px 0"><h2 style="margin:0">Powiedz, czego potrzebujesz. Radar znajdzie pasujące projekty i rozwiązania.</h2><p class="small muted" style="margin:0">Opisz potrzebę własnymi słowami (np. branża, problem, oczekiwany efekt). Radar dopasuje istniejące polskie innowacje, pokaże opisany etap oraz kontakt do podmiotu lub źródła.</p>'+
    '<textarea id="home-need" rows="2" style="width:100%" placeholder="np. Huta szkła szuka rozwiązań ograniczających emisje tlenków azotu ze spalin pieca"></textarea>'+
    '<div class="row" style="flex-wrap:wrap;gap:6px">'+NEED_EX.slice(0,4).map((x,k)=>'<button class="pill" data-needex="'+k+'" data-page="szukam">'+esc(x.split(/ (szuka|chce|potrzebuje)/)[0])+'</button>').join('')+'</div>'+
    '<div class="row"><button class="btn" data-needhome="1">Znajdź rozwiązania</button></div></div>';
@@ -122,12 +122,12 @@ function homeData(){
   const typs=TYP_ORDER.map(t=>[t,it.filter(i=>typOf(i)===t).length]).filter(x=>x[1]);
   const T=(v,l,s)=>'<div class="panel" style="text-align:center;margin:0"><div style="font-size:30px;font-weight:800;color:#4f6bed">'+v+'</div><div class="small"><b>'+l+'</b></div>'+(s?'<div class="small muted">'+s+'</div>':'')+'</div>';
   return '<h2 class="hs">Radar w liczbach</h2><div class="tiles5">'+
-   T(n,'innowacji w bazie','każda z linkiem do źródła')+T(ready,'gotowych do wdrożenia',Math.round(ready/Math.max(1,n)*100)+'% bazy (TRL 7–9 lub stosowane)')+T(anyc,'z kontaktem do wdrożenia',both+' z e-mailem i telefonem')+T(woj,'województw',cities+' miast i wsi')+T(avg?avg.toFixed(1):'–','średni TRL','technologie, ocena z uzasadnieniem')+T(srcs,'źródeł publicznych','rejestry, uczelnie, samorządy')+'</div>';
+   T(n,'projektów i rozwiązań','każdy z linkiem do źródła')+T(ready,'na etapie pilotażu lub stosowania',Math.round(ready/Math.max(1,n)*100)+'% bazy (TRL 7–9 lub stosowane)')+T(anyc,'z kontaktem do podmiotu lub źródła',both+' z e-mailem i telefonem')+T(woj,'województw',cities+' miast i wsi')+T(avg?avg.toFixed(1):'–','średni TRL','technologie, ocena z uzasadnieniem')+T(srcs,'źródeł publicznych','rejestry, uczelnie, samorządy')+'</div>';
 }
 function trlHist(){
   const c={};let na=0;S.items.forEach(i=>{if(i.trlNA)na++;else{const t=trlOf(i);c[t]=(c[t]||0)+1}});
   const mx=Math.max(1,na,...Object.values(c));
   const row=(l,v,col)=>'<div style="display:grid;grid-template-columns:90px 1fr 34px;gap:10px;align-items:center;margin:5px 0"><div class="small"><b>'+l+'</b></div><div style="height:16px;border-radius:5px;background:#eef1fa"><div style="height:100%;border-radius:5px;width:'+Math.round(v/mx*100)+'%;background:'+col+'"></div></div><div class="num"><b>'+v+'</b></div></div>';
   let h='';for(let t=1;t<=9;t++)h+=row('TRL '+t,c[t]||0,t>=7?'#0f9d8c':t>=4?'#e0a02a':'#7c8cf5');
-  return h+row('nie dotyczy',na,'#b6bdd3')+'<p class="small muted">Zielone: TRL 7–9 (gotowe do wdrożenia). Żółte: TRL 4–6 (rozwój i testy). Fioletowe: TRL 1–3 (badania).</p>';
+  return h+row('nie dotyczy',na,'#b6bdd3')+'<p class="small muted">Zielone: TRL 7–9 (pilotaż lub stosowanie). Żółte: TRL 4–6 (rozwój i testy). Fioletowe: TRL 1–3 (badania).</p>';
 }

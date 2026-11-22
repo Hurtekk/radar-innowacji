@@ -116,7 +116,7 @@ function loadFeed(){
   if(typeof fetch!=='function'||!/^https?:$/.test(location.protocol))return;
   fetch('feed/feed.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(j=>{
     if(!j||!Array.isArray(j.items))return;let n=0;
-    j.items.forEach(r=>{if(!r||!r.id||!r.title||S.items.some(x=>x.id===r.id||(x.url&&x.url===r.url)))return;S.items.push(fromFeed(r));n++});
+    j.items.forEach(r=>{if(!r||!r.id||!r.title||S.items.some(x=>x.id===r.id||(x.url&&x.url===r.url)))return;const item=fromFeed(r);if(item){S.items.push(item);n++}});
     if(n){save();render()}
   }).catch(()=>{});
 }
