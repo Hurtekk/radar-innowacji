@@ -35,5 +35,5 @@
 .home h1.home-title{font-size:clamp(24px,2.4vw,34px);line-height:1.2}
 @media(min-width:1100px){.home h1.home-title{position:relative;left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100vw - 64px);white-space:nowrap}}
 /* Provenance is separate from warnings: editorial assessments are informational. */
-.pill.assessed{background:var(--accent-soft);color:var(--accent-d)}
+.pill.assessed{background:var(--amber-soft);color:var(--amber)}
 .fact-legend{margin:0 0 10px}

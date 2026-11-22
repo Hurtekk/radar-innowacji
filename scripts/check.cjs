@@ -75,4 +75,4 @@ assert.equal(vm.runInContext("budgetConfirmed({value:'11 000 000 PLN',audit:{rea
 assert.equal(vm.runInContext("budgetConfirmed({value:'11 000 000 EUR',audit:{sourceBudget:'11 000 000 PLN'}})",rendering),false);
 assert(vm.runInContext("dataStatusPill({}, {notes:['Brak budżetu']})",rendering).includes('pill plain'));
 assert(vm.runInContext("dataStatusPill({uncertainty:'Nie potwierdzono uruchomienia'}, {notes:[]})",rendering).includes('pill warn'));
-console.log('PASS: potwierdzone budżety zielone, oceny niebieskie, braki neutralne; brak fałszywych potwierdzeń.');
+console.log('PASS: potwierdzone budżety zielone, oceny oznaczone osobno, braki neutralne; brak fałszywych potwierdzeń.');
