@@ -1,6 +1,6 @@
 /* ---------- dostępność cyfrowa (wzorowana na serwisach gov.pl: czcionka, kontrast, klawiatura, deklaracja) ---------- */
 PAGEX.dostepnosc=()=>pg('Deklaracja dostępności',
- '<div class="panel"><p>Radar innowacji dąży do spełnienia wymagań WCAG 2.1 na poziomie AA, zgodnie z ustawą o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych. Jest to prototyp konkursowy, więc pełny audyt dostępności nie został jeszcze wykonany.</p>'+
+ '<div class="panel"><p>Radar innowacyjny ZBIEG dąży do spełnienia wymagań WCAG 2.1 na poziomie AA, zgodnie z ustawą o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych. Jest to prototyp konkursowy, więc pełny audyt dostępności nie został jeszcze wykonany.</p>'+
  '<h3>Co możesz zmienić (pasek „Dostępność” u góry strony)</h3><ul>'+
  '<li><b>Wielkość tekstu (A, A+, A++):</b> trzy stopnie powiększenia całej strony; „A” przywraca normalną.</li>'+
  '<li><b>Wysoki kontrast (ikona połowy koła):</b> czarne tło, biały tekst i żółte akcenty dla osób słabowidzących.</li>'+

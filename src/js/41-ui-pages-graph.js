@@ -1,7 +1,7 @@
 
 /* ====================== nagłówek, pasek widoku, strona główna ====================== */
 function renderTop(){
-  const el=$('hdr'),logo='<button class="logo" data-act="home" aria-label="Radar innowacji, strona główna">'+IC.logo+'<span><b>Radar</b> innowacji</span></button>';
+  const el=$('hdr'),logo='<button class="logo" data-act="home" aria-label="Radar innowacyjny ZBIEG, strona główna">'+IC.logo+'<span><b>Radar</b> innowacyjny ZBIEG</span></button>';
   const acctP=S.acct?'<div class="ddi" style="cursor:default"><span><b>'+esc(S.acct.name)+'</b><br><small>'+esc(S.acct.kind===5?'Inwestor':kindName(S.acct.kind))+' · '+esc(S.acct.email)+'</small></span></div><div class="ddsep"></div><button class="ddi" data-act="logout">Wyloguj</button>':'';
   const acctB=S.acct?ddMenu('acct',esc(S.acct.name.length>18?S.acct.name.slice(0,17)+'…':S.acct.name),acctP):'<button class="btn ghost sm" data-act="acct">Zaloguj</button>';
   if(!S.role){el.innerHTML=logo+'<span></span><div class="hright"><button class="btn ghost sm" data-page="opis">Jak to działa</button>'+acctB+'</div>';return}
@@ -32,7 +32,7 @@ function renderSub(){
 }
 function renderHome(){
   const strong=graphPairs().filter(x=>x.sc>=70).length;
-  return '<section class="home"><span class="kick">'+IC.radar+' Radar innowacji · Podkarpacie</span><h1>Ukryte innowacje, <em>połączone z tymi, którzy je wdrożą</em></h1><p class="lead">Pomysły ze szkół, uczelni i samorządów zwykle zostają tam, gdzie powstały. Radar pomaga je odnaleźć, ocenić i skierować do właściwych ludzi.</p>'+searchBox('Szukaj tematu, np. lotnictwo, szkoła, energia')+
+  return '<section class="home"><span class="kick">'+IC.radar+' Radar innowacyjny ZBIEG · Podkarpacie</span><h1>Ukryte innowacje, <em>połączone z tymi, którzy je wdrożą</em></h1><p class="lead">Pomysły ze szkół, uczelni i samorządów zwykle zostają tam, gdzie powstały. Radar pomaga je odnaleźć, ocenić i skierować do właściwych ludzi.</p>'+searchBox('Szukaj tematu, np. lotnictwo, szkoła, energia')+
   '<div class="roles">'+(S.acct?'<button class="role" data-role="'+acctRole(S.acct)+'"><span class="ic">'+IC.radar+'</span><h3>Przejdź do mojego panelu</h3><p class="muted small">Zalogowano jako '+esc(S.acct.name)+'.</p><span class="go">Wchodzę →</span></button>':'<button class="role" data-role="inst"><span class="ic">'+IC.radar+'</span><h3>Przeglądaj jako gość</h3><p class="muted small">Innowacje, inwestorzy i mapy bez logowania. Kontakty są ukryte.</p><span class="go">Wchodzę →</span></button><button class="role t" data-act="acct"><span class="ic">'+IC.coin+'</span><h3>Zaloguj się lub załóż konto</h3><p class="muted small">Zgłaszaj innowacje lub oferty. Do wypróbowania jest konto demo szkoły i funduszu.</p><span class="go">Logowanie →</span></button>')+'</div>'+
   '<p class="small muted" style="margin-top:22px">'+(S.acct?'Zalogowano jako <b>'+esc(S.acct.name)+'</b>.':'Masz instytucję, szkołę lub fundusz? <button class="linkbtn" data-act="acct">Załóż konto lub zaloguj się</button>')+'</p><div class="flow"><span><b>1</b>Zgłoś</span><span><b>2</b>Oceń</span><span><b>3</b>Połącz</span></div>'+
   '<p class="stats">'+S.items.length+' innowacji · '+(PARTNERS.length)+' inwestorów i partnerów · '+strong+' silnych powiązań</p></section>';
