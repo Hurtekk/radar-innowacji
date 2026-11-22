@@ -1,70 +1,123 @@
 # Radar innowacji
 
-Narzędzie do wyszukiwania, opisywania i oceniania **istniejących** polskich innowacji (prototyp na HackNation 2026).
-Wynik to jeden samodzielny plik `dist/index.html`.
+Prototyp na HackNation 2026 do wyszukiwania, opisywania i oceniania istniejących polskich innowacji.
 
-## Struktura repo
+**[Otwórz aplikację na GitHub Pages](https://hurtekk.github.io/radar-innowacyjny-zbieg/)**
 
-```
-data/                      dane źródłowe (JSON), wstrzykiwane do aplikacji przy budowaniu
-  records/
-    ncbr-projects.json     190 projektów z bazy sukcesów NCBR (fakty ze źródła: tytuł, beneficjent, program, budżet…)
-    assessments.json       opisy, rodzaj innowacji, TRL i poziom wdrożenia (wdr 1–5 + uzasadnienie wb) – OCENA AUTORÓW, klucz = id rekordu
-    detected-feed.json     migawka kanału „wykryte” (odświeżana przez collector/)
-  reference/               programy NCBR, partnerzy, publiczne dane kontaktowe instytucji i firm
-  geo/                     miejscowości, środki województw, kontury województw (SVG path)
-src/
-  js/                      kod aplikacji; numer w nazwie = kolejność w skrypcie (10 logika, 20 dane/lokalizacje, 40+ interfejs)
-  styles/                  main.css, overrides.css i methodology.css (kolejność: STYLES w build.py)
-  templates/index.html     szkielet strony z ekranem startowym
-scripts/build.py           składa src/ + data/ w dist/
-dist/                      wynik budowania (index.html, script.js)
-collector/                 kolektor nowych projektów (Node 20+), feed/feed.json
-.github/workflows/         codzienne uruchamianie kolektora
-archive/authoring/         jednorazowe materiały z ręcznego opisywania rekordów (nie są częścią builda)
-```
+Aplikacja działa w przeglądarce, bez osobnego backendu i bazy danych. Gotowy plik `dist/index.html` zawiera kod, style i dane katalogu.
 
-## Budowanie
+## Uruchomienie
 
-```
-python scripts/build.py
+### Online
+
+Otwórz [wersję na GitHub Pages](https://hurtekk.github.io/radar-innowacyjny-zbieg/). Nic nie trzeba instalować.
+
+### Z pliku
+
+Pobierz repozytorium przez **Code → Download ZIP**, rozpakuj je i otwórz `dist/index.html` w przeglądarce.
+
+Możesz też pobrać kod przez Git:
+
+```bash
+git clone https://github.com/Hurtekk/radar-innowacyjny-zbieg.git
+cd radar-innowacyjny-zbieg
 ```
 
-Potrzebny jest tylko Python 3 (bez zależności). Skrypt waliduje JSON-y, ostrzega o rekordach bez oceny
-(takie rekordy nie trafiają do radaru) i zapisuje `dist/index.html` oraz `dist/script.js`.
+### Przez lokalny serwer
 
-## Dodawanie i zmiana rekordów
+Potrzebny jest Python 3. W głównym folderze repozytorium uruchom:
 
-- Nowy projekt NCBR: dopisz obiekt do `data/records/ncbr-projects.json` (kolejne `id`, np. `n191`)
-  oraz wpis o tym samym id w `data/records/assessments.json` (`typ`, `trl`, `tb`, `wdr`, `wb`, `opis`, `zast`). Potem build.
-  `wdr` to poziom rzeczywistego użycia 1–5 (skala w metodologii oceny), a `wb` to jego krótkie uzasadnienie na podstawie źródła.
-- **Id rekordu jest stabilne** – nie zmieniaj ani nie przenumerowuj istniejących, bo odwołują się do nich oceny i zapisany stan użytkowników.
-- Rekord bez wpisu w `assessments.json` jest pomijany (obecnie `n58` i `n60`).
-
-## Skąd są dane
-- Pozycje pochodzą z publicznej Bazy sukcesów beneficjentów NCBR (https://www.gov.pl/web/ncbr/). Każda pozycja ma link do swojej strony tam; pozycje bez źródła nie trafiają do radaru.
-- Opisy, rodzaj innowacji i **TRL są oceną autorów na podstawie strony źródłowej**, a nie daną ze źródła (patrz „Metodologia oceny” w aplikacji).
-- Konta w `src/js/22-demo-accounts.js` są demonstracyjne, dane fikcyjne (oznaczone DEMO).
-- Kontury województw (`data/geo/voivodeship-outlines.json`) pochodzą z GeoJSON `ppatrzyk/polska-geojson`; **licencję sprawdź przed publikacją**.
-
-## Kolektor
-
-Opis w [collector/README.md](collector/README.md). Aplikacja przy starcie próbuje pobrać `feed/feed.json`
-(względem adresu strony); bez serwera działa wbudowana migawka z `data/records/detected-feed.json`.
-
-## Kontrola spójności i aktualizacja katalogu
-
-Po zmianie danych lub reguł uruchom:
-
+```bash
+python3 -m http.server 8000 --bind 127.0.0.1 --directory dist
 ```
+
+Wejdź na [http://localhost:8000](http://localhost:8000). Serwer zatrzymasz przez `Ctrl+C`.
+
+Na Windows zamiast `python3` możesz użyć `py -3`.
+
+## Praca nad aplikacją
+
+Kod zmieniaj w `src/`, a dane w `data/`. Następnie zbuduj aplikację:
+
+```bash
+python3 scripts/build.py
+```
+
+Wystarczy Python 3, bez dodatkowych bibliotek. Skrypt sprawdza poprawność JSON-ów i generuje `dist/index.html` oraz `dist/script.js`. Rekordy bez oceny w `assessments.json` są pomijane.
+
+Po budowaniu otwórz plik lub uruchom lokalny serwer. Jeśli aplikacja jest już otwarta, odśwież stronę.
+
+### Publikacja na GitHub Pages
+
+Po wysłaniu zmian do gałęzi `main` GitHub Actions publikuje zawartość `dist/`.
+
+**Workflow nie buduje aplikacji.** Po zmianach w kodzie lub danych najpierw uruchom `python3 scripts/build.py` i dołącz wygenerowane pliki z `dist/` do commita.
+
+Publikację można też uruchomić ręcznie: **Actions → Deploy static content to Pages → Run workflow**.
+
+### Sprawdzenie zmian
+
+Po zmianie danych lub reguł uruchom poniższe kontrole. Oprócz Pythona potrzebny jest Node.js 20 lub nowszy.
+
+```bash
 python3 scripts/build.py
 node --check dist/script.js
 node scripts/check.cjs
 node collector/test.mjs
 ```
 
-`source-audit.json` przechowuje wynik odczytu, zakres kontroli, datę oraz krótkie fragmenty dowodów. Odczyt strony nie oznacza pełnej weryfikacji opisu. Pole `canonicalId` w ocenie wiąże dodatkowy wpis z jedną kartą projektu; `sourceUrls` zachowuje oba źródła.
+## Struktura repozytorium
 
-Wersja katalogu `DATA_REVISION` służy do aktualizacji już zapisanych danych. Przed pierwszą migracją aplikacja zachowuje poprzedni zapis w lokalnej kopii `radar-innowacji-v9-backup-before-<wersja>`. Aktualizuje pola redakcyjne i przelicza oceny, zachowując notatki, kontakty użytkownika, profil, statusy i pozostałe dane. Scalony rekord aliasu zostaje w `mergedRecords`. Kolejna zmiana danych wymaga podniesienia `DATA_REVISION`.
+- `src/` — kod JavaScript, style i szablon strony.
+- `data/records/` — projekty, oceny, rekomendacje i informacje o źródłach.
+- `data/reference/` — programy NCBR, partnerzy i publiczne dane kontaktowe.
+- `data/geo/` — miejscowości i dane województw.
+- `scripts/` — budowanie aplikacji i kontrola spójności.
+- `dist/` — gotowa aplikacja publikowana na GitHub Pages.
+- `collector/` — osobne narzędzie do wyszukiwania nowych projektów.
+- `.github/workflows/` — automatyczna publikacja na GitHub Pages.
+- `archive/authoring/` — materiały pomocnicze używane przy opracowywaniu rekordów; nie są częścią budowania.
 
-Budżety mają rozpoznaną walutę. Kwoty EUR nie są porównywane z progami PLN bez udokumentowanej konwersji (`budget.amountPLN` i `budget.conversionSource`). Brak zasięgu skutkuje roboczą wartością neutralną i widocznym zakresem wrażliwości. Udział w programie międzynarodowym nie jest deklaracją nowości światowej.
+Pliki JavaScript z `src/js/` są łączone w kolejności nazw. Kolejność arkuszy stylów określa lista `STYLES` w `scripts/build.py`.
+
+## Dane i sposób oceny
+
+Katalog obejmuje projekty z publicznej [Bazy sukcesów beneficjentów NCBR](https://www.gov.pl/web/ncbr/). Rekordy zawierają odnośniki do stron źródłowych.
+
+Opisy, rodzaj innowacji, TRL i poziom wdrożenia są oceną autorów na podstawie źródeł. Nie należy traktować ich jako oficjalnych ocen NCBR. Szczegóły opisuje „Metodologia oceny” w aplikacji.
+
+- Konta demonstracyjne w `src/js/22-demo-accounts.js` zawierają fikcyjne dane i są oznaczone jako DEMO.
+- Kontury województw pochodzą z projektu `ppatrzyk/polska-geojson`. Ich licencja wymaga sprawdzenia przed dalszą publikacją.
+- `data/records/source-audit.json` zapisuje zakres i datę sprawdzenia źródła oraz krótkie fragmenty dowodów. Sam odczyt strony nie oznacza pełnej weryfikacji opisu.
+- Kwoty EUR nie są porównywane z progami PLN bez udokumentowanego przeliczenia (`budget.amountPLN` i `budget.conversionSource`).
+- Brak danych o zasięgu oznacza roboczą wartość neutralną i pokazanie zakresu wrażliwości oceny. Udział w programie międzynarodowym sam w sobie nie oznacza nowości światowej.
+
+### Dodawanie i aktualizacja rekordów
+
+1. Dodaj projekt do `data/records/ncbr-projects.json`, nadając mu nowe, unikalne `id`.
+2. Dodaj ocenę pod tym samym `id` w `data/records/assessments.json`. Uzupełnij pola `typ`, `trl`, `tb`, `wdr`, `wb`, `opis` i `zast`, zgodnie z istniejącymi wpisami.
+3. Zbuduj aplikację i uruchom kontrole spójności.
+
+Pole `wdr` określa poziom rzeczywistego użycia w skali 1–5, a `wb` zawiera krótkie uzasadnienie na podstawie źródła.
+
+Nie zmieniaj ani nie przenumerowuj istniejących identyfikatorów — korzystają z nich oceny i zapisane dane użytkowników. Pole `canonicalId` wiąże dodatkowy wpis z jedną kartą projektu, a `sourceUrls` zachowuje odnośniki do źródeł.
+
+### Aktualizacja zapisanych danych
+
+Przy zmianie danych katalogu podnieś `DATA_REVISION`. Mechanizm migracji aktualizuje pola redakcyjne i przelicza oceny, zachowując notatki, kontakty, profil i statusy użytkownika.
+
+Przed migracją powstaje lokalna kopia `radar-innowacji-v9-backup-before-<wersja>`. Scalony rekord aliasu pozostaje w `mergedRecords`.
+
+## Kolektor nowych projektów
+
+Kolektor jest osobnym narzędziem i nie jest wymagany do uruchomienia aplikacji. Wymaga Node.js 20 lub nowszego, bez dodatkowych zależności.
+
+W głównym folderze repozytorium uruchom:
+
+```bash
+node collector/collect.mjs
+```
+
+Wynik trafia do `collector/feed/feed.json`. Więcej informacji znajdziesz w [instrukcji kolektora](collector/README.md).
+
+Obecny workflow GitHub Actions publikuje stronę; nie uruchamia kolektora cyklicznie. Samo uruchomienie kolektora nie aktualizuje też wbudowanej migawki `data/records/detected-feed.json` ani wersji na GitHub Pages.
