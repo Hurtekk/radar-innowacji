@@ -60,7 +60,6 @@ function scoreNotes(i){
   const notes=[],b=budgetOf(i);
   if(scopeOf(i)===null)notes.push(b?'Budżet '+b.currency+' nie jest porównywany z progami PLN bez udokumentowanego kursu.':'Brak danych o zasięgu; do wyniku roboczego przyjęto neutralne 3/5 za zasięg.');
   if(i.uncertainty)notes.push(i.uncertainty);
-  if(i.audit&&!i.audit.readable)notes.push('Nie udało się odczytać źródła podczas kontroli '+i.audit.checkedAt+'. Nie oznacza to, że strona nie działa; twierdzenia wymagają sprawdzenia.');
   if(!(i.wdr>0))notes.push('Brak oceny rzeczywistego użycia; sam etap ani TRL nie dowodzi wdrożenia.');
   return notes;
 }
@@ -100,41 +99,51 @@ function completeness(inn){
   return Math.round(100*checks.filter(Boolean).length/checks.length);
 }
 function recommend(inn,score,sims,comp){
-  const tech=inn.type==='technologiczna', top=sims[0], res={primary:null,secondary:[],alerts:[]};
-  if(top&&top.sim>=0.35)res.alerts.push({lvl:'warn',txt:'Możliwe dublowanie prac: „'+top.title+'” ('+top.src+', podobieństwo '+Math.round(top.sim*100)+'%). Przed dalszymi inwestycjami warto skontaktować się z autorami i rozważyć wspólny rozwój.'});
-  else if(top&&top.sim>=0.2)res.alerts.push({lvl:'info',txt:'Znaleziono częściowo podobne rozwiązanie: „'+top.title+'” ('+top.src+', '+Math.round(top.sim*100)+'%). Sprawdź, czym Twoje podejście się różni.'});
-  const why=[];
-  if(comp<60){
-    why.push('Kompletność opisu to '+comp+'%, a ocena potencjału wymaga co najmniej 60%.');
-    why.push('Brakujące informacje (opis, kontakt, tagi, dokumentacja) ograniczają wiarygodność oceny.');
-    res.primary={key:'dane',title:'Uzupełnić dane i obserwować',why};
-  }else if(score<45){
-    why.push('Ocena '+score+'/100 jest poniżej progu 45.');
-    if(inn.stage<=1)why.push('Rozwiązanie jest na etapie pomysłu, więc brakuje dowodów skuteczności.');
-    res.primary={key:'obserwuj',title:'Obserwować i doprecyzować pomysł',why};
-    res.secondary.push({title:'Konsultacja z mentorem PCI',why:['Mentor pomoże sprawdzić potrzebę i zaplanować pierwszy test.']});
-  }else if(inn.stage<=1){
-    why.push('Etap „'+STAGES[inn.stage]+'” wymaga potwierdzenia pomysłu w praktyce.');
-    why.push('Ocena '+score+'/100 uzasadnia inwestycję w prototyp.');
-    res.primary={key:'rozwoj',title:'Rozwinąć: prototypowanie i mentoring',why};
-    res.secondary.push({title:'Finansowanie pierwszego testu',why:['Mały grant lub budżet obywatelski wystarczą na prototyp.']});
-  }else if(tech&&inn.stage>=2&&score>=55){
-    why.push('Innowacja technologiczna na etapie „'+STAGES[inn.stage]+'” z oceną '+score+'/100.');
-    if(inn.ip>0)why.push('Ochrona własności jest w toku lub uzyskana, co ułatwia licencjonowanie.');
-    else why.push('Brak ochrony własności. Zalecana konsultacja w biurze transferu technologii przed publikacją.');
-    res.primary={key:'komerc',title:'Komercjalizacja: licencja, spin-off lub akceleracja',why};
-    res.secondary.push({title:'Finansowanie B+R i wdrożenia',why:['Programy typu NCBR wspierają dojrzewanie technologii od prototypu do wdrożenia.']});
-  }else if(inn.stage>=3&&(!tech||INFRA_VAL[inn.infra]>=4)){
-    why.push('Rozwiązanie działa w praktyce (etap „'+STAGES[inn.stage]+'”) i ma niskie wymagania infrastrukturalne.');
-    why.push('Typ „'+inn.type+'” zwykle przenosi się przez replikację wzorca, nie licencję.');
-    res.primary={key:'transfer',title:'Transfer i replikacja w innych instytucjach',why};
-    res.secondary.push({title:'Wymiana dobrych praktyk i finansowanie',why:['Programy typu Interreg wspierają upowszechnianie sprawdzonych rozwiązań.']});
+  const tech=inn.type==='technologiczna'&&!inn.trlNA,top=sims[0],stage=inn.stage;
+  const ip=inn.ip===2?'Zadeklarowana ochrona własności':inn.ip===1?'Zadeklarowane zgłoszenie / ochrona w toku':'Brak potwierdzonych danych o ochronie / nie dotyczy';
+  const res={primary:null,secondary:[],alerts:[],basis:[
+    'Ocena potencjału: '+score+'/100 (ocena radaru).',
+    'Etap: '+(STAGES[stage]||'nieustalony')+(inn.trlNA?' (TRL nie dotyczy).':'; TRL '+trlOf(inn)+(inn.trlBasis==='source'?' ze źródła.':' — ocena radaru.')),
+    ip+'.',
+    top?'Najbliższy opis: „'+top.title+'”, '+Math.round(top.sim*100)+'% podobieństwa tekstu.':'Brak innych opisów do porównania.'
+  ]};
+  const set=(key,title,why,steps)=>res.primary={key,title,why,steps};
+  if(top&&top.sim>=.35){
+    set('wspolpraca','Sprawdzić możliwość współpracy zamiast dublowania prac',
+      ['Podobieństwo opisu do „'+top.title+'” wynosi '+Math.round(top.sim*100)+'%. To sygnał do porównania, nie dowód identyczności rozwiązań.'],
+      ['Porównaj funkcje, odbiorców i wyniki obu rozwiązań.', 'Skontaktuj się z autorami podobnego projektu i ustal możliwości wspólnego rozwoju lub wykorzystania ich rozwiązania.', 'Przed rozpoczęciem kolejnych prac ustal różnice, podział zadań i zasady korzystania z wyników.']);
+  }else if(!Number.isInteger(stage)||stage<0||stage>4){
+    set('dane','Ustalić etap rozwoju', ['Bez etapu rozwoju nie można dobrać następnego testu lub wdrożenia.'], ['Potwierdź z zespołem, co już działa i jakie testy przeprowadzono.', 'Uzupełnij etap oraz dowody wyników i ponownie sprawdź rekomendację.']);
+  }else if(stage<=1){
+    set('rozwoj','Rozwój: przygotować i przetestować prototyp',
+      ['Etap „'+STAGES[stage]+'” wymaga sprawdzenia rozwiązania na małą skalę.', 'Ocena '+score+'/100 pomaga ustalić priorytet; nie potwierdza jeszcze skuteczności.'],
+      ['Wybierz jedną potrzebę odbiorcy i mierzalne kryterium powodzenia.', 'Przygotuj prototyp lub próbną wersję usługi i przetestuj ją z odbiorcą.', 'Zapisz wyniki, koszty i zmiany potrzebne przed pilotażem.']);
+  }else if(stage===2||!(inn.wdr>=3)){
+    set('rozwoj','Rozwój: przeprowadzić pilotaż z odbiorcą',
+      ['Etap „'+STAGES[stage]+'” i dostępne dowody użycia wymagają sprawdzenia rezultatów u odbiorcy.', 'Sama gotowość technologiczna nie dowodzi wdrożenia.'],
+      ['Pozyskaj partnera pilotażu i określ zakres testu.', 'Ustal mierniki skuteczności, kosztów oraz warunki zakończenia pilotażu.', 'Porównaj wyniki z kryteriami i udokumentuj decyzję o dalszym wdrożeniu.']);
+  }else if(tech&&score>=55){
+    set('komerc','Komercjalizacja: przygotować licencję, spin-off lub akcelerację',
+      ['Etap „'+STAGES[stage]+'”, dowody użycia '+inn.wdr+'/5 i ocena '+score+'/100 uzasadniają sprawdzenie ścieżki rynkowej.', ip+'; forma komercjalizacji wymaga ustalenia praw do wyników.'],
+      ['Potwierdź właściciela wyników, zakres praw i aktualny status ochrony z zespołem lub centrum transferu technologii.', 'Zweryfikuj odbiorcę, zapotrzebowanie i koszty wdrożenia.', 'Wybierz licencję dla istniejącego partnera, spin-off dla własnego biznesu albo akcelerację, gdy potrzebne jest wsparcie rynkowe.']);
+  }else if(!tech&&inn.wdr>=3){
+    set('transfer','Transfer i replikacja w innych instytucjach',
+      ['Rozwiązanie ma dowody użycia na poziomie '+inn.wdr+'/5.', 'Dla tego typu rozwiązania warto sprawdzić przeniesienie sprawdzonego sposobu działania do kolejnej instytucji.'],
+      ['Opisz sposób wdrożenia, wymagane zasoby i wyniki dotychczasowego użycia.', 'Ustal prawa do materiałów i warunki udostępnienia.', 'Wybierz kolejną instytucję, dostosuj rozwiązanie i porównaj efekty po wdrożeniu.']);
   }else{
-    why.push('Ocena '+score+'/100 przy etapie „'+STAGES[inn.stage]+'” wskazuje na potrzebę dalszego rozwoju.');
-    res.primary={key:'rozwoj',title:'Rozwinąć: pilotaż i finansowanie',why};
-    res.secondary.push({title:'Poszukać partnera wdrożeniowego',why:['Partner z branży przyspieszy przejście od prototypu do wdrożenia.']});
+    set('rozwoj','Rozwój: potwierdzić efekty przed skalowaniem',
+      ['Ocena '+score+'/100 wymaga wyjaśnienia słabszych kryteriów przed wyborem ścieżki rynkowej.'],
+      ['Sprawdź na karcie kryteria o najniższej ocenie i ich uzasadnienia.', 'Zbierz dowody skuteczności i kosztów u odbiorcy.', 'Po uzupełnieniu danych ponownie oceń możliwość komercjalizacji lub transferu.']);
   }
-  if(top&&top.sim>=0.35)res.secondary.unshift({title:'Współpraca zamiast dublowania',why:['Podobne rozwiązanie już istnieje, więc wspólny rozwój obniży koszt i ryzyko.']});
+  if(top&&top.sim>=.2&&top.sim<.35)res.alerts.push({lvl:'info',txt:'Częściowo podobny opis: „'+top.title+'” ('+Math.round(top.sim*100)+'%). Porównaj różnice i możliwość współpracy.'});
+  if(comp<60)res.alerts.push({lvl:'info',txt:'Kompletność opisu: '+comp+'%. Uzupełnij dostępne informacje; rekomendacja jest wstępna.'});
+  if(inn.uncertainty)res.alerts.push({lvl:'warn',txt:'Do sprawdzenia: '+inn.uncertainty});
+  if(tech&&inn.ip!==1&&inn.ip!==2)res.secondary.push({title:'Ustalić prawa do wyników',why:['Brak danych o ochronie nie oznacza braku praw. Przed udostępnieniem dokumentacji ustal właściciela i zasady wykorzystania.']});
+  const authored=AI_RECOMMENDATIONS[inn.id];
+  if(authored && authored.sourceTitle===inn.title && authored.sourceDescription===inn.description){
+    res.primary={key:'opracowane',title:authored.title,why:[authored.why],steps:authored.steps};
+    res.secondary=[];res.authored=true;
+  }
   return res;
 }
 /* baza inwestorów (uzupełniana z rejestru) */

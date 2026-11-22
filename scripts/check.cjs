@@ -76,3 +76,31 @@ assert.equal(vm.runInContext("budgetConfirmed({value:'11 000 000 EUR',audit:{sou
 assert(vm.runInContext("dataStatusPill({}, {notes:['Brak budżetu']})",rendering).includes('pill plain'));
 assert(vm.runInContext("dataStatusPill({uncertainty:'Nie potwierdzono uruchomienia'}, {notes:[]})",rendering).includes('pill warn'));
 console.log('PASS: potwierdzone budżety zielone, oceny oznaczone osobno, braki neutralne; brak fałszywych potwierdzeń.');
+
+// Recommendations follow maturity and actual use; textual similarity is only a review signal.
+const next=(extra={},score=70,sims=[],comp=85)=>{ctx.nextInput=Object.assign({type:'technologiczna',stage:4,trl:9,wdr:4,ip:0},extra);ctx.nextScore=score;ctx.nextSims=sims;ctx.nextComp=comp;return run('recommend(nextInput,nextScore,nextSims,nextComp)')};
+assert.equal(next({stage:0,wdr:1}).primary.key,'rozwoj');
+assert(next({stage:1,wdr:1}).primary.title.includes('prototyp'));
+assert(next({stage:2,wdr:1}).primary.title.includes('pilotaż'));
+assert(next({stage:4,wdr:1}).primary.title.includes('pilotaż'));
+assert.equal(next().primary.key,'komerc');
+assert.equal(next({},54).primary.key,'rozwoj');
+assert.equal(next({},55).primary.key,'komerc');
+assert.equal(next({type:'edukacyjna',trlNA:true}).primary.key,'transfer');
+assert.equal(next({stage:null}).primary.key,'dane');
+assert.equal(next({},70,[{id:'other',title:'Inny projekt',sim:.35}]).primary.key,'wspolpraca');
+assert.equal(next({},70,[{id:'other',title:'Inny projekt',sim:.349}]).primary.key,'komerc');
+assert.equal(next({},70,[],30).primary.key,'komerc');
+assert(next({},70,[],30).alerts.some(x=>x.txt.includes('wstępna')));
+assert(next().basis.some(x=>x.includes('Brak potwierdzonych danych')));
+assert(next({ip:1}).basis.some(x=>x.includes('w toku')));
+assert(next({ip:2}).basis.some(x=>x.includes('Zadeklarowana ochrona')));
+for(const i of rows){const a=run(`analyze(S.items.find(x=>x.id===${JSON.stringify(i.id)}))`);assert.equal(a.rec.primary.steps.length,3,i.id);assert.equal(a.rec.basis.length,4,i.id);}
+vm.runInContext(fs.readFileSync(root+'/src/js/42-ui-drawer-modal.js','utf8'),rendering);
+assert(vm.runInContext('recBlock(analyze(subject))',rendering).includes('Co zrobić teraz'));
+assert(vm.runInContext('cardText(subject,analyze(subject))',rendering).includes('CO ZROBIĆ TERAZ:'));
+rendering.nextUnsafe=next({},70,[{title:'<img src=x onerror=alert(1)>',sim:.5}]);
+assert(!vm.runInContext('recBlock({rec:nextUnsafe})',rendering).includes('<img'));
+console.log('PASS: wszystkie ścieżki rekomendacji, progi podobieństwa i oceny, brak danych IP, 198 planów działania, eksport i bezpieczne wyświetlanie.');
+
+assert(vm.runInContext('cardTxt(subject,analyze(subject))',rendering).includes('CO ZROBIĆ TERAZ:'));

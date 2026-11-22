@@ -25,6 +25,7 @@ DATA = [
     ('GEOPOLY',          'geo/voivodeship-outlines.json'),
     ('NCBR_PROJECTS',    'records/ncbr-projects.json'),
     ('REWRITE',          'records/assessments.json'),
+    ('AI_RECOMMENDATIONS', 'records/recommendations.json'),
     ('SOURCE_AUDIT',     'records/source-audit.json'),
     ('DETECTED_FEED',    'records/detected-feed.json'),
     ('NCBR_PROGS',       'reference/ncbr-programmes.json'),
