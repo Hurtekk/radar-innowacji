@@ -70,15 +70,6 @@ Opisy, rodzaj innowacji, TRL i poziom wdrożenia są oceną autorów na podstawi
 - Kwoty EUR nie są porównywane z progami PLN bez udokumentowanego przeliczenia (`budget.amountPLN` i `budget.conversionSource`).
 - Brak danych o zasięgu oznacza roboczą wartość neutralną i pokazanie zakresu wrażliwości oceny. Udział w programie międzynarodowym sam w sobie nie oznacza nowości światowej.
 
-### Dodawanie i aktualizacja rekordów
-
-1. Dodaj projekt do `data/records/ncbr-projects.json`, nadając mu nowe, unikalne `id`.
-2. Dodaj ocenę pod tym samym `id` w `data/records/assessments.json`. Uzupełnij pola `typ`, `trl`, `tb`, `wdr`, `wb`, `opis` i `zast`, zgodnie z istniejącymi wpisami.
-3. Zbuduj aplikację.
-
-Pole `wdr` określa poziom rzeczywistego użycia w skali 1–5, a `wb` zawiera krótkie uzasadnienie na podstawie źródła.
-
-Nie zmieniaj ani nie przenumerowuj istniejących identyfikatorów — korzystają z nich oceny i zapisane dane użytkowników. Pole `canonicalId` wiąże dodatkowy wpis z jedną kartą projektu, a `sourceUrls` zachowuje odnośniki do źródeł.
 
 ### Aktualizacja zapisanych danych
 
