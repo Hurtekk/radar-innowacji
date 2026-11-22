@@ -65,7 +65,5 @@ Katalog obejmuje projekty z publicznej [Bazy sukcesów beneficjentów NCBR](http
 
 Opisy, rodzaj innowacji, TRL i poziom wdrożenia są oceną autorów na podstawie źródeł. Nie należy traktować ich jako oficjalnych ocen NCBR. Szczegóły opisuje „Metodologia oceny” w aplikacji.
 
-- Kontury województw pochodzą z projektu `ppatrzyk/polska-geojson`. Ich licencja wymaga sprawdzenia przed dalszą publikacją.
-- `data/records/source-audit.json` zapisuje zakres i datę sprawdzenia źródła oraz krótkie fragmenty dowodów. Sam odczyt strony nie oznacza pełnej weryfikacji opisu.
-- Kwoty EUR nie są porównywane z progami PLN bez udokumentowanego przeliczenia (`budget.amountPLN` i `budget.conversionSource`).
+- Kontury województw pochodzą z projektu `ppatrzyk/polska-geojson`.
 - Brak danych o zasięgu oznacza roboczą wartość neutralną i pokazanie zakresu wrażliwości oceny. Udział w programie międzynarodowym sam w sobie nie oznacza nowości światowej.
