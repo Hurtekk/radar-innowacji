@@ -89,7 +89,7 @@ function criterionWhy(i,k,a){
 
 /* ---------- nagłówek, pasek widoku, strona główna ---------- */
 function renderTop(){
-  const el=$('hdr'),logo='<button class="logo" data-act="home" aria-label="Radar innowacyjny ZBIEG, strona główna">'+IC.logo+'<span><b>Radar</b> innowacyjny ZBIEG</span></button>';
+  const el=$('hdr'),logo='<button class="logo" data-act="home" aria-label="Radar innowacji ZBIEG, strona główna">'+IC.logo+'<span><b>Radar</b> innowacji ZBIEG</span></button>';
   const menuP=[['szukam','Szukam rozwiązania'],['opis','Jak to działa'],['statystyki','Statystyki innowacji'],['metod','Metodologia oceny'],['zrodla','Źródła i aktualizacje'],['analityka','Anonimowa analityka'],['priv','Prywatność i RODO'],['integr','Integracje i eksport'],['rozwoj','Skalowanie i rozwój'],['dostepnosc','Deklaracja dostępności']].map(x=>'<button class="ddi" data-page="'+x[0]+'">'+x[1]+'</button>').join('');
   const menu=ddMenu('m','Menu',menuP);
   if(!S.role){el.innerHTML=logo+'<span></span><div class="hright"><button class="btn sm" data-page="szukam">Szukam rozwiązania</button><button class="btn ghost sm" data-page="opis">Jak to działa</button>'+menu+'</div>';renderDrop();return}
@@ -112,7 +112,7 @@ function renderHome(){
   const byA=a=>S.items.filter(i=>area3Of(i)===a).length;
   const audT=AUD.slice(1).map(a=>'<button class="role" data-aud="'+a.id+'"><h3>'+esc(a.name)+'</h3><p class="muted small">'+esc(a.d)+'</p><span class="go">Szukam jako ta grupa →</span></button>').join('');
   const areaT=AREAS.map(a=>'<button class="role" data-area="'+a+'"><span class="areadot" style="background:'+AREA_C[a]+'"></span><h3>Innowacja '+a.toLowerCase().replace(/a$/,'a')+'</h3><p class="muted small">'+AREA_D[a]+'</p><span class="go">'+byA(a)+' w radarze →</span></button>').join('');
-  return '<section class="home"><h1 class="home-title">Poznaj <em>Radar innowacyjny ZBIEG</em>. Odkryj polskie rozwiązania</h1>'+
+  return '<section class="home"><h1 class="home-title">Poznaj <em>Radar innowacji ZBIEG</em>. Odkryj polskie rozwiązania</h1>'+
   homeData()+
   '<div class="row" style="justify-content:center;margin:26px 0 8px"><button class="btn" data-aud="all">Przeglądaj wszystkie '+n+' innowacji</button></div>'+
   '<h2 class="hs">Wybierz dziedzinę, która Cię interesuje</h2><div class="roles roles3">'+areaT+'</div></section>';

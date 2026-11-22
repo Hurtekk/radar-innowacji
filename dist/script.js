@@ -702,7 +702,7 @@ function factsBlock(inn){
 
 /* ====================== nagłówek, pasek widoku, strona główna ====================== */
 function renderTop(){
-  const el=$('hdr'),logo='<button class="logo" data-act="home" aria-label="Radar innowacyjny ZBIEG, strona główna">'+IC.logo+'<span><b>Radar</b> innowacyjny ZBIEG</span></button>';
+  const el=$('hdr'),logo='<button class="logo" data-act="home" aria-label="Radar innowacji ZBIEG, strona główna">'+IC.logo+'<span><b>Radar</b> innowacji ZBIEG</span></button>';
   const acctP=S.acct?'<div class="ddi" style="cursor:default"><span><b>'+esc(S.acct.name)+'</b><br><small>'+esc(S.acct.kind===5?'Inwestor':kindName(S.acct.kind))+' · '+esc(S.acct.email)+'</small></span></div><div class="ddsep"></div><button class="ddi" data-act="logout">Wyloguj</button>':'';
   const acctB=S.acct?ddMenu('acct',esc(S.acct.name.length>18?S.acct.name.slice(0,17)+'…':S.acct.name),acctP):'<button class="btn ghost sm" data-act="acct">Zaloguj</button>';
   if(!S.role){el.innerHTML=logo+'<span></span><div class="hright"><button class="btn ghost sm" data-page="opis">Jak to działa</button>'+acctB+'</div>';return}
@@ -733,7 +733,7 @@ function renderSub(){
 }
 function renderHome(){
   const strong=graphPairs().filter(x=>x.sc>=70).length;
-  return '<section class="home"><span class="kick">'+IC.radar+' Radar innowacyjny ZBIEG · Podkarpacie</span><h1>Ukryte innowacje, <em>połączone z tymi, którzy je wdrożą</em></h1><p class="lead">Pomysły ze szkół, uczelni i samorządów zwykle zostają tam, gdzie powstały. Radar pomaga je odnaleźć, ocenić i skierować do właściwych ludzi.</p>'+searchBox('Szukaj tematu, np. lotnictwo, szkoła, energia')+
+  return '<section class="home"><span class="kick">'+IC.radar+' Radar innowacji ZBIEG · Podkarpacie</span><h1>Ukryte innowacje, <em>połączone z tymi, którzy je wdrożą</em></h1><p class="lead">Pomysły ze szkół, uczelni i samorządów zwykle zostają tam, gdzie powstały. Radar pomaga je odnaleźć, ocenić i skierować do właściwych ludzi.</p>'+searchBox('Szukaj tematu, np. lotnictwo, szkoła, energia')+
   '<div class="roles">'+(S.acct?'<button class="role" data-role="'+acctRole(S.acct)+'"><span class="ic">'+IC.radar+'</span><h3>Przejdź do mojego panelu</h3><p class="muted small">Zalogowano jako '+esc(S.acct.name)+'.</p><span class="go">Wchodzę →</span></button>':'<button class="role" data-role="inst"><span class="ic">'+IC.radar+'</span><h3>Przeglądaj jako gość</h3><p class="muted small">Innowacje, inwestorzy i mapy bez logowania. Kontakty są ukryte.</p><span class="go">Wchodzę →</span></button><button class="role t" data-act="acct"><span class="ic">'+IC.coin+'</span><h3>Zaloguj się lub załóż konto</h3><p class="muted small">Zgłaszaj innowacje lub oferty. Do wypróbowania jest konto demo szkoły i funduszu.</p><span class="go">Logowanie →</span></button>')+'</div>'+
   '<p class="small muted" style="margin-top:22px">'+(S.acct?'Zalogowano jako <b>'+esc(S.acct.name)+'</b>.':'Masz instytucję, szkołę lub fundusz? <button class="linkbtn" data-act="acct">Załóż konto lub zaloguj się</button>')+'</p><div class="flow"><span><b>1</b>Zgłoś</span><span><b>2</b>Oceń</span><span><b>3</b>Połącz</span></div>'+
   '<p class="stats">'+S.items.length+' innowacji · '+(PARTNERS.length)+' inwestorów i partnerów · '+strong+' silnych powiązań</p></section>';
@@ -1680,7 +1680,7 @@ function criterionWhy(i,k,a){
 
 /* ---------- nagłówek, pasek widoku, strona główna ---------- */
 function renderTop(){
-  const el=$('hdr'),logo='<button class="logo" data-act="home" aria-label="Radar innowacyjny ZBIEG, strona główna">'+IC.logo+'<span><b>Radar</b> innowacyjny ZBIEG</span></button>';
+  const el=$('hdr'),logo='<button class="logo" data-act="home" aria-label="Radar innowacji ZBIEG, strona główna">'+IC.logo+'<span><b>Radar</b> innowacji ZBIEG</span></button>';
   const menuP=[['szukam','Szukam rozwiązania'],['opis','Jak to działa'],['statystyki','Statystyki innowacji'],['metod','Metodologia oceny'],['zrodla','Źródła i aktualizacje'],['analityka','Anonimowa analityka'],['priv','Prywatność i RODO'],['integr','Integracje i eksport'],['rozwoj','Skalowanie i rozwój'],['dostepnosc','Deklaracja dostępności']].map(x=>'<button class="ddi" data-page="'+x[0]+'">'+x[1]+'</button>').join('');
   const menu=ddMenu('m','Menu',menuP);
   if(!S.role){el.innerHTML=logo+'<span></span><div class="hright"><button class="btn sm" data-page="szukam">Szukam rozwiązania</button><button class="btn ghost sm" data-page="opis">Jak to działa</button>'+menu+'</div>';renderDrop();return}
@@ -1703,7 +1703,7 @@ function renderHome(){
   const byA=a=>S.items.filter(i=>area3Of(i)===a).length;
   const audT=AUD.slice(1).map(a=>'<button class="role" data-aud="'+a.id+'"><h3>'+esc(a.name)+'</h3><p class="muted small">'+esc(a.d)+'</p><span class="go">Szukam jako ta grupa →</span></button>').join('');
   const areaT=AREAS.map(a=>'<button class="role" data-area="'+a+'"><span class="areadot" style="background:'+AREA_C[a]+'"></span><h3>Innowacja '+a.toLowerCase().replace(/a$/,'a')+'</h3><p class="muted small">'+AREA_D[a]+'</p><span class="go">'+byA(a)+' w radarze →</span></button>').join('');
-  return '<section class="home"><h1 class="home-title">Poznaj <em>Radar innowacyjny ZBIEG</em>. Odkryj polskie rozwiązania</h1>'+
+  return '<section class="home"><h1 class="home-title">Poznaj <em>Radar innowacji ZBIEG</em>. Odkryj polskie rozwiązania</h1>'+
   homeData()+
   '<div class="row" style="justify-content:center;margin:26px 0 8px"><button class="btn" data-aud="all">Przeglądaj wszystkie '+n+' innowacji</button></div>'+
   '<h2 class="hs">Wybierz dziedzinę, która Cię interesuje</h2><div class="roles roles3">'+areaT+'</div></section>';
@@ -2150,7 +2150,7 @@ function pathOf(i){
 function needCard(r,q){
   const i=r.i,l=locOf(i)||{},rd=readyOf(i);
   const why=(r.hit.length?'<span class="small">słowa z potrzeby: <b>'+r.hit.map(esc).join(', ')+'</b></span> ':'')+(r.chit.length?'<span class="small">powiązanie tematyczne: <b>'+r.chit.map(esc).join('; ')+'</b></span>':'');
-  const mail=i.contact?'mailto:'+encodeURIComponent(i.contact).replace('%40','@')+'?subject='+encodeURIComponent('Zapytanie o wdrożenie: '+i.title)+'&body='+encodeURIComponent('Dzień dzień dobry,\n\nszukamy rozwiązania: '+q.slice(0,400)+'\n\nZainteresowała nas innowacja „'+i.title+'” (źródło: '+(i.url||'Radar innowacyjny ZBIEG')+'). Prosimy o informację o możliwości wdrożenia lub współpracy.\n\nPozdrawiam').replace(/dzień dzień/,'dzień'):'';
+  const mail=i.contact?'mailto:'+encodeURIComponent(i.contact).replace('%40','@')+'?subject='+encodeURIComponent('Zapytanie o wdrożenie: '+i.title)+'&body='+encodeURIComponent('Dzień dzień dobry,\n\nszukamy rozwiązania: '+q.slice(0,400)+'\n\nZainteresowała nas innowacja „'+i.title+'” (źródło: '+(i.url||'Radar innowacji ZBIEG')+'). Prosimy o informację o możliwości wdrożenia lub współpracy.\n\nPozdrawiam').replace(/dzień dzień/,'dzień'):'';
   return '<article class="card needc"><div class="row" style="justify-content:space-between;align-items:flex-start;gap:12px"><div><h3 style="margin:0 0 4px">'+esc(i.title)+'</h3><div class="meta">'+esc(i.institution)+' · '+esc(l.miejsc||l.city||'')+(l.woj?', '+esc(l.woj):'')+'</div></div><div style="text-align:center;min-width:74px"><div style="font-size:26px;font-weight:800;color:#4f6bed">'+r.rel+'%</div><div class="small muted">dopasowanie</div></div></div>'+
    '<div class="row" style="flex-wrap:wrap;gap:6px;margin:8px 0"><span class="pill '+(rd?'good':'warn')+'">'+(rd?'Pilotaż lub stosowanie':'Badania / rozwój')+'</span><span class="pill plain">'+esc(typOf(i))+'</span><span class="pill plain">'+trlTxt(i)+'</span><span class="pill plain">'+esc(area3Of(i))+'</span></div>'+
    '<p class="small" style="margin:6px 0">'+esc((i.description||'').slice(0,260))+((i.description||'').length>260?'…':'')+'</p>'+
@@ -2218,7 +2218,7 @@ function trlHist(){
 
 /* ---------- dostępność cyfrowa (wzorowana na serwisach gov.pl: czcionka, kontrast, klawiatura, deklaracja) ---------- */
 PAGEX.dostepnosc=()=>pg('Deklaracja dostępności',
- '<div class="panel"><p>Radar innowacyjny ZBIEG dąży do spełnienia wymagań WCAG 2.1 na poziomie AA, zgodnie z ustawą o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych. Jest to prototyp konkursowy, więc pełny audyt dostępności nie został jeszcze wykonany.</p>'+
+ '<div class="panel"><p>Radar innowacji ZBIEG dąży do spełnienia wymagań WCAG 2.1 na poziomie AA, zgodnie z ustawą o dostępności cyfrowej stron internetowych i aplikacji mobilnych podmiotów publicznych. Jest to prototyp konkursowy, więc pełny audyt dostępności nie został jeszcze wykonany.</p>'+
  '<h3>Co możesz zmienić (pasek „Dostępność” u góry strony)</h3><ul>'+
  '<li><b>Wielkość tekstu (A, A+, A++):</b> trzy stopnie powiększenia całej strony; „A” przywraca normalną.</li>'+
  '<li><b>Wysoki kontrast (ikona połowy koła):</b> czarne tło, biały tekst i żółte akcenty dla osób słabowidzących.</li>'+
