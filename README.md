@@ -4,7 +4,7 @@ Aplikacja do wyszukiwania, opisywania i oceniania istniejących polskich innowac
 
 **[Otwórz aplikację na GitHub Pages](https://hurtekk.github.io/radar-innowacyjny-zbieg/)**
 
-Aplikacja działa w przeglądarce, bez osobnego backendu i bazy danych. Gotowy plik `dist/index.html` zawiera kod, style i dane katalogu.
+Aplikacja działa w przeglądarce. Gotowy plik `dist/index.html` zawiera kod, style i dane katalogu.
 
 ## Uruchomienie
 
