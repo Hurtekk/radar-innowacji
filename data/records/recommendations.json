@@ -1065,5 +1065,1204 @@
     ],
     "sourceTitle": "AEROSIZE – hybrydowe poduszki ratunkowe",
     "sourceDescription": "AEROSIZE to hybrydowa poduszka lawinowa: gaz z naboju napełnia pneumatyczną ramę, a resztę objętości wypełnia powietrze z otoczenia, dzięki czemu system jest mniejszy i mieści się w osobnej kamizelce-uprzęży."
+  },
+  "n101": {
+    "title": "Przeprowadzić ocenę wozu kotwiącego w wyrobisku",
+    "why": "Samojezdny wóz kotwiący na podwoziu oponowym do zabezpieczania podziemnych wyrobisk przed obsuwaniem skał i zawałem. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Uzgodnij z kopalnią warunki testu i zakres nadzoru nad pracą urządzenia.",
+      "Porównaj czas i jakość kotwienia z dotychczasową metodą zabezpieczania wyrobiska.",
+      "Oceń ergonomię, dostępność serwisu i wymagania bezpieczeństwa przed wdrożeniem."
+    ],
+    "sourceTitle": "Innowacyjne układy zespolone do zabezpieczenia wyrobisk górniczych",
+    "sourceDescription": "Samojezdny wóz kotwiący na podwoziu oponowym do zabezpieczania podziemnych wyrobisk przed obsuwaniem skał i zawałem. Wersja zagraniczna instaluje siatkę z rolki w wyrobiskach do 7,5 m, wersja krajowa dla KGHM zabudowuje kotwy w wyrobiskach do 8,5 m."
+  },
+  "n102": {
+    "title": "Zweryfikować aptamer PureApta w konkretnym teście diagnostycznym",
+    "why": "PureApta to modularna platforma usługowa Pure Biologics do generowania chemicznie modyfikowanych aptamerów – cząsteczek, które mogą zastępować przeciwciała w testach diagnostycznych, służyć jako narzędzia badawcze lub substancje terapeutyczne. Platformę wykorzystano w trzech własnych projektach B+R i wchodzi w fazę komercjalizacji, bez klientów.",
+    "steps": [
+      "Wybierz z laboratorium analit i wymagania dla docelowego testu.",
+      "Porównaj swoistość, trwałość i powtarzalność aptameru z przeciwciałem referencyjnym.",
+      "Ustal prawa do wyników selekcji oraz warunki świadczenia usługi producentowi testu."
+    ],
+    "sourceTitle": "Modularna platforma usługowa PureApta do selekcji modyfikowanych aptamerów",
+    "sourceDescription": "PureApta to modularna platforma usługowa Pure Biologics do generowania chemicznie modyfikowanych aptamerów – cząsteczek, które mogą zastępować przeciwciała w testach diagnostycznych, służyć jako narzędzia badawcze lub substancje terapeutyczne."
+  },
+  "n103": {
+    "title": "Zmierz bilans energii baterii Waven w czujniku IoT",
+    "why": "Baterie AA doładowywane falami radiowymi bez wyjmowania z urządzenia; energię zbierają z otaczających pól elektromagnetycznych lub z dedykowanych ładowarek bezprzewodowych. Projekt zakończono sprawnymi prototypami elektronicznymi, bez wdrożeń.",
+    "steps": [
+      "Wybierz czujnik o znanym profilu poboru i warunki jego rzeczywistej pracy.",
+      "Porównaj energię uzyskiwaną z otoczenia oraz z dedykowanej ładowarki z zapotrzebowaniem urządzenia.",
+      "Oceń trwałość ogniwa i praktyczny zasięg ładowania przed ofertą dla producenta czujników."
+    ],
+    "sourceTitle": "Waven – bezprzewodowo ładowane baterie",
+    "sourceDescription": "Baterie AA doładowywane falami radiowymi bez wyjmowania z urządzenia; energię zbierają z otaczających pól elektromagnetycznych lub z dedykowanych ładowarek bezprzewodowych."
+  },
+  "n104": {
+    "title": "Przetestować serwodocisk SED na stanowisku zgrzewania",
+    "why": "Elektromechaniczny system docisku elektrod SED z algorytmem sterowania siłą lub przemieszczeniem elektrod w zgrzewaniu rezystancyjnym (Łukasiewicz – Instytut Spawalnictwa). Źródło podaje patenty, próby w laboratorium i medale targowe, bez wdrożeń u klientów.",
+    "steps": [
+      "Wybierz z producentem zgrzewarek materiał i parametry typowego połączenia.",
+      "Porównaj powtarzalność siły, jakość zgrzewów i czas cyklu z dociskiem pneumatycznym.",
+      "Policz zużycie energii i koszty serwisu przed próbą na linii produkcyjnej."
+    ],
+    "sourceTitle": "Innowacyjna metoda sterowania serwomechanicznym systemem docisku w technikach łączenia metali",
+    "sourceDescription": "Elektromechaniczny system docisku elektrod SED z algorytmem sterowania siłą lub przemieszczeniem elektrod w zgrzewaniu rezystancyjnym (Łukasiewicz – Instytut Spawalnictwa). Zastępuje docisk pneumatyczny o słabej dynamice, hałaśliwy i wymagający sprężonego powietrza."
+  },
+  "n105": {
+    "title": "Sprawdzić AOI 4.0 przy zmianie serii płytek",
+    "why": "System automatycznej optycznej inspekcji płytek drukowanych oparty na AI: po starcie produkcji zbiera zdjęcia wyrobów i uczy sieć neuronową na serwerze, więc tester jest gotowy do nowego produktu bez ręcznego programowania. Pięć gotowych urządzeń stoi w fabryce i czeka na dostawę do klientów.",
+    "steps": [
+      "Uzgodnij z fabryką zestaw wad i sposób oceny wyników inspekcji.",
+      "Zmierz czas przygotowania nowego produktu oraz liczbę wad pominiętych i fałszywych alarmów.",
+      "Oceń bezpieczne przetwarzanie obrazów i możliwość nadzoru operatora przed szerszym wdrożeniem."
+    ],
+    "sourceTitle": "Innowacyjny system automatycznej kontroli wizualnej AOI 4.0 z wykorzystaniem sztucznej inteligencji",
+    "sourceDescription": "System automatycznej optycznej inspekcji płytek drukowanych oparty na AI: po starcie produkcji zbiera zdjęcia wyrobów i uczy sieć neuronową na serwerze, więc tester jest gotowy do nowego produktu bez ręcznego programowania. Maszyny łączą się z chmurą z analityką na żywo."
+  },
+  "n106": {
+    "title": "Ocenić odzysk materiałów mobilną linią Pronar",
+    "why": "Mobilna linia Pronar odzyskuje i sortuje odpady komunalne, także na wysypiskach, z zdalnym sterowaniem, bez bezpośredniego kontaktu operatora ze szkodliwymi czynnikami. Maszyny pokazano w pracy w ramach projektu; klientów i wyników wdrożenia nie podano.",
+    "steps": [
+      "Wybierz z operatorem odpady o rozpoznanym składzie i ustal warunki próby.",
+      "Zmierz wydajność sortowania, czystość frakcji oraz udział materiału nadającego się do odzysku.",
+      "Porównaj koszt transportu i eksploatacji z instalacją stacjonarną dla wybranego miejsca."
+    ],
+    "sourceTitle": "Mobilna linia przetwarzania odpadów komunalnych",
+    "sourceDescription": "Mobilna linia Pronar odzyskuje i sortuje odpady komunalne, także na wysypiskach, z zdalnym sterowaniem, bez bezpośredniego kontaktu operatora ze szkodliwymi czynnikami."
+  },
+  "n107": {
+    "title": "Sprawdzić ciągłość ewidencji materiału dowodowego",
+    "why": "System oznaczania, ewidencji i śledzenia obiegu materiału dowodowego oparty na geoinformacji, opracowany przez Centralne Laboratorium Kryminalistyczne Policji i CYBID. Źródło opisuje system dla jednostek policji, ale nie podaje danych o wdrożeniach.",
+    "steps": [
+      "Uzgodnij z jednostką prowadzącą sprawę zakres pilotażu na danych testowych.",
+      "Prześledź przekazanie materiału od oznaczenia do archiwizacji i sprawdź historię zmian.",
+      "Oceń zgodność z procedurami, uprawnienia dostępu i integrację z istniejącymi rejestrami."
+    ],
+    "sourceTitle": "System oznaczania, ewidencji oraz śledzenia obiegu materiału dowodowego (geoinformacja)",
+    "sourceDescription": "System oznaczania, ewidencji i śledzenia obiegu materiału dowodowego oparty na geoinformacji, opracowany przez Centralne Laboratorium Kryminalistyczne Policji i CYBID. Integruje pomiary laserowe, obrazowanie i oględziny z powietrza dronami; jest modułowy."
+  },
+  "n108": {
+    "title": "Zweryfikować testy DNA patogenów pszenicy na próbkach terenowych",
+    "why": "Molekularne testy DNA do identyfikacji kluczowych grzybowych patogenów pszenicy zwyczajnej; wykrywają patogen w roślinie, zanim pojawią się objawy. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Dobierz z laboratorium próbki o potwierdzonych wynikach referencyjnych.",
+      "Porównaj trafność wykrywania poszczególnych patogenów przed wystąpieniem objawów.",
+      "Ustal czas i koszt badania oraz sposób przekazania wyniku doradcy rolnemu."
+    ],
+    "sourceTitle": "Nowe molekularne testy diagnostyczne kluczowych patogenów grzybowych pszenicy",
+    "sourceDescription": "Molekularne testy DNA do identyfikacji kluczowych grzybowych patogenów pszenicy zwyczajnej; wykrywają patogen w roślinie, zanim pojawią się objawy."
+  },
+  "n109": {
+    "title": "Przetestować sterowanie nawadnianiem w szkółce kontenerowej",
+    "why": "Kontroler nawadniania sterujący na podstawie parametrów klimatycznych i model, który wyznacza potrzeby wodne roślin dla każdej kolejnej godziny. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz gatunek roślin i kwatery porównywalne pod względem podłoża oraz ekspozycji.",
+      "Porównaj zużycie wody i kondycję roślin ze zwykłym harmonogramem podlewania.",
+      "Sprawdź działanie czujników i modelu w czasie upałów przed rozszerzeniem pilotażu."
+    ],
+    "sourceTitle": "Integrowane nawadnianie szkółek roślin ozdobnych",
+    "sourceDescription": "Kontroler nawadniania sterujący na podstawie parametrów klimatycznych i model, który wyznacza potrzeby wodne roślin dla każdej kolejnej godziny."
+  },
+  "n110": {
+    "title": "Zweryfikować użyteczność i bezpieczeństwo wymiany plików Cypherdog",
+    "why": "Cypherdog to rozwiązanie do szyfrowania plików wymienianych między użytkownikami bez „trzeciej strony”: nadawca i odbiorca szyfrują dokumenty własnymi hasłami i kluczami. Źródło podaje ponad 30 partnerów handlowych w Polsce, Europie i Ameryce Północnej.",
+    "steps": [
+      "Uzgodnij z organizacją testową typ dokumentów i zasady dostępu do kluczy.",
+      "Przeprowadź niezależną ocenę zabezpieczeń oraz sprawdź odzyskiwanie dostępu po utracie hasła.",
+      "Zmierz liczbę błędów użytkowników i nakład obsługi przy wymianie dokumentów między firmami."
+    ],
+    "sourceTitle": "Cypherdog",
+    "sourceDescription": "Cypherdog to rozwiązanie do szyfrowania plików wymienianych między użytkownikami bez „trzeciej strony”: nadawca i odbiorca szyfrują dokumenty własnymi hasłami i kluczami."
+  },
+  "n111": {
+    "title": "Zweryfikować kapsułę INNOSENSE dla jednego badania przesiewowego",
+    "why": "Kapsuła Badań Zmysłów pozwala samodzielnie zbadać słuch, wzrok, węch, smak i równowagę w jednym miejscu; wyniki trafiają do systemu „Portal Pacjenta”. Kapsułę prezentowano w latach 2018–2020, a odwiedzający z niej korzystali; wdrożeń klinicznych brak.",
+    "steps": [
+      "Wybierz z klinicystami jedną funkcję i grupę odbiorców, np. badanie słuchu dzieci.",
+      "Porównaj powtarzalność i trafność wyniku z odpowiednią metodą referencyjną.",
+      "Oceń dostępność urządzenia i ścieżkę skierowania do specjalisty po wyniku przesiewowym."
+    ],
+    "sourceTitle": "INNOSENSE – system diagnostyki i telerehabilitacji schorzeń narządów zmysłów",
+    "sourceDescription": "Kapsuła Badań Zmysłów pozwala samodzielnie zbadać słuch, wzrok, węch, smak i równowagę w jednym miejscu; wyniki trafiają do systemu „Portal Pacjenta”. Mobilna wersja z 2019 r. nie wymaga nadzoru przeszkolonego personelu."
+  },
+  "n112": {
+    "title": "Ocenić zgodność i ochronę danych środowiska Smart Borders",
+    "why": "Środowisko informatyczne do wdrożenia koncepcji Smart Borders: nowa baza danych dla Straży Granicznej z dokumentami, zdjęciami twarzy i odciskami palców oraz połączeniem z danymi o małym ruchu granicznym. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Ustal aktualny status projektu oraz zakres danych biometrycznych przewidzianych w systemie.",
+      "Z właściwą instytucją sprawdź podstawy przetwarzania, uprawnienia i okresy przechowywania.",
+      "Przetestuj integrację na danych syntetycznych oraz procedury korekty i kontroli dostępu."
+    ],
+    "sourceTitle": "Środowisko do wdrożenia koncepcji Smart Borders",
+    "sourceDescription": "Środowisko informatyczne do wdrożenia koncepcji Smart Borders: nowa baza danych dla Straży Granicznej z dokumentami, zdjęciami twarzy i odciskami palców oraz połączeniem z danymi o małym ruchu granicznym."
+  },
+  "n113": {
+    "title": "Zweryfikować żywotność hybrydowego zasobnika w pojeździe wolnobieżnym",
+    "why": "Hybrydowy zasobnik energii wydłuża żywotność tanich akumulatorów kwasowo-ołowiowych dzięki dodatkowym zasobnikom, a według firmy skraca też czas ładowania. Spółka zastosowała technologię w mikrosamochodach i przygotowała je do sprzedaży; testy oceniła pozytywnie.",
+    "steps": [
+      "Wybierz z operatorem pojazd i porównywalny akumulator referencyjny.",
+      "Zmierz liczbę cykli, czas ładowania i użyteczną pojemność w rzeczywistym profilu pracy.",
+      "Porównaj koszt całego zasobnika i jego wymiany z obecnym rozwiązaniem."
+    ],
+    "sourceTitle": "Hybrydowy zasobnik energii do lekkiego samochodu elektrycznego",
+    "sourceDescription": "Hybrydowy zasobnik energii wydłuża żywotność tanich akumulatorów kwasowo-ołowiowych dzięki dodatkowym zasobnikom, a według firmy skraca też czas ładowania."
+  },
+  "n114": {
+    "title": "Sprawdzić tokarkę KOLTECH w regeneracji zestawu kołowego",
+    "why": "Dokładna inteligentna tokarka do regeneracji zestawów kołowych pojazdów szynowych: mierzy temperatury wielu punktów w czasie rzeczywistym, narzędziami AI wyznacza błędy obróbki i kompensuje je w układzie sterowania, tłumi drgania i łamie wióry. Rozwiązanie zrealizowano w produkcyjnej tokarce; wdrożeń u klientów nie opisano.",
+    "steps": [
+      "Ustal z zakładem utrzymania taboru wymagane tolerancje obróbki.",
+      "Porównaj dokładność, czas regeneracji i liczbę poprawek z dotychczasową tokarką.",
+      "Oceń utrzymanie czujników temperatury i powtarzalność kompensacji przed kolejnymi instalacjami."
+    ],
+    "sourceTitle": "Inteligentna dokładna tokarka do regeneracji zestawów kołowych pojazdów szynowych",
+    "sourceDescription": "Dokładna inteligentna tokarka do regeneracji zestawów kołowych pojazdów szynowych: mierzy temperatury wielu punktów w czasie rzeczywistym, narzędziami AI wyznacza błędy obróbki i kompensuje je w układzie sterowania, tłumi drgania i łamie wióry."
+  },
+  "n115": {
+    "title": "Przetestować układ sprzętu z załogą samochodu pożarniczego",
+    "why": "Optymalizacja rozmieszczenia wyposażenia w zabudowie średniego samochodu ratowniczo-gaśniczego, która obniża wysokość pojazdu; wymagała zmian ramy pomocniczej i kształtu zbiornika. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz reprezentatywne wyposażenie i scenariusze pobierania sprzętu przez strażaków.",
+      "Porównaj czas dostępu, obciążenie fizyczne i rozmieszczenie ciężaru ze standardową zabudową.",
+      "Z producentem zabudowy potwierdź wymagania stateczności i dopuszczenia pojazdu."
+    ],
+    "sourceTitle": "Optymalizacja rozmieszczenia sprzętu na samochodach pożarniczych",
+    "sourceDescription": "Optymalizacja rozmieszczenia wyposażenia w zabudowie średniego samochodu ratowniczo-gaśniczego, która obniża wysokość pojazdu; wymagała zmian ramy pomocniczej i kształtu zbiornika. Poprawia ergonomię pobierania sprzętu i stateczność w zakrętach."
+  },
+  "n116": {
+    "title": "Ocenić opłacalność recyklomatów i ECO WALLET w jednej gminie",
+    "why": "Infrastruktura do segregacji i recyklingu odpadów opakowaniowych oparta na centralnej platformie rejestrującej transakcje z sieci recyklomatów i terminali mobilnych. Recyklomaty zainstalowano w ramach projektu badawczego; klientów nie podano.",
+    "steps": [
+      "Ustal z gminą i punktami handlowymi strumień opakowań oraz zasady rozliczeń.",
+      "Porównaj czystość zebranych frakcji, koszt obsługi i wykorzystanie nagród przez mieszkańców.",
+      "Zweryfikuj zgodność przyjętego modelu z aktualnymi zasadami systemu kaucyjnego przed rozszerzeniem."
+    ],
+    "sourceTitle": "Innowacyjny kompleksowy system zbiórki i recyklingu odpadów",
+    "sourceDescription": "Infrastruktura do segregacji i recyklingu odpadów opakowaniowych oparta na centralnej platformie rejestrującej transakcje z sieci recyklomatów i terminali mobilnych. W aplikacji ECO WALLET użytkownicy dostają walutę ECO-COIN za posegregowane odpady i wymieniają ją na nagrody lub rabaty."
+  },
+  "n117": {
+    "title": "Sprawdzić nawóz z odchodów larw w doświadczeniu uprawowym",
+    "why": "Technologia wytwarzania organicznego nawozu w formie peletu lub granulatu z odchodów larw Hermetia illucens, zagospodarowująca produkt uboczny hodowli owadów. Nawóz jest dopuszczony do obrotu i certyfikowany dla upraw ekologicznych, sprawdzono go w doświadczeniach szklarniowych; sprzedaży brak.",
+    "steps": [
+      "Oznacz skład i powtarzalność partii granulatu oraz wybierz gatunek roślin.",
+      "Porównaj wzrost i stan gleby z nawozem referencyjnym w kontrolowanym doświadczeniu.",
+      "Zweryfikuj bezpieczeństwo, dopuszczenie do obrotu i deklaracje o odporności roślin."
+    ],
+    "sourceTitle": "Nawóz organiczny z odchodów Hermetia illucens (pelet/granulat)",
+    "sourceDescription": "Technologia wytwarzania organicznego nawozu w formie peletu lub granulatu z odchodów larw Hermetia illucens, zagospodarowująca produkt uboczny hodowli owadów. Zawarta chityna zwiększa odporność roślin na stresy i patogeny."
+  },
+  "n118": {
+    "title": "Porównać pomiary jakości 5G z doświadczeniem użytkowników",
+    "why": "Platforma i metody monitorowania parametrów sieci 5G oraz usług i oceny jakości doświadczeń użytkownika (QoE), oparte na wielokryterialnej analizie danych i automatyzacji pomiarów w czasie rzeczywistym. Wyniki wykorzystali Orange Polska (analiza sieci 5G w Warszawie) i Systemics PAB (pomiary jakości usług).",
+    "steps": [
+      "Wybierz z operatorem usługę i scenariusze korzystania z sieci.",
+      "Porównaj automatyczne pomiary opóźnień i dostępności z rzeczywistymi wynikami użytkowników.",
+      "Ustal sposób udostępniania danych i integracji z procesem utrzymania sieci."
+    ],
+    "sourceTitle": "Mechanizmy i algorytmy testowania sieci 5G i ich usług",
+    "sourceDescription": "Platforma i metody monitorowania parametrów sieci 5G oraz usług i oceny jakości doświadczeń użytkownika (QoE), oparte na wielokryterialnej analizie danych i automatyzacji pomiarów w czasie rzeczywistym."
+  },
+  "n119": {
+    "title": "Ustalić zakres niezależnej oceny bramki kontrolnej",
+    "why": "Stacjonarna bramka wykrywająca śladowe ilości materiałów wybuchowych lub ich znaczników u osób przechodzących przez urządzenie; pobiera próbki powietrza z dłoni, okolic kieszeni i butów. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Potwierdź aktualny status prototypu i uprawnionego odbiorcę projektu.",
+      "Z laboratorium ustal program niezależnej oceny skuteczności oraz fałszywych alarmów.",
+      "Sprawdź ergonomię, ochronę prywatności i warunki eksploatacji przed decyzją o wdrożeniu."
+    ],
+    "sourceTitle": "Stacjonarny system do wykrywania śladowych ilości materiałów wybuchowych",
+    "sourceDescription": "Stacjonarna bramka wykrywająca śladowe ilości materiałów wybuchowych lub ich znaczników u osób przechodzących przez urządzenie; pobiera próbki powietrza z dłoni, okolic kieszeni i butów. Używa dwóch różnicowych spektrometrów ruchliwości jonów, analiza trwa ok. 5 sekund."
+  },
+  "n120": {
+    "title": "Ustalić warunki oceny przenośnego detektora",
+    "why": "Lekkie przenośne urządzenie do wykrywania śladowych ilości nadtlenków TATP i HMTD bez bezpośredniego pobierania próbek, oparte na różnicowej spektrometrii ruchliwości jonów; analiza do 10 sekund, oba związki wykrywane jednocześnie. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Potwierdź aktualny stan projektu i zakres informacji dostępnych odbiorcy instytucjonalnemu.",
+      "Z uprawnionym laboratorium zaplanuj niezależną ocenę wyników i ograniczeń urządzenia.",
+      "Ustal wymagania szkolenia operatorów, bezpieczeństwa oraz nadzoru nad dalszym transferem."
+    ],
+    "sourceTitle": "Przenośny detektor śladowych ilości TATP i HMTD",
+    "sourceDescription": "Lekkie przenośne urządzenie do wykrywania śladowych ilości nadtlenków TATP i HMTD bez bezpośredniego pobierania próbek, oparte na różnicowej spektrometrii ruchliwości jonów; analiza do 10 sekund, oba związki wykrywane jednocześnie."
+  },
+  "n121": {
+    "title": "Przećwiczyć organizację pracy mobilnego laboratorium",
+    "why": "Mobilna Platforma Kryminalistyczna to rozsuwane mobilne laboratorium: oględziny dużego miejsca zdarzenia, zabezpieczanie śladów, badania DNA, daktyloskopijne, broni i balistyczne, telefonów, analiza monitoringu i dokumentowanie dronem. Projekt zakończono pełnym prototypem i nagrodami branżowymi, bez wdrożenia seryjnego.",
+    "steps": [
+      "Uzgodnij ćwiczenie z właściwą jednostką na fikcyjnym zdarzeniu.",
+      "Zmierz czas przygotowania stanowisk i sprawdź obieg oraz oznaczenie próbek testowych.",
+      "Oceń współpracę służb, zasilanie i ochronę danych przed decyzją o dalszym wykorzystaniu."
+    ],
+    "sourceTitle": "Mobilna Platforma Kryminalistyczna do szybkiej identyfikacji na miejscu zdarzenia masowego",
+    "sourceDescription": "Mobilna Platforma Kryminalistyczna to rozsuwane mobilne laboratorium: oględziny dużego miejsca zdarzenia, zabezpieczanie śladów, badania DNA, daktyloskopijne, broni i balistyczne, telefonów, analiza monitoringu i dokumentowanie dronem. Gotowość do pracy ok. 30 minut po przyjeździe."
+  },
+  "n122": {
+    "title": "Sprawdzić odczyt RFID w rzeczywistym procesie sortowania",
+    "why": "Nowe procesy ekspedycyjno-rozdzielcze oparte na pasywnej identyfikacji radiowej RFID w dużej skali (Poczta Polska i Łukasiewicz – PIT), z komorą skanującą RFID do selektywnych odczytów znaczników w gęstym środowisku. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z operatorem jedną trasę przesyłek i ustal punkty pomiarowe.",
+      "Porównaj kompletność odczytu i tempo obsługi z dotychczasową ewidencją.",
+      "Oceń integrację komory skanującej z systemem logistycznym oraz koszt oznaczania przesyłek."
+    ],
+    "sourceTitle": "Wielkoskalowe procesy ekspedycyjno-rozdzielcze z pasywnym RFID",
+    "sourceDescription": "Nowe procesy ekspedycyjno-rozdzielcze oparte na pasywnej identyfikacji radiowej RFID w dużej skali (Poczta Polska i Łukasiewicz – PIT), z komorą skanującą RFID do selektywnych odczytów znaczników w gęstym środowisku."
+  },
+  "n123": {
+    "title": "Przetestować SIMMAG3D na przepływie jednego magazynu",
+    "why": "SIMMAG3D to system do modelowania i wizualizacji obiektów magazynowych w 3D (Politechnika Warszawska i Logifact-Systems), wspierający analizę procesów magazynowych, wykrywanie wąskich gardeł i projektowanie nowych obiektów i przepływów materiałów. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Zbierz od operatora plan obiektu oraz dane o ruchu towarów bez danych wrażliwych.",
+      "Porównaj wykryte wąskie gardła z rzeczywistymi czasami obsługi.",
+      "Sprawdź koszt przygotowania modelu i możliwość wymiany danych z systemem WMS."
+    ],
+    "sourceTitle": "System do modelowania i wizualizacji w 3D obiektów magazynowych",
+    "sourceDescription": "SIMMAG3D to system do modelowania i wizualizacji obiektów magazynowych w 3D (Politechnika Warszawska i Logifact-Systems), wspierający analizę procesów magazynowych, wykrywanie wąskich gardeł i projektowanie nowych obiektów i przepływów materiałów."
+  },
+  "n124": {
+    "title": "Ocenić element SMART-G z jednej partii odpadów",
+    "why": "Lekkie ognioodporne komponenty budowlane oraz lite elementy geopolimerowe wytwarzane technologiami addytywnymi. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz zastosowanie budowlane oraz określ zmienność składu użytego odpadu.",
+      "Zbadaj powtarzalność druku, wytrzymałość i odporność ogniową gotowego elementu.",
+      "Porównaj koszt i wpływ środowiskowy z wyrobem referencyjnym przy tych samych wymaganiach."
+    ],
+    "sourceTitle": "Inteligentne Materiały Geopolimerowe SMART-G Smart geopolymers",
+    "sourceDescription": "Lekkie ognioodporne komponenty budowlane oraz lite elementy geopolimerowe wytwarzane technologiami addytywnymi. Materiały powstają z odpadów przemysłowych, takich jak popioły lotne i odpady hutnicze."
+  },
+  "n125": {
+    "title": "Przetestować HyprSTEP na strumieniu ścieków odbiorcy",
+    "why": "HyprSTEP to hybrydowy proces oczyszczania ścieków: wstępne i końcowe oczyszczanie inteligentnymi filtrami tekstylnymi w połączeniu z dalszymi etapami zaawansowanego oczyszczania. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Uzgodnij z oczyszczalnią parametry wody wejściowej i cel oczyszczania.",
+      "Porównaj jakość odpływu, zużycie energii oraz trwałość filtrów z istniejącym procesem.",
+      "Oceń koszty czyszczenia i wymiany materiałów przed projektem większej instalacji."
+    ],
+    "sourceTitle": "Opracowanie nowego hybrydowego procesu zaawansowanego oczyszczania ścieków z wykorzystaniem inteligentnych filtrów tekstylnych i membran polimerowych modyfikowanych grafenem - HyprSTEP",
+    "sourceDescription": "HyprSTEP to hybrydowy proces oczyszczania ścieków: wstępne i końcowe oczyszczanie inteligentnymi filtrami tekstylnymi w połączeniu z dalszymi etapami zaawansowanego oczyszczania. Ma być skuteczniejszy i tańszy niż obecne technologie."
+  },
+  "n126": {
+    "title": "Ustalić formalny status projektu LOTR",
+    "why": "Lekki opancerzony transporter rozpoznawczy LOTR zbiera i gromadzi dane o przeciwniku i środowisku walki oraz przekazuje je w formie zaszyfrowanej. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Potwierdź aktualnego właściciela wyników i zakres danych przeznaczonych do udostępnienia.",
+      "Z właściwą instytucją sprawdź status projektu oraz warunki ochrony i transferu informacji.",
+      "Przekaż ocenę dalszego wykorzystania uprawnionemu odbiorcy i określ odpowiedzialność stron."
+    ],
+    "sourceTitle": "Lekki opancerzony transporter rozpoznawczy",
+    "sourceDescription": "Lekki opancerzony transporter rozpoznawczy LOTR zbiera i gromadzi dane o przeciwniku i środowisku walki oraz przekazuje je w formie zaszyfrowanej. Ma zastąpić przestarzałe pojazdy BRDM-2 z lat sześćdziesiątych."
+  },
+  "n127": {
+    "title": "Zweryfikować przewidywanie trwałości betonu ogniotrwałego",
+    "why": "Metody przewidywania długoterminowej ogniotrwałości wysokoglinowych materiałów monolitycznych (mas i betonów), których własności kształtują się dopiero w wyłożeniu urządzenia grzewczego u użytkownika. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z hutą rodzaj wyłożenia oraz próbki o znanej zawartości materiału z recyklingu.",
+      "Porównaj prognozowaną trwałość z wynikami obserwacji i badań materiału po pracy.",
+      "Ustal zakres niepewności modelu przed wykorzystaniem go do planowania remontów."
+    ],
+    "sourceTitle": "Przewidywalność długoterminowej ogniotrwałości wysokoglinowych betonów ogniotrwałych w warunkach dużego obciążenia cieplnego, ze szczególnym uwzględnieniem zanieczyszczeń pochodzących z materiału z recyklingu",
+    "sourceDescription": "Metody przewidywania długoterminowej ogniotrwałości wysokoglinowych materiałów monolitycznych (mas i betonów), których własności kształtują się dopiero w wyłożeniu urządzenia grzewczego u użytkownika."
+  },
+  "n128": {
+    "title": "Sprawdzić test mastitis na próbkach mleka od bydła",
+    "why": "Prototyp testu diagnostycznego wykrywającego antygeny bakterii wywołujących mastitis (zapalenie wymion) u bydła: Staphylococcus aureus, Streptococcus uberis i agalactiae oraz Escherichia coli. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Z weterynarzami zbierz odpowiednio oznaczone próbki i wyniki metod referencyjnych.",
+      "Oceń trafność wykrywania każdej bakterii oraz wpływ jakości próbki na wynik.",
+      "Ustal czas badania i sposób interpretacji wyniku przed próbą w gospodarstwach."
+    ],
+    "sourceTitle": "Innowacyjny test diagnostyczny do wykrywania antygenów wybranych gatunków bakterii wywołujących mastitis u bydła",
+    "sourceDescription": "Prototyp testu diagnostycznego wykrywającego antygeny bakterii wywołujących mastitis (zapalenie wymion) u bydła: Staphylococcus aureus, Streptococcus uberis i agalactiae oraz Escherichia coli. Ma uzupełnić metody oparte na liczeniu komórek somatycznych."
+  },
+  "n129": {
+    "title": "Przetestować montaż prefabrykowanego rozjazdu tramwajowego",
+    "why": "Contrack to technologia produkcji, logistyki, zabudowy i utrzymania prefabrykowanych rozjazdów tramwajowych. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z zarządcą torowiska zakres robót i sposób pomiaru czasu zamknięcia trasy.",
+      "Porównaj czas montażu, geometrię oraz wymagane prace wykończeniowe z dotychczasową technologią.",
+      "Monitoruj stan rozjazdu po uruchomieniu przed oceną kosztów całego cyklu życia."
+    ],
+    "sourceTitle": "Innowacyjna technologia produkcji, logistyki, zabudowy i utrzymania prefabrykowanych rozjazdów tramwajowych w blokach",
+    "sourceDescription": "Contrack to technologia produkcji, logistyki, zabudowy i utrzymania prefabrykowanych rozjazdów tramwajowych. Gotowe prefabrykaty trafiają na miejsce i są montowane metodą plug-in, zamiast wiązać beton 28 dni na budowie."
+  },
+  "n130": {
+    "title": "Zweryfikować bilans energii i wody budynku modułowego",
+    "why": "Innowacyjna modułowa technologia 3D budynku jednorodzinnego i wielorodzinnego: wysoka szczelność i izolacja, roczny bilans energii pokryty z fotowoltaiki, zużycie czystej wody do 12% typowego. Zrealizowano dom w technologii modułowej 3D z osiągniętymi parametrami energii i wody; serii komercyjnej brak.",
+    "steps": [
+      "Zbierz dane o zamieszkałym budynku i warunkach, w których podano deklarowane oszczędności.",
+      "Porównaj roczne zużycie energii i wody z odpowiednio dobranym budynkiem referencyjnym.",
+      "Ustal koszty utrzymania instalacji oraz możliwość przeniesienia technologii do innej gminy."
+    ],
+    "sourceTitle": "Budowa budynku mieszkalnego jednorodzinnego w ramach budownictwa efektywnego energetycznie i procesowo",
+    "sourceDescription": "Innowacyjna modułowa technologia 3D budynku jednorodzinnego i wielorodzinnego: wysoka szczelność i izolacja, roczny bilans energii pokryty z fotowoltaiki, zużycie czystej wody do 12% typowego."
+  },
+  "n131": {
+    "title": "Sprawdzić kontrolę rentgenowską na wybranej linii spożywczej",
+    "why": "Pierwsze przemysłowe urządzenie rentgenowskie PID Polska do automatycznych linii produkcyjnych, wykrywające zanieczyszczenia w produktach spożywczych. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Uzgodnij z producentem żywności rodzaj produktów i wymagania kontroli jakości.",
+      "W kontrolowanych warunkach porównaj wykrywalność zanieczyszczeń oraz liczbę odrzuceń z obecną metodą.",
+      "Zweryfikuj integrację z linią i wymagania bezpieczeństwa obsługi przed wdrożeniem."
+    ],
+    "sourceTitle": "Utworzenie pierwszego przemysłowego urządzenia rentgenowskiego, wykorzystującego technologię bezpośredniej konwersji – dedykowanego dla celów kontroli jakości w przemyśle spożywczym",
+    "sourceDescription": "Pierwsze przemysłowe urządzenie rentgenowskie PID Polska do automatycznych linii produkcyjnych, wykrywające zanieczyszczenia w produktach spożywczych."
+  },
+  "n132": {
+    "title": "Potwierdzić przedkliniczny potencjał estrów cukrowych",
+    "why": "Nowa forma leczenia nowotworów oparta na estrach cukrowych kwasów tłuszczowych (laktoza i monomery z bakteryjnych polihydroksyalkanianów), które mają hamować wzrost komórek nowotworowych i wzmacniać działanie tradycyjnych leków. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Ustal, które wyniki dotyczą badań komórkowych i jakie porównania już wykonano.",
+      "Z zespołem badawczym zaplanuj niezależną ocenę działania i toksyczności wybranej formy.",
+      "Określ dalsze etapy przedkliniczne bez przedstawiania substancji jako gotowej terapii."
+    ],
+    "sourceTitle": "Opracowanie funkcjonalnej formy aplikacji estrów cukrowych kwasów tłuszczowych na bazie bakteryjnych polihydroksyalkanianów hamujących rozwój komórek nowotworowych",
+    "sourceDescription": "Nowa forma leczenia nowotworów oparta na estrach cukrowych kwasów tłuszczowych (laktoza i monomery z bakteryjnych polihydroksyalkanianów), które mają hamować wzrost komórek nowotworowych i wzmacniać działanie tradycyjnych leków."
+  },
+  "n133": {
+    "title": "Sprawdzić przejrzystość porównania ofert energii",
+    "why": "ogarniamprad.pl to zautomatyzowana platforma optymalizacji zakupu energii elektrycznej i gazu: zbiera oferty sprzedawców i pozwala je porównać, zanim stracą ważność. Źródło opisuje wdrożoną platformę ogarniamprad.pl, bez liczby klientów.",
+    "steps": [
+      "Zbierz przykładowe oferty i warunki ważności za zgodą uczestniczących sprzedawców.",
+      "Porównaj całkowity koszt, dostępność ofert i sposób prezentacji opłat na platformie.",
+      "Ustal zasady aktualizacji cen, prowizji i ochrony danych przed rozszerzaniem usługi."
+    ],
+    "sourceTitle": "Ogarniamprad.pl – opracowanie technologii automatyzacji procesów przy wykorzystaniu zbiorów rozmytych z elementami algorytmów sztucznej inteligencji do obsługi dynamicznych aukcji sprzedaży energii elektrycznej i paliwa gazowego",
+    "sourceDescription": "ogarniamprad.pl to zautomatyzowana platforma optymalizacji zakupu energii elektrycznej i gazu: zbiera oferty sprzedawców i pozwala je porównać, zanim stracą ważność."
+  },
+  "n134": {
+    "title": "Ocenić model Laven na portfelu ubezpieczeń uzupełniających",
+    "why": "Model aktuarialny ubezpieczeń komplementarnych Laven: różnicuje składkę zależnie od tego, czy produkt jest sprzedawany samodzielnie, czy jako dodatek do innych ubezpieczeń. Źródło podaje komercjalizację wyników i bieżącą aktualizację modelu aktuarialnego.",
+    "steps": [
+      "Z ubezpieczycielem ustal cel modelu i przygotuj odpowiednio zabezpieczone dane historyczne.",
+      "Porównaj wycenę i szkodowość z przyjętym modelem referencyjnym.",
+      "Sprawdź wyjaśnialność różnic składek oraz wymagania nadzoru przed rozszerzeniem zastosowania."
+    ],
+    "sourceTitle": "Projekt B+R „Laven”",
+    "sourceDescription": "Model aktuarialny ubezpieczeń komplementarnych Laven: różnicuje składkę zależnie od tego, czy produkt jest sprzedawany samodzielnie, czy jako dodatek do innych ubezpieczeń."
+  },
+  "n135": {
+    "title": "Zweryfikować En-ActivETICS na fragmencie elewacji",
+    "why": "En-ActivETICS to lekki, energetycznie aktywowany bezspoinowy system izolacji termicznej elewacji; zgłoszono patent na kompozyt cementowy z granulatem modyfikowanym materiałem fazowo zmiennym. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Potwierdź zakres zgłoszenia patentowego oraz własność wyników.",
+      "Porównaj izolacyjność, trwałość i uzysk zintegrowanych elementów w warunkach ekspozycji.",
+      "Z producentem ociepleń oceń montaż, bezpieczeństwo i koszty utrzymania kompletnego systemu."
+    ],
+    "sourceTitle": "Bezspoinowy System Ociepleń Aktywowany Energetycznie – integracja powłok fotowoltaicznych stabilizowanych termicznie w budynkach efektywnych energetycznie",
+    "sourceDescription": "En-ActivETICS to lekki, energetycznie aktywowany bezspoinowy system izolacji termicznej elewacji; zgłoszono patent na kompozyt cementowy z granulatem modyfikowanym materiałem fazowo zmiennym."
+  },
+  "n136": {
+    "title": "Sprawdzić materiał tytanowy w jednym narzędziu skrawającym",
+    "why": "Technologia wytwarzania nowego materiału narzędziowego na osnowie tytanu, który ma zastąpić węglik spiekany WC-Co z toksycznym i kancerogennym kobaltem w obróbce skrawaniem. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z zakładem obróbki materiał obrabiany i geometrię narzędzia.",
+      "Porównaj trwałość ostrza i jakość powierzchni z węglikiem referencyjnym.",
+      "Oceń powtarzalność spiekania oraz koszty produkcji przed próbą przemysłową."
+    ],
+    "sourceTitle": "Materiał narzędziowy nowej generacji na osnowie tytanu wytwarzany w szybkim procesie spiekania iskrowo-plazmowego",
+    "sourceDescription": "Technologia wytwarzania nowego materiału narzędziowego na osnowie tytanu, który ma zastąpić węglik spiekany WC-Co z toksycznym i kancerogennym kobaltem w obróbce skrawaniem."
+  },
+  "n137": {
+    "title": "Porównać budynek modułowy z inwestycją komunalną",
+    "why": "Wielorodzinny budynek modułowy, energooszczędny i wykonywany pod klucz, pozwalający szybko zwolnić zajmowane komunalne zasoby mieszkaniowe do rewitalizacji i głębokiej termomodernizacji. Zrealizowano budynek demonstracyjny; liczby wdrożeń źródło nie podaje.",
+    "steps": [
+      "Ustal z zarządcą wymagania mieszkańców oraz dostępne dane o zrealizowanym obiekcie.",
+      "Porównaj czas budowy, rzeczywiste zużycie energii i koszty utrzymania z tradycyjnym budynkiem.",
+      "Oceń możliwość ponownego wykorzystania modułów oraz warunki adaptacji do innej działki."
+    ],
+    "sourceTitle": "Wielorodzinny budynek modułowy efektywny energetycznie i procesowo",
+    "sourceDescription": "Wielorodzinny budynek modułowy, energooszczędny i wykonywany pod klucz, pozwalający szybko zwolnić zajmowane komunalne zasoby mieszkaniowe do rewitalizacji i głębokiej termomodernizacji."
+  },
+  "n138": {
+    "title": "Zweryfikować identyfikację mikroorganizmów w jednym typie próbek",
+    "why": "Nowa metoda szybkiej i dokładnej identyfikacji mikroorganizmów w złożonych próbkach, mająca ograniczyć pracochłonność, koszty i niską specyficzność obecnych technik laboratoryjnych. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z laboratorium matrycę i panel mikroorganizmów do porównania.",
+      "Porównaj trafność, czas i liczbę próbek wymagających powtórzenia z metodą referencyjną.",
+      "Oceń przygotowanie próbek oraz koszt wdrożenia w rutynowej pracy laboratorium."
+    ],
+    "sourceTitle": "Nowe podejście w identyfikacji mikroorganizmów w matrycach środowiskowych i klinicznych dla rutynowych laboratoriów mikrobiologicznych",
+    "sourceDescription": "Nowa metoda szybkiej i dokładnej identyfikacji mikroorganizmów w złożonych próbkach, mająca ograniczyć pracochłonność, koszty i niską specyficzność obecnych technik laboratoryjnych."
+  },
+  "n139": {
+    "title": "Ustalić zakres walidacji kapsułki BioCam",
+    "why": "BioCam to kapsułka endoskopowa z AI do nieinwazyjnego wykrywania chorób układu pokarmowego, alternatywa dla gastroskopii i kolonoskopii. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Z klinicystami określ konkretny cel badania i dostępne wyniki porównawcze.",
+      "Oceń trafność wykrywania zmian oraz przypadki, w których konieczna jest dalsza diagnostyka.",
+      "Zweryfikuj bezpieczeństwo i wymagania regulacyjne bez zakładania, że kapsułka zastępuje endoskopię."
+    ],
+    "sourceTitle": "B+R Biocam",
+    "sourceDescription": "BioCam to kapsułka endoskopowa z AI do nieinwazyjnego wykrywania chorób układu pokarmowego, alternatywa dla gastroskopii i kolonoskopii."
+  },
+  "n140": {
+    "title": "Przenieść warsztaty projektowania zabawek do kolejnej szkoły",
+    "why": "Zajęcia projektowe Uniwersytetu Warszawskiego angażujące uczniów: studenci prowadzą z uczniami stacjonarne zajęcia, w których projektuje się i drukuje zabawki. Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
+    "steps": [
+      "Uzgodnij z zespołem UW dostęp do scenariuszy i sprzętu do druku.",
+      "Przeprowadź z uczniami pełny cykl od projektu do oceny gotowej zabawki.",
+      "Oceń samodzielność uczestników, koszt materiałów i czas przygotowania nauczycieli."
+    ],
+    "sourceTitle": "Mały Innowator",
+    "sourceDescription": "Zajęcia projektowe Uniwersytetu Warszawskiego angażujące uczniów: studenci prowadzą z uczniami stacjonarne zajęcia, w których projektuje się i drukuje zabawki. Program wspiera lokalną społeczność w ramach trzeciej misji uczelni."
+  },
+  "n141": {
+    "title": "Porównać Młodego Projektanta z programem Mały Innowator",
+    "why": "Hybrydowe zajęcia projektowe Uniwersytetu Warszawskiego rozwijające kompetencje uczniów, wdrożone w szkołach podstawowych jako zajęcia dodatkowe pobudzające aktywność edukacyjną i kulturalną. Zajęcia wdrożono w szkołach podstawowych (więcej niż jednej) jako zajęcia dodatkowe.",
+    "steps": [
+      "Ustal z autorami obu programów różnice w grupach, materiałach i celach zajęć.",
+      "Wybierz wspólne elementy możliwe do wykorzystania w kolejnej szkole.",
+      "Zmierz wykonanie zadania projektowego przez uczniów oraz zasoby wymagane od nauczyciela."
+    ],
+    "sourceTitle": "Młody Projektant",
+    "sourceDescription": "Hybrydowe zajęcia projektowe Uniwersytetu Warszawskiego rozwijające kompetencje uczniów, wdrożone w szkołach podstawowych jako zajęcia dodatkowe pobudzające aktywność edukacyjną i kulturalną."
+  },
+  "n142": {
+    "title": "Sprawdzić wykorzystanie metod z Laboratorium Edukacji Przyszłości w praktykach",
+    "why": "Program jednolitych studiów magisterskich dla przyszłych nauczycieli przedszkola i edukacji wczesnoszkolnej Wydziału Pedagogicznego UW; wdrożony do praktyki, kształci kompetencje m.in. Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
+    "steps": [
+      "Wybierz z placówką partnerską jedną kompetencję przyszłych nauczycieli do oceny.",
+      "Porównaj przygotowanie i realizację zajęć przez studentów w trakcie praktyk.",
+      "Zbierz opinie opiekunów oraz dostosuj moduł studiów do zaobserwowanych trudności."
+    ],
+    "sourceTitle": "Laboratorium Edukacji Przyszłości",
+    "sourceDescription": "Program jednolitych studiów magisterskich dla przyszłych nauczycieli przedszkola i edukacji wczesnoszkolnej Wydziału Pedagogicznego UW; wdrożony do praktyki, kształci kompetencje m.in. wspierania rozwoju dzieci i organizowania sytuacji edukacyjno-wychowawczych."
+  },
+  "n143": {
+    "title": "Potwierdzić emisje ogrzewacza biomasy w pełnym cyklu pracy",
+    "why": "Nowa generacja niskoemisyjnych ogrzewaczy pomieszczeń (piecokominków) spalających gaz procesowy z termicznego przetwarzania pelletu we własnym gazogeneratorze; ogrzewają pomieszczenia i przygotowują ciepłą wodę, przy emisjach znacznie poniżej limitów Ekoprojektu. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Z laboratorium ustal reprezentatywne paliwo oraz warunki rozruchu i zmiennego obciążenia.",
+      "Zmierz emisje, sprawność i jakość przygotowania ciepłej wody w całym cyklu.",
+      "Porównaj koszty obsługi i wymagania konserwacji przed próbą u użytkownika."
+    ],
+    "sourceTitle": "Opracowanie nowej generacji akumulacyjnych ogrzewaczy pomieszczeń zasilanych gazem procesowym z termochemicznej konwersji biomasy",
+    "sourceDescription": "Nowa generacja niskoemisyjnych ogrzewaczy pomieszczeń (piecokominków) spalających gaz procesowy z termicznego przetwarzania pelletu we własnym gazogeneratorze; ogrzewają pomieszczenia i przygotowują ciepłą wodę, przy emisjach znacznie poniżej limitów Ekoprojektu."
+  },
+  "n144": {
+    "title": "Ocenić demonstrator ThermOS w całym sezonie grzewczym i chłodniczym",
+    "why": "ThermOS łączy pompę ciepła, fotowoltaikę i dwustopniowe magazynowanie ciepła oraz chłodu. Zbudowano demonstrator w użytkowanym budynku w Krakowie. To demonstracja w warunkach rzeczywistych: 2/5. Źródło nie potwierdza regularnej sprzedaży.",
+    "steps": [
+      "Zbierz dane z użytkowanego budynku oraz harmonogram pracy instalacji.",
+      "Porównaj energię pobieraną przez pompę ciepła i działanie magazynu z odpowiednim punktem odniesienia.",
+      "Z projektantem ustal warunki przeniesienia systemu do kolejnego budynku."
+    ],
+    "sourceTitle": "ThermOS - Thermal Optimal System",
+    "sourceDescription": "ThermOS łączy pompę ciepła, fotowoltaikę i dwustopniowe magazynowanie ciepła oraz chłodu. W ramach projektu ConnectPoint zbudowano demonstrator w Krakowie na działającej instalacji użytkowanego budynku; źródło opisuje ogrzewanie i sezonowe wytwarzanie wody lodowej."
+  },
+  "n145": {
+    "title": "Sprawdzić EnzymeCP na jednym patogenie roślin",
+    "why": "Kompozycje enzymów jako biologiczna ochrona roślin: alternatywa dla chemicznych pestycydów, która ma zachować skuteczność przy mniejszej szkodliwości dla roślin, konsumentów i środowiska (konsorcjum międzynarodowe z firmą BioMosae B.V.). Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Z zespołem badawczym wybierz uprawę, patogen i preparat referencyjny.",
+      "Porównaj skuteczność oraz wpływ na rośliny i organizmy niebędące celem w odpowiednich badaniach.",
+      "Ustal trwałość kompozycji enzymów i wymagania dopuszczenia przed próbami rynkowymi."
+    ],
+    "sourceTitle": "EnzymeCP: kompozycje enzymów jako przyszłość biologicznej ochrony roślin",
+    "sourceDescription": "Kompozycje enzymów jako biologiczna ochrona roślin: alternatywa dla chemicznych pestycydów, która ma zachować skuteczność przy mniejszej szkodliwości dla roślin, konsumentów i środowiska (konsorcjum międzynarodowe z firmą BioMosae B.V.)."
+  },
+  "n146": {
+    "title": "Porównać wodny grunt cynkowy z innym rozwiązaniem z bazy",
+    "why": "Wodne ekologiczne grunty pigmentowane cynkiem o zmniejszonej zawartości cynku, oparte na wodorozcieńczalnej żywicy epoksydowej z dodatkami zwiększającymi barierowość i odporność mechaniczną powłoki. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Uzgodnij z autorami dostęp do receptur próbek i zakres możliwej współpracy.",
+      "Na identycznej stali porównaj przyczepność, odporność korozyjną i warunki aplikacji.",
+      "Oceń emisję rozpuszczalników oraz koszt całego systemu powłokowego dla wybranego odbiorcy."
+    ],
+    "sourceTitle": "Wodne, przyjazne dla środowiska grunty wysoko pigmentowane cynkiem",
+    "sourceDescription": "Wodne ekologiczne grunty pigmentowane cynkiem o zmniejszonej zawartości cynku, oparte na wodorozcieńczalnej żywicy epoksydowej z dodatkami zwiększającymi barierowość i odporność mechaniczną powłoki."
+  },
+  "n147": {
+    "title": "Zweryfikować odzysk wody z pofermentu jednej biogazowni",
+    "why": "Zintegrowana technologia odzysku wody z pofermentu biogazowni (hydrotermalna karbonizacja, odwadnianie, suszenie) z wykorzystaniem produktów ubocznych do produkcji energii elektrycznej i ciepła; odzyskana woda ma nadawać się do rolnictwa. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Zbadaj zmienność składu pofermentu i określ planowane zastosowanie odzyskanej wody.",
+      "Zmierz jakość wody, zużycie energii i ilość pozostałości po pełnym procesie.",
+      "Porównaj bilans energetyczny oraz wymagania wykorzystania wody w rolnictwie przed skalowaniem."
+    ],
+    "sourceTitle": "Samowystarczalna wielostopniowa technologia odzysku wody z wysoko uwodnionych produktów fermentacji dla celów rolniczych",
+    "sourceDescription": "Zintegrowana technologia odzysku wody z pofermentu biogazowni (hydrotermalna karbonizacja, odwadnianie, suszenie) z wykorzystaniem produktów ubocznych do produkcji energii elektrycznej i ciepła; odzyskana woda ma nadawać się do rolnictwa."
+  },
+  "n148": {
+    "title": "Sprawdzić wiarygodność wskaźników platformy eco rank",
+    "why": "Platforma eco rank porównuje i ocenia działania proekologiczne organizacji w zrozumiałej formie oraz pomaga im monitorować i raportować wpływ na środowisko. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z firmami jedną branżę i źródła danych o wpływie środowiskowym.",
+      "Porównaj wyniki platformy z udokumentowanymi danymi oraz oceń możliwość ich niezależnej weryfikacji.",
+      "Przetestuj czytelność ocen z konsumentami, wyjaśniając ograniczenia porównania."
+    ],
+    "sourceTitle": "Wykorzystanie technologii informacyjnych w podnoszeniu skuteczności Systemu Zarządzania Środowiskowego (SZŚ)",
+    "sourceDescription": "Platforma eco rank porównuje i ocenia działania proekologiczne organizacji w zrozumiałej formie oraz pomaga im monitorować i raportować wpływ na środowisko. Prototyp obejmuje sześć branż, m.in. spożywczą i kosmetyków."
+  },
+  "n149": {
+    "title": "Ustalić instytucjonalną ścieżkę oceny projektu P-18PL",
+    "why": "Radar P-18PL pracuje w paśmie VHF i wykrywa oraz śledzi pociski balistyczne i hipersoniczne, obiekty powietrzne różnych typów (także w technologii stealth) i śmigłowce w zawisie; może pracować w trybie pasywnym. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Potwierdź właściciela wyników i aktualny status projektu w konsorcjum.",
+      "Uzgodnij zasady ochrony informacji i zakres danych możliwych do przekazania.",
+      "Skieruj dalszą ocenę potrzeb oraz decyzję o wykorzystaniu do uprawnionej instytucji."
+    ],
+    "sourceTitle": "Opracowanie prototypu radaru P-18PL wstępnego wskazywania celów pracującego w paśmie metrowym, ze skanowaniem fazowym w dwóch płaszczyznach dla zestawów rakietowych OP (ZROP) P-18PL",
+    "sourceDescription": "Radar P-18PL pracuje w paśmie VHF i wykrywa oraz śledzi pociski balistyczne i hipersoniczne, obiekty powietrzne różnych typów (także w technologii stealth) i śmigłowce w zawisie; może pracować w trybie pasywnym."
+  },
+  "n150": {
+    "title": "Potwierdzić status i warunki transferu szyfratorów",
+    "why": "Szyfratory ETA-MS-11 i ETA-MSZ przetwarzają informacje niejawne o klauzulach „Tajne” i „Zastrzeżone” z wydajnością 1 Gbit/s. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Ustal z właścicielem aktualny status urządzeń oraz zakres możliwej dokumentacji.",
+      "Zweryfikuj wymagane uprawnienia, certyfikację i zasady ochrony informacji.",
+      "Uzgodnij z uprawnionym odbiorcą odpowiedzialność za dalszą ocenę i utrzymanie systemu."
+    ],
+    "sourceTitle": "Prace B+R mające na celu opracowanie innowacyjnego szyfratora online sprzętowego, mobilnego rozwiązania kryptograficznego, zapewniającego wysoką siłę ochrony kryptograficznej i odporność na ataki sieciowe, wraz z systemem do zdalnego monitorowania i zdalnej konfiguracji pracy całego systemu kryptograficznego",
+    "sourceDescription": "Szyfratory ETA-MS-11 i ETA-MSZ przetwarzają informacje niejawne o klauzulach „Tajne” i „Zastrzeżone” z wydajnością 1 Gbit/s."
+  },
+  "n151": {
+    "title": "Sprawdzić trwałość powłoki AnBaCo na uchwytach",
+    "why": "AnBaCo to nietoksyczne antybakteryjne powłoki zol-żel z nanocząstkami węgla, nanoszone na często dotykane przedmioty, np. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z operatorem transportu materiał uchwytu i warunki jego mycia.",
+      "Porównaj działanie powłoki i jej trwałość po wielokrotnym dotykaniu i czyszczeniu.",
+      "Oceń bezpieczeństwo użytkowania oraz koszt nanoszenia przed próbą w pojazdach."
+    ],
+    "sourceTitle": "Warstwy antybakteryjne zol-żel zawierające nanocząstki węgla",
+    "sourceDescription": "AnBaCo to nietoksyczne antybakteryjne powłoki zol-żel z nanocząstkami węgla, nanoszone na często dotykane przedmioty, np. uchwyty w transporcie publicznym."
+  },
+  "n152": {
+    "title": "Ocenić PosEmo pod kątem trafności i prywatności",
+    "why": "PosEmo to prototyp narzędzia do automatycznego określania zaangażowania i emocji rozmówców podczas wideorozmów na podstawie niewerbalnej ekspresji (ruchu i postawy). Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Uzgodnij dobrowolny udział osób oraz zasady przetwarzania obrazu wideorozmowy.",
+      "Porównaj interpretacje narzędzia z deklaracjami uczestników w różnych warunkach rozmowy.",
+      "Nie traktuj ekspresji jako pewnego odczytu emocji; ustal dopuszczalne zastosowania z użytkownikami."
+    ],
+    "sourceTitle": "PosEmo – Narzędzie do automatycznego określania zaangażowania i pobudzenia emocjonalnego osób w obrazie z kamery",
+    "sourceDescription": "PosEmo to prototyp narzędzia do automatycznego określania zaangażowania i emocji rozmówców podczas wideorozmów na podstawie niewerbalnej ekspresji (ruchu i postawy)."
+  },
+  "n153": {
+    "title": "Sprawdzić BoltSense w monitoringu jednego połączenia",
+    "why": "BoltSense to elementy złączne do zdalnego pomiaru naprężeń w trudno dostępnych, krytycznych miejscach (turbiny wiatrowe, młyny kulowe) z łącznością Bluetooth LE i LoRa oraz portalem klienta do analiz i raportów. Copper State Bolt & Nut Company zainstalowała ponad 4000 śrub; opisano sprzedaż sprzętu i SaaS. Oferta rynkowa odpowiada 4/5. Liczba śrub nie jest liczbą klientów.",
+    "steps": [
+      "Wybierz z operatorem turbiny punkt pomiarowy oraz referencyjną metodę pomiaru naprężenia.",
+      "Porównaj odczyty w czasie zmian obciążenia i sprawdź dostępność łączności.",
+      "Ustal zakres kalibracji, wymiany baterii i reakcji na alarm przed rozszerzeniem instalacji."
+    ],
+    "sourceTitle": "BoltSense – Nowatorskie elementy złączne do pomiaru obciążeń",
+    "sourceDescription": "BoltSense to elementy złączne do zdalnego pomiaru naprężeń w trudno dostępnych, krytycznych miejscach (turbiny wiatrowe, młyny kulowe) z łącznością Bluetooth LE i LoRa oraz portalem klienta do analiz i raportów."
+  },
+  "n154": {
+    "title": "Zweryfikować detekcję ransomware w kontrolowanym środowisku",
+    "why": "Narzędzie wczesnej detekcji i unieszkodliwiania ransomware, niebazujące wyłącznie na sygnaturach znanych zagrożeń; ma działać oszczędnie w różnych środowiskach IT. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Uzgodnij z zespołem bezpieczeństwa zakres testów na odizolowanych danych testowych.",
+      "Porównaj wykrywanie znanych scenariuszy oraz liczbę błędnych blokad z ochroną referencyjną.",
+      "Oceń wpływ na wydajność i możliwość odwrócenia błędnej interwencji."
+    ],
+    "sourceTitle": "Uniwersalny system wczesnej detekcji i unieszkodliwiania złośliwego oprogramowania typu ransomware",
+    "sourceDescription": "Narzędzie wczesnej detekcji i unieszkodliwiania ransomware, niebazujące wyłącznie na sygnaturach znanych zagrożeń; ma działać oszczędnie w różnych środowiskach IT."
+  },
+  "n155": {
+    "title": "Ocenić filtr harmonicznych SiC w instalacji przemysłowej",
+    "why": "Aktywny filtr harmonicznych MMB Drives dla przemysłowych sieci średniego napięcia, redukujący zakłócenia od falowników dużej mocy; rozwiązanie objęte zgłoszeniem patentowym. Źródło podaje zgłoszenie patentowe i stanowiska testowe w laboratorium oraz plan wdrożenia do produkcji.",
+    "steps": [
+      "Ustal z operatorem sieci charakter obciążeń i bezpieczne warunki pomiarów.",
+      "Porównaj jakość energii, straty oraz temperaturę filtra w ustalonych punktach pracy.",
+      "Potwierdź zakres zgłoszenia patentowego i wymagania integracji przed wdrożeniem."
+    ],
+    "sourceTitle": "Opracowanie innowacyjnego aktywnego filtra harmonicznych z tranzystorami z węglika krzemu (SiC) z bezstratnymi obwodami łagodzenia du/dt przeznaczonego do sieci przemysłowych średniego napięcia",
+    "sourceDescription": "Aktywny filtr harmonicznych MMB Drives dla przemysłowych sieci średniego napięcia, redukujący zakłócenia od falowników dużej mocy; rozwiązanie objęte zgłoszeniem patentowym."
+  },
+  "n156": {
+    "title": "Zweryfikować pomiar Gepetto na zdjęciach z różnych telefonów",
+    "why": "Rozwiązanie telemedyczne Gepetto analizuje zdjęcie wykonane smartfonem i wskazuje wynik z określoną dokładnością; podstawowe komponenty zintegrowano i odwzorowano w laboratorium. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Z okulistami określ mierzoną wielkość i zastosowanie wyniku.",
+      "Porównaj dokładność w różnych warunkach oświetlenia z profesjonalnym pomiarem referencyjnym.",
+      "Oceń ochronę zdjęć i ograniczenia zastosowania przed oferowaniem usługi użytkownikom."
+    ],
+    "sourceTitle": "Gepetto – opracowanie innowacyjnego rozwiązania telemedycznego mającego na celu umożliwienie doboru okularów korekcyjnych w zakresie zdrowotnym oraz wizualnym bez konieczności wychodzenia z domu",
+    "sourceDescription": "Rozwiązanie telemedyczne Gepetto analizuje zdjęcie wykonane smartfonem i wskazuje wynik z określoną dokładnością; podstawowe komponenty zintegrowano i odwzorowano w laboratorium."
+  },
+  "n157": {
+    "title": "Sprawdzić trwałość akumulatora KLAB w cyklu magazynowania OZE",
+    "why": "Technologia KLAB akumulatorów kwasowo-węglowych InnBAT zastępuje część ołowianych elementów konstrukcji akumulatora materiałem węglowym; służy do magazynowania nadwyżek energii z wiatru i słońca. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z odbiorcą profil ładowania odpowiadający instalacji fotowoltaicznej.",
+      "Porównaj użyteczną pojemność, sprawność i liczbę cykli z akumulatorem referencyjnym.",
+      "Oblicz koszt magazynowania w całym okresie eksploatacji oraz zasady recyklingu."
+    ],
+    "sourceTitle": "Magazynowanie energii elektrycznej - Strumień “Bateria”",
+    "sourceDescription": "Technologia KLAB akumulatorów kwasowo-węglowych InnBAT zastępuje część ołowianych elementów konstrukcji akumulatora materiałem węglowym; służy do magazynowania nadwyżek energii z wiatru i słońca."
+  },
+  "n158": {
+    "title": "Zweryfikować bilans energetyczny oczyszczania WOW",
+    "why": "Technologia ewaporacyjnego oczyszczania i odsalania płynów: z wody o wysokim stężeniu zanieczyszczeń robi wodę zdemineralizowaną, zużywając ok. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz rodzaj zanieczyszczonej wody i ustal warunki pomiaru całego procesu.",
+      "Zmierz jakość wody, zużycie energii i ilość koncentratu przy porównywalnym urządzeniu referencyjnym.",
+      "Osobno policz energię potrzebną poza godzinami pracy paneli słonecznych przed oceną samowystarczalności."
+    ],
+    "sourceTitle": "Ewaporacyjne Oczyszczanie Płynów WOW",
+    "sourceDescription": "Technologia ewaporacyjnego oczyszczania i odsalania płynów: z wody o wysokim stężeniu zanieczyszczeń robi wodę zdemineralizowaną, zużywając ok. 1–1,5 kWh/m3 (ponad dwa razy mniej niż najlepsze metody na rynku); z panelami słonecznymi działa jako zeroenergetyczna."
+  },
+  "n159": {
+    "title": "Sprawdzić dostępność całej ścieżki studenta",
+    "why": "Program dostosowania Wyższej Szkoły Społeczno-Ekonomicznej w Gdańsku i Ostrołęce do potrzeb studentów z niepełnosprawnościami: likwidacja barier architektonicznych (toalety, komunikacja pionowa, wejście główne), informacyjnych i cyfrowych oraz zakup sprzętu wspierającego. Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
+    "steps": [
+      "Z osobami z niepełnosprawnościami wybierz zadania obejmujące wejście do budynku i system cyfrowy.",
+      "Przetestuj samodzielne wykonanie zadań oraz dostępność sprzętu wspomagającego.",
+      "Usuń stwierdzone bariery i ustal odpowiedzialność za aktualizację dostosowań."
+    ],
+    "sourceTitle": "Wyższa Szkoła Społeczno-Ekonomiczna w Gdańsku – uczelnią przyjazną",
+    "sourceDescription": "Program dostosowania Wyższej Szkoły Społeczno-Ekonomicznej w Gdańsku i Ostrołęce do potrzeb studentów z niepełnosprawnościami: likwidacja barier architektonicznych (toalety, komunikacja pionowa, wejście główne), informacyjnych i cyfrowych oraz zakup sprzętu wspierającego."
+  },
+  "n160": {
+    "title": "Porównać procedury wsparcia Łużyckiej Szkoły Wyższej z inną uczelnią",
+    "why": "Program poprawy dostępności Łużyckiej Szkoły Wyższej dla osób z niepełnosprawnościami: zmiany w strukturze organizacyjnej, architekturze, technologiach wspierających, procedurach, wsparciu edukacyjnym i szkoleniach o niepełnosprawności oraz alternatywne metody kształcenia. Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
+    "steps": [
+      "Ustal z zespołami zakres pomocy edukacyjnej i potrzeby zgłaszane przez studentów.",
+      "Przetestuj dostępność jednego procesu od zgłoszenia potrzeby do uzyskania wsparcia.",
+      "Wymień przydatne procedury z inną uczelnią, zachowując lokalne dostosowanie."
+    ],
+    "sourceTitle": "Łużycka Szkoła Wyższa – Uczelnia Równych Szans",
+    "sourceDescription": "Program poprawy dostępności Łużyckiej Szkoły Wyższej dla osób z niepełnosprawnościami: zmiany w strukturze organizacyjnej, architekturze, technologiach wspierających, procedurach, wsparciu edukacyjnym i szkoleniach o niepełnosprawności oraz alternatywne metody kształcenia."
+  },
+  "n161": {
+    "title": "Sprawdzić źródło laserowe przy obróbce miedzi",
+    "why": "Wielodiodowe niebieskie źródło laserowe średniej i dużej mocy do grawerowania, cięcia i spiekania proszków; niebieskie światło jest lepiej pochłaniane niż podczerwień, więc działa na materiałach odbijających lasery CO2, np. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z producentem jedno zadanie obróbki i materiał referencyjny.",
+      "Porównaj jakość, szybkość i zużycie energii z dotychczasową metodą.",
+      "Zweryfikuj trwałość źródła i wymagania ochrony operatora przed demonstracją przemysłową."
+    ],
+    "sourceTitle": "Opracowanie technologii źródła laserowego wielodiodowego opartego na diodach o długościach fal z zakresu 350-550 nm, pozwalającej na modyfikację parametrów wiązki laserowej w celu optymalizacji procesów cięcia, grawerowania i spiekania materiałów używanych w przemyśle",
+    "sourceDescription": "Wielodiodowe niebieskie źródło laserowe średniej i dużej mocy do grawerowania, cięcia i spiekania proszków; niebieskie światło jest lepiej pochłaniane niż podczerwień, więc działa na materiałach odbijających lasery CO2, np. na miedzi."
+  },
+  "n162": {
+    "title": "Przetestować Cinematic Feel na jednej scenie gry RPG",
+    "why": "Cinematic Feel to zintegrowany zestaw narzędzi do tworzenia interaktywnych scen o jakości filmowej i technologia pozwalająca graczom aktywnie w nich uczestniczyć, w grach role-playing z otwartym światem i nieliniową fabułą. Zestaw narzędzi jest gotowy, ale źródło nie wymienia tytułów gier ani wdrożeń.",
+    "steps": [
+      "Wybierz z zespołem gry scenę z kilkoma możliwymi decyzjami gracza.",
+      "Porównaj czas przygotowania, jakość animacji i reakcje graczy z obecnym procesem produkcji.",
+      "Ustal możliwość integracji narzędzi z silnikiem gry oraz prawa do wykorzystanych zasobów."
+    ],
+    "sourceTitle": "Cinematic Feel — kompleksowa technologia umożliwiająca dostarczanie unikalnej, filmowej jakości w grach RPG z otwartym światem, uwzględniająca również innowacyjne rozwiązania procesowe i unikalny zestaw dedykowanych narzędzi",
+    "sourceDescription": "Cinematic Feel to zintegrowany zestaw narzędzi do tworzenia interaktywnych scen o jakości filmowej i technologia pozwalająca graczom aktywnie w nich uczestniczyć, w grach role-playing z otwartym światem i nieliniową fabułą."
+  },
+  "n163": {
+    "title": "Zweryfikować rehabilitację NeuroRec w warunkach domowych",
+    "why": "NeuroRec to system aktywizacji układu nerwowego i mięśniowego do indywidualnej, zdalnej, codziennej rehabilitacji poudarowej; pacjent ćwiczy samodzielnie w domu na wypożyczonym urządzeniu z automatyzacją procesu rehabilitacji. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Z rehabilitantami ustal grupę pacjentów, zakres ćwiczeń oraz zasady nadzoru.",
+      "Porównaj regularność ćwiczeń i wybrane wyniki funkcjonalne z odpowiednią opieką referencyjną.",
+      "Sprawdź bezpieczeństwo samodzielnej obsługi i dostęp specjalisty w razie problemu."
+    ],
+    "sourceTitle": "Specjalistyczny system aktywizacji układów nerwowych i mięśniowych z wykorzystaniem sygnałów EMG i metod symulacji, jako innowacyjna forma diagnostyki, rehabilitacji i terapii dla osób z dysfunkcją kończyn",
+    "sourceDescription": "NeuroRec to system aktywizacji układu nerwowego i mięśniowego do indywidualnej, zdalnej, codziennej rehabilitacji poudarowej; pacjent ćwiczy samodzielnie w domu na wypożyczonym urządzeniu z automatyzacją procesu rehabilitacji."
+  },
+  "n164": {
+    "title": "Ocenić przydatność platformy Smarter Diagnostics w profilaktyce urazów",
+    "why": "Platforma profilaktyki urazów sportowych: diagnostyka wspierana sztuczną inteligencją i obrazowaniem tkanek w rezonansie magnetycznym minimalizuje ryzyko kontuzji u osób aktywnych i sportowców. Firma wdrożyła ofertę wśród pracodawców i klientów.",
+    "steps": [
+      "Wybierz z lekarzami sportowymi jedną grupę i jasno określony rodzaj urazu.",
+      "Sprawdź trafność oceny na niezależnych danych oraz porównaj ją z dotychczasową praktyką.",
+      "Oceń, czy wynik zmienia decyzję specjalisty; nie utożsamiaj obrazu MRI z gwarancją uniknięcia kontuzji."
+    ],
+    "sourceTitle": "Smarter Diagnostics – Platforma profilaktyki urazów sportowych oparta o obrazowanie Rezonansem Magnetycznym i algorytmy sztucznej inteligencji",
+    "sourceDescription": "Platforma profilaktyki urazów sportowych: diagnostyka wspierana sztuczną inteligencją i obrazowaniem tkanek w rezonansie magnetycznym minimalizuje ryzyko kontuzji u osób aktywnych i sportowców."
+  },
+  "n165": {
+    "title": "Sprawdzić SPIN Autofeed na stanowisku montażowym",
+    "why": "Narzędzie wkrętakowe robota SPIN Autofeed z łącznością 5G i AI (CTHINGS.CO z SPIN Robotics i Duńskim Instytutem Technologicznym) umożliwiające predykcyjną konserwację maszyn i mniej nieplanowanych przestojów. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z producentem jedno połączenie i aktualny sposób kontroli narzędzia.",
+      "Porównaj czas cyklu, błędy podawania i dostępność stanowiska z istniejącym procesem.",
+      "Oceń jakość danych do przewidywania konserwacji i opłacalność łączności 5G."
+    ],
+    "sourceTitle": "SPIN-AUTOFEED - pierwsze na świecie narzędzie wkrętakowe z końcówką ramienia do cobotów z automatycznym podawaniem śrub",
+    "sourceDescription": "Narzędzie wkrętakowe robota SPIN Autofeed z łącznością 5G i AI (CTHINGS.CO z SPIN Robotics i Duńskim Instytutem Technologicznym) umożliwiające predykcyjną konserwację maszyn i mniej nieplanowanych przestojów."
+  },
+  "n166": {
+    "title": "Przetestować automatyzację kampanii na ograniczonym budżecie",
+    "why": "W pełni zautomatyzowane narzędzie do wystawiania i optymalizacji kampanii produktowych w Google Ads na podstawie autorskiego algorytmu predykcyjnego, bez udziału specjalisty. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Ustal z reklamodawcą limit wydatków i cele kampanii oraz uprawnienia narzędzia.",
+      "Porównaj koszty pozyskania i sprzedaż z kampanią prowadzoną dotychczas w podobnych warunkach.",
+      "Zapewnij ręczne zatwierdzanie zmian i sprawdź rozliczenie przed zwiększeniem skali."
+    ],
+    "sourceTitle": "Opracowanie w pełni zautomatyzowanego narzędzia autonomicznie zarządzającego i optymalizującego kampanie reklamowe w wyszukiwarkach internetowych i marketplace'ach, umożliwiającego efektywne przeniesienie sprzedaży do Internetu, w szczególności w czasie pandemii COVID-19",
+    "sourceDescription": "W pełni zautomatyzowane narzędzie do wystawiania i optymalizacji kampanii produktowych w Google Ads na podstawie autorskiego algorytmu predykcyjnego, bez udziału specjalisty."
+  },
+  "n167": {
+    "title": "Porównać nanocząstki do ujawniania śladów z metodą referencyjną",
+    "why": "Metoda ujawniania śladów linii papilarnych nanocząstkami wytwarzanymi przez konsorcjum z Centralnym Laboratorium Kryminalistycznym Policji; ma być bardziej uniwersalna i skuteczna niż odczynniki chemiczne i proszki daktyloskopijne. Środki są komercyjnie dostępne, a firma planuje sprzedaż do laboratoriów w UE i USA.",
+    "steps": [
+      "Z laboratorium kryminalistycznym wybierz typy powierzchni oraz próbek kontrolnych.",
+      "Oceń czytelność i powtarzalność uzyskiwanych śladów w porównywalnych warunkach.",
+      "Ustal bezpieczeństwo pracy oraz dokumentację metody przed wdrożeniem laboratoryjnym."
+    ],
+    "sourceTitle": "Ujawnianie śladów linii papilarnych nanocząsteczkami wytwarzanymi przy użyciu technologii wysokich ciśnień",
+    "sourceDescription": "Metoda ujawniania śladów linii papilarnych nanocząstkami wytwarzanymi przez konsorcjum z Centralnym Laboratorium Kryminalistycznym Policji; ma być bardziej uniwersalna i skuteczna niż odczynniki chemiczne i proszki daktyloskopijne."
+  },
+  "n168": {
+    "title": "Sprawdzić trwałość biokompozytowej ramy rowerowej",
+    "why": "Amortyzowana rama rowerowa typu gravel z kompozytów i biokompozytów: amortyzację zapewnia sprężyste odkształcenie ramy i widelca oraz elastomer zamiast tłumika. Źródło opisuje nowy produkt (rama gravel), bez danych o sprzedaży.",
+    "steps": [
+      "Z producentem określ wymagane obciążenia i sposób porównania ze standardową ramą.",
+      "Oceń trwałość zmęczeniową, sprężystość oraz zachowanie widelca i elastomeru.",
+      "Sprawdź możliwość naprawy oraz koszt produkcji przed krótką serią testową."
+    ],
+    "sourceTitle": "Opracowanie roweru z podatną ramą oraz widelcem przedniego koła z zastosowaniem bio-kompozytów",
+    "sourceDescription": "Amortyzowana rama rowerowa typu gravel z kompozytów i biokompozytów: amortyzację zapewnia sprężyste odkształcenie ramy i widelca oraz elastomer zamiast tłumika."
+  },
+  "n169": {
+    "title": "Zweryfikować narzędzie AI Investments na danych historycznych",
+    "why": "Platforma AII (AI Investments) do zarządzania portfelami inwestycyjnymi i kontroli ryzyka, oparta na uczeniu maszynowym (m.in. Wynik projektu wdrożył luksemburski fundusz alternatywny.",
+    "steps": [
+      "Z funduszem ustal cele zarządzania ryzykiem i zasady korzystania z danych.",
+      "Porównaj decyzje modelu z punktem odniesienia, uwzględniając koszty i zmienne warunki rynku.",
+      "Sprawdź nadzór człowieka, wyjaśnialność wyników oraz ograniczenia modelu przed użyciem operacyjnym."
+    ],
+    "sourceTitle": "Al Investments - zaawansowane narzędzie inwestycyjne oparte na uczeniu maszynowym oraz Big Data",
+    "sourceDescription": "Platforma AII (AI Investments) do zarządzania portfelami inwestycyjnymi i kontroli ryzyka, oparta na uczeniu maszynowym (m.in. Transformer, Differentiable Neural Computer); optymalizuje portfel i wykrywa ryzyka."
+  },
+  "n170": {
+    "title": "Przenieść element studiów dualnych do nowej firmy partnerskiej",
+    "why": "Program Uniwersytetu Technologiczno-Humanistycznego w Radomiu dla studentów kierunku Samochody i Bezpieczeństwo w Transporcie Drogowym: 2400 godzin staży przemysłowych oraz specjalistyczne szkolenie dla kandydatów na diagnostów samochodowych. Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
+    "steps": [
+      "Uzgodnij z pracodawcą zadania stażowe i zakres szkolenia diagnostów.",
+      "Porównaj umiejętności studentów przed stażem i po jego ukończeniu.",
+      "Śledź ukończenie programu i zatrudnienie w określonym czasie bez utożsamiania godzin stażu ze skutecznością."
+    ],
+    "sourceTitle": "Podniesienie jakości i efektywności kształtowania wiedzy oraz umiejętności praktycznych studentów na kierunku Samochody i bezpieczeństwo w transporcie drogowym poprzez utworzenie studiów dualnych",
+    "sourceDescription": "Program Uniwersytetu Technologiczno-Humanistycznego w Radomiu dla studentów kierunku Samochody i Bezpieczeństwo w Transporcie Drogowym: 2400 godzin staży przemysłowych oraz specjalistyczne szkolenie dla kandydatów na diagnostów samochodowych."
+  },
+  "n171": {
+    "title": "Potwierdzić trwałość szyn w warunkach eksploatacji",
+    "why": "Technologia produkcji 120-metrowych szyn kolejowych obrabianych cieplnie przez przyspieszone chłodzenie główki po walcowaniu; struktura drobnopłytkowego perlitu daje wyższą wytrzymałość, twardość i odporność na pękanie niż w szynach standardowych. Działa linia pilotażowa do obróbki cieplnej szyn; odbiorców nie wskazano.",
+    "steps": [
+      "Wybierz z zarządcą torów odcinek i szyny referencyjne o porównywalnym obciążeniu.",
+      "Monitoruj zużycie, uszkodzenia oraz zgodność parametrów materiału z wymaganiami.",
+      "Porównaj koszty utrzymania i wymiany w całym cyklu życia toru."
+    ],
+    "sourceTitle": "Niezawodne i trwałe w eksploatacji, nowoczesne szyny kolejowe o długości 120 m, charakteryzujące się wysokimi właściwościami mechanicznymi, dużą odpornością na pękanie oraz zmodyfikowaną mikrostrukturą materiału w wyniku modernizacji procesu chłodzenia po walcowaniu",
+    "sourceDescription": "Technologia produkcji 120-metrowych szyn kolejowych obrabianych cieplnie przez przyspieszone chłodzenie główki po walcowaniu; struktura drobnopłytkowego perlitu daje wyższą wytrzymałość, twardość i odporność na pękanie niż w szynach standardowych."
+  },
+  "n172": {
+    "title": "Zweryfikować Theraply VR z terapeutami i dziećmi",
+    "why": "Theraply VR: interaktywna platforma terapeutyczna w wirtualnej rzeczywistości dla dzieci ze specjalnymi potrzebami edukacyjnymi; gry terapeutyczne, tempo terapii dopasowane do dziecka i bezpieczna, indywidualna przestrzeń. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Z terapeutami i opiekunami ustal cel zajęć oraz warunki bezpiecznego udziału dzieci.",
+      "Porównaj wykonanie wybranego zadania i tolerancję korzystania z VR z dotychczasową metodą.",
+      "Zbierz dane o dostępności i obciążeniu opiekunów przed formułowaniem deklaracji terapeutycznych."
+    ],
+    "sourceTitle": "Theraply VR - Stworzenie innowacyjnej, spersonalizowanej metody terapii dzieci SPE z wykorzystaniem technologii wirtualnej rzeczywistości (VR) wspomagającej pracę terapeutów oraz rodziców",
+    "sourceDescription": "Theraply VR: interaktywna platforma terapeutyczna w wirtualnej rzeczywistości dla dzieci ze specjalnymi potrzebami edukacyjnymi; gry terapeutyczne, tempo terapii dopasowane do dziecka i bezpieczna, indywidualna przestrzeń."
+  },
+  "n173": {
+    "title": "Sprawdzić wykorzystanie laboratoriów dydaktycznych uczelni",
+    "why": "Projekt Wyższej Szkoły Finansów i Prawa w Bielsku-Białej: nowe laboratoria dydaktyczne (multimedialna strzelnica, wirtualna sala zbrodni VR, laboratorium kryminalistyczne), szkolenia kadry oraz nowoczesne systemy informatyczne do obsługi studentów. Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
+    "steps": [
+      "Wybierz jedno laboratorium i przypisz zadania do konkretnych efektów nauczania.",
+      "Oceń wykonanie ćwiczeń przez studentów oraz czas przygotowania zajęć przez kadrę.",
+      "Na podstawie wyników dostosuj harmonogram, szkolenia i koszty utrzymania sprzętu."
+    ],
+    "sourceTitle": "Dostosowanie oferty edukacyjnej Wyższej Szkoły Finansów i Prawa w Bielsku-Białej do potrzeb gospodarki, rynku pracy i społeczeństwa",
+    "sourceDescription": "Projekt Wyższej Szkoły Finansów i Prawa w Bielsku-Białej: nowe laboratoria dydaktyczne (multimedialna strzelnica, wirtualna sala zbrodni VR, laboratorium kryminalistyczne), szkolenia kadry oraz nowoczesne systemy informatyczne do obsługi studentów."
+  },
+  "n174": {
+    "title": "Ocenić Zeus w zadaniach codziennych użytkowników",
+    "why": "Zeus: bioniczna proteza przedramienia o konstrukcji modułowej, tańsza od dostępnych na rynku, z założeniem szybkiej wymiany uszkodzonych modułów i sensorycznego sprzężenia zwrotnego. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Z protetykami ustal sposób dopasowania protezy i bezpieczny zakres testów.",
+      "Porównaj obsługę chwytu, wymianę modułów i wygodę użytkowników w codziennych zadaniach.",
+      "Zweryfikuj trwałość, serwis oraz działanie sprzężenia zwrotnego przed szerszym wdrożeniem."
+    ],
+    "sourceTitle": "Opracowanie bionicznej protezy przedramienia „Zeus\" o modułowej konstrukcji, odznaczającej się wysoką wytrzymałością na uderzenia i intuicyjnej kontroli ruchu opartej na przetwarzaniu biosygnałów",
+    "sourceDescription": "Zeus: bioniczna proteza przedramienia o konstrukcji modułowej, tańsza od dostępnych na rynku, z założeniem szybkiej wymiany uszkodzonych modułów i sensorycznego sprzężenia zwrotnego."
+  },
+  "n175": {
+    "title": "Zweryfikować Cardiomatics Junior na niezależnych zapisach EKG",
+    "why": "Cardiomatics Junior: system AI trenowany na dużych zbiorach danych, który automatycznie interpretuje pediatryczne zapisy EKG i wspiera wykrywanie zaburzeń rytmu serca i przewodzenia u dzieci. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Z kardiologami dziecięcymi określ grupy wiekowe i zaburzenia objęte badaniem.",
+      "Porównaj wyniki algorytmu z oceną specjalistów, uwzględniając błędy i jakość zapisów.",
+      "Ustal sposób nadzoru klinicznego oraz ograniczenia wyniku przed użyciem w placówce."
+    ],
+    "sourceTitle": "Opracowanie innowacyjnego narzędzia do automatycznej oceny zaburzeń rytmu serca i przewodzenia u pacjentów pediatrycznych",
+    "sourceDescription": "Cardiomatics Junior: system AI trenowany na dużych zbiorach danych, który automatycznie interpretuje pediatryczne zapisy EKG i wspiera wykrywanie zaburzeń rytmu serca i przewodzenia u dzieci."
+  },
+  "n176": {
+    "title": "Zweryfikować Cardiomatics-CRT u pacjentów z urządzeniami wszczepialnymi",
+    "why": "Cardiomatics-CRT: algorytmy uczenia maszynowego do automatycznej analizy EKG, w tym pacjentów z wszczepionymi urządzeniami; wykrywają bloki przedsionkowo-komorowe i wspierają ocenę terapii resynchronizującej serce. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z klinicystami zakres rytmów i typów urządzeń objętych walidacją.",
+      "Porównaj automatyczne wskazania z oceną specjalistów na niezależnych zapisach.",
+      "Ustal sposób prezentacji niepewnych wyników i rolę lekarza w interpretacji."
+    ],
+    "sourceTitle": "System automatycznej detekcji zaburzeń rytmu serca na potrzeby wczesnego wykrywania chorób układu sercowo-naczyniowego",
+    "sourceDescription": "Cardiomatics-CRT: algorytmy uczenia maszynowego do automatycznej analizy EKG, w tym pacjentów z wszczepionymi urządzeniami; wykrywają bloki przedsionkowo-komorowe i wspierają ocenę terapii resynchronizującej serce."
+  },
+  "n177": {
+    "title": "Sprawdzić szkolenie VR serwisantów turbin wiatrowych",
+    "why": "System wspierający szkolenie i pracę personelu serwisowego elektrowni wiatrowych: symulacje zdarzeń nietypowych i wnętrza gondoli, aby przygotować serwisantów do niebezpiecznych prac na wysokości. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Z operatorem wybierz jedną procedurę i kompetencje wymagane do jej wykonania.",
+      "Porównaj przygotowanie uczestników po symulacji z dotychczasowym szkoleniem praktycznym.",
+      "Oceń dostępność sprzętu i sposób aktualizacji scenariuszy bez zastępowania obowiązkowych szkoleń."
+    ],
+    "sourceTitle": "Opracowanie systemu wspierającego szkolenie i pracę personelu serwisowego elektrowni wiatrowych, z wykorzystaniem technologii wirtualnej i rozszerzonej rzeczywistości",
+    "sourceDescription": "System wspierający szkolenie i pracę personelu serwisowego elektrowni wiatrowych: symulacje zdarzeń nietypowych i wnętrza gondoli, aby przygotować serwisantów do niebezpiecznych prac na wysokości."
+  },
+  "n178": {
+    "title": "Przetestować instrukcje AR w serwisie urządzenia naziemnego",
+    "why": "System wspomagania pracy osób montujących, serwisujących i obsługujących urządzenia naziemnej obsługi statków powietrznych (WCBKT), poprawiający precyzję i efektywność tych prac; wykorzystuje technologię rzeczywistości rozszerzonej. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z użytkownikiem jedną procedurę obsługi i zatwierdzoną dokumentację.",
+      "Porównaj czas wykonania oraz liczbę pomyłek z tradycyjną instrukcją.",
+      "Sprawdź czytelność wskazówek i zasady aktualizacji dokumentacji w warunkach pracy."
+    ],
+    "sourceTitle": "System wspomagania pracy osób wykonujących montaż, serwisantów i operatorów urządzeń naziemnej obsługi statków powietrznych (NOSP) bazujący na technologii rozszerzonej rzeczywistości",
+    "sourceDescription": "System wspomagania pracy osób montujących, serwisujących i obsługujących urządzenia naziemnej obsługi statków powietrznych (WCBKT), poprawiający precyzję i efektywność tych prac; wykorzystuje technologię rzeczywistości rozszerzonej."
+  },
+  "n179": {
+    "title": "Ocenić stanowisko szkoleniowe operatorów kontroli bezpieczeństwa",
+    "why": "Stanowisko szkolenia i doszkalania operatora kontroli bezpieczeństwa (lotniska, sądy, obiekty chronione): weryfikuje zdolności kandydatów, generuje obrazy bagażu i jest tańsze od istniejących systemów. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Ustal z ośrodkiem szkolenia kompetencje mierzone przez zestaw ćwiczeń.",
+      "Porównaj wyniki uczestników przed szkoleniem i po nim z wymaganym programem.",
+      "Sprawdź dostępność materiałów, nadzór instruktora i całkowity koszt stanowiska."
+    ],
+    "sourceTitle": "Opracowanie innowacyjnego stanowiska szkolenia i doszkalania operatora kontroli bezpieczeństwa w porcie lotniczym",
+    "sourceDescription": "Stanowisko szkolenia i doszkalania operatora kontroli bezpieczeństwa (lotniska, sądy, obiekty chronione): weryfikuje zdolności kandydatów, generuje obrazy bagażu i jest tańsze od istniejących systemów."
+  },
+  "n180": {
+    "title": "Porównać georadar SGPR z pomiarem referencyjnym",
+    "why": "Nieinwazyjne georadary SGPR oparte na szerokopasmowej analizie spektralnej: wyższa rozdzielczość niż w georadarach impulsowych i penetracja do kilkudziesięciu metrów. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z geologiem teren o znanej strukturze i celu badania.",
+      "Porównaj rozdzielczość, głębokość użytecznego pomiaru oraz czas interpretacji z inną metodą.",
+      "Udokumentuj ograniczenia związane z podłożem przed przygotowaniem oferty dla odbiorców."
+    ],
+    "sourceTitle": "Tworzenie nieinwazyjnych georadarów, które są bardziej precyzyjne i szybsze od konwencjonalnych georadarów. Produkt firmy SGPR.TECH skierowany jest do klientów, dla których obecne georadary są niewystarczające",
+    "sourceDescription": "Nieinwazyjne georadary SGPR oparte na szerokopasmowej analizie spektralnej: wyższa rozdzielczość niż w georadarach impulsowych i penetracja do kilkudziesięciu metrów."
+  },
+  "n181": {
+    "title": "Sprawdzić Snarto ITS w jednej firmie transportowej",
+    "why": "Snarto ITS: system on-line do zarządzania flotą w czasie rzeczywistym, czasem pracy kierowców i zleceniami z optymalizacją rentowności przewozów. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Uzgodnij dostęp do danych tras, kosztów i czasu pracy kierowców.",
+      "Porównaj planowane i rzeczywiste koszty wybranych przewozów z dotychczasowym planowaniem.",
+      "Oceń kompletność danych, wygodę dyspozytora i zasady ochrony danych przed wdrożeniem we flocie."
+    ],
+    "sourceTitle": "SNARTO ITS",
+    "sourceDescription": "Snarto ITS: system on-line do zarządzania flotą w czasie rzeczywistym, czasem pracy kierowców i zleceniami z optymalizacją rentowności przewozów."
+  },
+  "n182": {
+    "title": "Oddzielić wykrywanie upadków od ich przewidywania w Sidly",
+    "why": "Sidly Care PRO: urządzenie telemedyczne z detekcją upadków oraz pomiarami tętna i saturacji. Źródło pokazuje działanie technologii w Telecentrum i wskazuje ponad 60 tys. użytkowników technologii SiDLY ogółem. Ostrożna ocena 3/5 odnosi się do użycia systemu, nie do potwierdzonego wdrożenia funkcji predykcji.",
+    "steps": [
+      "Ustal z twórcami, jakie wyniki dotyczą wykrywania zdarzenia, a jakie przewidywania ryzyka.",
+      "Z klinicystami zaprojektuj ocenę trafności obu funkcji i częstości fałszywych alarmów.",
+      "Podawaj osobno liczbę użytkowników konkretnej funkcji oraz całej technologii firmy."
+    ],
+    "sourceTitle": "Opracowanie inteligentnego systemu telemedycznego w z funkcją predykcji upadków",
+    "sourceDescription": "Sidly Care PRO: urządzenie telemedyczne z detekcją upadków oraz pomiarami tętna i saturacji. Predykcja upadków jest celem wskazanym w tytule projektu; podany opis wyników nie potwierdza skuteczności przewidywania upadków."
+  },
+  "n183": {
+    "title": "Wybrać związek z biblioteki Selvita do dalszej oceny",
+    "why": "Platforma technologiczna Selvita S.A. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Ustal z zespołem badawczym cel terapeutyczny i zakres dostępnych praw do biblioteki.",
+      "Porównaj aktywność oraz wstępne bezpieczeństwo wybranych kandydatów w badaniach przedklinicznych.",
+      "Wybierz partnera do dalszych badań, nie przedstawiając biblioteki jako gotowego leku."
+    ],
+    "sourceTitle": "Platforma technologiczna dla nowych generacji leków przeciw chorobom spowodowanym przez koronawirusy, w szczególności SARS-CoV-2",
+    "sourceDescription": "Platforma technologiczna Selvita S.A. do odkrywania nowych generacji leków przeciwwirusowych, oparta na unikalnej w skali światowej bibliotece związków o potencjalnym działaniu antywirusowym."
+  },
+  "n184": {
+    "title": "Ocenić warunki stosowania UCT w kopalni",
+    "why": "UCT (Underground Cleaning Technology): technologia i prototyp systemu SCKU-UCT do czyszczenia i konserwacji urządzeń zainstalowanych pod ziemią w warunkach zagrożenia wybuchem metanu lub pyłu węglowego, bez wydobywania ich na powierzchnię. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Uzgodnij z operatorem i uprawnionymi specjalistami zakres oceny bezpieczeństwa urządzenia.",
+      "Sprawdź skuteczność czyszczenia i czas postoju w kontrolowanych warunkach.",
+      "Potwierdź wymagane dopuszczenia oraz procedury nadzoru przed próbą w miejscu instalacji."
+    ],
+    "sourceTitle": "Opracowanie innowacyjnej technologii czyszczenia urządzeń w warunkach zagrożonych wybuchem metanu i/lub pyłu węglowego w miejscu ich zabudowy z wykorzystaniem dwutlenku węgla w postaci stałej – UCT (Underground Cleaning Technology)",
+    "sourceDescription": "UCT (Underground Cleaning Technology): technologia i prototyp systemu SCKU-UCT do czyszczenia i konserwacji urządzeń zainstalowanych pod ziemią w warunkach zagrożenia wybuchem metanu lub pyłu węglowego, bez wydobywania ich na powierzchnię."
+  },
+  "n185": {
+    "title": "Zmierz wpływ cyfryzacji programu SGGW na wybrany proces",
+    "why": "Program Szkoły Głównej Gospodarstwa Wiejskiego „Sukces z natury”: zmiany w zarządzaniu kształceniem, cyfryzacja procesów (panel dydaktyczny i redakcyjny, wirtualny asystent rekrutacji, rozbudowa systemu bibliotecznego) i podniesienie kompetencji studentów. Program został zrealizowany z uczestnikami w jednej instytucji; źródło nie podaje szerszego zastosowania.",
+    "steps": [
+      "Wybierz z uczelnią jeden proces, np. obsługę rekrutacji albo dokumentów dydaktycznych.",
+      "Porównaj czas realizacji, liczbę błędów i doświadczenie użytkowników przed zmianą i po niej.",
+      "Udostępnij innym uczelniom opis warunków wdrożenia oraz kosztów utrzymania."
+    ],
+    "sourceTitle": "Sukces z natury – kompleksowy program podniesienia jakości zarządzania procesem kształcenia i jakości nauczania Szkoły Głównej Gospodarstwa Wiejskiego w Warszawie",
+    "sourceDescription": "Program Szkoły Głównej Gospodarstwa Wiejskiego „Sukces z natury”: zmiany w zarządzaniu kształceniem, cyfryzacja procesów (panel dydaktyczny i redakcyjny, wirtualny asystent rekrutacji, rozbudowa systemu bibliotecznego) i podniesienie kompetencji studentów."
+  },
+  "n186": {
+    "title": "Ocenić możliwość transferu ISWOT do kolejnej jednostki",
+    "why": "System wykrywania osób ukrytych w środkach transportu: wykonany i zwalidowany w warunkach rzeczywistych, z dokumentacją, szkoleniami operatorów i przekazaniem prototypu oraz praw Śląskiemu Oddziałowi Straży Granicznej. System zainstalowano i zwalidowano w warunkach rzeczywistych (próbna instalacja).",
+    "steps": [
+      "Potwierdź z dysponentem prototypu zakres przekazanych praw i aktualny status urządzenia.",
+      "Ustal z uprawnionym odbiorcą zakres niezależnej oceny i szkolenia operatorów.",
+      "Zweryfikuj zasady ochrony danych, nadzoru oraz odpowiedzialności przed wykorzystaniem w kolejnej lokalizacji."
+    ],
+    "sourceTitle": "Opracowanie innowacyjnego systemu wykrywania osób ukrytych w środkach transportu o akronimie ,,ISWOT”",
+    "sourceDescription": "System wykrywania osób ukrytych w środkach transportu: wykonany i zwalidowany w warunkach rzeczywistych, z dokumentacją, szkoleniami operatorów i przekazaniem prototypu oraz praw Śląskiemu Oddziałowi Straży Granicznej."
+  },
+  "n187": {
+    "title": "Uzgodnić z SDS Optic wspólną walidację opisów mikrosondy",
+    "why": "inPROBE: światłowodowy mikrobiosensor do diagnostyki nowotworu piersi HER2-dodatniego, mający uzupełniać lub zastępować biopsję, testy immunohistochemiczne i metodę FISH. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Porównaj zakres projektu inPROBE z drugim wpisem dotyczącym mikrosond tej firmy.",
+      "Z klinicystami ustal dostępne wyniki porównania HER2 z metodami referencyjnymi.",
+      "Przygotuj jeden plan dalszej walidacji i wyjaśnij, czy oba wpisy opisują ten sam produkt."
+    ],
+    "sourceTitle": "Wytworzenie innowacyjnej technologii mikrosondy do badania aktywnych biologicznie związków, przy użyciu metod do tej pory niedostępnych (popularnie nazywana „polską mikrosondą z Lublina”)",
+    "sourceDescription": "inPROBE: światłowodowy mikrobiosensor do diagnostyki nowotworu piersi HER2-dodatniego, mający uzupełniać lub zastępować biopsję, testy immunohistochemiczne i metodę FISH."
+  },
+  "n188": {
+    "title": "Przetestować robota karmiącego FIDI z użytkownikami",
+    "why": "FIDI: robot karmiący dla osób z niepełnosprawnościami; zwiększa samodzielność i komfort jedzenia oraz odciąża opiekunów. Źródło opisuje korzyści gotowego robota, bez danych o sprzedaży.",
+    "steps": [
+      "Ustal z użytkownikami i opiekunami potrzeby dotyczące ustawienia, sterowania i czyszczenia.",
+      "W bezpiecznym nadzorowanym teście oceń samodzielność jedzenia i wygodę obsługi.",
+      "Na tej podstawie określ potrzebne dostosowania, serwis oraz warunki wdrożenia w placówce opieki."
+    ],
+    "sourceTitle": "Robot Karmiący \"FIDI\"",
+    "sourceDescription": "FIDI: robot karmiący dla osób z niepełnosprawnościami; zwiększa samodzielność i komfort jedzenia oraz odciąża opiekunów."
+  },
+  "n189": {
+    "title": "Zweryfikować algorytm rozpoznawania sygnałów nowotworów krwi",
+    "why": "Algorytmy AI do wczesnej diagnostyki nowotworów krwi (limfo- i mieloproliferacyjnych), uczone na rzeczywistych danych pacjentów i wykorzystujące przetwarzanie języka naturalnego do identyfikacji objawów. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Z hematologami ustal grupę pacjentów i objawy, które system ma identyfikować.",
+      "Porównaj wyniki na niezależnych danych z oceną lekarzy, uwzględniając błędy i brakujące informacje.",
+      "Oceń wpływ na czas skierowania oraz zasady ochrony danych przed dalszym wdrożeniem."
+    ],
+    "sourceTitle": "Opracowanie i wdrożenie innowacyjnego, opartego o uczenie maszynowe procesu diagnostycznego, w celu skrócenia ścieżki pacjenta i poprawy jakości opieki zdrowotnej nad pacjentami z chorobami limfo- i mieloproliferacyjnymi",
+    "sourceDescription": "Algorytmy AI do wczesnej diagnostyki nowotworów krwi (limfo- i mieloproliferacyjnych), uczone na rzeczywistych danych pacjentów i wykorzystujące przetwarzanie języka naturalnego do identyfikacji objawów."
+  },
+  "n190": {
+    "title": "Sprawdzić ergonomię modue na stanowisku pracy",
+    "why": "modue: modułowe urządzenie do ergonomicznej pracy z komputerem, które można dopasować do potrzeb użytkownika i które ogranicza przełączanie między narzędziami i aplikacjami. Źródło opisuje wyniki prac (badania, prototyp lub produkt), ale nie wspomina o użytkownikach ani wdrożeniach poza zespołem projektu.",
+    "steps": [
+      "Wybierz z programistami lub grafikami zadania wymagające częstego przełączania narzędzi.",
+      "Porównaj czas obsługi, liczbę przełączeń i odczuwalny komfort z dotychczasowym stanowiskiem.",
+      "Oceń możliwość dopasowania modułów i koszt zestawu przed przygotowaniem oferty."
+    ],
+    "sourceTitle": "MODUE – opracowanie modułowego urządzenia pozwalającego na pogłębioną interakcję użytkownika z systemem komputerowym dzięki zastosowaniu przekazywania informacji zwrotnej za pomocą dobranych efektorów, w tym systemów haptycznych czy maszyn elektrycznych",
+    "sourceDescription": "modue: modułowe urządzenie do ergonomicznej pracy z komputerem, które można dopasować do potrzeb użytkownika i które ogranicza przełączanie między narzędziami i aplikacjami."
+  },
+  "w-ur-powloka": {
+    "title": "Sprawdzić trwałość powłoki TiO₂ na ekranie publicznym",
+    "why": "Patent Uniwersytetu Rzeszowskiego na sposób wytwarzania antybakteryjnej powłoki nanokompozytowej TiO₂:Ag,N nakładanej na szkło ekranów dotykowych. Źródło potwierdza patent i rozwój w projekcie, ale nie podaje testów u użytkownika ani wdrożenia.",
+    "steps": [
+      "Ustal z właścicielem patentu zakres praw do zastosowania i przygotowania próbek.",
+      "Porównaj działanie antybakteryjne oraz czytelność i odporność powłoki po czyszczeniu.",
+      "Z operatorem terminali oceń bezpieczeństwo i koszt zastosowania na jednym typie ekranu."
+    ],
+    "sourceTitle": "Antybakteryjna powłoka nanokompozytowa TiO₂:Ag,N na szkle ekranów dotykowych",
+    "sourceDescription": "Patent Uniwersytetu Rzeszowskiego na sposób wytwarzania antybakteryjnej powłoki nanokompozytowej TiO₂:Ag,N nakładanej na szkło ekranów dotykowych. Powłoka ma ograniczać namnażanie bakterii na powierzchniach dotykanych przez wiele osób. To wynik wieloletnich badań zespołu z trzech wydziałów."
+  },
+  "w-ur-zelki": {
+    "title": "Ocenić stabilność składników żelków sosnowych",
+    "why": "Patent Uniwersytetu Rzeszowskiego (P.441917, 2025) na sposób wytwarzania żelków owocowych wzbogaconych związkami bioaktywnymi z modyfikowanych młodych pędów sosny. Źródło podaje numer patentu na sposób wytwarzania, bez opisu produkcji ani użytkowników.",
+    "steps": [
+      "Potwierdź z uczelnią zakres zgłoszenia i możliwość opracowania próbek z producentem.",
+      "Sprawdź stabilność składników, smak oraz bezpieczeństwo produktu podczas przechowywania.",
+      "Zweryfikuj podstawy ewentualnych oświadczeń zdrowotnych przed przygotowaniem oferty."
+    ],
+    "sourceTitle": "Prozdrowotne żelki owocowe z modyfikowanych młodych pędów sosny",
+    "sourceDescription": "Patent Uniwersytetu Rzeszowskiego (P.441917, 2025) na sposób wytwarzania żelków owocowych wzbogaconych związkami bioaktywnymi z modyfikowanych młodych pędów sosny."
+  },
+  "w-prz-drony": {
+    "title": "Ustalić warunki niezależnej oceny sieci sensorów",
+    "why": "Sieć małych węzłów radiowych w topologii mesh z algorytmami rozpoznawania dronów. Studenci zbudowali działające węzły i wygrali hackathon; integracja i testy trwają.",
+    "steps": [
+      "Potwierdź z zespołem aktualny status prototypu i właściciela wyników.",
+      "Z uprawnioną instytucją uzgodnij zakres oceny skuteczności oraz fałszywych alarmów.",
+      "Ustal zasady ochrony danych i legalnego użytkowania przed dalszym transferem."
+    ],
+    "sourceTitle": "Tania sieć sensorów mesh do wykrywania dronów",
+    "sourceDescription": "Sieć małych węzłów radiowych w topologii mesh z algorytmami rozpoznawania dronów. Prototyp studencki, który wygrał hackathon Euro Defense Tech i jest integrowany i testowany."
+  },
+  "w-prz-lakiery": {
+    "title": "Sprawdzić lakier proszkowy na płycie MDF",
+    "why": "Lakiery proszkowe utwardzalne w niskiej temperaturze lub promieniowaniem UV. Źródło opisuje gotowe lakiery i ich przeznaczenie, ale nie podaje wdrożeń u klientów.",
+    "steps": [
+      "Uzgodnij z producentem mebli podłoże i maksymalną temperaturę procesu.",
+      "Porównaj przyczepność, trwałość i wygląd powłoki z obecnie stosowanym lakierem.",
+      "Oceń koszt utwardzania i emisje całego procesu przed próbą produkcyjną."
+    ],
+    "sourceTitle": "Lakiery proszkowe utwardzalne w niskiej temperaturze lub promieniowaniem UV",
+    "sourceDescription": "Lakiery proszkowe utwardzalne w niskiej temperaturze lub promieniowaniem UV. Pozwalają malować materiały wrażliwe na ciepło, które nie znoszą 180–200°C wymaganych przez klasyczne farby proszkowe, i zastępują ciekłe wyroby o wysokiej emisji."
+  },
+  "w-pans-5g": {
+    "title": "Uruchomić jeden wspólny test w laboratorium PANS 5G",
+    "why": "Prywatna sieć 5G obejmująca teren lotniska w Krośnie, uruchomiona w Państwowej Akademii Nauk Stosowanych jako laboratorium do testowania technologii łączności w warunkach operacyjnych. Sieć działa na terenie lotniska i służy jako poligon testowy; liczby użytkowników źródło nie podaje.",
+    "steps": [
+      "Ustal z lotniskiem i zespołem badawczym zakres dostępności sieci dla partnera.",
+      "Wybierz urządzenie lub usługę oraz zmierz łączność w reprezentatywnych punktach terenu.",
+      "Przygotuj zasady dostępu, bezpieczeństwa i udostępniania wyników kolejnym zespołom."
+    ],
+    "sourceTitle": "PANS 5G LAB – prywatna sieć 5G obejmująca lotnisko w Krośnie",
+    "sourceDescription": "Prywatna sieć 5G obejmująca teren lotniska w Krośnie, uruchomiona w Państwowej Akademii Nauk Stosowanych jako laboratorium do testowania technologii łączności w warunkach operacyjnych."
+  },
+  "w-jaroslaw-asystent": {
+    "title": "Sprawdzić asystenta mobilności z użytkownikami wózków",
+    "why": "Elektryczny asystent mobilności: projekt uczniów technikum z Jarosławia, wspierający napęd wózków. Medal INTARG potwierdza działające rozwiązanie, ale źródło nie podaje testów z użytkownikami.",
+    "steps": [
+      "Z użytkownikami i opiekunami ustal wymagane dopasowanie oraz warunki bezpiecznej próby.",
+      "Oceń wygodę sterowania, montaż i działanie na typowych nawierzchniach pod nadzorem.",
+      "Określ zmiany konstrukcyjne oraz potrzebne badania przed szerszym udostępnieniem."
+    ],
+    "sourceTitle": "Elektryczny Asystent Mobilności dla osób na wózkach",
+    "sourceDescription": "Elektryczny asystent mobilności: projekt uczniów technikum z Jarosławia, wspierający napęd wózków. Nagrodzony złotym medalem na targach wynalazków INTARG w Katowicach."
+  },
+  "w-polaniec-przejazd": {
+    "title": "Zweryfikować koncepcję ostrzegania o rogatkach z zarządcą kolei",
+    "why": "Projekt uczniów z Połańca: system ostrzegający maszynistę o niezamkniętych rogatkach na przejeździe kolejowym. Źródło opisuje nagrodę w olimpiadzie i ideę systemu, bez testów na torach.",
+    "steps": [
+      "Ustal z opiekunem projektu i zarządcą infrastruktury zakres dostępnych danych o stanie przejazdu.",
+      "Na danych testowych sprawdź ciągłość informacji i sposób sygnalizacji niepewnego stanu.",
+      "Określ wymagania bezpieczeństwa i formalną ścieżkę oceny przed jakąkolwiek próbą eksploatacyjną."
+    ],
+    "sourceTitle": "Bezpieczny przejazd kolejowy – system ostrzegający maszynistę o niezamkniętych przejazdach",
+    "sourceDescription": "Projekt uczniów z Połańca: system ostrzegający maszynistę o niezamkniętych rogatkach na przejeździe kolejowym. Zajął trzecie miejsce w Polsce w Olimpiadzie Innowacji Technicznych i Wynalazczości w kategorii rozwiązań softwarowo-technicznych."
+  },
+  "w-put-elektrolit": {
+    "title": "Ocenić ofertę licencji na elektrolit żelowy",
+    "why": "Wynalazek Politechniki Poznańskiej: elektrolit żelowy z naturalnym talkiem do ogniw, łatwiejszy do recyklingu i mniej obciążający środowisko niż klasyczne elektrolity. Uczelnia szuka partnera: zaprasza do składania ofert na licencję lub nabycie praw.",
+    "steps": [
+      "Potwierdź z Politechniką Poznańską aktualne warunki licencji lub nabycia praw.",
+      "Z producentem ogniw porównaj trwałość, przewodność i proces odzysku z elektrolitem referencyjnym.",
+      "Oceń koszt produkcji oraz zakres dalszych badań potrzebnych do zastosowania w ogniwie."
+    ],
+    "sourceTitle": "Ekologiczne magazynowanie energii – elektrolit żelowy z naturalnym talkiem",
+    "sourceDescription": "Wynalazek Politechniki Poznańskiej: elektrolit żelowy z naturalnym talkiem do ogniw, łatwiejszy do recyklingu i mniej obciążający środowisko niż klasyczne elektrolity. Uczelnia ogłosiła zaproszenie do składania ofert na licencję lub nabycie praw."
+  },
+  "w-pk-lohc": {
+    "title": "Zweryfikować bilans całej instalacji LOHC",
+    "why": "Dwa rozwiązania patentowe Politechniki Krakowskiej dotyczą uwalniania i separacji wodoru z ciekłych nośników organicznych (LOHC) oraz dopasowania podaży wodoru do zapotrzebowania. Prawa kupiła REENERGOLOGY, ale transfer praw nie jest dowodem użycia produktu u odbiorcy. Brak potwierdzonej eksploatacji: 1/5.",
+    "steps": [
+      "Ustal z właścicielem praw zakres dostępnych danych i możliwości współpracy.",
+      "Porównaj zapotrzebowanie na ciepło, czystość wodoru oraz stabilność pracy dla zmiennego poboru.",
+      "Oceń koszt i sprawność pełnej instalacji, a nie wyłącznie stopień przereagowania."
+    ],
+    "sourceTitle": "Magazynowanie wodoru w ciekłych nośnikach organicznych (LOHC) – dwa rozwiązania patentowe",
+    "sourceDescription": "Dwa rozwiązania patentowe Politechniki Krakowskiej dotyczą uwalniania i separacji wodoru z ciekłych nośników organicznych (LOHC) oraz dopasowania podaży wodoru do zapotrzebowania. Źródło opisuje doświadczenia przy ok. 320°C, stopień przereagowania 97,5% i zakup praw przez REENERGOLOGY."
+  },
+  "w-imn-linia": {
+    "title": "Przygotować ofertę próbnej serii ogniw dla partnera",
+    "why": "Linia pilotażowa do produkcji ogniw litowo-jonowych i post-litowych uruchomiona w 2026 r. Linię pilotażową uruchomiono w 2026 r.; źródło nie podaje wyprodukowanych partii ani klientów.",
+    "steps": [
+      "Z zespołem linii ustal dostępne formaty ogniw i wymagania przyjęcia nowego materiału.",
+      "Wykonaj serię porównawczą oraz oceń powtarzalność procesu i wyniki testów ogniw.",
+      "Ustal prawa do danych, poufność oraz koszt dostępu przed pozyskaniem kolejnych klientów."
+    ],
+    "sourceTitle": "Linia pilotażowa do produkcji ogniw litowo-jonowych i post-litowych",
+    "sourceDescription": "Linia pilotażowa do produkcji ogniw litowo-jonowych i post-litowych uruchomiona w 2026 r. w instytucie badawczym (koszt ponad 9 mln zł). Pozwala wytwarzać ogniwa z nowych materiałów w skali zbliżonej do przemysłowej."
+  },
+  "w-rap-steam": {
+    "title": "Ocenić efekty RaP STEAM w kilku szkołach",
+    "why": "Regionalny program Województwa Podkarpackiego włączający robotykę edukacyjną, programowanie i podejście STEAM do szkół podstawowych. Program działa w regionie i opisano go jako dobrą praktykę Interreg Europe.",
+    "steps": [
+      "Wybierz wspólne zadanie z programowania i robotyki dopasowane do wieku uczniów.",
+      "Porównaj wykonanie zadania przed zajęciami i po nich oraz potrzeby nauczycieli.",
+      "Opracuj scenariusze i koszty utrzymania pracowni do wykorzystania w kolejnych szkołach."
+    ],
+    "sourceTitle": "RaP STEAM – robotyka, programowanie i edukacja STEAM w szkołach podstawowych",
+    "sourceDescription": "Regionalny program Województwa Podkarpackiego włączający robotykę edukacyjną, programowanie i podejście STEAM do szkół podstawowych. Opisany jako dobra praktyka w programie Interreg Europe."
+  },
+  "w-dreamup": {
+    "title": "Sprawdzić wpływ Dream Up na wybory edukacyjne uczestników",
+    "why": "Bezpłatny program rozwojowy „Dream Up – Rozwiń skrzydła” dla uczniów liceów i techników z Podkarpacia (16+), prowadzony przez zakład przemysłu lotniczego. Program jest prowadzony, a nabór do edycji 2026 odbył się 21.09–04.10.2026.",
+    "steps": [
+      "Uzgodnij z organizatorem sposób kontaktu z uczestnikami i ochronę ich danych.",
+      "Zbierz informacje o decyzjach edukacyjnych oraz użyteczności zajęć po zakończeniu programu.",
+      "Wybierz najlepiej oceniane moduły do następnej edycji i rozszerz współpracę ze szkołami."
+    ],
+    "sourceTitle": "Dream Up – Rozwiń skrzydła: program rozwojowy dla uczniów liceów i techników",
+    "sourceDescription": "Bezpłatny program rozwojowy „Dream Up – Rozwiń skrzydła” dla uczniów liceów i techników z Podkarpacia (16+), prowadzony przez zakład przemysłu lotniczego."
+  },
+  "w-lo4-jaslo-ai": {
+    "title": "Przygotować pierwszy projekt uczniowski w laboratorium AI",
+    "why": "Laboratorium Sztucznej Inteligencji w IV Liceum Ogólnokształcącym w Jaśle, w którym uczniowie będą zdobywać praktyczne umiejętności z uczenia maszynowego, analizy danych i sztucznej inteligencji. Laboratorium jest dopiero planowane (szkoła pozyskała grant).",
+    "steps": [
+      "Potwierdź etap uruchomienia pracowni i dostępność opiekuna oraz sprzętu.",
+      "Zaplanuj zajęcia na publicznym zbiorze danych z oceną jakości wyników modelu.",
+      "Zbierz opinie uczniów i nauczycieli, a następnie dostosuj program do kolejnych klas."
+    ],
+    "sourceTitle": "Laboratorium Sztucznej Inteligencji w IV LO w Jaśle",
+    "sourceDescription": "Laboratorium Sztucznej Inteligencji w IV Liceum Ogólnokształcącym w Jaśle, w którym uczniowie będą zdobywać praktyczne umiejętności z uczenia maszynowego, analizy danych i sztucznej inteligencji. Szkoła pozyskała na nie grant."
+  },
+  "w-steam-jaslo": {
+    "title": "Sprawdzić dostępność zajęć STEAM w czterech szkołach",
+    "why": "Projekt wyposażenia pracowni STEAM w czterech szkołach powiatu jasielskiego z naciskiem na praktyczne zastosowanie wiedzy o programowaniu i robotyce oraz dostępność dla uczniów ze specjalnymi potrzebami. Źródło opisuje projekt wyposażenia pracowni, bez informacji o ukończeniu.",
+    "steps": [
+      "Potwierdź stan wyposażenia pracowni i potrzeby uczniów korzystających z dostosowań.",
+      "Przetestuj wspólne ćwiczenie z robotyki z różnymi sposobami obsługi sprzętu.",
+      "Wymień scenariusze między szkołami i zaplanuj szkolenia oraz utrzymanie wyposażenia."
+    ],
+    "sourceTitle": "Pracownie STEAM w czterech szkołach powiatu jasielskiego",
+    "sourceDescription": "Projekt wyposażenia pracowni STEAM w czterech szkołach powiatu jasielskiego z naciskiem na praktyczne zastosowanie wiedzy o programowaniu i robotyce oraz dostępność dla uczniów ze specjalnymi potrzebami."
+  },
+  "w-rzeszow-parking": {
+    "title": "Potwierdzić obecny status systemu parkowania w Rzeszowie",
+    "why": "Historyczna zapowiedź wdrożenia Inteligentnego Systemu Płatnego Parkowania w Rzeszowie przez Asseco Data Systems: monitoring zajętości strefy, tablice i aplikacja dla mieszkańców. Podany artykuł zapowiada wdrożenie i używa czasu przyszłego. Brak w nim potwierdzenia rzeczywistego użycia: 1/5. Upłynięcie planowanego terminu nie jest dowodem realizacji.",
+    "steps": [
+      "Sprawdź z miastem, czy zapowiedziany system został odebrany i które funkcje uruchomiono.",
+      "Jeśli działa, porównaj aktualność informacji o zajętości z pomiarem w wybranej strefie.",
+      "Dopiero na podstawie potwierdzonego statusu określ zakres rozwoju i współpracy z operatorem."
+    ],
+    "sourceTitle": "Inteligentny System Płatnego Parkowania w Rzeszowie",
+    "sourceDescription": "Historyczna zapowiedź wdrożenia Inteligentnego Systemu Płatnego Parkowania w Rzeszowie przez Asseco Data Systems: monitoring zajętości strefy, tablice i aplikacja dla mieszkańców. Artykuł podaje budżet 14,7 mln zł i plan uruchomienia od 2021 r.; sam nie potwierdza odbioru ani uruchomienia systemu."
+  },
+  "w-rzeszow-smietniki": {
+    "title": "Ocenić wyniki testu inteligentnych pojemników",
+    "why": "Test inteligentnych pojemników na odpady z czujnikami poziomu zapełnienia i zgniatarką, uruchomiony w kwietniu 2025 r. Test pojemników z czujnikami ruszył w kwietniu 2025 r. jako pilotaż.",
+    "steps": [
+      "Zbierz od miasta uwagi mieszkańców i dane o napełnieniu pojemników z okresu próby.",
+      "Porównaj częstotliwość odbioru, poprawność segregacji i koszty z pobliskim punktem referencyjnym.",
+      "Przed rozszerzeniem popraw oznaczenia oraz sposób reagowania na zgłoszenia mieszkańców."
+    ],
+    "sourceTitle": "Test inteligentnych pojemników na odpady z czujnikami zapełnienia",
+    "sourceDescription": "Test inteligentnych pojemników na odpady z czujnikami poziomu zapełnienia i zgniatarką, uruchomiony w kwietniu 2025 r. przy ul. Hetmańskiej w Rzeszowie. Mieszkańcy zgłaszali uwagi do segregacji."
+  },
+  "w-rzeszow-5g-lacznosc": {
+    "title": "Przećwiczyć łączność awaryjną Rzeszowa w scenariuszu kryzysowym",
+    "why": "System Łączności Awaryjnej miasta Rzeszowa oparty na prywatnej sieci 5G (technologie HPE i Nokia) wspiera ratowników i zarządzanie kryzysowe. System łączności działa w administracji miasta i został nagrodzony na Kongresie Bezpieczeństwa Polski.",
+    "steps": [
+      "Uzgodnij ze służbami bezpieczny zakres ćwiczenia i role operatorów sieci.",
+      "Sprawdź dostępność komunikacji i organizację pracy przy symulowanej awarii zwykłej łączności.",
+      "Oceń zasilanie, procedury zastępcze oraz szkolenie ratowników przed rozszerzeniem systemu."
+    ],
+    "sourceTitle": "System Łączności Awaryjnej miasta Rzeszowa na prywatnej sieci 5G",
+    "sourceDescription": "System Łączności Awaryjnej miasta Rzeszowa oparty na prywatnej sieci 5G (technologie HPE i Nokia) wspiera ratowników i zarządzanie kryzysowe. Nagrodzony podczas Kongresu Bezpieczeństwa Polski."
+  },
+  "w-tyczyn-sms": {
+    "title": "Sprawdzić dotarcie powiadomień SMS do mieszkańców",
+    "why": "Gminny system powiadomień SMS w Gminie Tyczyn wysyła komunikaty urzędu bezpośrednio na telefony mieszkańców Tyczyna, Borku Starego, Kielnarowej i Hermanowej. System działa i wysyła komunikaty do mieszkańców gminy Tyczyn.",
+    "steps": [
+      "Uzgodnij z gminą zasady zapisów, ochrony numerów i rodzaje komunikatów.",
+      "Zmierz skuteczność doręczenia i czas wysłania próbnego komunikatu.",
+      "Uzupełnij kanały dostępne osobom bez telefonu lub potrzebującym innych formatów powiadomień."
+    ],
+    "sourceTitle": "Gminne powiadomienia SMS w Gminie Tyczyn",
+    "sourceDescription": "Gminny system powiadomień SMS w Gminie Tyczyn wysyła komunikaty urzędu bezpośrednio na telefony mieszkańców Tyczyna, Borku Starego, Kielnarowej i Hermanowej."
+  },
+  "w-nml-rezerwacje": {
+    "title": "Ocenić wpływ rezerwacji na obsługę wydziału komunikacji",
+    "why": "Rezerwacja wizyt online i elektroniczny system kolejkowy w Wydziale Komunikacji i Transportu Starostwa Powiatowego w Nowym Mieście Lubawskim, uruchomione w projekcie „E-usługi publiczne w Powiecie Nowomiejskim – etap I” (EFRR). System działa w starostwie od 30.05.2025 r.",
+    "steps": [
+      "Zbierz anonimowe dane o terminach wizyt, nieobecnościach i czasie oczekiwania.",
+      "Porównaj wyniki z okresem lub stanowiskami o podobnym obciążeniu.",
+      "Sprawdź dostępność dla osób bez internetu i popraw sposób umawiania na podstawie opinii mieszkańców."
+    ],
+    "sourceTitle": "System rezerwacji wizyt online i kolejkowy w Starostwie Powiatowym w Nowym Mieście Lubawskim",
+    "sourceDescription": "Rezerwacja wizyt online i elektroniczny system kolejkowy w Wydziale Komunikacji i Transportu Starostwa Powiatowego w Nowym Mieście Lubawskim, uruchomione w projekcie „E-usługi publiczne w Powiecie Nowomiejskim – etap I” (EFRR)."
   }
 }

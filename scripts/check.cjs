@@ -104,3 +104,7 @@ assert(!vm.runInContext('recBlock({rec:nextUnsafe})',rendering).includes('<img')
 console.log('PASS: wszystkie ścieżki rekomendacji, progi podobieństwa i oceny, brak danych IP, 198 planów działania, eksport i bezpieczne wyświetlanie.');
 
 assert(vm.runInContext('cardTxt(subject,analyze(subject))',rendering).includes('CO ZROBIĆ TERAZ:'));
+// Published catalog cards must all display individually authored recommendations.
+for(const i of rows){const a=run(`analyze(S.items.find(x=>x.id===${JSON.stringify(i.id)}))`);assert(a.rec.authored,`Brak indywidualnej rekomendacji: ${i.id}`);}
+assert.equal(new Set(rows.map(i=>run(`analyze(S.items.find(x=>x.id===${JSON.stringify(i.id)})).rec.primary.title`))).size,rows.length);
+console.log('PASS: 198 indywidualnych rekomendacji z unikalnymi tytułami dla aktualnego katalogu.');
