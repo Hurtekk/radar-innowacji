@@ -59,3 +59,20 @@ const quota=vm.createContext({URL,console,localStorage:{getItem:k=>blocked.get(k
 vm.runInContext(src,quota);vm.runInContext('function F0(){return {}};function FI0(){return {}};',quota);vm.runInContext(start,quota);vm.runInContext('save()',quota);
 assert.equal(blocked.get('radar-innowacji-v9'),oldRaw);
 console.log('PASS: oryginalny zapis pozostaje nienaruszony, gdy nie można zapisać kopii zapasowej.');
+
+// Provenance colors must not imply that every computed assessment is a warning.
+const factStatus=(id,label)=>vm.runInContext(`factRows(REAL_ITEMS.concat(DETECTED_ITEMS).find(i=>i.id===${JSON.stringify(id)})).find(r=>r[0]===${JSON.stringify(label)})[1]`,rendering);
+assert.equal(factStatus('n90','Budżet'),'f');
+assert.equal(factStatus('n90','TRL'),'n');
+assert.equal(factStatus('n90','Ocena w pięciu kryteriach'),'e');
+assert(vm.runInContext("factPill('f')",rendering).includes('pill good'));
+assert(vm.runInContext("factPill('s')",rendering).includes('pill good'));
+assert(vm.runInContext("factPill('e')",rendering).includes('pill assessed'));
+assert(vm.runInContext("factPill('u')",rendering).includes('pill plain'));
+assert(!vm.runInContext("factsTable(subject)",rendering).includes('pill warn'));
+assert.equal(vm.runInContext("budgetConfirmed({value:'11 000 000 PLN',audit:{readable:true,sourceBudget:'12 000 000 PLN'}})",rendering),false);
+assert.equal(vm.runInContext("budgetConfirmed({value:'11 000 000 PLN',audit:{readable:true}})",rendering),false);
+assert.equal(vm.runInContext("budgetConfirmed({value:'11 000 000 EUR',audit:{sourceBudget:'11 000 000 PLN'}})",rendering),false);
+assert(vm.runInContext("dataStatusPill({}, {notes:['Brak budżetu']})",rendering).includes('pill plain'));
+assert(vm.runInContext("dataStatusPill({uncertainty:'Nie potwierdzono uruchomienia'}, {notes:[]})",rendering).includes('pill warn'));
+console.log('PASS: potwierdzone budżety zielone, oceny niebieskie, braki neutralne; brak fałszywych potwierdzeń.');

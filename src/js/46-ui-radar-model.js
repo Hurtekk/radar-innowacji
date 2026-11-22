@@ -46,23 +46,32 @@ function track(k,v){
 
 /* ---------- dane: fakty potwierdzone a szacunki ---------- */
 function budgetLabel(i){const b=budgetOf(i);return b?b.amount.toLocaleString('pl-PL',{maximumFractionDigits:2})+' '+b.currency:'brak danych'}
+function budgetConfirmed(i){
+  const actual=budgetOf(i),recorded=i.audit&&i.audit.sourceBudget;
+  const reference=recorded?budgetOf({value:recorded}):null;
+  return !!(actual&&reference&&actual.amount===reference.amount&&actual.currency===reference.currency);
+}
 function factRows(i){
   const l=locOf(i)||{},checked=i.audit&&i.audit.reviewed&&i.audit.readable;
   return [
    ['Tytuł i instytucja',checked?'f':'s',checked?'porównano ze wskazanym źródłem podczas kontroli '+i.audit.checkedAt:'dane przypisane do źródła; sam link nie oznacza weryfikacji'],
-   ['Opis','e','streszczenie autora / radaru; zakres dowodów podano poniżej'],
-   ['Lokalizacja','s',l.prec==='miejscowość'?'miejscowość przypisana w danych; nie oznacza lokalizacji każdego wdrożenia':'lokalizacja przybliżona lub brak miejscowości'],
+   ['Opis','r','streszczenie autora / radaru na podstawie źródła; zakres dowodów podano poniżej'],
+   ['Lokalizacja',l.prec==='miejscowość'?'s':l.prec?'e':'u',l.prec==='miejscowość'?'miejscowość podana w danych źródłowych; nie oznacza lokalizacji każdego wdrożenia':l.prec?'lokalizacja przybliżona do województwa':'brak danych o lokalizacji'],
    ['Etap rozwoju','e',i.trlNA?'ocena etapu usługi z dowodów użycia':'ocena wynikająca z przypisanego TRL'],
    ['Wdrożenie w praktyce','e',i.wdr>0?'ocena autorów '+i.wdr+'/5; dowody i zakres opisano w uzasadnieniu':'brak dowodów użycia; sam TRL nie dowodzi wdrożenia'],
-   ['TRL',i.trlBasis==='source'?'s':'e',i.trlNA?'nie dotyczy — decyzja klasyfikacyjna radaru, nie deklaracja beneficjenta':i.trlBasis==='source'?'liczba przypisana do źródła; sprawdź wskazany dokument':'szacunek radaru z opisu; nie jest oficjalną oceną beneficjenta'],
-   ['Budżet',budgetOf(i)?'s':'u',budgetLabel(i)+(scopeOf(i)===null?'; brak podstaw do porównania z progami PLN lub brak zasięgu':'; w projektach NCBR służy jako przybliżenie zasięgu')],
+   ['TRL',i.trlNA?'n':i.trlBasis==='source'?'s':'e',i.trlNA?'nie dotyczy — decyzja klasyfikacyjna radaru, nie deklaracja beneficjenta':i.trlBasis==='source'?'liczba podana w źródle':'szacunek radaru z opisu; nie jest oficjalną oceną beneficjenta'],
+   ['Budżet',budgetConfirmed(i)?'f':budgetOf(i)?'s':'u',budgetLabel(i)+(budgetConfirmed(i)?'; kwota i waluta porównane ze źródłem '+i.audit.checkedAt:'')+(scopeOf(i)===null?'; brak danych o zasięgu lub przeliczenia waluty na PLN':'; w projektach NCBR służy jako przybliżenie zasięgu')],
    ['Obszar innowacji','e','klasyfikacja radaru według głównego zastosowania'],
    ['Ochrona własności',i.ip>0?'s':'u',i.ip>0?'deklaracja w przypisanym źródle; aktualnego statusu nie sprawdzono w rejestrze patentowym':'brak informacji nie oznacza braku ochrony'],
    ['Ocena w pięciu kryteriach','e','algorytm przelicza oceny autorów i dane źródłowe; nie potwierdza skuteczności']
   ];
 }
-const factPill=t=>t==='f'?'<span class="pill good">porównane ze źródłem</span>':t==='s'?'<span class="pill plain">dane przypisane do źródła</span>':t==='u'?'<span class="pill warn">brak danych</span>':'<span class="pill warn">ocena radaru</span>';
-function factsTable(i){return '<div class="tablewrap"><table><thead><tr><th>Informacja</th><th>Status</th><th>Skąd</th></tr></thead><tbody>'+factRows(i).map(r=>'<tr><td>'+esc(r[0])+'</td><td>'+factPill(r[1])+'</td><td class="small muted">'+esc(r[2])+'</td></tr>').join('')+'</tbody></table></div>'}
+const factPill=t=>t==='f'?'<span class="pill good">Potwierdzone w źródle</span>':t==='s'?'<span class="pill good">Ze źródła</span>':t==='u'?'<span class="pill plain">Brak danych</span>':t==='n'?'<span class="pill plain">Nie dotyczy</span>':t==='r'?'<span class="pill assessed">Streszczenie źródła</span>':t==='v'?'<span class="pill warn">Wymaga sprawdzenia</span>':'<span class="pill assessed">Ocena radaru</span>';
+function factsTable(i){return '<p class="small muted fact-legend">Zielone: fakty ze źródeł; „Potwierdzone” oznacza dodatkowe porównanie z dokumentem. Niebieskie: opracowanie lub ocena radaru, nie błąd. Szare: brak danych albo nie dotyczy.</p><div class="tablewrap"><table><thead><tr><th>Informacja</th><th>Status</th><th>Skąd</th></tr></thead><tbody>'+factRows(i).map(r=>'<tr><td>'+esc(r[0])+'</td><td>'+factPill(r[1])+'</td><td class="small muted">'+esc(r[2])+'</td></tr>').join('')+'</tbody></table></div>'}
+function dataStatusPill(i,a){
+  if(i.uncertainty)return '<span class="pill warn" title="'+esc(i.uncertainty)+'">Wymaga sprawdzenia</span>';
+  return a.notes.length?'<span class="pill plain" title="'+esc(a.notes.join(' '))+'">Niepełne dane</span>':'';
+}
 function evidenceBlock(i){
   const a=i.audit,urls=[...new Set([i.url].concat(i.sourceUrls||[]))].filter(u=>/^https?:\/\//.test(u||''));
   const state=a?(a.readable?(a.reviewed?'Porównano wybrane twierdzenia i ocenę ze źródłem.':'Odczytano treść lub fragment źródła; nie potwierdzono osobno wszystkich twierdzeń.'):'Odczyt źródła nie powiódł się; treść pozostaje niezweryfikowana. Nie jest to dowód niedziałania strony.'):'Brak odnotowanej kontroli źródła.';
@@ -136,7 +145,7 @@ function innCard(r){
   const s0=a.sims[0];
   return '<div class="cardw"><button class="card" data-open="inn:'+i.id+'"><div class="ctop"><div><span class="pill" style="background:'+AREA_C[ar]+'1a;color:'+AREA_C[ar]+'">'+ar+'</span>'+(i.detected?' <span class="pill plain" title="Znalezione automatycznie w publicznym źródle">Wykryte '+esc(i.discoveredAt)+'</span>':'')+'<h3 style="margin-top:8px">'+esc(i.title)+'</h3></div><div style="text-align:center">'+ring(ps,46,lvl(ps))+(A.w?'<div class="hint" style="margin-top:2px">dopasowanie</div>':'')+'</div></div>'+
   '<div class="meta">'+esc(i.institution)+' · '+esc(l.city)+'</div><p class="small cdesc">'+esc((i.description||i.problem||'').slice(0,140))+((i.description||'').length>140?'…':'')+'</p>'+
-  '<div class="cfoot"><span class="pill plain">'+STAGES[i.stage]+'</span><span class="pill plain" title="'+esc(i.trlWhy||'')+'">'+trlTxt(i)+'</span><span class="pill '+lvl(a.score)+'">'+scoreWord(a.score)+'</span>'+(a.notes.length?'<span class="pill warn">Wynik z zastrzeżeniami</span>':'')+(A.sim&&s0?'<span class="pill '+(s0.sim>=.35?'warn':'plain')+'">podobny opis: '+Math.round(s0.sim*100)+'%</span>':'')+'</div>'+
+  '<div class="cfoot"><span class="pill plain">'+STAGES[i.stage]+'</span><span class="pill plain" title="'+esc(i.trlWhy||'')+'">'+trlTxt(i)+'</span><span class="pill '+lvl(a.score)+'">'+scoreWord(a.score)+'</span>'+dataStatusPill(i,a)+(A.sim&&s0?'<span class="pill '+(s0.sim>=.35?'warn':'plain')+'">podobny opis: '+Math.round(s0.sim*100)+'%</span>':'')+'</div>'+
   (i.url?'<div class="hint" style="margin-top:8px">Źródło: '+esc(domainOf(i.url))+'</div>':'')+'</button><button class="cmpb'+(on?' on':'')+'" data-cmp="'+i.id+'" aria-pressed="'+on+'">'+(on?'✓ W porównaniu':'+ Porównaj')+'</button></div>';
 }
 function resultsHTML(){
@@ -219,14 +228,14 @@ PAGEX.porownanie=()=>{
   const txt=(label,f)=>'<tr><th scope="row">'+label+'</th>'+D.map(d=>'<td>'+f(d)+'</td>').join('')+'</tr>';
   const head='<tr><th></th>'+D.map(d=>'<th scope="col"><div style="font-weight:700">'+esc(d.i.title)+'</div><button class="linkbtn" data-cmp="'+d.i.id+'">usuń z porównania</button></th>').join('')+'</tr>';
   const body=txt('Obszar',d=>area3Of(d.i))+txt('Instytucja',d=>esc(d.i.institution))+txt('Miejsce',d=>esc(d.a.lab.city))+
-   row('Etap rozwoju',d=>d.i.stage,d=>STAGES[d.i.stage]+((d.i.stageOk||!d.i.estimated)?'':' <span class="pill warn">szacunek</span>'))+
-   txt('Rodzaj',d=>esc(typOf(d.i)))+row('TRL',d=>trlOf(d.i),d=>d.i.trlNA?'nie dotyczy':'TRL '+trlOf(d.i)+(d.i.trlBasis==='source'?' <span class="pill good">ze źródła</span>':' <span class="pill warn">ocena</span>'))+txt('Uzasadnienie TRL',d=>esc(d.i.trlWhy||'—'))+row('Wdrożenie w praktyce',d=>d.i.wdr>0?d.i.wdr:d.i.stage+1,d=>d.i.wdr>0?d.i.wdr+'/5':'szacunek z etapu')+txt('Uzasadnienie wdrożenia',d=>esc(d.i.wdrWhy||'—'))+
+   row('Etap rozwoju',d=>d.i.stage,d=>STAGES[d.i.stage]+((d.i.stageOk||!d.i.estimated)?'':' <span class="pill assessed">ocena radaru</span>'))+
+   txt('Rodzaj',d=>esc(typOf(d.i)))+row('TRL',d=>trlOf(d.i),d=>d.i.trlNA?'nie dotyczy':'TRL '+trlOf(d.i)+(d.i.trlBasis==='source'?' <span class="pill good">ze źródła</span>':' <span class="pill assessed">ocena radaru</span>'))+txt('Uzasadnienie TRL',d=>esc(d.i.trlWhy||'—'))+row('Wdrożenie w praktyce',d=>d.i.wdr>0?d.i.wdr:d.i.stage+1,d=>d.i.wdr>0?d.i.wdr+'/5':'szacunek z etapu')+txt('Uzasadnienie wdrożenia',d=>esc(d.i.wdrWhy||'—'))+
    CRIT.filter(c=>c.k!=='wdroz'&&c.k!=='trl').map(c=>row(c.name,d=>(d.i.scores||d.a.sug)[c.k]||1,d=>bar5((d.i.scores||d.a.sug)[c.k]||1)+' '+((d.i.scores||d.a.sug)[c.k]||1)+'/5')).join('')+
    row('Ocena potencjału',d=>d.a.score,d=>'<b>'+d.a.score+'/100</b> · '+scoreWord(d.a.score))+
    (audOf().w?row('Dopasowanie do profilu',d=>profScore(d.i,d.a),d=>'<b>'+profScore(d.i,d.a)+'/100</b>'):'')+
    txt('Ochrona własności',d=>esc(IPL[d.i.ip]))+
    txt('Najbliższe podobne rozwiązanie',d=>d.a.sims[0]?esc(d.a.sims[0].title)+' ('+Math.round(d.a.sims[0].sim*100)+'%)':'brak podobnych')+
-   txt('Fakty ze źródła',d=>factRows(d.i).filter(r=>r[1]==='f').length+' z '+factRows(d.i).length)+
+   txt('Porównane ze źródłem',d=>factRows(d.i).filter(r=>r[1]==='f').length+' z '+factRows(d.i).length)+
    txt('Źródło',d=>d.i.url?'<a href="'+esc(d.i.url)+'" target="_blank" rel="noopener noreferrer">'+esc(domainOf(d.i.url))+' ↗</a>':'brak linku')+
    txt('Szczegóły',d=>'<button class="btn ghost sm" data-open="inn:'+d.i.id+'">Otwórz kartę</button>');
   return back()+'<div class="page stack" style="max-width:1100px"><h2>Porównanie innowacji</h2><p class="muted">Najlepsza wartość w wierszu jest podświetlona. Wartości oznaczone jako szacunek nie pochodzą ze źródła.</p><div class="panel tablewrap"><table class="cmpt"><thead>'+head+'</thead><tbody>'+body+'</tbody></table></div><div class="row"><button class="btn ghost sm" data-act="cmpclr">Wyczyść porównanie</button><button class="btn sm" data-go="inn">Dodaj kolejne</button></div></div>';
