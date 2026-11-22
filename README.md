@@ -1,6 +1,6 @@
 # Radar innowacji
 
-Prototyp na HackNation 2026 do wyszukiwania, opisywania i oceniania istniejących polskich innowacji.
+Aplikacja do wyszukiwania, opisywania i oceniania istniejących polskich innowacji, stworzona na HackNation 2026.
 
 **[Otwórz aplikację na GitHub Pages](https://hurtekk.github.io/radar-innowacyjny-zbieg/)**
 
@@ -47,25 +47,6 @@ Wystarczy Python 3, bez dodatkowych bibliotek. Skrypt sprawdza poprawność JSON
 
 Po budowaniu otwórz plik lub uruchom lokalny serwer. Jeśli aplikacja jest już otwarta, odśwież stronę.
 
-### Publikacja na GitHub Pages
-
-Po wysłaniu zmian do gałęzi `main` GitHub Actions publikuje zawartość `dist/`.
-
-**Workflow nie buduje aplikacji.** Po zmianach w kodzie lub danych najpierw uruchom `python3 scripts/build.py` i dołącz wygenerowane pliki z `dist/` do commita.
-
-Publikację można też uruchomić ręcznie: **Actions → Deploy static content to Pages → Run workflow**.
-
-### Sprawdzenie zmian
-
-Po zmianie danych lub reguł uruchom poniższe kontrole. Oprócz Pythona potrzebny jest Node.js 20 lub nowszy.
-
-```bash
-python3 scripts/build.py
-node --check dist/script.js
-node scripts/check.cjs
-node collector/test.mjs
-```
-
 ## Struktura repozytorium
 
 - `src/` — kod JavaScript, style i szablon strony.
@@ -74,8 +55,6 @@ node collector/test.mjs
 - `data/geo/` — miejscowości i dane województw.
 - `scripts/` — budowanie aplikacji i kontrola spójności.
 - `dist/` — gotowa aplikacja publikowana na GitHub Pages.
-- `collector/` — osobne narzędzie do wyszukiwania nowych projektów.
-- `.github/workflows/` — automatyczna publikacja na GitHub Pages.
 - `archive/authoring/` — materiały pomocnicze używane przy opracowywaniu rekordów; nie są częścią budowania.
 
 Pliki JavaScript z `src/js/` są łączone w kolejności nazw. Kolejność arkuszy stylów określa lista `STYLES` w `scripts/build.py`.
@@ -86,7 +65,6 @@ Katalog obejmuje projekty z publicznej [Bazy sukcesów beneficjentów NCBR](http
 
 Opisy, rodzaj innowacji, TRL i poziom wdrożenia są oceną autorów na podstawie źródeł. Nie należy traktować ich jako oficjalnych ocen NCBR. Szczegóły opisuje „Metodologia oceny” w aplikacji.
 
-- Konta demonstracyjne w `src/js/22-demo-accounts.js` zawierają fikcyjne dane i są oznaczone jako DEMO.
 - Kontury województw pochodzą z projektu `ppatrzyk/polska-geojson`. Ich licencja wymaga sprawdzenia przed dalszą publikacją.
 - `data/records/source-audit.json` zapisuje zakres i datę sprawdzenia źródła oraz krótkie fragmenty dowodów. Sam odczyt strony nie oznacza pełnej weryfikacji opisu.
 - Kwoty EUR nie są porównywane z progami PLN bez udokumentowanego przeliczenia (`budget.amountPLN` i `budget.conversionSource`).
@@ -96,7 +74,7 @@ Opisy, rodzaj innowacji, TRL i poziom wdrożenia są oceną autorów na podstawi
 
 1. Dodaj projekt do `data/records/ncbr-projects.json`, nadając mu nowe, unikalne `id`.
 2. Dodaj ocenę pod tym samym `id` w `data/records/assessments.json`. Uzupełnij pola `typ`, `trl`, `tb`, `wdr`, `wb`, `opis` i `zast`, zgodnie z istniejącymi wpisami.
-3. Zbuduj aplikację i uruchom kontrole spójności.
+3. Zbuduj aplikację.
 
 Pole `wdr` określa poziom rzeczywistego użycia w skali 1–5, a `wb` zawiera krótkie uzasadnienie na podstawie źródła.
 
@@ -108,16 +86,3 @@ Przy zmianie danych katalogu podnieś `DATA_REVISION`. Mechanizm migracji aktual
 
 Przed migracją powstaje lokalna kopia `radar-innowacji-v9-backup-before-<wersja>`. Scalony rekord aliasu pozostaje w `mergedRecords`.
 
-## Kolektor nowych projektów
-
-Kolektor jest osobnym narzędziem i nie jest wymagany do uruchomienia aplikacji. Wymaga Node.js 20 lub nowszego, bez dodatkowych zależności.
-
-W głównym folderze repozytorium uruchom:
-
-```bash
-node collector/collect.mjs
-```
-
-Wynik trafia do `collector/feed/feed.json`. Więcej informacji znajdziesz w [instrukcji kolektora](collector/README.md).
-
-Obecny workflow GitHub Actions publikuje stronę; nie uruchamia kolektora cyklicznie. Samo uruchomienie kolektora nie aktualizuje też wbudowanej migawki `data/records/detected-feed.json` ani wersji na GitHub Pages.
